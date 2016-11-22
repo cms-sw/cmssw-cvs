@@ -1,0 +1,15 @@
+<environment>
+<use name=FWCore/PluginManager>
+<use name=DataFormats/Common>
+<use name=FWCore/Framework>
+<use name=boost>
+<use name=root>
+<use name=SimDataFormats/GeneratorProducts>
+# <flags EDM_PLUGIN=1>
+<library file=VtxTester.cc name=VtxSmearingTest>
+<flags EDM_PLUGIN=1>
+</library>
+<library file=BoostTester.cc name=VtxSmearingBoostTest>
+<flags EDM_PLUGIN=1>
+</library>
+</environment>

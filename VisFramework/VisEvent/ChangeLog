@@ -1,0 +1,122 @@
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisEventContentTwig.cc, VisEventCoreContent.cc: Remove unneeded
+	lock.
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisEventCoreContent.h, VisEventCoreContent.cc: Remove unused
+	multi-threaded base class. Replaced by a simpler one.
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2008-11-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventCoreContent.cc: Add FED raw data twig. Make an unknown
+	twig label more compact.
+
+2008-06-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventContentTwig.cc: Shorten a twig name in brackets.
+
+2008-05-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventContentTwig.cc: Remove warning by initializing the twig
+	to zero.
+
+2008-05-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventContentTwig.cc: Enable event data browser configuration.
+	* VisEventCoreContent.cc: Add event id twig.
+
+2008-05-15  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventContentTwig.h, VisEventContentTwig.cc: Move conflicting
+	headers. Undefine emit.
+
+2007-12-12  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* BuildFile: Added explicit qt dependency in order to let new scram run
+	MOC properly.
+
+2007-11-02  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventContentTwig.cc: Close the unknown types branch. Remove
+	commented out lines.
+	* VisEventCoreContent.cc: Remove additional twig. Rename Provenance twig
+	to Event Collections which it is. 
+
+2007-10-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventContentTwig.cc: Separate unknown event collection types
+	and gray them out to indicate that they cannot be displayed.
+
+2007-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventContentTwig.cc, VisEventCoreContent.cc: Move the dynamic
+	event content in a separate tree browser. Enable and expand the
+	content by default.
+
+2007-04-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventContentTwig.h, xtypeinfo.h, VisEventContentTwig.cc,
+	VisEventContentTwigOps.cc, VisEventCoreContent.cc, iglet.cc:
+	Migrate to the new Iguana directory structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* VisEventContentTwigOps.cc, VisEventCoreContent.cc: Adapt to
+	migration of IGUANA to CMSSW.
+
+2007-03-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventContentTwig.cc: Headers has been moved.
+
+2007-03-02  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventContentTwig.cc: Do not delete the twigs on new event,
+	assume that the list of the products from the product registry
+	does not change.
+
+2006-11-21  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventContentTwig.cc: Add run and event number to the
+	information on the status bar.
+
+2006-11-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventContentTwig.h, VisEventContentTwig.cc: Construct dynamic
+	twigs on preProcessEvent signal. Take information from the product
+	registry.
+	* VisEventCoreContent.cc: Connect the event content twig to the
+	signals of the event processor only if the event processor has
+	already been initialized.
+	
+2006-10-31  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventCoreContent.cc, VisEventContentTwig.cc: Add process name
+	to the dynamic twigs.
+
+2006-04-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventCoreContent.cc: Change labels of the dynamic twigs.
+
+2006-03-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventContentTwig.h, VisEventContentTwig.cc: Move it here from
+	VisFrameworkBase. Name it differently to avoid conflicts as a
+	temporary measure.
+	* VisEventContentTwigOps.h, VisEventContentTwigOps.cc: Menu
+	options for the above twig. 
+	* VisEventCoreContent.h, VisEventCoreContent.cc: Event content
+	data proxy.
+	* xtypeinfo.h, plugin.cc: Declare and define the above types.
+	* BuildFile: New file to build and export this plugin.
+
+	* New shared dynamic event content visualisation core.

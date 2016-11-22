@@ -1,0 +1,179 @@
+2010-01-06  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Export the library - it is used by the plugins.
+
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisMuonTwig.cc, VisRefitTrackTwig.cc, VisTrackTwig.cc: Removed
+	unneeded lock.
+
+2009-09-11  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisMuonTwig.h, VisMuonTwig.cc: Clean up.
+	* VisRefitTrackTwig.h, VisRefitTrackTwig.cc: Cache
+	representations. 
+
+2009-09-10  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisRefitTrackTwig.h, VisRefitTrackTwig.cc: Cache reps. 
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisMuonContent.h, VisMuonContent.cc: Remove unused
+	multi-threaded base class. Replaced by a simpler one. 
+
+2009-08-25  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisMuonFilter.cc: Remove compilation warnings.
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2008-09-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonTwig.cc: Set visibility of the children based on the
+	visibility of the parent.
+	
+	* VisRefitTrackTwig.cc: Make muons blue.
+	* VisMuonTwig.cc: Add detectors.
+
+2008-06-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonTwig.h, VisMuonTwig.cc: Make individual Muon branches as
+	twigs. Add additional Muon parameters to the text rep.
+
+2008-06-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonTwig.cc: Add Calo energy twig.
+	* VisMuonEnergyTwig.h, VisMuonEnergyTwig.cc: New twig to represent
+	Muon calo energy. Just text rep for now.
+	* xtypeinfo.h, xtypeinfo.cc: Added the new type twig.
+
+2008-06-18  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisRefitTrackTwig.h, VisRefitTrackTwig.cc: A dynamic twig to
+	draw referenced from Muon Tracks. The tracks are refitted.
+	* VisMuonTwig.h, VisMuonTwig.cc: Add a possibility to draw hit
+	chambers. Add a number of muons in the collection to the twig
+	name. Expand the collections to show individual Muons and their
+	Tracks if any.
+
+2008-05-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonTwig.h, VisMuonTwig.cc: Allow Muon annotations, added
+	RPhi and RZ representations. Handle exceptions at the base
+	class. Enrich text representation.
+	* VisTrackTwig.h, VisTrackTwig.cc: Allow Track annotations, added
+	RPhi and RZ representations. Handle exceptions at the base
+	class. Enrich text representation.Allow configuration of animation 
+	and B field.
+	* VisMuonContent.cc: Connect exceptions.
+
+2008-05-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonFilter.h, VisMuonFilter.cc, plugins/plugin.cc, 
+	plugins/BuildFile: A Muon filter.
+
+	* VisMuonTwig.h, VisMuonTwig.cc: Allow configuration of animation 
+	and B field.
+
+2008-05-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonTwig.h, VisMuonTwig.cc: Include animation, set zero field.
+
+2008-01-31  Stefano Lacaprara  <lacaprara@pd.infn.it>
+
+	* VisMuonTwig.cc, VisTrackTwig.cc: vertex is in centimeter while
+	IgSoIdealTrack wants meter. Extend max r and z to cover muon system
+
+2008-01-31  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added Stefano.
+
+2007-11-02  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonContent.cc, VisMuonTwig.cc: Let the framework handle the
+	extensions.
+
+2007-09-24  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonTwig.h, VisMuonTwig.cc: New class to display
+	reco::Muons.
+	* xtypeinfo.h, xtypeinfo.cc: Define and declare the new class. 
+	* VisMuonContent.cc: Add a new class.
+	* BuildFile: Add DataFormats/Muon library.
+	* VisTrackTwig.h, VisTrackTwig.cc: Do not access TrackExtras, draw
+	an ideal helix as a track.
+
+2007-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Vis*Content.cc: Introduce separate tree browser.
+	
+2007-04-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Adapted to the changes in the Iguana subsystem directory structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* VisMuonContent.cc: Adapt to migration of IGUANA to CMSSW.
+
+2007-02-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrackTwig.cc: Print eta and phi for each track.
+
+2007-02-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrackTwig.cc: Add text representation of the Track.
+
+2006-11-15  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrackTwig.cc: Invalidate the twig on new event.
+
+2006-11-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrackTwig.h, VisTrackTwig.cc: VisEventSelector takes now a
+	process name.
+	
+2006-09-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Add Norbert and Chang Liu as developers.
+
+2006-09-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrackTwig.h, VisTrackTwig.cc: Add a spline track connecting
+	innermost and outermost states of the track.
+
+2006-07-03  Riccardo Bellan  <Riccardo.Bellan@cern.ch>
+	
+	* VisTrackTwig.cc: Fix in vector<SbVec3f> memory allocation
+
+2006-06-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	*.admin/developers: Added Nicola and Riccardo.
+
+2006-06-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrackTwig.h, VisTrackTwig.cc: Provide more debug output for a
+	3D representation.
+
+2006-06-27  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrackTwig.cc: Provide a 3D repesentation.
+
+2006-06-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* New package to provide a plugin for global muon reconstruction 
+	visualisation.
+	
+	* BuildFile, VisTrackTwig.h, VisTrackTwig.cc, VisMuonContent.h, 
+	VisMuonContent.cc, plugin.cc, xtypeinfo.h: Initial implementation 
+	of the reconstruced tracks visualization.  

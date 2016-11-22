@@ -1,0 +1,122 @@
+#Inventor V2.1 ascii
+
+
+Separator {
+  renderCaching OFF
+
+  DrawStyle {
+    style FILLED
+
+  }
+  DEF Yellow Material {
+    ambientColor 1 1 0
+    diffuseColor 1 1 0
+    specularColor 1 1 0
+    emissiveColor 1 1 0
+    shininess 0
+    transparency 0
+
+  }
+  DEF HVQX+0 Switch {
+    whichChild -3
+
+    Separator {
+
+      MatrixTransform {
+        matrix 0.00098768843 -0.00015643447 1.630262e-19 0
+          0.00015643447 0.00098768843 2.0134034e-19 0
+          0 0 0.001 0
+          0.14716683 0.83462459 11.955 1
+
+      }
+      DEF +1 IgSoG4Trap {
+        fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+        dz 825
+        theta 0
+        phi 0
+        dy1 722.5
+        dx1 22.040873
+        dx2 276.83337
+        dy2 722.5
+        dx3 22.040873
+        dx4 276.83337
+        alp1 0
+        alp2 0
+
+      }
+    }
+    Separator {
+
+      MatrixTransform {
+        matrix -0.00098768843 -0.00015643447 -8.0387389e-20 0
+          -0.00015643447 0.00098768843 5.9722628e-20 0
+          1.2246064e-19 0 -0.001 0
+          -0.14716683 0.83462459 -11.955 1
+
+      }
+      USE +1
+    }
+  }
+  DEF HVQX+2 Switch {
+    whichChild -3
+
+    Separator {
+
+      MatrixTransform {
+        matrix -0.00098480773 -0.00017364819 -8.0634936e-20 0
+          0.00017364819 -0.00098480773 -3.8104802e-20 0
+          0 0 0.001 0
+          0.14716683 -0.83462459 11.955 1
+
+      }
+      DEF +3 IgSoG4Trap {
+        fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+        dz 825
+        theta 0
+        phi 0
+        dy1 722.5
+        dx1 22.040873
+        dx2 276.83337
+        dy2 722.5
+        dx3 22.040873
+        dx4 276.83337
+        alp1 0
+        alp2 0
+
+      }
+    }
+    Separator {
+
+      MatrixTransform {
+        matrix 0.00098480773 -0.00017364819 -8.2495388e-20 0
+          -0.00017364819 -0.00098480773 -1.8183051e-19 0
+          1.2246064e-19 0 -0.001 0
+          -0.14716683 -0.83462459 -11.955 1
+
+      }
+      USE +3
+    }
+  }
+  Separator {
+
+    Translation {
+      translation -3 0 0
+
+    }
+    DrawStyle {
+      style LINES
+
+    }
+    Material {
+      ambientColor 0.42352942 0.43921569 0.45490196
+      diffuseColor 0.42352942 0.43921569 0.45490196
+      specularColor 0.42352942 0.43921569 0.45490196
+      emissiveColor 0.42352942 0.43921569 0.45490196
+      shininess 0
+      transparency 0
+
+    }
+    USE HVQX+0
+    USE HVQX+2
+  }
+}

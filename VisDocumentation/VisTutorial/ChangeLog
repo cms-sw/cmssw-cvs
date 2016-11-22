@@ -1,0 +1,365 @@
+2008-09-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-mfield_cfg.py: New configuration to visualize magnetic
+	field. 
+	* cmssw-geom_cfg.py: New configuration to run Geant4 and magnetic
+	field visualization. 
+
+2008-08-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-CRUZET4-noReco_cfg.py: Add a new configuration for
+	CRUZET4.
+
+2008-08-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-ZprimeMuMu_cfg.py: New file. Example of python
+	configuration for iguana.
+
+2008-07-22  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-higgs-4mu.py: Example of Python configuration. 
+
+2008-01-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-Darren.cfg, iguana-application-Darren.cff: Test
+	configuration for GsfTracks.
+
+2008-01-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-Daniele.cfg, iguana-application-Daniele.cff: Test
+	configuration for GsfTracks.
+
+	* iguana-application-Daniele.cff: Updated.
+
+2007-11-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* iguana-application.cff: Updated for GREN.
+
+2007-11-16  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-iguana.cfg: Update for the CMSSW_1_7_0 release.
+	* iguana-application.cff: Updated for the release.
+	* cmssw-testsample.cfg: Configuration file to produce a test
+	sample.
+
+2007-10-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-iguana.cfg: Update for the Boston tutorial.
+
+2007-09-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-relval.cfg: Update for the DESY tutorial.
+	* cmssw-iguana.cfg: Update for the DESY tutorial.
+	* iguana-application.cff: Iguana application configuration.
+
+	* cmssw-geom.cfg, cmssw-relval.cfg, cmssw-iguana.cfg,
+	iguana-application.cff: Update for the DESY tutorial.
+
+2007-08-31  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* GREA-online.cfg, iguana-dt.cfi: Updated GREA files.
+	* iguana-gt.cfi: GT unpacker.
+	* iguana-geometry.cff: Geometry.
+	* iguana-application.cff: IGUANA settings.
+
+2007-08-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cfg, *.cfi: GREA files.
+
+2007-08-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-relval.cfg: Update for the pre8 data.
+
+2007-08-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-relval.cfg: Update for the CERN tutorial.
+	
+	* cmssw-relval.cfg: Updated.
+		
+	* cmssw-relval.cfg: Updated for 1_6_0_pre8.
+	* cmssw-test.cfg: Added for tests.
+	
+	* cmssw-test.cfg: Added comments.
+
+2007-06-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-geom.cfg, cmssw-geom-sens.cfg: Update the maxEvents
+	parameter. Now it is not part of the source.
+
+2007-05-31  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* materials.iv, materials.map: TOB and Support Tube geometry materials
+	from Riccardo.
+
+2007-04-24  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cabling-MTCC-2-1.db, cablingCatalog-MTCC-2-1.xml,
+	iguana-rpc.cfi: Deleted since RPCs do not provide backwards
+	compatibility with MTCC data.
+	* run-template.cfg: Modified to accommodate the above changes.
+
+	* iguana-hcal.cff: Defines more then one module.
+	* iguana-hcal.cfi: Renamed.
+
+2007-04-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* iguana-geometry.cfi: Use full ideal geometry. Remove
+	TrackerRecoGeometryESProducer.
+	* iguana-hcal.cfi: New parameters added to the HcalDbProducer.
+	
+2007-02-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* iguana-rpc.cfi, iguana-dt.cfi: New paramter added to the
+	PoolDBESSource.
+
+2006-11-27  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* iguana-rpc.cfi: RPC rec hit configuration file name has been
+	changed.
+	* iguana-hcal.cfi: HCAL simple reconstructor takes one more
+	parameter. Change to include its cfi file.
+
+2006-11-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* run: A new script which was used in MTCC II to produce a
+	configuration file for a certain run.
+	* run-template.cfg: A template of the configuration file to be
+	used by the above script.
+	* iguana-application.cfi: Configuration file fragment which
+	defines an event display configuration. Used by run-template.cfg.
+	* iguana-geometry.cfi: Configuration file fragment which defines
+	which event setup sources to load for MTCC II event display. Used
+	by run-template.cfg.
+	* iguana-csc.cfi: Configuration file fragment which defines csc
+	sequence of raw2digi and local reconstruction modules. Can be used
+	by run-template.cfg.
+	* iguana-dt.cfi: Configuration file fragment which defines dt
+	sequence of raw2digi and local reconstruction modules. Can be used
+	by run-template.cfg.
+	* iguana-hcal.cfi: Configuration file fragment which defines hcal
+	sequence of raw2digi and local reconstruction modules. Used by
+	run-template.cfg. For MTCC II event display.
+	* iguana-rpc.cfi:  Configuration file fragment which defines rpc
+	sequence of raw2digi and local reconstruction modules. Used by
+	run-template.cfg.  For MTCC II event display.
+	* cablingCatalog-MTCC-2-1.xml, cabling-MTCC-2-1.db: RPCs cabling
+	information for MTCC II data. For MTCC II event display.
+	* emap_mtcc_hbheho_honew_oct09.txt, means_run_3833_noR1_s3.txt:
+	HCAL cabling and pedestals for MTCC II event display.
+	* README.1st: Instructions on how to use run script.
+	
+2006-09-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* README.1st, cmssw-geom.cfg, cmssw-geom-sens.cfg: Updated for 0_9_0.
+	* cmssw-dt-only.cfg, cmssw-reco.cfg, cmssw-simulation.cfg,
+	csc_slice_test_map.txt, DT-HCAL-CSC-offline-run2140.cfg, emu.cfg,
+	emuLCTtest.cfg, emuRawData.cfg, hbho_ring12_tb04.txt, hcal.cfg,
+	HCAL-CSC-run2185.cfg, hcal.xml, he_map.txt, SherpaWriteHepMC.dat,
+	testmapping.map: Removed as obsolete.
+
+2006-08-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* HCAL-CSC-run2185.cfg: An example of a parameter set file
+	for MTCC.
+	
+2006-08-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* DT-HCAL-CSC-offline-run2140.cfg: An example of a parameter set file
+	for MTCC.
+
+2006-06-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* hcal.cfg: Include an hcal visualization configuration parameter set
+	file which replaces specific "HCAL ONLINE" startup session. 
+
+2006-06-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* hcal.cfg: Include message logger, use data file from castor.
+
+2006-05-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-geom.cfg: Generate one event to be able to get Magnetic
+	field.
+	* emuLCTtest.cfg: Include cfi file for CSC xml geometry, rather
+	then define here.
+	* emu.xml: Remove from here - use the standard CSC cfi file.
+	* testmapping.map: Needed in a local place.
+	* he_map.txt: HE map for commissioning.
+
+	* cmssw-simulation.cfg: Update to use the message logger cfi
+	include file.
+
+2006-05-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-geom-sens.cfg: Configuration for simulated geometry
+	visualization with sensitive detectors.
+
+2006-05-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-simulation.cfg: Modified copy from SimG4Core/Application -
+	added the RPC geometry producer and removed output module - so far
+	we are not interested in making the data persistent.
+	
+	* developers: Added Nicola.
+
+2006-05-02  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* hcal.cfg: Include calorimetry parameter set file.
+
+2006-04-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-geom.cfg: New parameter introduced by the GeometryProducer.
+	* cmssw-simulation.cfg: CheckHits parameter became untracked.
+	* satocrich.txt, hbho_ring12_tb04.txt: Remove local copies, use
+	these files from CondFormats/HcalMapping.
+	* run_11609_pedestals.txt: Remove local copy.
+	
+2006-04-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-reco.cfg: Update for the release.
+	* cmssw-geom.cfg: New parameter set file for geometry visualization.
+
+2006-04-24  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* run_11609_pedestals.txt, hbho_ring12_tb04.txt: Add text calibrations
+	here.
+	* hcal.cfg: Update according to changes in parameters.
+
+2006-04-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-dt-only.cfg, cmssw-reco.cfg, emuRawData.cfg: Update parameter
+	set files.
+	
+	* cmssw-simulation.cfg: Update for the release.
+
+2006-04-12  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* hcal.cfg: HcalTextCalibrations:file is now of type FileInPath.
+
+
+2006-03-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-dt-only.cfg: Parameter set for dt digis.
+
+2006-03-24  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-reco.cfg, cmssw-simulation.cfg, emu.cfg, emuRawData.cfg: Modify
+	the parameters for PoolSource and use includes as of CMSSW_0_6_0 series.
+
+2006-03-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* emu.cfg, emuLCTtest.cfg, emuRawData.cfg: Modify the path to an
+	xml file.
+	
+	* emu.cfg: Correct parameters of the CSCDCCUnpacker.
+	* README.1st: Add recent EMU slice data.
+
+2006-03-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-reco.cfg: Modify for demo.
+
+	* cmssw-reco.cfg: Update magnetic field.
+
+2006-03-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* cmssw-reco.cfg: Use satocrich.txt mapping from current directory
+	(temporarily).
+
+2006-03-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* simGeometry.cfg: Renamed to cmssw-simulation.cfg
+	* recoGeometry.cfg: Renamed to cmssw-reco.cfg
+	* README.1st: Updated.
+	* CaloTowers_HB_HO.root, demo.cfg: Removed as obsolete.
+	* emu.cfg: Updated.
+	* emuLCTtest.cfg, emuRawData.cfg: New configurations for reading from 
+	the binary datafiles.
+	* hcal.cfg: Updated.
+	* satocrich.txt: Temporary added here - the fixes did not make to the
+	release.
+	
+2006-02-08  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* README.1st: Information add about setting the CMSSW_SEARCH_PATH.
+	* emu.cfg: Fixed the fileName (No hard coded path).
+	* emu.xml: Fixed the mf.xml and muonNumbering.xml relative paths
+	(these are now available under Geometry/MuonCommonData/data instead
+	of Geometry/MuonCommonData).
+	* emu.cfg, hcal.cfg: Full relative path used for xml files w.r.t
+	CMSSW_SEARCH_PATH.
+	* README.1st: Cleanup. No need to add "." in CMSSW_SEARCH_PATH.
+
+2006-01-30  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* .admin/developers: Added Shahzad Muzaffar as administrator.
+	* .admin/developers: Removed the empty line.
+	
+2006-01-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* simGeometry.cfg: Add more parameters to visualize CALO. Use
+	geometry configuration from Geometry.
+	
+2006-01-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* simGeometry.cfg, SherpaWriteHepMC.dat: Example files for running
+	Simulation visualization.
+
+2005-12-16  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* hcal.cfg: Correct where the xml file is.
+
+	* README.1st: Update on where to get the data from.
+
+2005-12-15  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* emu.xml, emu.cfg, csc_slice_test_map.txt: New files for the EMu
+	tutorial.
+
+	* hcal.xml: Corrected version for HCAL online event display.
+	* hcal.cfg, demo.cfg: Use the release versions of the files.
+	* TESTconfiguration.xml, hcalGeom.cfg, hf.cfg,
+	testConfigurationIanna.xml, tracker.cfg: Obsolete files -
+	removed.
+
+2005-12-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* recoGeometry.cfg: Use release configuration of geometry
+	and magnetic field. 
+
+2005-11-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* testConfigurationIanna.xml: Complete configuration for the
+	detector geometry including magnetic field.
+	* recoGeometry.cfg: Update to include all available and needed for
+	the geometry and magnetic field visualization producers.
+	* hcal.cfg: Use new calibration service.
+	* CaloTowers_HB_HO.root: Data file for the demo.cfg.
+	* README.1st: Update location of the demo data file.
+
+	* TESTconfiguration.xml: Geometry configuration for the HCAL
+	on-line display.
+	* demo.cfg, hcal.cfg, recoGeometry.cfg,
+	testConfigurationIanna.xml: Modify locations of the files to
+	non-existing yet release area.
+
+2005-11-02  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* demo.cfg: Parameter set file for the reco jet example.
+	* hcal.cfg: Modified accordingly to simplified HcalDbSource. 
+	Added the reconstruction geometry of HCAL.
+	* hcalGeom.cfg: Reconstruction geometry of the HCAL.
+	* recoGeometry.cfg: Both tracker and HCAL geometry.
+
+2005-10-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* README.1st: Instructions on how to get the data.
+	* tracker.cfg: New parameter set file to read the tracker 
+	geometry.
+	* hf.cfg: New parameter set file to read HF data.
+	* test.cfg: Renamed to hcal.cfg.
+
+2005-10-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* test.cfg: New parameter set file.
+
+	* Logging file.

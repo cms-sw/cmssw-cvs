@@ -1,0 +1,27 @@
+<use name=clhep>
+
+#<bin file=testNewGrid.cpp>
+#</bin>
+
+#<bin file=allVolumes.cpp>
+#</bin>
+ 
+#<bin file=testGridAccess.cpp>
+#</bin>
+ 
+#<bin file=checkAllGrids.cpp>
+#</bin>
+ 
+#<bin file=SolenoidField.cpp>
+#</bin>
+ 
+#<bin file=testFieldInterpolation.cpp>
+#</bin>
+
+<bin file=BinaryTablesGeneration/GridFileReader.cpp name=GridFileReader>
+  <use name=MagneticField/Interpolation>
+</bin>
+
+<bin file="BinaryTablesGeneration/prepareFieldTable.cpp, BinaryTablesGeneration/prepareMagneticFieldGrid.cc" name=prepareFieldTable>
+  <use name=MagneticField/Interpolation>
+</bin>

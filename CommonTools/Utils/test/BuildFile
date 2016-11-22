@@ -1,0 +1,12 @@
+<bin name="testCommonToolsUtil" file="testSelectors.cc,testSelectIterator.cc,testComparators.cc,testCutParser.cc,testExpressionParser.cc,testRunner.cpp">
+<!-- <flags CXXFLAGS="-DBOOST_SPIRIT_DEBUG -DBOOST_SPIRIT_DEBUG_OUT=std::cerr">  -->
+  <use name=DataFormats/TrackReco>
+  <use name=DataFormats/TrackerRecHit2D>
+  <use name=DataFormats/Candidate>
+  <use name=DataFormats/PatCandidates>
+  <use name=DataFormats/GeometryVector>
+  <use name=DataFormats/SiStripCluster>
+  <use name=CommonTools/Utils>
+  <use name=cppunit>
+</bin>
+

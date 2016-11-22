@@ -1,0 +1,115 @@
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisSimHitsContent.h, VisSimHitsContent.cc: Removed unused base
+	class.
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	*  *.cc, *h: Final migration to Qt4.
+
+2008-10-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisSimHitsContent.cc: Modify names to be consistent. 
+	* VisPCaloHitTwig.h, VisPCaloHitTwig.cc: Split by collections. Use
+	VisEventSetupService. Display LS, BX, and Orbit.
+	* VisPSimHitTwig.h, VisPSimHitTwig.cc: Split by collections. Check
+	DetId validity - only Tracker and Muon are displayed. Use
+	VisEventSetupService. Display LS, BX, and Orbit.
+
+2008-05-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisPCaloHitTwig.cc: Migrate to CaloGeometry.
+
+2008-04-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisSimTrackTwig.cc: Add gammas in RZ and RPhi views.
+	* VisSimHitContent.cc: Allow to exclude Twigs from a configuration
+	file.
+
+2007-11-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisSimTrackTwig.cc: Add annotations and cut on Pt.
+
+2007-11-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisPCaloHitTwig.cc, VisPSimHitTwig.cc, VisSimHitsContent.cc, 
+	VisSimTrackTwig.cc: Let the framework handle the exceptions.
+	
+2007-04-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Vis*Content.cc: Introduce separate tree browser.
+	
+2007-04-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* xtypeinfo.h, VisPCaloHitTwig.cc, VisPSimHitTwig.cc,
+	VisSimHitsContent.cc, VisSimTrackTwig.cc, VisSimVertexTwig.cc,
+	iglet.cc: Migrate to the new Iguana subsystem directory
+	structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* VisSimHitsContent.cc: Adapt to migration of IGUANA to CMSSW.
+
+2007-03-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Use VisEventSetup to define a name of detector ID.
+	* VisPCaloHitTwig.h, VisPCaloHitTwig.cc: Use VisEventSetup to
+	define a name of detector ID. Set a minimum energy cut:
+	VisPCaloHitTwig_minEnergy in VisConfigurationService.
+	* VisPSimHitTwig.h, VisPSimHitTwig.cc: Use one GlobalTrackingGeometry.
+	* VisSimHitsContent.cc: Get VisEventSetupService.
+
+2007-02-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisSimTrackTwig.cc: Display only known charged particles.
+
+2007-01-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisSimVertexTwig.h, VisSimVertexTwig.cc: New class to visualize
+	a simulated vertex.
+	* VisSimTrackTwig.h, VisSimTrackTwig.cc: New class to visualize a
+	simulated track.
+	* xtypeinfo.h, plugin.cc: Declare and define the above classes.
+	* VisSimHitsContent.cc: Add the above classes.
+	* BuildFile: Add dependencies on SimTrack and SimVertex.
+
+2006-11-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisPCaloHitTwig.h, VisPCaloHitTwig.cc, VisPSimHitTwig.h,
+	VisPSimHitTwig.cc: VisEventSelector takes now a process name. 
+
+2006-05-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisPCaloHitTwig.cc, VisPSimHitTwig.cc: Connect sim hits by the 
+	time of flight and separate by particle type, add different 
+	colors by detectors.
+
+2006-04-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisPCaloHitTwig.cc: Add RPhi representation as a circular
+	histogram.
+
+2006-04-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisPCaloHitTwig.h, VisPCaloHitTwig.cc, VisPSimHitTwig.h,
+	VisPSimHitTwig.cc: Add 3D representations in global coordinates -
+	temporarily all handling local to global is done here.
+	* BuildFile: Add all geometry packages here.
+
+2006-03-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisPCaloHitTwig.h, VisPCaloHitTwig.cc, VisPSimHitTwig.h,
+	VisPSimHitTwig.cc, VisSimHitsContent.h, VisSimHitsContent.cc,
+	xtypeinfo.h, plugin.cc: New files to represent PCaloHit and PSimHit.	
+
+	* New package to provide a plugin for the visualization of the
+	simulated hits.
+

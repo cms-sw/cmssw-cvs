@@ -1,0 +1,25 @@
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisGsfPFRecTrackTwig.cc, VisPFClusterTwig.cc, VisPFContent.cc,
+	VisPFRecHitTwig.cc, VisPFRecTrackTwig.cc,
+	VisTrackingParticleTwig.cc: Removed unneeded lock.
+
+2009-08-28  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove obsolete tools.
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisPFContent.h, VisPFContent.cc: Remove unused multi-threaded
+	base class. Replaced by a simpler one.
+
+2009-08-25  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisTrackingParticleTwig.cc: Removed compilation warnings.
+
+2009-01-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* iguana-pf.cfg: Removed as obsolete.
+
+	* New logging file. 
+

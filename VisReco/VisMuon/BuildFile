@@ -1,0 +1,12 @@
+<use name=Iguana/Inventor>
+<use name=VisFramework/VisFrameworkBase>
+<use name=VisFramework/VisEventSetup>
+<use name=DataFormats/TrackReco>
+<use name=DataFormats/MuonReco>
+<use name=Geometry/CommonDetUnit>
+<use name=Geometry/Records>
+<use name=Geometry/CommonTopologies>
+
+<export>
+ <lib name=VisRecoVisMuon>
+</export>
