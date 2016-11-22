@@ -1,0 +1,14 @@
+<use name=CondFormats/SiStripObjects>
+<use name=DataFormats/SiStripCommon>
+<use name=DataFormats/SiStripDetId>
+<use name=boost>
+<use name=rootgraphics>
+
+<export>
+  <lib name=DQMSiStripCommissioningSummary>
+  <use name=CondFormats/SiStripObjects>
+  <use name=DataFormats/SiStripCommon>
+  <use name=DataFormats/SiStripDetId>
+  <use name=boost>
+  <use name=rootgraphics>
+</export>

@@ -1,0 +1,9 @@
+<use name=boost>
+<use name=FWCore/ParameterSet>
+<use name=FWCore/PythonParameterSet>
+
+<bin file=edmConfigHash.cpp>
+</bin> 
+ 
+<bin file=edmParameterSetDump.cpp>
+</bin>

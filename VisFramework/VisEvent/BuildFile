@@ -1,0 +1,6 @@
+<use name=VisFramework/VisFrameworkBase>
+<use name=qt>
+
+<export>
+  <lib name=VisFrameworkVisEvent>
+</export>

@@ -1,0 +1,1334 @@
+#Inventor V2.1 ascii
+
+
+Separator {
+  renderCaching OFF
+
+  Group {
+
+    DrawStyle {
+      style LINES
+
+    }
+    Material {
+      ambientColor 0.42352942 0.43921569 0.45490196
+      diffuseColor 0.42352942 0.43921569 0.45490196
+      specularColor 0.42352942 0.43921569 0.45490196
+      emissiveColor 0.42352942 0.43921569 0.45490196
+      shininess 0
+      transparency 0
+
+    }
+  }
+  DEF _unnamed_/_unnamed_/_unnamed_/_unnamed_/_unnamed_ Separator {
+    renderCaching OFF
+
+    Translation {
+      translation 0 0 10
+
+    }
+    Switch {
+      whichChild -3
+
+      Separator {
+
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.8945732 0.16575366 0.16566628
+          front2 1.9018102 0 0.16566628
+          front3 1.9018102 0 0
+          front4 1.8945732 0.16575366 0
+          back1 2.8278997 0.24740915 0.24727871
+          back2 2.8387017 0 0.24727871
+          back3 2.8387017 0 0
+          back4 2.8278997 0.24740915 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.8729173 0.33024585 0.16566628
+          front2 1.8945732 0.16575369 0.16566628
+          front3 1.8945732 0.16575369 0
+          front4 1.8729173 0.33024585 0
+          back1 2.7955756 0.49293536 0.24727871
+          back2 2.8278997 0.24740916 0.24727871
+          back3 2.8278997 0.24740916 0
+          back4 2.7955756 0.49293536 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.8370076 0.49222469 0.16566628
+          front2 1.8729173 0.33024585 0.16566628
+          front3 1.8729173 0.33024585 0
+          front4 1.8370076 0.49222469 0
+          back1 2.7419753 0.7347101 0.24727871
+          back2 2.7955756 0.49293536 0.24727871
+          back3 2.7955756 0.49293536 0
+          back4 2.7419753 0.7347101 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.787117 0.65045738 0.16566628
+          front2 1.8370076 0.49222469 0.16566628
+          front3 1.8370076 0.49222469 0
+          front4 1.787117 0.65045738 0
+          back1 2.6675069 0.97089314 0.24727871
+          back2 2.7419753 0.7347101 0.24727871
+          back3 2.7419753 0.7347101 0
+          back4 2.6675069 0.97089314 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.7236253 0.80373973 0.16566628
+          front2 1.787117 0.65045738 0.16566628
+          front3 1.787117 0.65045738 0
+          front4 1.7236253 0.80373973 0
+          back1 2.5727375 1.1996872 0.24727871
+          back2 2.6675069 0.97089326 0.24727871
+          back3 2.6675069 0.97089326 0
+          back4 2.5727375 1.1996872 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.6470158 0.95090508 0.16566628
+          front2 1.7236253 0.80373979 0.16566628
+          front3 1.7236253 0.80373979 0
+          front4 1.6470158 0.95090508 0
+          back1 2.4583879 1.4193509 0.24727871
+          back2 2.5727375 1.1996872 0.24727871
+          back3 2.5727375 1.1996872 0
+          back4 2.4583879 1.4193509 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.5578717 1.0908335 0.16566628
+          front2 1.6470158 0.95090508 0.16566628
+          front3 1.6470158 0.95090508 0
+          front4 1.5578717 1.0908335 0
+          back1 2.3253284 1.6282125 0.24727871
+          back2 2.4583879 1.4193509 0.24727871
+          back3 2.4583879 1.4193509 0
+          back4 2.3253284 1.6282125 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.4568712 1.2224599 0.16566628
+          front2 1.5578717 1.0908335 0.16566628
+          front3 1.5578717 1.0908335 0
+          front4 1.4568712 1.2224599 0
+          back1 2.1745718 1.8246824 0.24727871
+          back2 2.3253284 1.6282125 0.24727871
+          back3 2.3253284 1.6282125 0
+          back4 2.1745718 1.8246824 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.3447828 1.3447828 0.16566628
+          front2 1.456871 1.22246 0.16566628
+          front3 1.456871 1.22246 0
+          front4 1.3447828 1.3447828 0
+          back1 2.0072651 2.0072653 0.24727871
+          back2 2.1745718 1.8246825 0.24727871
+          back3 2.1745718 1.8246825 0
+          back4 2.0072651 2.0072653 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.22246 1.456871 0.16566628
+          front2 1.3447828 1.3447828 0.16566628
+          front3 1.3447828 1.3447828 0
+          front4 1.22246 1.456871 0
+          back1 1.8246824 2.1745718 0.24727871
+          back2 2.0072651 2.0072653 0.24727871
+          back3 2.0072651 2.0072653 0
+          back4 1.8246824 2.1745718 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.0908335 1.5578717 0.16566628
+          front2 1.22246 1.456871 0.16566628
+          front3 1.22246 1.456871 0
+          front4 1.0908335 1.5578717 0
+          back1 1.6282125 2.3253284 0.24727871
+          back2 1.8246824 2.1745718 0.24727871
+          back3 1.8246824 2.1745718 0
+          back4 1.6282125 2.3253284 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 0.9509052 1.6470158 0.16566628
+          front2 1.0908335 1.5578716 0.16566628
+          front3 1.0908335 1.5578716 0
+          front4 0.9509052 1.6470158 0
+          back1 1.4193511 2.4583879 0.24727871
+          back2 1.6282126 2.3253281 0.24727871
+          back3 1.6282126 2.3253281 0
+          back4 1.4193511 2.4583879 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 0.80373973 1.7236253 0.16566628
+          front2 0.95090503 1.647016 0.16566628
+          front3 0.95090503 1.647016 0
+          front4 0.80373973 1.7236253 0
+          back1 1.1996872 2.5727375 0.24727871
+          back2 1.4193509 2.4583879 0.24727871
+          back3 1.4193509 2.4583879 0
+          back4 1.1996872 2.5727375 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 0.65045738 1.787117 0.16566628
+          front2 0.80373973 1.7236253 0.16566628
+          front3 0.80373973 1.7236253 0
+          front4 0.65045738 1.787117 0
+          back1 0.97089314 2.6675069 0.24727871
+          back2 1.1996872 2.5727375 0.24727871
+          back3 1.1996872 2.5727375 0
+          back4 0.97089314 2.6675069 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 0.49222472 1.8370076 0.16566628
+          front2 0.65045738 1.787117 0.16566628
+          front3 0.65045738 1.787117 0
+          front4 0.49222472 1.8370076 0
+          back1 0.73471016 2.7419753 0.24727871
+          back2 0.97089314 2.6675069 0.24727871
+          back3 0.97089314 2.6675069 0
+          back4 0.73471016 2.7419753 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 0.33024594 1.8729173 0.16566628
+          front2 0.49222472 1.8370076 0.16566628
+          front3 0.49222472 1.8370076 0
+          front4 0.33024594 1.8729173 0
+          back1 0.49293554 2.7955756 0.24727871
+          back2 0.73471016 2.7419753 0.24727871
+          back3 0.73471016 2.7419753 0
+          back4 0.49293554 2.7955756 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 0.16575378 1.8945732 0.16566628
+          front2 0.33024594 1.8729173 0.16566628
+          front3 0.33024594 1.8729173 0
+          front4 0.16575378 1.8945732 0
+          back1 0.24740933 2.8278997 0.24727871
+          back2 0.49293554 2.7955756 0.24727871
+          back3 0.49293554 2.7955756 0
+          back4 0.24740933 2.8278997 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -8.3130764e-08 1.9018102 0.16566628
+          front2 0.16575356 1.8945732 0.16566628
+          front3 0.16575356 1.8945732 0
+          front4 -8.3130764e-08 1.9018102 0
+          back1 -1.240836e-07 2.8387017 0.24727871
+          back2 0.24740899 2.8278997 0.24727871
+          back3 0.24740899 2.8278997 0
+          back4 -1.240836e-07 2.8387017 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -0.16575372 1.8945732 0.16566628
+          front2 -8.3130764e-08 1.9018102 0.16566628
+          front3 -8.3130764e-08 1.9018102 0
+          front4 -0.16575372 1.8945732 0
+          back1 -0.24740922 2.8278997 0.24727871
+          back2 -1.240836e-07 2.8387017 0.24727871
+          back3 -1.240836e-07 2.8387017 0
+          back4 -0.24740922 2.8278997 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -0.33024588 1.8729173 0.16566628
+          front2 -0.16575372 1.8945732 0.16566628
+          front3 -0.16575372 1.8945732 0
+          front4 -0.33024588 1.8729173 0
+          back1 -0.49293542 2.7955756 0.24727871
+          back2 -0.24740922 2.8278997 0.24727871
+          back3 -0.24740922 2.8278997 0
+          back4 -0.49293542 2.7955756 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -0.49222466 1.8370076 0.16566628
+          front2 -0.33024588 1.8729173 0.16566628
+          front3 -0.33024588 1.8729173 0
+          front4 -0.49222466 1.8370076 0
+          back1 -0.7347101 2.7419753 0.24727871
+          back2 -0.49293542 2.7955756 0.24727871
+          back3 -0.49293542 2.7955756 0
+          back4 -0.7347101 2.7419753 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -0.65045732 1.787117 0.16566628
+          front2 -0.49222466 1.8370076 0.16566628
+          front3 -0.49222466 1.8370076 0
+          front4 -0.65045732 1.787117 0
+          back1 -0.97089309 2.6675069 0.24727871
+          back2 -0.7347101 2.7419753 0.24727871
+          back3 -0.7347101 2.7419753 0
+          back4 -0.97089309 2.6675069 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -0.80373985 1.7236253 0.16566628
+          front2 -0.65045732 1.787117 0.16566628
+          front3 -0.65045732 1.787117 0
+          front4 -0.80373985 1.7236253 0
+          back1 -1.1996875 2.5727375 0.24727871
+          back2 -0.97089309 2.6675069 0.24727871
+          back3 -0.97089309 2.6675069 0
+          back4 -1.1996875 2.5727375 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -0.95090514 1.6470158 0.16566628
+          front2 -0.80373985 1.7236253 0.16566628
+          front3 -0.80373985 1.7236253 0
+          front4 -0.95090514 1.6470158 0
+          back1 -1.4193511 2.4583879 0.24727871
+          back2 -1.1996875 2.5727375 0.24727871
+          back3 -1.1996875 2.5727375 0
+          back4 -1.4193511 2.4583879 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.0908335 1.5578716 0.16566628
+          front2 -0.95090514 1.6470158 0.16566628
+          front3 -0.95090514 1.6470158 0
+          front4 -1.0908335 1.5578716 0
+          back1 -1.6282126 2.3253284 0.24727871
+          back2 -1.4193511 2.4583879 0.24727871
+          back3 -1.4193511 2.4583879 0
+          back4 -1.6282126 2.3253284 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.22246 1.456871 0.16566628
+          front2 -1.0908335 1.5578716 0.16566628
+          front3 -1.0908335 1.5578716 0
+          front4 -1.22246 1.456871 0
+          back1 -1.8246824 2.1745718 0.24727871
+          back2 -1.6282126 2.3253284 0.24727871
+          back3 -1.6282126 2.3253284 0
+          back4 -1.8246824 2.1745718 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.3447828 1.3447828 0.16566628
+          front2 -1.22246 1.456871 0.16566628
+          front3 -1.22246 1.456871 0
+          front4 -1.3447828 1.3447828 0
+          back1 -2.0072653 2.0072653 0.24727871
+          back2 -1.8246824 2.1745718 0.24727871
+          back3 -1.8246824 2.1745718 0
+          back4 -2.0072653 2.0072653 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.456871 1.22246 0.16566628
+          front2 -1.3447828 1.3447828 0.16566628
+          front3 -1.3447828 1.3447828 0
+          front4 -1.456871 1.22246 0
+          back1 -2.1745718 1.8246824 0.24727871
+          back2 -2.0072653 2.0072653 0.24727871
+          back3 -2.0072653 2.0072653 0
+          back4 -2.1745718 1.8246824 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.5578717 1.0908335 0.16566628
+          front2 -1.456871 1.22246 0.16566628
+          front3 -1.456871 1.22246 0
+          front4 -1.5578717 1.0908335 0
+          back1 -2.3253284 1.6282126 0.24727871
+          back2 -2.1745718 1.8246824 0.24727871
+          back3 -2.1745718 1.8246824 0
+          back4 -2.3253284 1.6282126 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.6470158 0.95090514 0.16566628
+          front2 -1.5578717 1.0908335 0.16566628
+          front3 -1.5578717 1.0908335 0
+          front4 -1.6470158 0.95090514 0
+          back1 -2.4583879 1.4193511 0.24727871
+          back2 -2.3253284 1.6282126 0.24727871
+          back3 -2.3253284 1.6282126 0
+          back4 -2.4583879 1.4193511 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.7236253 0.80373979 0.16566628
+          front2 -1.6470158 0.95090514 0.16566628
+          front3 -1.6470158 0.95090514 0
+          front4 -1.7236253 0.80373979 0
+          back1 -2.5727375 1.1996874 0.24727871
+          back2 -2.4583879 1.4193511 0.24727871
+          back3 -2.4583879 1.4193511 0
+          back4 -2.5727375 1.1996874 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.7871169 0.65045756 0.16566628
+          front2 -1.7236253 0.80373979 0.16566628
+          front3 -1.7236253 0.80373979 0
+          front4 -1.7871169 0.65045756 0
+          back1 -2.6675069 0.97089338 0.24727871
+          back2 -2.5727375 1.1996874 0.24727871
+          back3 -2.5727375 1.1996874 0
+          back4 -2.6675069 0.97089338 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.8370074 0.49222487 0.16566628
+          front2 -1.7871169 0.65045756 0.16566628
+          front3 -1.7871169 0.65045756 0
+          front4 -1.8370074 0.49222487 0
+          back1 -2.7419753 0.7347104 0.24727871
+          back2 -2.6675069 0.97089338 0.24727871
+          back3 -2.6675069 0.97089338 0
+          back4 -2.7419753 0.7347104 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.8729173 0.33024609 0.16566628
+          front2 -1.8370074 0.49222487 0.16566628
+          front3 -1.8370074 0.49222487 0
+          front4 -1.8729173 0.33024609 0
+          back1 -2.7955756 0.49293572 0.24727871
+          back2 -2.7419753 0.7347104 0.24727871
+          back3 -2.7419753 0.7347104 0
+          back4 -2.7955756 0.49293572 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.8945732 0.16575348 0.16566628
+          front2 -1.8729175 0.33024561 0.16566628
+          front3 -1.8729175 0.33024561 0
+          front4 -1.8945732 0.16575348 0
+          back1 -2.8278997 0.24740887 0.24727871
+          back2 -2.7955756 0.49293506 0.24727871
+          back3 -2.7955756 0.49293506 0
+          back4 -2.8278997 0.24740887 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.9018102 -1.6626153e-07 0.16566628
+          front2 -1.8945732 0.16575348 0.16566628
+          front3 -1.8945732 0.16575348 0
+          front4 -1.9018102 -1.6626153e-07 0
+          back1 -2.8387017 -2.481672e-07 0.24727871
+          back2 -2.8278997 0.24740887 0.24727871
+          back3 -2.8278997 0.24740887 0
+          back4 -2.8387017 -2.481672e-07 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.8945732 -0.16575348 0.16566628
+          front2 -1.9018102 1.6626153e-07 0.16566628
+          front3 -1.9018102 1.6626153e-07 0
+          front4 -1.8945732 -0.16575348 0
+          back1 -2.8278997 -0.24740887 0.24727871
+          back2 -2.8387017 2.481672e-07 0.24727871
+          back3 -2.8387017 2.481672e-07 0
+          back4 -2.8278997 -0.24740887 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.8729175 -0.33024561 0.16566628
+          front2 -1.8945732 -0.16575348 0.16566628
+          front3 -1.8945732 -0.16575348 0
+          front4 -1.8729175 -0.33024561 0
+          back1 -2.7955756 -0.49293506 0.24727871
+          back2 -2.8278997 -0.24740887 0.24727871
+          back3 -2.8278997 -0.24740887 0
+          back4 -2.7955756 -0.49293506 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.8370074 -0.49222487 0.16566628
+          front2 -1.8729173 -0.33024609 0.16566628
+          front3 -1.8729173 -0.33024609 0
+          front4 -1.8370074 -0.49222487 0
+          back1 -2.7419753 -0.7347104 0.24727871
+          back2 -2.7955756 -0.49293572 0.24727871
+          back3 -2.7955756 -0.49293572 0
+          back4 -2.7419753 -0.7347104 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.7871169 -0.65045756 0.16566628
+          front2 -1.8370074 -0.49222487 0.16566628
+          front3 -1.8370074 -0.49222487 0
+          front4 -1.7871169 -0.65045756 0
+          back1 -2.6675069 -0.97089338 0.24727871
+          back2 -2.7419753 -0.7347104 0.24727871
+          back3 -2.7419753 -0.7347104 0
+          back4 -2.6675069 -0.97089338 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.7236253 -0.80373979 0.16566628
+          front2 -1.7871169 -0.65045756 0.16566628
+          front3 -1.7871169 -0.65045756 0
+          front4 -1.7236253 -0.80373979 0
+          back1 -2.5727375 -1.1996874 0.24727871
+          back2 -2.6675069 -0.97089338 0.24727871
+          back3 -2.6675069 -0.97089338 0
+          back4 -2.5727375 -1.1996874 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.6470158 -0.95090514 0.16566628
+          front2 -1.7236253 -0.80373979 0.16566628
+          front3 -1.7236253 -0.80373979 0
+          front4 -1.6470158 -0.95090514 0
+          back1 -2.4583879 -1.4193511 0.24727871
+          back2 -2.5727375 -1.1996874 0.24727871
+          back3 -2.5727375 -1.1996874 0
+          back4 -2.4583879 -1.4193511 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.5578717 -1.0908335 0.16566628
+          front2 -1.6470158 -0.95090514 0.16566628
+          front3 -1.6470158 -0.95090514 0
+          front4 -1.5578717 -1.0908335 0
+          back1 -2.3253284 -1.6282126 0.24727871
+          back2 -2.4583879 -1.4193511 0.24727871
+          back3 -2.4583879 -1.4193511 0
+          back4 -2.3253284 -1.6282126 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.456871 -1.22246 0.16566628
+          front2 -1.5578717 -1.0908335 0.16566628
+          front3 -1.5578717 -1.0908335 0
+          front4 -1.456871 -1.22246 0
+          back1 -2.1745718 -1.8246824 0.24727871
+          back2 -2.3253284 -1.6282126 0.24727871
+          back3 -2.3253284 -1.6282126 0
+          back4 -2.1745718 -1.8246824 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.3447828 -1.3447828 0.16566628
+          front2 -1.456871 -1.22246 0.16566628
+          front3 -1.456871 -1.22246 0
+          front4 -1.3447828 -1.3447828 0
+          back1 -2.0072653 -2.0072653 0.24727871
+          back2 -2.1745718 -1.8246824 0.24727871
+          back3 -2.1745718 -1.8246824 0
+          back4 -2.0072653 -2.0072653 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.22246 -1.456871 0.16566628
+          front2 -1.3447828 -1.3447828 0.16566628
+          front3 -1.3447828 -1.3447828 0
+          front4 -1.22246 -1.456871 0
+          back1 -1.8246824 -2.1745718 0.24727871
+          back2 -2.0072653 -2.0072653 0.24727871
+          back3 -2.0072653 -2.0072653 0
+          back4 -1.8246824 -2.1745718 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -1.0908335 -1.5578716 0.16566628
+          front2 -1.22246 -1.456871 0.16566628
+          front3 -1.22246 -1.456871 0
+          front4 -1.0908335 -1.5578716 0
+          back1 -1.6282126 -2.3253284 0.24727871
+          back2 -1.8246824 -2.1745718 0.24727871
+          back3 -1.8246824 -2.1745718 0
+          back4 -1.6282126 -2.3253284 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -0.95090514 -1.6470158 0.16566628
+          front2 -1.0908335 -1.5578716 0.16566628
+          front3 -1.0908335 -1.5578716 0
+          front4 -0.95090514 -1.6470158 0
+          back1 -1.4193511 -2.4583879 0.24727871
+          back2 -1.6282126 -2.3253284 0.24727871
+          back3 -1.6282126 -2.3253284 0
+          back4 -1.4193511 -2.4583879 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -0.80373985 -1.7236253 0.16566628
+          front2 -0.95090514 -1.6470158 0.16566628
+          front3 -0.95090514 -1.6470158 0
+          front4 -0.80373985 -1.7236253 0
+          back1 -1.1996875 -2.5727375 0.24727871
+          back2 -1.4193511 -2.4583879 0.24727871
+          back3 -1.4193511 -2.4583879 0
+          back4 -1.1996875 -2.5727375 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -0.65045732 -1.787117 0.16566628
+          front2 -0.80373985 -1.7236253 0.16566628
+          front3 -0.80373985 -1.7236253 0
+          front4 -0.65045732 -1.787117 0
+          back1 -0.97089309 -2.6675069 0.24727871
+          back2 -1.1996875 -2.5727375 0.24727871
+          back3 -1.1996875 -2.5727375 0
+          back4 -0.97089309 -2.6675069 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -0.49222466 -1.8370076 0.16566628
+          front2 -0.65045732 -1.787117 0.16566628
+          front3 -0.65045732 -1.787117 0
+          front4 -0.49222466 -1.8370076 0
+          back1 -0.7347101 -2.7419753 0.24727871
+          back2 -0.97089309 -2.6675069 0.24727871
+          back3 -0.97089309 -2.6675069 0
+          back4 -0.7347101 -2.7419753 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -0.33024588 -1.8729173 0.16566628
+          front2 -0.49222466 -1.8370076 0.16566628
+          front3 -0.49222466 -1.8370076 0
+          front4 -0.33024588 -1.8729173 0
+          back1 -0.49293542 -2.7955756 0.24727871
+          back2 -0.7347101 -2.7419753 0.24727871
+          back3 -0.7347101 -2.7419753 0
+          back4 -0.49293542 -2.7955756 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -0.16575372 -1.8945732 0.16566628
+          front2 -0.33024588 -1.8729173 0.16566628
+          front3 -0.33024588 -1.8729173 0
+          front4 -0.16575372 -1.8945732 0
+          back1 -0.24740922 -2.8278997 0.24727871
+          back2 -0.49293542 -2.7955756 0.24727871
+          back3 -0.49293542 -2.7955756 0
+          back4 -0.24740922 -2.8278997 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 -8.3130764e-08 -1.9018102 0.16566628
+          front2 -0.16575372 -1.8945732 0.16566628
+          front3 -0.16575372 -1.8945732 0
+          front4 -8.3130764e-08 -1.9018102 0
+          back1 -1.240836e-07 -2.8387017 0.24727871
+          back2 -0.24740922 -2.8278997 0.24727871
+          back3 -0.24740922 -2.8278997 0
+          back4 -1.240836e-07 -2.8387017 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 0.16575356 -1.8945732 0.16566628
+          front2 -8.3130764e-08 -1.9018102 0.16566628
+          front3 -8.3130764e-08 -1.9018102 0
+          front4 0.16575356 -1.8945732 0
+          back1 0.24740899 -2.8278997 0.24727871
+          back2 -1.240836e-07 -2.8387017 0.24727871
+          back3 -1.240836e-07 -2.8387017 0
+          back4 0.24740899 -2.8278997 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 0.33024594 -1.8729173 0.16566628
+          front2 0.16575378 -1.8945732 0.16566628
+          front3 0.16575378 -1.8945732 0
+          front4 0.33024594 -1.8729173 0
+          back1 0.49293554 -2.7955756 0.24727871
+          back2 0.24740933 -2.8278997 0.24727871
+          back3 0.24740933 -2.8278997 0
+          back4 0.49293554 -2.7955756 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 0.49222472 -1.8370076 0.16566628
+          front2 0.33024594 -1.8729173 0.16566628
+          front3 0.33024594 -1.8729173 0
+          front4 0.49222472 -1.8370076 0
+          back1 0.73471016 -2.7419753 0.24727871
+          back2 0.49293554 -2.7955756 0.24727871
+          back3 0.49293554 -2.7955756 0
+          back4 0.73471016 -2.7419753 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 0.65045738 -1.787117 0.16566628
+          front2 0.49222472 -1.8370076 0.16566628
+          front3 0.49222472 -1.8370076 0
+          front4 0.65045738 -1.787117 0
+          back1 0.97089314 -2.6675069 0.24727871
+          back2 0.73471016 -2.7419753 0.24727871
+          back3 0.73471016 -2.7419753 0
+          back4 0.97089314 -2.6675069 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 0.80373973 -1.7236253 0.16566628
+          front2 0.65045738 -1.787117 0.16566628
+          front3 0.65045738 -1.787117 0
+          front4 0.80373973 -1.7236253 0
+          back1 1.1996872 -2.5727375 0.24727871
+          back2 0.97089314 -2.6675069 0.24727871
+          back3 0.97089314 -2.6675069 0
+          back4 1.1996872 -2.5727375 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 0.95090503 -1.647016 0.16566628
+          front2 0.80373973 -1.7236253 0.16566628
+          front3 0.80373973 -1.7236253 0
+          front4 0.95090503 -1.647016 0
+          back1 1.4193509 -2.4583879 0.24727871
+          back2 1.1996872 -2.5727375 0.24727871
+          back3 1.1996872 -2.5727375 0
+          back4 1.4193509 -2.4583879 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.0908335 -1.5578716 0.16566628
+          front2 0.9509052 -1.6470158 0.16566628
+          front3 0.9509052 -1.6470158 0
+          front4 1.0908335 -1.5578716 0
+          back1 1.6282126 -2.3253281 0.24727871
+          back2 1.4193511 -2.4583879 0.24727871
+          back3 1.4193511 -2.4583879 0
+          back4 1.6282126 -2.3253281 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.22246 -1.456871 0.16566628
+          front2 1.0908335 -1.5578717 0.16566628
+          front3 1.0908335 -1.5578717 0
+          front4 1.22246 -1.456871 0
+          back1 1.8246824 -2.1745718 0.24727871
+          back2 1.6282125 -2.3253284 0.24727871
+          back3 1.6282125 -2.3253284 0
+          back4 1.8246824 -2.1745718 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.3447828 -1.3447828 0.16566628
+          front2 1.22246 -1.456871 0.16566628
+          front3 1.22246 -1.456871 0
+          front4 1.3447828 -1.3447828 0
+          back1 2.0072651 -2.0072653 0.24727871
+          back2 1.8246824 -2.1745718 0.24727871
+          back3 1.8246824 -2.1745718 0
+          back4 2.0072651 -2.0072653 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.456871 -1.22246 0.16566628
+          front2 1.3447828 -1.3447828 0.16566628
+          front3 1.3447828 -1.3447828 0
+          front4 1.456871 -1.22246 0
+          back1 2.1745718 -1.8246825 0.24727871
+          back2 2.0072651 -2.0072653 0.24727871
+          back3 2.0072651 -2.0072653 0
+          back4 2.1745718 -1.8246825 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.5578717 -1.0908335 0.16566628
+          front2 1.4568712 -1.2224599 0.16566628
+          front3 1.4568712 -1.2224599 0
+          front4 1.5578717 -1.0908335 0
+          back1 2.3253284 -1.6282125 0.24727871
+          back2 2.1745718 -1.8246824 0.24727871
+          back3 2.1745718 -1.8246824 0
+          back4 2.3253284 -1.6282125 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.6470158 -0.95090508 0.16566628
+          front2 1.5578717 -1.0908335 0.16566628
+          front3 1.5578717 -1.0908335 0
+          front4 1.6470158 -0.95090508 0
+          back1 2.4583879 -1.4193509 0.24727871
+          back2 2.3253284 -1.6282125 0.24727871
+          back3 2.3253284 -1.6282125 0
+          back4 2.4583879 -1.4193509 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.7236253 -0.80373979 0.16566628
+          front2 1.6470158 -0.95090508 0.16566628
+          front3 1.6470158 -0.95090508 0
+          front4 1.7236253 -0.80373979 0
+          back1 2.5727375 -1.1996872 0.24727871
+          back2 2.4583879 -1.4193509 0.24727871
+          back3 2.4583879 -1.4193509 0
+          back4 2.5727375 -1.1996872 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.787117 -0.65045738 0.16566628
+          front2 1.7236253 -0.80373973 0.16566628
+          front3 1.7236253 -0.80373973 0
+          front4 1.787117 -0.65045738 0
+          back1 2.6675069 -0.97089326 0.24727871
+          back2 2.5727375 -1.1996872 0.24727871
+          back3 2.5727375 -1.1996872 0
+          back4 2.6675069 -0.97089326 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.8370076 -0.49222469 0.16566628
+          front2 1.787117 -0.65045738 0.16566628
+          front3 1.787117 -0.65045738 0
+          front4 1.8370076 -0.49222469 0
+          back1 2.7419753 -0.7347101 0.24727871
+          back2 2.6675069 -0.97089314 0.24727871
+          back3 2.6675069 -0.97089314 0
+          back4 2.7419753 -0.7347101 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.8729173 -0.33024585 0.16566628
+          front2 1.8370076 -0.49222469 0.16566628
+          front3 1.8370076 -0.49222469 0
+          front4 1.8729173 -0.33024585 0
+          back1 2.7955756 -0.49293536 0.24727871
+          back2 2.7419753 -0.7347101 0.24727871
+          back3 2.7419753 -0.7347101 0
+          back4 2.7955756 -0.49293536 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.8945732 -0.16575369 0.16566628
+          front2 1.8729173 -0.33024585 0.16566628
+          front3 1.8729173 -0.33024585 0
+          front4 1.8945732 -0.16575369 0
+          back1 2.8278997 -0.24740916 0.24727871
+          back2 2.7955756 -0.49293536 0.24727871
+          back3 2.7955756 -0.49293536 0
+          back4 2.8278997 -0.24740916 0
+
+        }
+        IgSoCrystalHit {
+          fields [ SFFloat energy, SFFloat minimumEnergy, SFFloat scale, SFFloat relativeWidth, SFBool drawCrystal, SFBool drawHit, SFBool showLines, SFVec3f front1, SFVec3f front2, SFVec3f front3, SFVec3f front4, SFVec3f back1, SFVec3f back2, SFVec3f back3, SFVec3f back4, SFNode callbackList, SFNode shapeHints, SFNode faces, SFNode lines, SFNode separator ]
+          energy 0.5
+          scale 0.1
+          relativeWidth 0.5
+          drawCrystal TRUE
+          drawHit FALSE
+          showLines TRUE
+          front1 1.9018102 0 0.16566628
+          front2 1.8945732 -0.16575366 0.16566628
+          front3 1.8945732 -0.16575366 0
+          front4 1.9018102 0 0
+          back1 2.8387017 0 0.24727871
+          back2 2.8278997 -0.24740915 0.24727871
+          back3 2.8278997 -0.24740915 0
+          back4 2.8387017 0 0
+
+        }
+      }
+    }
+  }
+}

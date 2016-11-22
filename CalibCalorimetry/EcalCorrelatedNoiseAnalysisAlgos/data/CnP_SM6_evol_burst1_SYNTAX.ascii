@@ -1,0 +1,25 @@
+  => This file is a commented version of the list-of-runs file: CnP_SM6_evol_burst1.ascii
+  => Comments are indicated by " => "
+
+  => The file CnP_SM6_evol_burst1.ascii must be located in the directory indicated
+  => in the file cna_stability.cfg, the last-mentionned must be located 
+  => in the user's HOME directory.
+
+CnP_time_evol_burst1.ascii  => 1rst line: NAME OF THE FILE
+
+8                           => 2nd  line: NUMBER OF NON EMPTY LINES AFTER THE 2nd LINE
+                            => (= NUMBER OF RUNS TO BE READ)
+
+CnP 17500 0 150 6           => "CnP"   : analysis name
+                            => "17500" : run number
+                            => "0"     : 1st taken event number
+                            => "150"   : number of taken events
+                            => "6"     : SM_number
+
+CnP 17506 0 150 6           => (idem)
+CnP 17510 0 150 6           => (idem)
+CnP 17513 0 150 6           => (idem)
+CnP 17517 0 150 6           => (idem)
+CnP 17522 0 150 6           => (idem)
+CnP 17526 0 150 6           => (idem)
+CnP 17635 0 150 6           => (idem)

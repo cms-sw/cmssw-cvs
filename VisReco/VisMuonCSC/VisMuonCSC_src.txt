@@ -1,0 +1,47 @@
+Log for qt3to4 on Mon Apr 6 13:53:56 2009. Number of log entries: 40
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/iglet.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCALCTDigiTwig.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCChamberDrawer.cc
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCChamberSelector.cc at line 17 column 19: qgroupbox.h -> q3groupbox.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCChamberSelector.cc at line 23 column 20: qwhatsthis.h -> q3whatsthis.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCChamberSelector.cc at line 31 column 49: QVBoxLayout -> Q3VBoxLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCChamberSelector.cc at line 33 column 40: QGroupBox -> Q3GroupBox
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCChamberSelector.cc at line 37 column 48: QVBoxLayout -> Q3VBoxLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCChamberSelector.cc at line 40 column 29: QHBoxLayout -> Q3HBoxLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCChamberSelector.cc at line 54 column 31: QHBoxLayout -> Q3HBoxLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCChamberSelector.cc at line 67 column 31: QHBoxLayout -> Q3HBoxLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCChamberSelector.cc at line 80 column 31: QHBoxLayout -> Q3HBoxLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCChamberSelector.cc at line 93 column 29: QHBoxLayout -> Q3HBoxLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCChamberSelector.cc: Added the following include directives:
+	#include <Q3HBoxLayout> 	#include <Q3VBoxLayout> 
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCChamberSelectorImpl.cc at line 13 column 96: WFlags -> Qt::WFlags
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCChamberSelectorImplService.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCCLCTDigiTwig.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCComparatorDigiTwig.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCConfigurationService.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCCorrelatedLCTDigiTwig.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCDigiTools.cc
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCPlotWidgetAxisX.cc at line 4 column 940: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCPlotWidgetAxisX.cc: Added the following include directives:
+	#include <QPaintEvent> 	#include <Q3PointArray> 
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCPlotWidgetAxisY.cc at line 4 column 771: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCPlotWidgetAxisY.cc: Added the following include directives:
+	#include <QPaintEvent> 	#include <Q3PointArray> 
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCPlotWidget.cc at line 5 column 785: WFlags -> Qt::WFlags
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCPlotWidget.cc at line 5 column 2876: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCPlotWidget.cc: Added the following include directives:
+	#include <Q3PointArray> 	#include <QMouseEvent> 	#include <QPaintEvent> 
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCRecHit2DTwig.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCRPCDigiTwig.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCSegmentTwig.cc
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCStackPlots.cc at line 3 column 1326: WFlags -> Qt::WFlags
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCStackPlots.cc at line 3 column 2099: QGridLayout -> Q3GridLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCStackPlots.cc at line 3 column 2120: QGridLayout -> Q3GridLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCStackPlots.cc: Added the following include directives:
+	#include <Q3GridLayout> 
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCStackPlotService.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCStripDigiTwig.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisCSCWireDigiTwig.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/VisMuonCSCContent.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisMuonCSC/src/xtypeinfo.cc
+

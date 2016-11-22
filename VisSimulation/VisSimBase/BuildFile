@@ -1,0 +1,13 @@
+<use name=VisGeant4/VisG4Core>
+<use name=VisGeant4/VisG4Fields>
+<use name=VisGeant4/VisG4Volumes>
+<use name=Iguana/Studio>
+
+<export>
+  <use name=VisGeant4/VisG4Core>
+  <use name=VisGeant4/VisG4Fields>
+  <use name=VisGeant4/VisG4Volumes>
+  <use name=Iguana/Studio>
+  <lib name=VisSimulationVisSimBase>
+</export>
+

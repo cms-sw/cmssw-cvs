@@ -1,0 +1,9 @@
+<use name=CalibCalorimetry/EcalCorrelatedNoiseAnalysisAlgos>
+<use name=root>
+
+<bin name=EcalCorrelatedNoiseExample file=EcalCorrelatedNoiseExample.cc>
+</bin>
+
+<bin name=InteractiveCNAForEcalBarrel file=InteractiveCNAForEcalBarrel.cc>
+ <lib name=Gui>
+</bin>
