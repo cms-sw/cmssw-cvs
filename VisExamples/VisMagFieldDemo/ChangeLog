@@ -1,0 +1,34 @@
+2007-04-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisMagFieldDemoMain.cc, VisMagFieldDemoMain.h,
+	iglet.cc: Migrate to the new Iguana subsystem directory
+	structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+
+2006-01-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMagFieldDemoMain.cc: Correct the name spelling for the
+	session type. 
+
+2005-11-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMagFieldDemoMain.cc: Load the visualisation framework 
+	document proxies.
+
+2005-10-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* test/README.1st: Update instructions on how to run it.
+
+2005-10-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, plugin.cc, VisMagFieldDemoMain.h, VisMagFieldDemoMain.cc,
+	test/configuration.xml, test/README.1st: New files to provide an
+	application for the demo.
+
+	* New package to provide a visualisation application
+	for magnetic field demo.

@@ -1,0 +1,4 @@
+<use name=Iguana/Inventor>
+<use name=VisFramework/VisEventSetup>
+<use name=DataFormats/HcalDetId>
+<use name=DataFormats/HcalRecHit>

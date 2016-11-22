@@ -1,0 +1,315 @@
+2010-01-08  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisG4TwigOps.cc: Remove dependency ob Qt3Support.
+
+2009-06-29  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* src/VisG4TwigOps.cc (actionGetMass): Increase
+	precision. Cleanup.
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2007-12-12  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* BuildFile: Added explicit qt dependency in order to let new scram run
+	MOC properly.
+
+2007-07-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisG4VolumeTwig.cc: Added text representation of G4Torus.
+
+2007-04-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisG4FilterCategory.h, VisG4GeometryTwig.h,
+	VisG4VolumeTwig.h, VisG4Details.cc, VisG4FilterCategory.cc,
+	VisG4GeometryTwig.cc, VisG4MaterialMiscFilter.cc, VisG4TwigOps.cc,
+	VisG4VolumeTwig.cc, plugin.cc: Adapted to the new directory
+	structure of the Iguana subsystem.
+
+2007-03-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* xtypeinfo.h, plugin.cc, VisG4Filter.cc, VisG4FilterCache.cc,
+	VisG4FilterTable.cc, VisG4GeometryTwig.cc,
+	VisG4MaterialCacheFilter.cc, VisG4MaterialDensityFilter.cc,
+	VisG4MaterialFalseColorFilter.cc, VisG4MaterialFilter.cc,
+	VisG4MaterialMiscFilter.cc, VisG4Navigator.cc, VisG4TwigOps.cc,
+	VisG4VolumeTwig.cc: Migrate to the new config.
+
+2006-11-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisG4Details.h, VisG4Filter.h, VisG4FilterCache.h,
+	VisG4FilterCategory.h, VisG4FilterTable.h, VisG4GeometryTwig.h,
+	VisG4MaterialCacheFilter.h, VisG4MaterialDensityFilter.h,
+	VisG4MaterialFalseColorFilter.h, VisG4MaterialFilter.h,
+	VisG4MaterialMiscFilter.h, VisG4MaterialNameFilter.h, VisG4Navigator.h,
+	VisG4TwigOps.h, VisG4VolumePicker.h, VisG4VolumeTwig.h, config.h,
+	xtypeinfo.h, VisG4Details.cc, VisG4Filter.cc, VisG4FilterCache.cc,
+	VisG4FilterCategory.cc, VisG4FilterTable.cc, VisG4GeometryTwig.cc,
+	VisG4MaterialCacheFilter.cc, VisG4MaterialDensityFilter.cc,
+	VisG4MaterialFalseColorFilter.cc, VisG4MaterialFilter.cc,
+	VisG4MaterialMiscFilter.cc, VisG4MaterialNameFilter.cc,
+	VisG4Navigator.cc, VisG4TwigOps.cc, VisG4VolumePicker.cc,
+	VisG4VolumeTwig.cc, plugin.cc: Move the code from IGUANACMS.
+	
+2006-10-10  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* BuildFile: Added missing dependency Ig_Modules/IgControlCentre.
+	
+2006-06-07  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* VisG4Details.cc : Extra ; removed for ANSI C++ compliancy.
+
+2006-03-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisG4TwigOps.cc: Add a signal to show the material dialog when
+	the material is saved. Needs to be done properly: create a class
+	for the material dialog with an appropriate signal.
+
+2005-05-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisG4Filter.h, VisG4MaterialFilter.h: Add virtual destructors.
+	* VisG4Filter.cc: Make sure that return value is always
+	initialized.
+	* VisG4TwigOps.h, VisG4TwigOps.cc: Add calculations of mass. Add
+	progress bar to time the consuming operations.
+
+	* VisG4TwigOps.h: Promote the menu item higher.
+	* VisG4TwigOps.cc: Add warnings when setup for logical volumes and
+	materials is illegal.
+
+2005-04-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisG4MaterialFalseColorFilter.cc: Remove dependency
+	on COBRA/Utilities.
+
+2005-03-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* python/BuildFile: Add missing dependency.
+
+2005-03-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, python/BuildFile: Port to new SCRAMV1.
+
+2004-07-14  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* BuildFile: IgPython dependency added.
+	
+	* VisG4Filter.pyste: Include path fixed for VisG4Details.h.
+
+2004-04-28  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* VisG4FilterCategory.cc, VisG4FilterCategory.h: Updated because
+	categories now need state, not control center, passed in the
+	constructor.
+
+2004-01-22  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile, VisG4FilterTable.cc: Ignore dependencies on python.
+
+2004-01-21  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* VisG4MaterialFalseColorFilter.cc: now can read configuration
+	from colorByVolume.txt file in the current directory.
+	loadConfig() method added.
+	
+
+2004-01-10  Lassi A. Tuura  <lat@iki.fi>
+
+	* VisG4GeometryTwig.cc, VisG4TwigOps.cc, VisG4VolumeTwig.cc:
+	Move to new invalidation-based rendering.  "doRepresent" is
+	now unnecessary, just use "doUpdate".
+
+2003-12-16  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* VisG4TwigOps.cc (doApplyFilter): now adding twig path
+	details as well to the detail list.
+
+	* VisG4VolumeTwig.cc: now filters are configurable via environment
+	variables. This is going to be changed, once the filter rewrite is
+	in place.
+
+	* VisG4VolumeTwig.h: cosmetic fixes.
+
+	* VisG4MaterialFilter.cc, VisG4MaterialFilter.h: New API to
+	specify filter name. New API to enable/disable filter. Added
+	static list with all the filter instantiated.  
+
+	* VisG4MaterialFalseColorFilter.cc,
+	VisG4MaterialFalseColorFilter.h: New API to specify filter
+	name. New API to enable/disable filter. Added static list with all
+	the filter instantiated.
+
+	* VisG4MaterialDensityFilter.cc, VisG4MaterialDensityFilter.h: New
+	API to specify filter name. Now constructor takes boolean argument
+	which specifies whether the filter is on or off.
+
+	* VisG4MaterialNameFilter.cc, VisG4MaterialNameFilter.h: New
+	API to specify filter name. Now constructor takes boolean argument
+	which specifies whether the filter is on or off.
+
+	* VisG4MaterialMiscFilter.cc, VisG4MaterialMiscFilter.h: New
+	API to specify filter name. Now constructor takes boolean argument
+	which specifies whether the filter is on or off.
+
+	* VisG4MaterialCacheFilter.h, VisG4MaterialCacheFilter.cc: New API
+	to specify filter name. Now constructor takes boolean argument
+	which specifies whether the filter is on or off. 
+
+	* VisG4FilterCache.h (VisG4FilterCache): now uses the new
+	VisSoMaterialDetails::less functor for the map insertion.
+
+	* VisG4Details.cc, VisG4Details.h: All details class have been
+	rewritten in a cleaner way. Implemented a detail class which
+	contains the full twig path.
+
+2003-11-28  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* src/VisG4MaterialDensityFilter.cc (getSoMaterial): cosmetic
+	fixes.
+
+2003-09-26  Lassi A. Tuura  <lat@lxcms73.cern.ch>
+
+	* VisG4Details.h, VisG4FilterCache.h, VisG4MaterialCacheFilter.h,
+	VisG4MaterialFilter.h, VisG4MaterialMiscFilter.h,
+	VisG4MaterialNameFilter.h, VisG4FilterTable.cc,
+	VisG4MaterialFilter.cc, VisG4MaterialMiscFilter.cc,
+	VisG4MaterialNameFilter.cc, VisG4VolumeTwig.cc:
+	More renaming and clean-up.
+
+2003-09-26  Lassi A. Tuura  <lat@iki.fi>
+
+	* Imported from IGUANA; all classees renamed but not yet tested.
+	All new classes (detail, visualisation filters) renamed to VisG4*
+	and simplified.  Cleanups in python code.
+
+2003-09-13  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgG4GeometryTwig.cc, IgG4MaterialCacheFilter.cc,
+	IgG4MaterialFilter.cc, IgG4MaterialTransparencyByDensityFilter.cc,
+	IgG4Navigator.cc, IgG4TwigOps.cc, IgG4VolumeTwig.cc,
+	IgVisualizationFilter.cc, IgVisualizationFilterCache.cc,
+	IgVisualizationFilterTable.cc, xtypeinfo.h, config.h:
+	Move to using SEAL Foundation classes.
+
+2003-08-28  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* src/IgG4MaterialMiscFilter.cc (IgG4MaterialLUTFilter): Using a
+	singleton for the conversion map. To be fixed.
+	(getSoMaterial): check for existance of material name before using it.
+
+2003-08-27  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* src/IgG4VolumeTwig.cc (MMM_DEFUN_FUNC): spacing fixes.
+
+	* src/IgSoMaterialMap.{h,cc}: moved from IgG4Volumes/ to
+	Ig3DMaterialEditor/
+
+	* src/IgG4ToSoMaterialMap.{h,cc}: moved from IgG4Volumes/ to
+	Ig3DMaterialEditor/
+	
+	* src/IgG4MaterialMiscFilter.cc (IgG4MaterialLUTFilter): getting
+	the material map from a singleton so that it is the same used by
+	the material editor.
+	IgSoMaterialMap.h IgG4ToSoMaterialMap.h moved from IgG4Volumes/ to
+	Ig3DMaterialEditor.
+ 
+	* src/IgG4MaterialCacheFilter.cc (getSoMaterial): caching momently 
+	removed to allow on the fly changes to materials.
+
+	* interface/IgG4TwigOps.h (IgG4TwigOps): New menu item/layout to 
+	support the new material editor.
+	Added actionAppearence method which pops up the material editor.
+
+	* BuildFile: Added Ig3DMaterialEditor as a dependency.
+	Removed Geant4 dependency as already included in Ig3DMaterialEditor.
+
+2003-08-19  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* src/IgG4TwigOps.cc (actionApplyFilter): applies visibility
+	filters only if they are present!
+
+	* src/IgSoMaterialMap.cc (setDefaultMaterials): added method which
+	creates some default materials.
+
+	* src/IgG4ToSoMaterialMap.{cc,.h} (defaultMappings): added method
+	which fills the conversion table with default values for materials 
+	found in CMS configuration 1.23.
+	(end): code cosmetic fixes.
+	(begin): code cosmetic fixes.
+
+2003-08-15  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* src/IgG4TwigOps.cc (actionApplyFilter): fixed a crash when no
+	filters are selected.
+
+	* python/IgVisualizationFilterAll.py,
+	python/IgVisualizationDensity.py,
+	python/IgVisualizationFilterRegExp.py,
+	python/IgVisualizationFilterSensitive.py: sample python filters. 
+	
+	* python/IgDetails.pyste: python bindings for the
+	IgDetails* classes. 
+
+	* python/IgVisualizationFilter.pyste: python bindings for the
+	IgVisualizationFilter base class.
+
+2003-08-14  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* src/plugin.cc: Splitted up from original IgGeant4/src/plugin.cc
+
+	* BuildFile: Uses IgPython
+
+	* src/IgSoMaterialMap.h: Modified to use the new
+	IgSoMaterialMapEntry class. 
+	(IgSoMaterialMapEntry): Custom class which
+	keeps track of file/path informations associated to a SoMaterial.
+
+	* src/IgSoMaterialMap.cc (IgSoMaterialMap): the map of all the
+	used SoMaterials now keeps track of custom class
+	IgSoMaterialMapEntry which contains, in addition to the old
+	pointer to a SoMaterial, also the file/path information regarding the
+	SoMaterial.
+
+	* src/IgG4VolumeTwig.cc (drawVolumeTwig): Code rearranged so that
+	filtering on volume basis can be performed as first thing.
+
+	* interface/IgG4VolumeTwig.h (IgG4VolumeTwig): Renamed global
+	materialFilter pointer and added a global pointer to the global
+	visualization filter. 
+
+	* {src,interface}/IgG4TwigOps.{cc,h} (IgG4TwigOps): Added support to have
+	filtering menu in place in the twig popup menu.
+
+	* {src,interface}/IgG4MaterialTransparencyByDensityFilter.{cc,h}: Uses "details" in place of
+	only G4Material.
+	
+	* {src,interface}/IgG4MaterialFilter.{cc,h}: Uses "details" in place of
+	only G4Material.
+
+	* {src,interface}/IgG4MaterialMiscFilter.{cc,h}: Uses "details" in place of
+	only G4Material.
+
+	* {src,interface}/IgG4MaterialCacheFilter.{cc,h}: Uses "details" in place of
+	only G4Material.
+
+	* {src,interface}/IgDetails.{cc,h}: Added to CVS. Utility class
+	which keeps track of all the interesting details of a twig.
+
+	* {src,interface}/IgVisualizationFilterTable.{cc,h}: Added to CVS. Global
+	visualization filters table.
+
+	* {src,interface}/IgVisualizationFilterCache.{cc,h}: Added to CVS. Visualization
+	filter which is supposed to cache results returned by other filters.
+
+	* {src,interface}/IgVisualizationFilterByMaterialName.{cc,h}: Added to
+	CVS. Visualization filter which discriminates volumes on their density.
+
+	* {src,interface}/IgVisualizationFilter.{cc,h}: Added to CVS. Visualization
+	filters base class.
+
+2003-08-13  Lassi A. Tuura  <lat@iki.fi>
+
+	* New package splitting off G4 volumes from IgGeant4.
+

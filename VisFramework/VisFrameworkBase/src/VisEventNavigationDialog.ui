@@ -1,0 +1,128 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>VisEventNavigationDialog</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>VisEventNavigationDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>369</width>
+            <height>103</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Event Navigation</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLineEdit" row="0" column="1">
+            <property name="name">
+                <cstring>skipNumberLineEdit</cstring>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="0" column="2">
+            <property name="name">
+                <cstring>buttonLayout</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>okPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Go</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Skip events</string>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                        <string>Skip specified number of events forward.</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>closePushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Close</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Close the dialog</string>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                        <string>Close the dialog.</string>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QButtonGroup" row="0" column="0">
+            <property name="name">
+                <cstring>buttonGroup</cstring>
+            </property>
+            <property name="title">
+                <string>Skip</string>
+            </property>
+            <property name="exclusive">
+                <bool>true</bool>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QRadioButton" row="0" column="0">
+                    <property name="name">
+                        <cstring>forwardRadioButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Forward</string>
+                    </property>
+                    <property name="checked">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="1" column="0">
+                    <property name="name">
+                        <cstring>backRadioButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Back</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>okPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>VisEventNavigationDialog</receiver>
+        <slot>skip()</slot>
+    </connection>
+    <connection>
+        <sender>closePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>VisEventNavigationDialog</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>skipNumberLineEdit</sender>
+        <signal>returnPressed()</signal>
+        <receiver>VisEventNavigationDialog</receiver>
+        <slot>skip()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>skipBackwards()</slot>
+    <slot>skipForward()</slot>
+    <slot>skip()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

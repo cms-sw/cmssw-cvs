@@ -1,0 +1,274 @@
+2010-01-19  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile, VisDT4DSegmentTwig.cc, VisDT2DSegmentTwig.cc,
+	VisDTDigiTwig.cc, VisDTRecHitsTwig.cc: Remove dependency on
+	VisReco/VisRecoGeometry package.
+
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-10-23  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisDTDigiTwig.cc: Remove compilation warnings.
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisDT2DSegmentTwig.cc, VisDT4DSegmentTwig.cc, VisDTDigiTwig.cc,
+	VisDTRecHitsTwig.cc, VisMuonDTContent.cc: Removed unneeded lock.
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisMuonDTContent.h, VisMuonDTContent.cc: Remove unused
+	multi-threaded base class. Replaced by a simpler one. 
+
+2009-08-25  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisMuonDTContent.cc: Remove compilation warnings.
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2009-01-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDT4DSegmentTwig.cc, VisDTDigiTwig.cc, VisMuonDTContent.cc:
+	Display separate collections.
+
+	* visDT_MTCC.cfg, visRecoDT.cfg, visRecoDT_fromCosmicData.cfg,
+	visRecoDT_fromDigis2Segments.cfg: Removed as obsolete.
+
+2008-06-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonDTContent.cc: Remove obsolete VisMuonDTDetTwig.
+	* VisMuonDTDetTwig.h, VisMuonDTDetTwig.cc: Remove as
+	obsolete. It has been replaced by VisEventSetup.
+
+2008-05-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added a new developer.
+
+2007-12-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDT4DSegmentTwig.cc: Access specific hits only when the
+	segments are present.
+
+2007-10-31  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	*  VisMuonDTContent.cc: Disable invisible twigs.
+
+2007-10-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDT2DSegmentTwig.cc, VisDT4DSegmentTwig.cc, VisDTDigiTwig.cc,
+	VisDTRecHitsTwig.cc, VisMuonDTContent.cc, VisMuonDTDetTwig.cc: Use
+	base class update. Let the framework handle the exceptions.
+
+2007-09-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDTDigiTwig.cc: Set all colors for RPhi and RZ views.
+	
+2007-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Vis*Content.cc: Introduce separate tree browser.
+	
+2007-04-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Adapted to the changes in the Iguana subsystem directory structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* VisDT2DSegmentTwig.cc, VisDT4DSegmentTwig.cc, VisDTDigiTwig.cc,
+	VisDTRecHitsTwig.cc, VisMuonDTContent.cc: Adapt to migration of
+	IGUANA to CMSSW.
+
+2007-03-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonDTDetTwig.h, VisDT2DSegmentTwig.cc,
+	VisDT4DSegmentTwig.cc, VisDTRecHitsTwig.cc: Headers has been
+	moved. 
+
+2006-11-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDT2DSegmentTwig.h, VisDT2DSegmentTwig.cc,
+	VisDT4DSegmentTwig.h, VisDT4DSegmentTwig.cc, VisDTDigiTwig.h,
+	VisDTDigiTwig.cc, VisDTRecHitsTwig.h, VisDTRecHitsTwig.cc:
+	VisEventSelector takes now a process name.
+	* VisMuonDTContent.cc: Reformatting.
+
+2006-08-08  Gianni Masetti  <Gianni.Masetti@cern.ch>
+
+	* VisDTDigiTwig.cc, VisDT4DSegmentTwig.cc: new color for
+	4D segments and cleaning of the digi file.
+
+2006-07-12  Gianni Masetti  <Gianni.Masetti@cern.ch>
+
+	* VisDTDigiTwig.h, VisDTDigiTwig.cc,
+	VisMuonDTDetTwig.h, VisMuonDTDetTwig.cc,
+	VisMuonDTContent.cc: some new tools for MTCC visualization.
+
+2006-06-20  Nicola AMAPANE  <nicola.amapane@cern.ch>
+
+	* VisMuonDTContent.cc: fix twig names
+
+2006-06-20  Nicola AMAPANE  <nicola.amapane@cern.ch>
+
+	* visRecoDT.cfg, visRecoDT_fromCosmicData.cfg,
+	visRecoDT_fromDigis2Segments.cfg: use default main app.
+
+2006-05-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Move Nicola to administrators of the package.
+
+2006-05-09  Gianni Masetti  <Gianni.Masetti@cern.ch>
+
+	* VisMuonDTDetTwig.h, VisMuonDTDetTwig.cc,
+	VisDT2DSegmentTwig.cc, VisDT4DSegmentTwig.cc: rechit
+	visualisation for 2D and 4D segments.
+	
+2006-05-05  Riccardo Bellan <Riccardo.Bellan@cern.ch>
+	
+	* visRecoDT_fromDigis2Segments.cfg: new example cfg file
+	
+2006-05-05  Gianni MASETTI  <Gianni.Masetti@cern.ch>
+
+	* VisMuonDTDetTwig.h, VisMuonDTContent.cc,
+	VisMuonDTDetTwig.cc: All levels can be selected individually
+	* VisDTRecHitsTwig.cc: update.
+	
+2006-05-04  Gianni Masetti  <Gianni.Masetti@cern.ch>
+
+	* VisDT4DSegmentTwig.cc, VisDT2DSegmentTwig.cc, VisDTRecHitsTwig.cc: 
+	3D version and rechit as line.
+
+2006-05-03  Nicola AMAPANE  <nicola.amapane@cern.ch>
+
+	* visRecoDT.cfg: new example cfg file
+
+2006-05-02  Gianni Masetti  <Gianni.Masetti@cern.ch>
+
+	* VisDT4DSegmentTwig.h, VisDT2DSegmentTwig.h, VisDTRecHitsTwig.h, 
+	VisDT4DSegmentTwig.cc, VisDT2DSegmentTwig.cc, VisDTRecHitsTwig.cc,
+	VisMuonDTContent.cc: Initial version with preliminary 4D segment
+	visualisation.
+
+2006-04-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDTRecHitsTwig.cc, VisDT2DSegmentTwig.cc: Register the twigs
+	to the twig factory. Use generic selector to get the event data.
+
+2006-04-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonDTContent.cc: Add auto-start configuration.
+
+2006-04-24  Gianni Masetti  <Gianni.Masetti@cern.ch>
+
+	* VisDT2DSegmentTwig.h, VisDTRecHitsTwig.h, VisDT2DSegmentTwig.cc
+	VisDTRecHitsTwig.cc, VisMuonDTContent.cc: Cleaning of segment 
+	visualisation files.
+	
+2006-04-21  Gianni Masetti  <Gianni.Masetti@cern.ch>
+
+	* VisDT2DSegmentTwig.h, VisDTRecHitsTwig.h, VisDT2DSegmentTwig.cc
+	VisDTRecHitsTwig.cc: Initial version with preliminary segment
+	visualisation.
+
+2006-04-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonDTContent.cc: Update twig labels for consistency with
+	other detectors.
+
+2006-04-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonDTDetTwig.cc: Remove cout.
+	* VisMuonDTContent.cc: Remove twig invalidation and debug message.
+	* VisDTDigiTwig.cc: Add an alias for the product created by
+	VisTwigFactory service.
+	
+2006-03-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonDTContent.cc: Remove bindings to boost signals - it's done by
+	the base class.
+	* VisDTDigiTwig.cc: Try to get the digis by label.
+
+	* VisDTDigiTwig.h, VisDTDigiTwig.cc: Register the twig with the
+	twig factory and provide its creator. Add friendly name, module
+	name and instance name to use the VisSelector.
+	* VisMuonDTContent.cc: The API of the VisDTDigiTwig changed.
+
+2006-03-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonDTDetTwig.cc: TrackerBaseAlgo moved to TrackerNumberingBuilder.
+
+2006-03-09  Nicola Amapane  <Nicola.Amapane@cern.ch>
+	* VisDTDigiTwig.cc: adapt to interface changes in DTGeometry.
+
+2006-03-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDTDigiTwig.cc: Correct the dimensions of the digis according
+	to the chamber rotation. Make GeomDetUnit constant.
+
+2006-03-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDTDigiTwig.cc: Rotate digis according to the chamber rotation.
+	* VisMuonDTContent.cc: Look up for an event twig and a status bar.
+	
+2006-02-08  Nicola Amapane  <Nicola.Amapane@cern.ch>
+
+	* VisDTDigiTwig.h, VisDTDigiTwig.cc, VisMuonDTDetTwig.h: adapt to
+	changes in DT Geometry packaging
+
+2006-02-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDTDigiTwig.cc: Add filled and wireframe with slightly darker
+	color for digis.
+	* VisMuonDTContent.cc: Change colors of the digis.
+	* VisMuonDTDetTwig.cc: A try for a wireframe and filled volumes
+	(so far commented out); Make a slice of the RZ view a bit wider to
+	include the fourth ring of chambers.
+
+2006-02-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDTDigiTwig.h, VisDTDigiTwig.cc: Separate digis by the
+	superlayers, use different colors and wireframe style, draw wires
+	in 3D and RPhi.
+	* VisMuonDTContent.cc: Separate digis by the superalyers.
+	* VisMuonDTDetTwig.cc: Draw Reconstructed geometry of the
+	chambers.
+	* VisMuonDTDetTwig.h, VisMuonDTDetTwig.cc: DT geometry twig: both
+	chambers and superlayers.
+
+2006-02-07  Riccardo Bellan <Riccardo.Bellan@cern.ch>
+
+	* VisDTDigiTwig.h, VisDTDigiTwig.cc, BuildFile: global position of the wire 
+
+
+2006-01-30  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* .admin/developers: Added Shahzad Muzaffar as administrator.
+	* .admin/developers: Removed the empty line.
+	
+2006-01-20  Riccardo Bellan <Riccardo.Bellan@cern.ch>
+
+	* VisDTDigiTwig.h, interface/VisDTDigiTwig.cc: DTLayerId instead of DTDetId. 
+
+2005-12-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDTDigiTwig.h, VisDTDigiTwig.cc: Use geometry.
+	* BuildFile: Add modules needed for geometry.
+
+2005-12-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDTDigiTwig.cc: Check validity of the collection.
+
+2005-11-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDTDigiTwig.h, VisMuonDTContent.h, xtypeinfo.h, plugin.cc,
+	VisDTDigiTwig.cc, VisMuonDTContent.cc, BuildFile: Initial
+	population with preliminary DTDigi visualisation.
+
+	* New package to provide a plugin for muon DT
+	visualisation. 

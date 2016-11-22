@@ -1,0 +1,15 @@
+2007-03-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* plugin.cc, BuildFile, VisTrackerDemoMain.cc  VisTrackerDemoMain.h: 
+	Removed. Now since we have a possibilty to configure 
+	one application CMSSW via parameter set file, this package 
+	becomes obsolete.
+
+2006-04-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* New package to provide a visualisation application
+	for Custom Tracker event display.
+
+	* BuildFile, VisTrackerDemoMain.cc, VisTrackerDemoMain.h,
+	plugin.cc: New files package to provide a visualisation
+	application for custom tracker visualization.

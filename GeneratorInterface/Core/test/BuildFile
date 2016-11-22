@@ -1,0 +1,19 @@
+<use name=FWCore/Framework>
+<use name=FWCore/ParameterSet>
+<use name=DataFormats/Common>
+<use name=SimDataFormats/GeneratorProducts>
+<use name=hepmc>
+
+<library file="MockHadronizer.cc,MockHadronizerGeneratorFilter.cc" name=GeneratorInterfaceTestMockHadronizerGeneratorFilter>
+  <use name=GeneratorInterface/ExternalDecays>
+  <flags EDM_PLUGIN=1>
+</library>
+
+<library file="EventCounterTester.cc" name=GeneratorInterfaceTestEventCounterTester>
+  <flags EDM_PLUGIN=1>
+</library>
+
+<bin file=TestDriver.cpp name= TestGeneratorInterfaceTestMockHadronizerGeneratorFilter>
+  <flags TEST_RUNNER_ARGS=" /bin/bash run_MockHadronizerGeneratorFilter.sh">
+  <use name=FWCore/Utilities>
+</bin>
