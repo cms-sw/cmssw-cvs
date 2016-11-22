@@ -1,0 +1,6 @@
+<dbconfiguration>
+   <detector name='GEOMETRY' offline_connect='sqlite_file:myfile.db'>
+      <poolsetup mappingdir='src/CondFormats/GeometryObjects/xml' mappingfile='*.xml' library='CondFormatsGeometryObjects' />
+   </detector>
+</dbconfiguration>
+

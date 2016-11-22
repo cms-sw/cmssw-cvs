@@ -1,0 +1,7 @@
+<use name=clhep>
+<use name=MagneticField/Engine>
+<use name=MagneticField/Records>
+
+<use name=Iguana/GLBrowsers>
+<use name=Iguana/Inventor>
+<use name=VisFramework/VisFrameworkBase>

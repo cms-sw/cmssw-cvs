@@ -1,0 +1,136 @@
+2010-01-04  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependency.
+
+2007-08-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Remove obsolete dependencies.
+	* VisConfigEditor.h, VisParamEditor.h, VisQtConfigService.h,
+	VisConfigEditor.cc, VisConfigEditor.ui, VisConfigEditor.ui.h,
+	VisParamEditor.cc, VisParamEditor.ui, VisParamEditor.ui.h,
+	VisQtConfigService.cc: Removed as obsolete.
+
+2007-04-16  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Adapt to the new EDM plugin manager.
+	* plugins/plugins.cc, plugins/BuildFile: Moved here to create an
+	EDM plugin out of this package. 
+
+2007-04-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisQtConfigService.h, VisQtConfigService.cc: Adapt to
+	the changes in the Iguana directory structure.
+
+2007-03-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* plugin.cc: Adapt to migration of IGUANA to CMSSW.
+
+2006-10-24  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* src/plugine.cc: Added missing ";".
+
+2006-06-09  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* src/VisConfigurationService.cc: Removed cout statements.
+
+2006-06-09  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* interface/VisConfigurationService.h, src/VisConfigurationService.cc:
+	New service added for providing the visualization configuration.
+	* src/plugin.cc: Registered the new VisConfigurationService in edm
+	service registry.
+	* BuildFile: Added extra dependencies and export section.
+
+2006-01-30  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* .admin/developers: Added Shahzad Muzaffar as administrator.
+	* .admin/developers: Removed the empty line.
+	
+2005-12-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisConfigEditor.h, VisParamEditor.h,
+	VisQtConfigService.h, VisConfigEditor.cc, VisConfigEditor.ui,
+	VisConfigEditor.ui.h, VisParamEditor.cc, VisParamEditor.ui,
+	VisParamEditor.ui.h, VisQtConfigService.cc, plugin.cc: New files
+	migrated from IGUANACMS.
+
+2005-03-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* src/BuildFile: Removed as not needed for SCRAM V1.0.1.
+	* BuildFile: Define it to be plugin here.
+
+2005-03-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, src/BuildFile: Port to new SCRAMV1.
+
+2004-09-15 Ianna Osborne <ianna.osborne@cern.ch>
+
+	* VisQtConfigService.cc: Rename menu. Data cards can be stored in
+	a file with any name.
+
+2004-01-12 Ianna Osborne <ianna.osborne@cern.ch>
+
+	* Moved from VisOrca.
+
+2004-01-07 Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* src/BuildFile, plugin.cc: New files to make it a plugin. 
+	* IgQtOrcaExtensions.h, IgQtOrcaExtensions.cc: Make it an
+	extension.
+
+	* IgQtConfig.h, IgQtConfig.cc, IgQtConfigService.h,
+	IgQtConfigService.cc: Add update menu item and corresponding slot.
+
+2003-10-17 Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Add COBRA group and IgQtBrowser library to resolve symbols.
+
+
+2003-09-10 Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Adjusted to the new structure.
+	
+2003-09-05  Ianna Osborne  <ianna.osborne@cern.ch>
+	
+	* Former IgQtConfigService package from ORCA Visualisation subsystem.
+
+2003-08-19  Ianna Osborne  <ianna.osborne@cern.ch>
+	
+	* IgQtConfig.h, IgQtConfig.cc, IgQtConfigService.h,
+	IgQtConfigService.cc: Added placeholder for COBRA rewind.
+
+2003-07-01  Ianna Osborne  <ianna.osborne@cern.ch>
+	
+	* BuildFile: Export the library.
+	
+	* IgQtConfigService.cc: Rename the service to be a COBRA service, fix
+	its appearance before Debug menu.
+
+2003-05-16  Ianna Osborne  <ianna.osborne@cern.ch>
+	
+	* ParamEditor.h: Convert QString to string.
+	 	
+2003-03-11  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* IgQtConfig.h, IgQtConfig.cc, IgQtConfigService.h,
+	IgQtConfigService.cc, IgQtOrcaExtensions.h, IgQtOrcaExtensions.cc:
+	Config menu bar service with one pulldown menu "Edit .orcarc".
+
+	* orcarc.ui, orcarc.ui.h : Configurables editor panel - Qt
+	Designer files.
+
+	* parameditor.ui parameditor.ui : Parameter editor panel - Qt
+	Designer files.
+
+	* ConfigEditor.h, ConfigEditorCB.h, ConfigEditor.cc,
+	ParamEditor.h, ParamEditorCB.h ParamEditor.cc: Auto generated
+	files.
+
+2003-03-11  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* New package to provide configuration service. For the moment
+	provides only possibility to view and edit .orcarc
+	configurables. Values can be changed, new configurables can be
+	added.
+

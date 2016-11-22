@@ -1,0 +1,16 @@
+<export>
+  <lib name=SimMuonNeutron>
+  <use name=SimDataFormats/EncodedEventId>
+  <use name=FWCore/Framework>
+  <use name=FWCore/ParameterSet>
+  <use name=FWCore/MessageLogger>
+  <use name=CLHEP>
+  <use name=rootcore>
+</export>
+
+<use name=SimDataFormats/EncodedEventId>
+<use name=FWCore/Framework>
+<use name=FWCore/ParameterSet>
+<use name=FWCore/MessageLogger>
+<use name=CLHEP>
+<use name=rootcore>

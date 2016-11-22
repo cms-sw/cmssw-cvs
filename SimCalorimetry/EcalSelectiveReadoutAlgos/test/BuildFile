@@ -1,0 +1,7 @@
+<environment>
+  <use name=SimCalorimetry/EcalSelectiveReadoutAlgos>
+  <use name=SimCalorimetry/CaloSimAlgos>
+
+#  <bin file=EcalSelectiveReadoutTest.cpp></bin>
+</environment>
+

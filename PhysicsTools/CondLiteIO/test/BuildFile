@@ -1,0 +1,15 @@
+<environment>
+  <use name=PhysicsTools/CondLiteIO>
+</environment>
+
+
+<bin name=testPhysicsToolsCondLiteIO
+  file=recordwriter.cppunit.cpp>
+  <use name=rootcintex>
+  <use name=rootcore>
+  <use name=DataFormats/StdDictionaries>
+  <use name=DataFormats/TestObjects>
+  <use name=cppunit>
+</bin>
+
+

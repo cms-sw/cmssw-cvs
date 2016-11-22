@@ -1,0 +1,7 @@
+<use name=Iguana/Inventor>
+<use name=VisFramework/VisFrameworkBase>
+<use name=DataFormats/RPCDigi>
+<use name=Geometry/RPCGeometry>
+<use name=DataFormats/RPCRecHit>
+<use name=Geometry/Records>
+<use name=Geometry/CommonDetUnit>

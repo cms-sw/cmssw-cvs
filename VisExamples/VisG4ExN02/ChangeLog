@@ -1,0 +1,127 @@
+2010-01-25  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisG4ExampleSetup.cc: Correct include name.
+
+2007-04-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisG4ExampleSetup.cc, VisG4ExampleSetup.h, iglet.cc:
+	Migrate to the new Iguana subsystem directory structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+
+2006-11-27  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisG4ExampleEventAction.cc, VisG4ExampleGenerator.cc,
+	VisG4ExampleParametrisation.cc, VisG4ExampleRunAction.cc,
+	VisG4ExampleSetup.cc, plugin.cc, VisG4ExampleEventAction.h,
+	VisG4ExampleGenerator.h, VisG4ExampleParametrisation.h,
+	VisG4ExampleRunAction.h, VisG4ExampleSetup.h,
+	VisG4ExampleDetector.cc, VisG4ExampleField.cc, VisG4ExampleHit.cc,
+	VisG4ExamplePhysics.cc, VisG4ExampleSD.cc, VisG4ExampleDetector.h,
+	VisG4ExampleField.h, VisG4ExampleHit.h, VisG4ExamplePhysics.h,
+	VisG4ExampleSD.h, BuildFile: Migrated from IGUANACMS.
+	
+2005-06-17  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* VisG4ExampleSetup.cc: listen/unlisten renamed to add/remove into
+	IgDispatcher.
+
+2005-04_01  Shahzad Muzaffar <Shahzad.Muzaffar@cern.ch>
+
+	* VisG4ExampleSetup.cc: IgState passed for the VisG4MagFieldTwig.
+
+2005-03-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* src/BuildFile: Removed as not needed for SCRAM V1.0.1.
+	* BuildFile: Define it to be plugin here.
+
+2005-03-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, src/BuildFile: Port to new SCRAMV1.
+
+2004-12-02  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Add IgControlCentre library.
+	
+2004-11-03  Shahzad Muzaffar <Shahzad.Muzaffar@cern.ch>
+
+	* BuildFile, VisG4ExampleSetup.cc: IgStudio/IgMDIView used instead of
+	Ig3dMDIView/Ig3DMDIView.
+
+2004-05-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisG4ExampleSetup.cc: Move to the MDI view.
+
+2003-09-26  Lassi A. Tuura  <lat@iki.fi>
+
+	* VisG4ExampleSetup.cc: Fix label.
+
+2003-09-26  Lassi A. Tuura  <lat@iki.fi>
+
+	* Imported IGUANA example IgG4Demo with suitable renames.
+
+2003-09-15  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgG4DemoParametrisation.cc, IgG4DemoSetup.cc, plugin.cc,
+	src/BuildFile: Move to SEAL Foundation classes and plug-in
+	manager.
+
+2003-08-14  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* src/IgG4DemoSetup.cc: using splitted up IgG4* packages in place
+	of unique IgGeant4 one.
+
+	* interface/config.h: using splitted up IgG4* packages in place
+	of unique IgGeant4 one.
+
+2003-03-27  Lassi A. Tuura  <lat@iki.fi>
+
+	* plugin.cc: Plug-in manager update.
+
+2003-03-20  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgG4DemoDetector.cc: Make field non-zero.
+
+2003-03-19  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgG4DemoSetup.h, IgG4DemoSetup.cc: Move to the document paradigm.
+	Remove references to now-obsolete G4 classes.  Get twig operations
+	from IgCommonOps.  Rename label to indicate this is Geant4 Example
+	N02.
+
+	* BuildFile: Clean up external refs.  Add references to Ig3DView
+	IgCommonOps.
+
+2003-01-16 Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* IgG4DemoHit.h: Change private inheritance from G4VHit to 
+	public.
+
+2002-12-04  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* IgG4DemoSetup.cc (setup): Remove the old graphics system
+	IgG4VisManager initialisation code that is no longer needed.
+
+2002-10-16  Lassi A. Tuura  <lat@iki.fi>
+
+	* config.h: Default Windows to DLL use.  Unify.
+
+2002-09-27  Lassi A. Tuura  <lat@iki.fi>
+
+	* config.h: Include build hacks from G4 for Solaris.
+
+	* src/BuildFile: Disable plug-in on Solaris.
+
+2002-09-26  Lassi A. Tuura  <lat@iki.fi>
+
+	* Adjust to plug-in management changes.
+
+2002-08-15  Lassi A. Tuura  <lat@iki.fi>
+
+	* Clean up code a bit.
+
+	* New package to demonstrate IgGeant4 in a studio environment.

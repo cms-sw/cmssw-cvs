@@ -1,0 +1,17 @@
+<use name=DataFormats/TrackerRecHit2D>
+<use name=VisFramework/VisFrameworkBase>
+<use name=VisFramework/VisConfigService>
+<use name=DataFormats/TrackReco>
+<use name=DataFormats/SiStripCluster>
+<use name=Geometry/TrackerGeometryBuilder>
+<use name=Geometry/TrackerNumberingBuilder>
+<use name=Geometry/CommonDetUnit>
+<use name=Iguana/Inventor>
+<use name=clhep>
+
+<use name=CondFormats/SiStripObjects>
+<use name=CalibFormats/SiStripObjects>
+<use name=CalibTracker/Records>
+<use name=qt>
+
+<Flags EDM_PLUGIN=1>

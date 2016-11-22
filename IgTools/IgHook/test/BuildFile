@@ -1,0 +1,4 @@
+<use name=IgTools/IgHook>
+<bin name=test_IgHook_Basic file=hooktest.cpp></bin>
+<bin name=test_IgHook_Catch file=catchtest.cpp></bin>
+<bin name=test_IgHook_Trace file=tracetest.cpp></bin>

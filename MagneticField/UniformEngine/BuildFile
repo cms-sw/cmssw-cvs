@@ -1,0 +1,6 @@
+<use name=MagneticField/Engine>
+<export>
+  <use name=MagneticField/Engine>
+  <lib name=MagneticFieldUniformEngine>
+</export>
+

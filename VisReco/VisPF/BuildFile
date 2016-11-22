@@ -1,0 +1,18 @@
+<use name=DataFormats/ParticleFlowReco>
+<use name=FWCore/Framework>
+<use name=Geometry/CaloGeometry>
+<use name=Geometry/Records>
+<use name=Iguana/Framework>
+<use name=Iguana/GLModels>
+<use name=Iguana/Inventor>
+<use name=Iguana/Models>
+<use name=Iguana/Studio>
+<use name=Iguana/Utilities>
+<use name=SimDataFormats/TrackingAnalysis>
+<use name=VisFramework/VisFrameworkBase>
+<use name=coin>
+<use name=qt>
+<use name=rootmath>
+<export>
+  <lib name=VisRecoVisPF>
+</export>
