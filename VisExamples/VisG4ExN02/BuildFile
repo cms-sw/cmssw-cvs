@@ -1,0 +1,6 @@
+<use name=VisGeant4/VisG4Core>
+<use name=VisGeant4/VisG4Transients>
+<use name=VisGeant4/VisG4Volumes>
+<use name=VisGeant4/VisG4Fields>
+<use name=Iguana/Studio>
+

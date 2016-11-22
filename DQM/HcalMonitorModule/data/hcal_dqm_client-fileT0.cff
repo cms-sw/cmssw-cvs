@@ -1,0 +1,21 @@
+
+    include "DQM/HcalMonitorClient/data/HcalMonitorClient.cfi"
+    replace hcalClient.plotPedRAW       = true
+    replace hcalClient.DoPerChanTests   = false
+    #turn off client's html output
+    replace hcalClient.baseHtmlDir      = ''
+
+    replace hcalClient.SummaryClient    = true
+    replace hcalClient.DataFormatClient = true
+    replace hcalClient.DigiClient       = false
+    replace hcalClient.RecHitClient     = false
+    replace hcalClient.TrigPrimClient   = true
+    replace hcalClient.PedestalClient   = false
+    replace hcalClient.DeadCellClient   = false
+    replace hcalClient.HotCellClient    = false
+
+    replace hcalClient.LEDClient        = false
+    replace hcalClient.CaloTowerClient  = false
+    
+    sequence hcalOfflineDQMClient = { hcalClient }
+

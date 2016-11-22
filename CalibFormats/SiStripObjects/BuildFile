@@ -1,0 +1,18 @@
+<use name=FWCore/Framework>
+<use name=FWCore/MessageLogger>
+<use name=DataFormats/SiStripCommon>
+<use name=DataFormats/SiStripDetId>
+<use name=CondFormats/SiStripObjects>
+<use name=CalibTracker/SiStripCommon>
+<use name=boost>
+
+<export>
+  <lib name=CalibFormatsSiStripObjects>
+  <use name=FWCore/Framework>
+  <use name=FWCore/MessageLogger>
+  <use name=DataFormats/SiStripCommon>
+  <use name=DataFormats/SiStripDetId>
+  <use name=CondFormats/SiStripObjects>
+  <use name=CalibTracker/SiStripCommon>
+  <use name=boost>
+</export>

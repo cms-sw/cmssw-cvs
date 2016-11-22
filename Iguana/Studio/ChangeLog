@@ -1,0 +1,314 @@
+2010-01-25  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* IgMdiView.cc: Remove unneeded includes. Tile windows in the
+	workspace. 
+
+	* IgQtTwigBrowser.cc, IgQtTwigRep.cc, xtypeinfo.cc: Add debugging
+	columns. Make sure disabled children are drawn in gray. Add a
+	folder icon to the reps with children.
+	* control_centre.xpm, fileopen.xpm, fileprint.xpm, filesave.xpm,
+	iguana.qrc, zoom_minus.xpm, zoom_plus.xpm, IgStudioSetup.ui:
+	Update icons.
+	* rcc_iguana.cc: Auto-generated.
+
+2010-01-22  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* IgQtAppMenuService.h, IgQtObjectMenu.h, IgQtTwigBrowser.h,
+	IgQtTwigRep.h, IgTwigOps.h, IgQtAppDebug.cc, IgQtObjectMenu.cc,
+	IgQtTwigBrowser.cc, IgQtTwigRep.cc, IgTwigOps.cc, xtypeinfo.cc:
+	Migration to Qt4 native functionality.
+
+2010-01-15  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* IgQtTwigBrowser.h, IgQtTwigBrowser.cc, IgQtTwigRep.h,
+	IgQtTwigRep.cc: Clean up of obsolete functions. 
+
+	* IgQtAppMenuService.cc, IgQtObjectMenu.cc: Remove Qt3 includes.
+
+2010-01-13  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* IgQtObjectMenuService.h, IgQtObjectMenuService.cc,
+	IgFileFetcher.cc, IgFileLocalProxy.cc, IgQtTwigBrowser.cc: More
+	Qt3Support classes replaced by Qt4 native ones. 
+
+	* IgQtAppDebug.h, IgQtAppHelp.h, IgQtPixButton.h,
+	IgQtScrollView.h, IgQtTextBrowser.h, IgQtTwigBrowser.h,
+	IgQtTwigRep.h, IgSoQtThumbWheel.h, IgQtAppDebug.cc,
+	IgQtAppHelp.cc, IgQtAppHelpService.cc, IgQtPixButton.cc,
+	IgQtScrollView.cc, IgQtTextBrowser.cc, IgQtTwigBrowser.cc,
+	IgQtTwigRep.cc, IgSoQtThumbWheel.cpp, xtypeinfo.cc: First attempt
+	at migration from Qt3Support to a proper Qt4 classes.
+
+2010-01-12  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* IgStudioDriver.cc: Remove classlib dependency.
+
+	* IgStudioSetup.ui: Migrated to Qt4.
+	* interface/ui_IgStudioSetup.h: Auto-generated from the above.
+	* IgStudioSetup.h, IgStudioSetup.cc: Migrated to use proper Qt4
+	classes.
+	* IgStudioDriver.cc: Use new Qt4-based IgStudioSetup dialog.
+	* IgStudioSetup.ui.h: Replaced by ui_IgStudioSetup.h.
+
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Clean up compilation warnings.
+	* IgQtTreeBrowser.h, IgQtTreeBrowser.cc, IgQtTreeRep.h,
+	IgQtTreeRep.cc: Removed as unused.
+
+2009-08-28  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* test_IgStudio.cpp: Correct the icon name. Remove image service.
+
+	* IgImageIDs.h, IgQtAppImageService.h, IgQtAppImageService.cc:
+	Removed as unused.
+	* iguana.qrc: All icons are now here.
+	* rcc_iguana.cc: Auto-generated from iguana.qrc.
+	* IgStudioDriver.cc, test_IgStudio.cpp: Remove icons from here. We
+	do not need a service to load them. Qt takes care of it.
+
+	* Remove unused icons.
+
+	* Add new play and pause icons.
+
+2009-08-25  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* test_IgStudio.cpp: Remove compilation warning.
+
+	* IgMDIView.cc: Removed unneeded headers.
+
+2009-08-21  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* interface/IgConfigElement.h, interface/IgDocumentDataset.h,
+	interface/IgQDockAreaSite.h, interface/IgQDockWindowSite.h,
+	interface/IgQWidgetSite.h, interface/IgQWidgetStackSite.h,
+	src/IgConfigElement.cc, src/IgDocumentDataset.cc,
+	src/IgQDockAreaSite.cc, src/IgQDockWindowSite.cc,
+	src/IgQWidgetSite.cc, src/IgQWidgetStackSite.cc: Removed as
+	unused.
+	* IgStudioDriver.cc, src/iglet.cc, test/test_IgStudio.cpp:
+	Modified accordingly.
+
+2009-06-29  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* IgQWorkspaceSite.h, IgQWorkspaceSite.cc: Removed as obsolete.
+	* iglet.cc: Updated accordingly.
+
+2009-06-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* IgQtWorkspace.h, IgQtWorkspace.cc: Removed.
+
+	* IgPage.h, IgPage.cc: Migrate to QMdiArea. Cleanup.
+	* IgStudioDriver.h, IgStudioDriver.cc, IgDocument.cc: Migrate to
+	QMainWindow.
+	* IgQToolBoxSite.h, IgQToolBoxSite.cc, IgQtFocusManager.h,
+	IgQtFocusManager.cc: Removed.
+
+2009-06-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* IgQtTwigBrowser.h, IgQtTwigBrowser.cc: Restore picking and selection.
+
+2009-06-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* IgQtAppMenuService.cc, IgQtAppHelpService.cc: Clean up.
+
+2009-06-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* IgPage.h, IgPage.cc, IgQtAppHelpService.cc: Migrate to Qt4 menus
+	and actions. 
+
+	* IgQtAppDebugService.cc, IgQtAppDebugService.h,
+	IgQtAppHelpService.cc, IgQtAppHelpService.h: Finalize migration of
+	menus to Qt4. 
+
+	* IgPage.h, IgPage.cc: Remove sites. Use QMainWindow interface to
+	add dock windows elsewhere.
+	* IgMDIView.cc, IgQtTextBrowser.cc, IgQtTwigBrowser.cc: Update
+	accordingly.
+	* IgQMainWindowSite.cc: Add QWorspace as a central widget of
+	QMainWindow.
+
+2009-06-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* IgPage.h, IgPage.cc: Use proper QWorkspace.
+	* IgQMainWindowSite.h, IgQMainWindowSite.cc, IgQDockWindowSite.cc,
+	IgQtAppMenuService.h, IgQtAppMenuService.cc,
+	IgQtAppStatusBarService.h, IgQtAppStatusBarService.cc,
+	IgQtAppToolBarService.h, IgQtAppToolBarService.cc: Migrate to
+	QMainWindow and QToolBar.
+	* IgMDIView.cc: Adapt to the changes above.
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2009-03-18  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* test/BuildFile, test/test_IgStudio.cpp: Added a new test.
+
+2009-03-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* IgQtAppDebug.cc, IgPage.cc: More corrections to migrate to Qt 4. 
+
+	* *.cc, *.h: Port to Qt 4.
+
+2009-02-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* IgQtAppHelp.cc, IgQtAppDebug.cc: Port to gcc 4.3.2.
+
+	* IgSoAnyThumbWheel.h, IgSoAnyThumbWheel.cc: Re-added.
+	* iglet.cc: Removed unused plugin.
+
+2009-01-27  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* IgWizardBase.h, IgWizard.h, IgWizardPage.h, IgWizardBase.cc,
+	IgWizardBase.ui, IgWizard.cc, IgWizardPage.cc: Removed as
+	obsolete.
+
+	* AdvListView.h, AdvListViewItem.h, IgNTupleAppExtension.h,
+	IgNTupleAppMain.h, IgNTupleAppSetup.h, IgSoAnyThumbWheel.h,
+	AdvListView.cc, AdvListViewItem.cc, IgNTupleAppExtension.cc,
+	IgNTupleAppMain.cc, IgNTupleAppSetup.cc, IgSoAnyThumbWheel.cpp:
+	Removed as obsolete.
+
+2009-01-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* previous.xpm, next.xpm, play.xpm, pause.xpm: Toolbar icons for
+	event navigation.
+
+2008-06-24  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* IgStudioDriver.cc: Python configuration files in the
+	command line should start CMSSW session automatically.
+
+2008-05-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* IgPage.h, IgPage.cc: Add a new automated screen shot
+	production.
+
+2008-03-11  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* IgPage.h, IgPage.cc: Add full screen and maximized window menus.
+	
+2008-01-31  Serkan Bozyigit <Serkan.Bozyigit@cern.ch>
+	* IgXMLReader.h, IgXMLReader.cc: New classes to read XML files.
+
+2008-01-31  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added a new developer.
+
+2007-09-20  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* IgFileFetcher.h, IgFileLocalProxy.h, IgFileProxy.h,
+	IgFileProxyDB.h, IgFileFetcher.cc, IgFileLocalProxy.cc,
+	IgFileProxy.cc, IgFileProxyDB.cc: New classes to read files.
+	* iglet.cc: Added IgFileLocalProxy.
+
+2007-08-21  George Alverson <George.Alverson@cern.ch>
+
+	* IgQtAppDebug.cc: extend buffer size to accomodate full command length
+
+2007-08-20  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added a new developer.
+
+2007-07-27  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* IgStudioDriver.cc: Set a default CMSSW driver if root or cfg
+	file is given to iguana.
+
+2007-06-07  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* IgNTupleAppExtension.h, IgNTupleAppMain.h, IgNTupleAppSetup.h,
+	IgQtTreeBrowser.h, IgQtTreeRep.h, IgNTupleAppExtension.cc,
+	IgNTupleAppMain.cc, IgNTupleAppSetup.cc, IgQtTreeBrowser.cc,
+	IgQtTreeRep.cc: Migrated from IGUANA.
+	* xtypeinfo.h, xtypeinfo.cc: Added Tree rep and browser.
+	* iglet.cc: Add NTuple application.
+
+2007-04-13  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* IgQtTextBrowser.h, IgQtTwigBrowser.h, IgQtTwigRep.h,
+	xtypeinfo.h, IgQtTextBrowser.cc, IgQtTwigBrowser.cc,
+	IgQtTwigRep.cc, xtypeinfo.cc: Migrated from IGUANA.
+	* BuildFile, iglet.cc: Modified accordingly.
+
+2007-04-11  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* IgTwigOps.h, IgTwigOps.cc: Added missing files.
+
+2007-04-03  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* IgStudioDriver.cc: Add ASSERT to check existence of the
+	configuration service.
+	* iglet.cc: Add configuration service.
+
+2007-04-02  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* Migrated from IGUANA Ig_Modules/IgStudio, Ig_Modules/IgConfig,
+	Ig_Modules/IgQtBrowser, Ig_Extensions/IgIcons, Ig_Extensions/IgQt
+	and adapted to the new CVS directory structure.
+
+	* AdvListView.h, AdvListViewItem.h, config.h, IgConfigElement.h,
+	IgDocumentData.h, IgDocumentDataManager.h, IgDocumentDataset.h,
+	IgDocument.h, IgImageIDs.h, IgMDIView.h, IgModelManager.h,
+	IgNetscapeRunner.h, IgPage.h, IgQDockAreaSite.h,
+	IgQDockWindowSite.h, IgQHSplitterSite.h, IgQMainWindowSite.h,
+	IgQSplitterSite.h, IgQtAppActiveService.h,
+	IgQtAppContextService.h, IgQtAppCrashAlertService.h,
+	IgQtAppDebug.h, IgQtAppDebugService.h, IgQtAppExtensions.h,
+	IgQtAppHelp.h, IgQtAppHelpService.h, IgQtAppImageService.h,
+	IgQtAppLoopService.h, IgQtAppMenuService.h,
+	IgQtAppStatusBarService.h, IgQtAppToolBarService.h,
+	IgQtAppWindowService.h, IgQtBadSiteError.h, IgQtCallbacks.h,
+	IgQtFocusManager.h, IgQtLineEdit.h, IgQtLock.h, IgQtObjectMenu.h,
+	IgQtObjectMenuMessage.h, IgQtObjectMenuService.h,
+	IgQToolBoxSite.h, IgQtPixButton.h, IgQtScheduledEventExecutor.h,
+	IgQtScheduledEvent.h, IgQtScrollView.h, IgQtSite.h,
+	IgQtSiteStack.h, IgQtWorkspace.h, IgQVSplitterSite.h,
+	IgQWidgetSite.h, IgQWidgetStackSite.h, IgQWorkspaceSite.h,
+	IgSoAnyThumbWheel.h, IgSoQtThumbWheel.h, IgStudioDriver.h,
+	IgStudioSetupExtension.h, IgStudioSetup.h, IgViewCreator.h,
+	IgViewDB.h, IgView.h, IgWizardBase.h, IgWizard.h, IgWizardPage.h,
+	AdvListView.cc, AdvListViewItem.cc, IgConfigElement.cc,
+	IgDocument.cc, IgDocumentData.cc, IgDocumentDataManager.cc,
+	IgDocumentDataset.cc, iglet.cc, IgMDIView.cc, IgModelManager.cc,
+	IgPage.cc, IgQDockAreaSite.cc, IgQDockWindowSite.cc,
+	IgQHSplitterSite.cc, IgQMainWindowSite.cc, IgQSplitterSite.cc,
+	IgQtAppActiveService.cc, IgQtAppContextService.cc,
+	IgQtAppCrashAlertService.cc, IgQtAppDebug.cc,
+	IgQtAppDebugService.cc, IgQtAppExtensions.cc, IgQtAppHelp.cc,
+	IgQtAppHelpService.cc, IgQtAppImageService.cc,
+	IgQtAppLoopService.cc, IgQtAppMenuService.cc,
+	IgQtAppStatusBarService.cc, IgQtAppToolBarService.cc,
+	IgQtAppWindowService.cc, IgQtBadSiteError.cc, IgQtCallbacks.cc,
+	IgQtFocusManager.cc, IgQtLineEdit.cc, IgQtLock.cc,
+	IgQtObjectMenu.cc, IgQtObjectMenuService.cc, IgQToolBoxSite.cc,
+	IgQtPixButton.cc, IgQtScheduledEvent.cc,
+	IgQtScheduledEventExecutor.cc, IgQtScrollView.cc, IgQtSite.cc,
+	IgQtSiteStack.cc, IgQtWorkspace.cc, IgQVSplitterSite.cc,
+	IgQWidgetSite.cc, IgQWidgetStackSite.cc, IgQWorkspaceSite.cc,
+	IgStudioDriver.cc, IgStudioSetup.cc, IgStudioSetupExtension.cc,
+	IgView.cc, IgViewCreator.cc, IgViewDB.cc, IgWizardBase.cc,
+	IgWizard.cc, IgWizardPage.cc: Migrated fro IGUANA and modified
+	according to the new directory structure.
+
+	* autoprint.xpm, document.xpm, forward.xpm, home0.xpm,
+	iguana-small.xpm, perspective.xpm, seek.xpm, x_small.xpm,
+	y_small.xpm, yx_small.xpm, zoom_plus.xpm, back.xpm, fileopen.xpm,
+	greright.xpm, home.xpm, IGUANA_SPLASH.xpm, pick.xpm, set_home.xpm,
+	x.xpm, y.xpm, yz_small_wb.xpm, z_small.xpm, cmsIguana.xpm,
+	fileprint.xpm, grid.xpm, iguana-medium.xpm, inverse.xpm,
+	print_views.xpm, view_all.xpm, xz_small_wb.xpm, yx_small_col.xpm,
+	yz_small.xpm, z.xpm, control_centre.xpm, filesave.xpm, help.xpm,
+	iguana-mini.xpm, ortho.xpm, save_to_disk.xpm, view.xpm,
+	xz_small.xpm, yx_small_wb.xpm, zoom_minus.xpm: Migrated from
+	IGUANA.
+	* IgNetscapeRunner.cpp, IgSoAnyThumbWheel.cpp,
+	IgSoQtThumbWheel.cpp, IgStudioSetup.ui, IgStudioSetup.ui.h,
+	IgWizardBase.ui: Migrated from IGUANA and modified according to
+	the new directory structure. 

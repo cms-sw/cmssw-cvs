@@ -1,0 +1,9 @@
+<bin name="TrackingHDQMInspector" file="TrackingHDQMInspector.cc">
+ <use name="DQM/SiStripHistoricInfoClient">
+ <use name="DQMServices/Diagnostic">
+</bin>
+<bin name="SiStripHDQMInspector" file="SiStripHDQMInspector.cc">
+ <use name="DQM/SiStripHistoricInfoClient">
+ <use name="DQMServices/Diagnostic">
+ <use name="FWCore/MessageLogger">
+</bin>

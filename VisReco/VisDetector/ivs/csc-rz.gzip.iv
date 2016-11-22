@@ -1,0 +1,2514 @@
+#Inventor V2.1 ascii
+
+
+DEF IGGI_SCENE_GRAPH_V2 Selection {
+  policy SINGLE
+
+  DEF IGGI_3D_REP Separator {
+    renderCaching OFF
+
+    Group {
+
+      DEF Default_X20Light_X20Group Group {
+
+      }
+    }
+    Separator {
+
+    }
+    DEF IGGI_3D_REP Separator {
+      renderCaching OFF
+
+      Group {
+
+      }
+      DEF Objects Switch {
+        whichChild -3
+
+      }
+      DEF IGGI_3D_REP Separator {
+        renderCaching OFF
+
+        Group {
+
+        }
+        DEF CMS_X20Event_X20and_X20Detector Switch {
+          whichChild -3
+
+        }
+        DEF IGGI_3D_REP Separator {
+          renderCaching OFF
+
+          Group {
+
+          }
+          DEF Annotations Switch {
+            whichChild -3
+
+          }
+        }
+        DEF IGGI_3D_REP Separator {
+          renderCaching OFF
+
+          Group {
+
+          }
+          DEF Muon Switch {
+            whichChild -3
+
+          }
+          DEF IGGI_3D_REP Separator {
+            renderCaching OFF
+
+            Group {
+
+            }
+            DEF Barrel Switch {
+              whichChild -3
+
+            }
+            DEF IGGI_3D_REP Separator {
+              renderCaching OFF
+
+              Group {
+
+              }
+              DEF Drift_X20Tubes Switch {
+                whichChild -1
+
+              }
+              DEF IGGI_3D_REP Separator {
+                renderCaching OFF
+
+                Group {
+
+                }
+                DEF Drift_X20Tubes_X20Superlayers Switch {
+                  whichChild -1
+
+                }
+                DEF IGGI_3D_REP Separator {
+                  renderCaching OFF
+
+                  Group {
+
+                  }
+                  DEF Drift_X20Tubes_X20Superlayers_X20(details) Switch {
+                    whichChild -1
+
+                  }
+                }
+              }
+            }
+            DEF IGGI_3D_REP Separator {
+              renderCaching OFF
+
+              Group {
+
+              }
+              DEF RPCs Switch {
+                whichChild -1
+
+              }
+            }
+            DEF IGGI_3D_REP Separator {
+              renderCaching OFF
+
+              Group {
+
+              }
+              DEF Absorber Switch {
+                whichChild -1
+
+              }
+            }
+          }
+          DEF IGGI_3D_REP Separator {
+            renderCaching OFF
+
+            Group {
+
+            }
+            DEF Endcap Switch {
+              whichChild -3
+
+            }
+            DEF IGGI_3D_REP Separator {
+              renderCaching OFF
+
+              Group {
+
+              }
+              DEF CSCs Switch {
+                whichChild -3
+
+                DEF IGGI_SCENE_GRAPH_V2 Selection {
+                  policy SINGLE
+
+                  DEF IGGI_3D_REP Separator {
+                    renderCaching OFF
+
+                    Group {
+
+                      DEF Default_X20View_X20Points Group {
+
+                        DEF Current_X20Viewpoint IgSoViewpoint {
+                          fields [ SFVec3f position, SFRotation orientation, SFFloat aspectRatio, SFFloat focalDistance, SFFloat heightAngle, SFEnum cameraType, SFFloat nearDistance, SFFloat farDistance ]
+                          position -0.1551348 0.082108259 32.356056
+                          orientation 0 0 1  0
+                          aspectRatio 1
+                          focalDistance 32.356056
+                          heightAngle 0.78539819
+                          cameraType Perspective
+                          nearDistance 19.424042
+                          farDistance 45.288071
+
+                        }
+                      }
+                      DEF Default_X20Light_X20Group Group {
+
+                      }
+                      DEF Z_X20Slicers Switch {
+                        whichChild 1
+
+                        DEF All Group {
+
+                          DEF Full_X20Slicer+0 IgSoSlicer {
+                            fields [ SFBool on, SFBool manip, SFFloat thickness, SFPlane plane ]
+                            on FALSE
+                            manip FALSE
+                            plane 0 0 1  0
+
+                          }
+                        }
+                        DEF Active Group {
+
+                          USE Full_X20Slicer+0
+                        }
+                      }
+                      DEF Clip_X20Planes Switch {
+                        whichChild 1
+
+                        DEF All Group {
+
+                          DEF Full_X20Clip_X20Plane+1 IgSoClipPlane {
+                            fields [ SFBool on, SFBool manip, SFPlane plane ]
+                            on FALSE
+                            manip FALSE
+                            plane -1 0 0  0
+
+                          }
+                        }
+                        DEF Active Group {
+
+                          USE Full_X20Clip_X20Plane+1
+                        }
+                      }
+                      DEF Default_X20Anims_X20Group Group {
+
+                        DEF Default_X20Animator IgSoAnimator {
+                          fields [ SFRotation rotation, SFShort timeMax, SFShort timeStep, SFFloat timeFreq, SFVec3f axis, SFBool on, SFBool reset, SFInt32 state, SFInt32 newAxis, SFBool complete ]
+                          rotation 0 0 1  0
+                          axis 1 0 0
+                          state 0
+                          newAxis 0
+                          complete TRUE
+
+                        }
+                      }
+                    }
+                    DEF Root Separator {
+
+                    }
+                    DEF IGGI_3D_REP Separator {
+                      renderCaching OFF
+
+                      Group {
+
+                      }
+                      DEF Objects Switch {
+                        whichChild -3
+
+                        Selection {
+                          policy SINGLE
+
+                          Separator {
+                            renderCaching OFF
+
+                            Group {
+
+                          DrawStyle {
+                            style LINES
+
+                          }
+                              Material {
+                              ambientColor 0.42352942 0.43921569 0.45490196
+                              diffuseColor 0.42352942 0.43921569 0.45490196
+                              specularColor 0.42352942 0.43921569 0.45490196
+                              emissiveColor 0.42352942 0.43921569 0.45490196
+                                shininess 0
+                                transparency 0
+
+                              }
+                              Group {
+
+                                IgSoViewpoint {
+                                  fields [ SFVec3f position, SFRotation orientation, SFFloat aspectRatio, SFFloat focalDistance, SFFloat heightAngle, SFEnum cameraType, SFFloat nearDistance, SFFloat farDistance ]
+                                  position -0.1551348 0.082108259 32.356056
+                                  orientation 0 0 1  0
+                                  aspectRatio 1
+                                  focalDistance 32.356056
+                                  heightAngle 0.78539819
+                                  cameraType Perspective
+                                  nearDistance 19.424042
+                                  farDistance 45.288071
+
+                                }
+                              }
+                              Switch {
+                                whichChild 1
+
+                                Group {
+
+                                  DEF +2 IgSoSlicer {
+                                    fields [ SFBool on, SFBool manip, SFFloat thickness, SFPlane plane ]
+                                    on FALSE
+                                    manip FALSE
+                                    plane 0 0 1  0
+
+                                  }
+                                }
+                                Group {
+
+                                  USE +2
+                                }
+                              }
+                              Switch {
+                                whichChild 1
+
+                                Group {
+
+                                  DEF +3 IgSoClipPlane {
+                                    fields [ SFBool on, SFBool manip, SFPlane plane ]
+                                    on FALSE
+                                    manip FALSE
+                                    plane -1 0 0  0
+
+                                  }
+                                }
+                                Group {
+
+                                  USE +3
+                                }
+                              }
+                              Group {
+
+                                IgSoAnimator {
+                                  fields [ SFRotation rotation, SFShort timeMax, SFShort timeStep, SFFloat timeFreq, SFVec3f axis, SFBool on, SFBool reset, SFInt32 state, SFInt32 newAxis, SFBool complete ]
+                                  rotation 0 0 1  0
+                                  axis 1 0 0
+                                  state 0
+                                  newAxis 0
+                                  complete TRUE
+
+                                }
+                              }
+                            }
+                            DEF _unnamed_/_unnamed_/_unnamed_ Separator {
+                              renderCaching OFF
+
+                              Separator {
+                                renderCaching OFF
+
+                                Separator {
+                                  renderCaching OFF
+
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 6.8704939e-16 2.0274999 5.8695002
+                                            rotation 1.8062131e-16 1 3.3040737e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.52749997
+                                            dx1 0.13123
+                                            dx2 0.22353001
+                                            dy2 0.52749997
+                                            dx3 0.13123
+                                            dx4 0.22353001
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.35207167 1.9966977 6.1965003
+                                            rotation -0.087155744 0.99619472 2.7830376e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.52749997
+                                            dx1 0.13123
+                                            dx2 0.22353001
+                                            dy2 0.52749997
+                                            dx3 0.13123
+                                            dx4 0.22353001
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.35207167 -1.9966977 6.1965003
+                                            rotation 0.99619472 -0.087155744 2.7830376e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.52749997
+                                            dx1 0.13123
+                                            dx2 0.22353001
+                                            dy2 0.52749997
+                                            dx3 0.13123
+                                            dx4 0.22353001
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -5.1822609e-16 -2.0274999 5.8695002
+                                            rotation 1 -1.3898794e-16 2.7724467e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.52749997
+                                            dx1 0.13123
+                                            dx2 0.22353001
+                                            dy2 0.52749997
+                                            dx3 0.13123
+                                            dx4 0.22353001
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 1.2386828e-15 3.684 6.8460002
+                                            rotation 1.8062131e-16 1 3.3040737e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.866
+                                            dx1 0.255
+                                            dx2 0.41749999
+                                            dy2 0.866
+                                            dx3 0.255
+                                            dx4 0.41749999
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.6397199 3.6280317 7.0910006
+                                            rotation -0.087155744 0.99619472 2.7830376e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.866
+                                            dx1 0.255
+                                            dx2 0.41749999
+                                            dy2 0.866
+                                            dx3 0.255
+                                            dx4 0.41749999
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.6397199 -3.6280317 7.0910006
+                                            rotation 0.99619472 -0.087155744 2.7830376e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.866
+                                            dx1 0.255
+                                            dx2 0.41749999
+                                            dy2 0.866
+                                            dx3 0.255
+                                            dx4 0.41749999
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -9.319282e-16 -3.684 6.8460002
+                                            rotation 1 -1.3898794e-16 2.7724467e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.866
+                                            dx1 0.255
+                                            dx2 0.41749999
+                                            dy2 0.866
+                                            dx3 0.255
+                                            dx4 0.41749999
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 2.1940231e-15 5.9403005 7.0240002
+                                            rotation 1.8369095e-16 1 3.0615159e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.82029998
+                                            dx1 0.32419997
+                                            dx2 0.46775001
+                                            dy2 0.82029998
+                                            dx3 0.32419997
+                                            dx4 0.46775001
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -2.9214759e-15 -5.9403005 7.0240002
+                                            rotation 1 -2.4492127e-16 3.0615159e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.82029998
+                                            dx1 0.32419997
+                                            dx2 0.46775001
+                                            dy2 0.82029998
+                                            dx3 0.32419997
+                                            dx4 0.46775001
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 4.3974719e-16 1.285 5.8695002
+                                            rotation 1.8062131e-16 1 3.3040737e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.215
+                                            dx1 0.093610004
+                                            dx2 0.13123
+                                            dy2 0.215
+                                            dx3 0.093610004
+                                            dx4 0.13123
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -3.3274943e-16 -1.285 5.8695002
+                                            rotation 1 -1.3898794e-16 2.7724467e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.215
+                                            dx1 0.093610004
+                                            dx2 0.13123
+                                            dy2 0.215
+                                            dx3 0.093610004
+                                            dx4 0.13123
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                Separator {
+                                  renderCaching OFF
+
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 0.21069901 2.4083006 8.4095001
+                                            rotation 0.043619391 0.99904823 3.3072216e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.9483
+                                            dx1 0.2762
+                                            dx2 0.63575
+                                            dy2 0.9483
+                                            dx3 0.2762
+                                            dx4 0.63575
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.62569505 2.3351257 8.1575003
+                                            rotation -0.13052619 0.99144489 3.3325843e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.9483
+                                            dx1 0.2762
+                                            dx2 0.63575
+                                            dy2 0.9483
+                                            dx3 0.2762
+                                            dx4 0.63575
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.21069901 -2.4083006 8.1575003
+                                            rotation 0.99904823 -0.043619391 2.0930465e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.9483
+                                            dx1 0.2762
+                                            dx2 0.63575
+                                            dy2 0.9483
+                                            dx3 0.2762
+                                            dx4 0.63575
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 0.62569505 -2.3351257 8.4095001
+                                            rotation 0.99144489 0.13052619 3.3325843e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.9483
+                                            dx1 0.2762
+                                            dx2 0.63575
+                                            dy2 0.9483
+                                            dx3 0.2762
+                                            dx4 0.63575
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 1.7612648e-15 5.2529998 8.1575003
+                                            rotation 1.8062131e-16 1 3.3040737e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 1.6152999
+                                            dx1 0.33955002
+                                            dx2 0.63300002
+                                            dy2 1.6152999
+                                            dx3 0.33955002
+                                            dx4 0.63300002
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.91217387 5.1731954 8.4095001
+                                            rotation -0.087155744 0.99619472 2.7830376e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 1.6152999
+                                            dx1 0.33955002
+                                            dx2 0.63300002
+                                            dy2 1.6152999
+                                            dx3 0.33955002
+                                            dx4 0.63300002
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -1.3238647e-15 -5.2529998 8.1575003
+                                            rotation 1 -1.3898794e-16 2.7724467e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 1.6152999
+                                            dx1 0.33955002
+                                            dx2 0.63300002
+                                            dy2 1.6152999
+                                            dx3 0.33955002
+                                            dx4 0.63300002
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 0.91217387 -5.1731954 8.4095001
+                                            rotation 0.99619472 0.087155744 3.3166948e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 1.6152999
+                                            dx1 0.33955002
+                                            dx2 0.63300002
+                                            dy2 1.6152999
+                                            dx3 0.33955002
+                                            dx4 0.63300002
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                Separator {
+                                  renderCaching OFF
+
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 0.21940151 2.5077708 9.2305002
+                                            rotation 4.2575285e-15 -3.4968982e-15 -1  0.087265939
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.84850001
+                                            dx1 0.31415001
+                                            dx2 0.6358
+                                            dy2 0.84850001
+                                            dx3 0.31415001
+                                            dx4 0.6358
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.65153807 2.4315734 9.4824991
+                                            rotation 1.3978928e-15 -1.0670667e-15 1  0.26179901
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.84850001
+                                            dx1 0.31415001
+                                            dx2 0.6358
+                                            dy2 0.84850001
+                                            dx3 0.31415001
+                                            dx4 0.6358
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.21940151 -2.5077708 9.4824991
+                                            rotation 2.3089982e-17 1.4249663e-17 1  3.0543263
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.84850001
+                                            dx1 0.31415001
+                                            dx2 0.6358
+                                            dy2 0.84850001
+                                            dx3 0.31415001
+                                            dx4 0.6358
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 0.65153807 -2.4315734 9.2305002
+                                            rotation -4.2773245e-17 6.5269818e-17 1  3.4033921
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.84850001
+                                            dx1 0.31415001
+                                            dx2 0.6358
+                                            dy2 0.84850001
+                                            dx3 0.31415001
+                                            dx4 0.6358
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 1.7379361e-15 5.2529998 9.4824991
+                                            rotation 0 0 1  0
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 1.6152999
+                                            dx1 0.33955002
+                                            dx2 0.63300002
+                                            dy2 1.6152999
+                                            dx3 0.33955002
+                                            dx4 0.63300002
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.91217387 5.1731954 9.2305002
+                                            rotation 2.0555897e-15 -1.7083353e-15 1  0.17453241
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 1.6152999
+                                            dx1 0.33955002
+                                            dx2 0.63300002
+                                            dy2 1.6152999
+                                            dx3 0.33955002
+                                            dx4 0.63300002
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -1.300536e-15 -5.2529998 9.4824991
+                                            rotation 2.8906918e-18 2.8189581e-17 1  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 1.6152999
+                                            dx1 0.33955002
+                                            dx2 0.63300002
+                                            dy2 1.6152999
+                                            dx3 0.33955002
+                                            dx4 0.63300002
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 0.91217387 -5.1731954 9.2305002
+                                            rotation -2.9228936e-17 5.4721468e-17 1  3.3161256
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 1.6152999
+                                            dx1 0.33955002
+                                            dx2 0.63300002
+                                            dy2 1.6152999
+                                            dx3 0.33955002
+                                            dx4 0.63300002
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                DEF _unnamed_/_unnamed_ Separator {
+                                  renderCaching OFF
+
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Switch {
+                                      whichChild -3
+
+                                      DEF _unnamed_/_unnamed_ Separator {
+
+                                        Transform {
+                                          translation 0.22806044 2.6067426 10.139449
+                                          rotation 4.2575285e-15 -3.4968982e-15 -1  0.087265939
+
+                                        }
+                                        IgSoG4Trap {
+                                          fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                          dz 0.076799996
+                                          dy1 0.74845004
+                                          dx1 0.347
+                                          dx2 0.61580002
+                                          dy2 0.74845004
+                                          dx3 0.347
+                                          dx4 0.61580002
+                                          alp1 0
+                                          alp2 0
+
+                                        }
+                                      }
+                                    }
+                                  }
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Switch {
+                                      whichChild -3
+
+                                      DEF _unnamed_/_unnamed_ Separator {
+
+                                        Transform {
+                                          translation -0.67725182 2.5275381 10.39145
+                                          rotation 1.3978928e-15 -1.0670667e-15 1  0.26179901
+
+                                        }
+                                        IgSoG4Trap {
+                                          fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                          dz 0.076799996
+                                          dy1 0.74845004
+                                          dx1 0.347
+                                          dx2 0.61580002
+                                          dy2 0.74845004
+                                          dx3 0.347
+                                          dx4 0.61580002
+                                          alp1 0
+                                          alp2 0
+
+                                        }
+                                      }
+                                    }
+                                  }
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Switch {
+                                      whichChild -3
+
+                                      DEF _unnamed_/_unnamed_ Separator {
+
+                                        Transform {
+                                          translation -0.22806044 -2.6067426 10.39145
+                                          rotation 2.3089982e-17 1.4249663e-17 1  3.0543263
+
+                                        }
+                                        IgSoG4Trap {
+                                          fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                          dz 0.076799996
+                                          dy1 0.74845004
+                                          dx1 0.347
+                                          dx2 0.61580002
+                                          dy2 0.74845004
+                                          dx3 0.347
+                                          dx4 0.61580002
+                                          alp1 0
+                                          alp2 0
+
+                                        }
+                                      }
+                                    }
+                                  }
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Switch {
+                                      whichChild -3
+
+                                      DEF _unnamed_/_unnamed_ Separator {
+
+                                        Transform {
+                                          translation 0.67725182 -2.5275381 10.139449
+                                          rotation -4.2773245e-17 6.5269818e-17 1  3.4033921
+
+                                        }
+                                        IgSoG4Trap {
+                                          fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                          dz 0.076799996
+                                          dy1 0.74845004
+                                          dx1 0.347
+                                          dx2 0.61580002
+                                          dy2 0.74845004
+                                          dx3 0.347
+                                          dx4 0.61580002
+                                          alp1 0
+                                          alp2 0
+
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                              Separator {
+                                renderCaching OFF
+
+                                Separator {
+                                  renderCaching OFF
+
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 1.3979945e-15 2.0274999 -5.8695002
+                                            rotation 0 0 1  0
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.52749997
+                                            dx1 0.13123
+                                            dx2 0.22353001
+                                            dy2 0.52749997
+                                            dx3 0.13123
+                                            dx4 0.22353001
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.35207167 1.9966977 -6.1965003
+                                            rotation 5.3875451e-16 8.3810012e-17 1  0.17453241
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.52749997
+                                            dx1 0.13123
+                                            dx2 0.22353001
+                                            dy2 0.52749997
+                                            dx3 0.13123
+                                            dx4 0.22353001
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.35207167 -1.9966977 -6.1965003
+                                            rotation -7.7984404e-17 3.8181919e-17 1  2.9670596
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.52749997
+                                            dx1 0.13123
+                                            dx2 0.22353001
+                                            dy2 0.52749997
+                                            dx3 0.13123
+                                            dx4 0.22353001
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 1.9271913e-16 -2.0274999 -5.8695002
+                                            rotation -9.4736168e-17 3.3040737e-17 1  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.52749997
+                                            dx1 0.13123
+                                            dx2 0.22353001
+                                            dy2 0.52749997
+                                            dx3 0.13123
+                                            dx4 0.22353001
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 0.6397199 3.6280317 -7.0910006
+                                            rotation 8.449061e-16 -9.9880914e-17 -1  0.17453241
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.866
+                                            dx1 0.255
+                                            dx2 0.41749999
+                                            dy2 0.866
+                                            dx3 0.255
+                                            dx4 0.41749999
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 2.0692109e-15 3.684 -6.8460002
+                                            rotation 0 0 1  0
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.866
+                                            dx1 0.255
+                                            dx2 0.41749999
+                                            dy2 0.866
+                                            dx3 0.255
+                                            dx4 0.41749999
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.6397199 -3.6280317 -7.0910006
+                                            rotation -7.7984404e-17 3.8181919e-17 1  2.9670596
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.866
+                                            dx1 0.255
+                                            dx2 0.41749999
+                                            dy2 0.866
+                                            dx3 0.255
+                                            dx4 0.41749999
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -1.0140021e-16 -3.684 -6.8460002
+                                            rotation -9.4736168e-17 3.3040737e-17 1  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.866
+                                            dx1 0.255
+                                            dx2 0.41749999
+                                            dy2 0.866
+                                            dx3 0.255
+                                            dx4 0.41749999
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 3.0463493e-15 5.9403005 -7.0240002
+                                            rotation 0 0 1  0
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.82029998
+                                            dx1 0.32419997
+                                            dx2 0.46775001
+                                            dy2 0.82029998
+                                            dx3 0.32419997
+                                            dx4 0.46775001
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -2.0691499e-15 -5.9403005 -7.0240002
+                                            rotation -9.1845477e-17 3.0615159e-17 1  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.82029998
+                                            dx1 0.32419997
+                                            dx2 0.46775001
+                                            dy2 0.82029998
+                                            dx3 0.32419997
+                                            dx4 0.46775001
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 1.1506924e-15 1.285 -5.8695002
+                                            rotation 0 0 1  0
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.215
+                                            dx1 0.093610004
+                                            dx2 0.13123
+                                            dy2 0.215
+                                            dx3 0.093610004
+                                            dx4 0.13123
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 3.7819576e-16 -1.285 -5.8695002
+                                            rotation -9.4736168e-17 3.3040737e-17 1  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.215
+                                            dx1 0.093610004
+                                            dx2 0.13123
+                                            dy2 0.215
+                                            dx3 0.093610004
+                                            dx4 0.13123
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                Separator {
+                                  renderCaching OFF
+
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 0.21069901 2.4083006 -8.4095001
+                                            rotation 1.5250882e-15 -1.3023758e-16 -1  0.087265939
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.9483
+                                            dx1 0.2762
+                                            dx2 0.63575
+                                            dy2 0.9483
+                                            dx3 0.2762
+                                            dx4 0.63575
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.62569505 2.3351257 -8.1575003
+                                            rotation 2.4653386e-16 3.0831655e-17 1  0.26179901
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.9483
+                                            dx1 0.2762
+                                            dx2 0.63575
+                                            dy2 0.9483
+                                            dx3 0.2762
+                                            dx4 0.63575
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.21069901 -2.4083006 -8.1575003
+                                            rotation -9.3373398e-17 3.8843816e-17 1  3.0543263
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.9483
+                                            dx1 0.2762
+                                            dx2 0.63575
+                                            dy2 0.9483
+                                            dx3 0.2762
+                                            dx4 0.63575
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 0.62569505 -2.3351257 -8.4095001
+                                            rotation -1.1196933e-16 1.9082608e-17 1  3.4033921
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.9483
+                                            dx1 0.2762
+                                            dx2 0.63575
+                                            dy2 0.9483
+                                            dx3 0.2762
+                                            dx4 0.63575
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 2.7524001e-15 5.2529998 -8.1575003
+                                            rotation 0 0 1  0
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 1.6152999
+                                            dx1 0.33955002
+                                            dx2 0.63300002
+                                            dy2 1.6152999
+                                            dx3 0.33955002
+                                            dx4 0.63300002
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.91217387 5.1731954 -8.4095001
+                                            rotation 5.3875451e-16 8.3810012e-17 1  0.17453241
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 1.6152999
+                                            dx1 0.33955002
+                                            dx2 0.63300002
+                                            dy2 1.6152999
+                                            dx3 0.33955002
+                                            dx4 0.63300002
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -3.3272955e-16 -5.2529998 -8.1575003
+                                            rotation -9.4736168e-17 3.3040737e-17 1  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 1.6152999
+                                            dx1 0.33955002
+                                            dx2 0.63300002
+                                            dy2 1.6152999
+                                            dx3 0.33955002
+                                            dx4 0.63300002
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 0.91217387 -5.1731954 -8.4095001
+                                            rotation -1.0476919e-16 2.2111046e-17 1  3.3161256
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 1.6152999
+                                            dx1 0.33955002
+                                            dx2 0.63300002
+                                            dy2 1.6152999
+                                            dx3 0.33955002
+                                            dx4 0.63300002
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                Separator {
+                                  renderCaching OFF
+
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 0.21940151 2.5077708 -9.2305002
+                                            rotation 0.043619391 0.99904823 -8.611516e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.84850001
+                                            dx1 0.31415001
+                                            dx2 0.6358
+                                            dy2 0.84850001
+                                            dx3 0.31415001
+                                            dx4 0.6358
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.65153807 2.4315734 -9.4824991
+                                            rotation -0.13052619 0.99144489 -1.1695662e-16  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.84850001
+                                            dx1 0.31415001
+                                            dx2 0.6358
+                                            dy2 0.84850001
+                                            dx3 0.31415001
+                                            dx4 0.6358
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.21940151 -2.5077708 -9.4824991
+                                            rotation 0.99904823 -0.043619391 1.3728298e-16  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.84850001
+                                            dx1 0.31415001
+                                            dx2 0.6358
+                                            dy2 0.84850001
+                                            dx3 0.31415001
+                                            dx4 0.6358
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 0.65153807 -2.4315734 -9.2305002
+                                            rotation 0.99144489 0.13052619 1.0192995e-16  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 0.84850001
+                                            dx1 0.31415001
+                                            dx2 0.6358
+                                            dy2 0.84850001
+                                            dx3 0.31415001
+                                            dx4 0.6358
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 2.9070065e-15 5.2529998 -9.4824991
+                                            rotation 2.7545511e-17 1 -9.4271055e-17  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 1.6152999
+                                            dx1 0.33955002
+                                            dx2 0.63300002
+                                            dy2 1.6152999
+                                            dx3 0.33955002
+                                            dx4 0.63300002
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -0.91217387 5.1731954 -9.2305002
+                                            rotation -0.087155744 0.99619472 -1.0437052e-16  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 1.6152999
+                                            dx1 0.33955002
+                                            dx2 0.63300002
+                                            dy2 1.6152999
+                                            dx3 0.33955002
+                                            dx4 0.63300002
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation -1.3146552e-16 -5.2529998 -9.4824991
+                                            rotation 1 1.4087852e-17 1.2535132e-16  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 1.6152999
+                                            dx1 0.33955002
+                                            dx2 0.63300002
+                                            dy2 1.6152999
+                                            dx3 0.33955002
+                                            dx4 0.63300002
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                    Separator {
+                                      renderCaching OFF
+
+                                      Switch {
+                                        whichChild -3
+
+                                        DEF _unnamed_/_unnamed_ Separator {
+
+                                          Transform {
+                                            translation 0.91217387 -5.1731954 -9.2305002
+                                            rotation 0.99619472 0.087155744 1.0841976e-16  3.1415927
+
+                                          }
+                                          IgSoG4Trap {
+                                            fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                            dz 0.076799996
+                                            dy1 1.6152999
+                                            dx1 0.33955002
+                                            dx2 0.63300002
+                                            dy2 1.6152999
+                                            dx3 0.33955002
+                                            dx4 0.63300002
+                                            alp1 0
+                                            alp2 0
+
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                DEF _unnamed_/_unnamed_ Separator {
+                                  renderCaching OFF
+
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Switch {
+                                      whichChild -3
+
+                                      DEF _unnamed_/_unnamed_ Separator {
+
+                                        Transform {
+                                          translation 0.22806044 2.6067426 -10.139449
+                                          rotation 0.043619391 0.99904823 -8.611516e-17  3.1415927
+
+                                        }
+                                        IgSoG4Trap {
+                                          fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                          dz 0.076799996
+                                          dy1 0.74845004
+                                          dx1 0.347
+                                          dx2 0.61580002
+                                          dy2 0.74845004
+                                          dx3 0.347
+                                          dx4 0.61580002
+                                          alp1 0
+                                          alp2 0
+
+                                        }
+                                      }
+                                    }
+                                  }
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Switch {
+                                      whichChild -3
+
+                                      DEF _unnamed_/_unnamed_ Separator {
+
+                                        Transform {
+                                          translation -0.67725182 2.5275381 -10.39145
+                                          rotation -0.13052619 0.99144489 -1.1695662e-16  3.1415927
+
+                                        }
+                                        IgSoG4Trap {
+                                          fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                          dz 0.076799996
+                                          dy1 0.74845004
+                                          dx1 0.347
+                                          dx2 0.61580002
+                                          dy2 0.74845004
+                                          dx3 0.347
+                                          dx4 0.61580002
+                                          alp1 0
+                                          alp2 0
+
+                                        }
+                                      }
+                                    }
+                                  }
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Switch {
+                                      whichChild -3
+
+                                      DEF _unnamed_/_unnamed_ Separator {
+
+                                        Transform {
+                                          translation -0.22806044 -2.6067426 -10.39145
+                                          rotation 0.99904823 -0.043619391 1.3728298e-16  3.1415927
+
+                                        }
+                                        IgSoG4Trap {
+                                          fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                          dz 0.076799996
+                                          dy1 0.74845004
+                                          dx1 0.347
+                                          dx2 0.61580002
+                                          dy2 0.74845004
+                                          dx3 0.347
+                                          dx4 0.61580002
+                                          alp1 0
+                                          alp2 0
+
+                                        }
+                                      }
+                                    }
+                                  }
+                                  Separator {
+                                    renderCaching OFF
+
+                                    Switch {
+                                      whichChild -3
+
+                                      DEF _unnamed_/_unnamed_ Separator {
+
+                                        Transform {
+                                          translation 0.67725182 -2.5275381 -10.139449
+                                          rotation 0.99144489 0.13052619 1.0192995e-16  3.1415927
+
+                                        }
+                                        IgSoG4Trap {
+                                          fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+                                          dz 0.076799996
+                                          dy1 0.74845004
+                                          dx1 0.347
+                                          dx2 0.61580002
+                                          dy2 0.74845004
+                                          dx3 0.347
+                                          dx4 0.61580002
+                                          alp1 0
+                                          alp2 0
+
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            DEF IGGI_3D_REP Separator {
+              renderCaching OFF
+
+              Group {
+
+              }
+              DEF RPCs Switch {
+                whichChild -1
+
+              }
+            }
+            DEF IGGI_3D_REP Separator {
+              renderCaching OFF
+
+              Group {
+
+              }
+              DEF Absorber Switch {
+                whichChild -1
+
+              }
+            }
+          }
+        }
+        DEF IGGI_3D_REP Separator {
+          renderCaching OFF
+
+          Group {
+
+          }
+          DEF ECAL Switch {
+            whichChild -3
+
+          }
+          DEF IGGI_3D_REP Separator {
+            renderCaching OFF
+
+            Group {
+
+            }
+            DEF Barrel Switch {
+              whichChild -1
+
+            }
+          }
+          DEF IGGI_3D_REP Separator {
+            renderCaching OFF
+
+            Group {
+
+            }
+            DEF Forward Switch {
+              whichChild -1
+
+            }
+          }
+          DEF IGGI_3D_REP Separator {
+            renderCaching OFF
+
+            Group {
+
+            }
+            DEF Preshower Switch {
+              whichChild -1
+
+            }
+          }
+        }
+        DEF IGGI_3D_REP Separator {
+          renderCaching OFF
+
+          Group {
+
+          }
+          DEF HCAL Switch {
+            whichChild -3
+
+          }
+          DEF IGGI_3D_REP Separator {
+            renderCaching OFF
+
+            Group {
+
+            }
+            DEF Barrel Switch {
+              whichChild -1
+
+            }
+            DEF IGGI_3D_REP Separator {
+              renderCaching OFF
+
+              Group {
+
+              }
+              DEF Barrel_X20Layers Switch {
+                whichChild -1
+
+              }
+            }
+            DEF IGGI_3D_REP Separator {
+              renderCaching OFF
+
+              Group {
+
+              }
+              DEF Towers Switch {
+                whichChild -1
+
+              }
+            }
+          }
+          DEF IGGI_3D_REP Separator {
+            renderCaching OFF
+
+            Group {
+
+            }
+            DEF Endcap Switch {
+              whichChild -1
+
+            }
+          }
+          DEF IGGI_3D_REP Separator {
+            renderCaching OFF
+
+            Group {
+
+            }
+            DEF Forward Switch {
+              whichChild -1
+
+            }
+          }
+          DEF IGGI_3D_REP Separator {
+            renderCaching OFF
+
+            Group {
+
+            }
+            DEF Outer Switch {
+              whichChild -1
+
+            }
+          }
+        }
+        DEF IGGI_3D_REP Separator {
+          renderCaching OFF
+
+          Group {
+
+          }
+          DEF Tracker Switch {
+            whichChild -3
+
+          }
+          DEF IGGI_3D_REP Separator {
+            renderCaching OFF
+
+            Group {
+
+            }
+            DEF Tracker Switch {
+              whichChild -1
+
+            }
+          }
+        }
+        DEF IGGI_3D_REP Separator {
+          renderCaching OFF
+
+          Group {
+
+          }
+          DEF Beampipe Switch {
+            whichChild -1
+
+          }
+        }
+        DEF IGGI_3D_REP Separator {
+          renderCaching OFF
+
+          Group {
+
+          }
+          DEF Magnet Switch {
+            whichChild -1
+
+          }
+        }
+      }
+      DEF IGGI_3D_REP Separator {
+        renderCaching OFF
+
+        Group {
+
+        }
+        DEF Provenance Switch {
+          whichChild -3
+
+        }
+        DEF IGGI_3D_REP Separator {
+          renderCaching OFF
+
+          Group {
+
+          }
+          DEF Dynamic_X20Event_X20Content Switch {
+            whichChild -3
+
+          }
+          DEF IGGI_3D_REP Separator {
+            renderCaching OFF
+
+            Group {
+
+            }
+            DEF Alias_X20(Friendly_X20Name_X20_X2b_X20Module_X20Label_X20_X2b_X20Instance_X20Name_X20_X2b_X20Process_X20Name) Switch {
+              whichChild -1
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

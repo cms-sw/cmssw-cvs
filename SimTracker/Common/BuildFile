@@ -1,0 +1,8 @@
+<use name=CLHEP>
+<use name=SimDataFormats/TrackingHit>
+<use name=SimDataFormats/CrossingFrame>
+
+<export>
+   <lib name=SimTrackerCommon>
+   <use name=CLHEP>
+</export>

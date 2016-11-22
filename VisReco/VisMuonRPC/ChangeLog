@@ -1,0 +1,132 @@
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisRPCContent.cc, VisRPCDigiTwig.cc, VisRPCRecHitTwig.cc:
+	Removed unneeded lock. 
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisRPCContent.h, VisRPCContent.cc: Remove unused multi-threaded
+	base class. Replaced by a simpler one.
+
+2009-01-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added a new developer.
+
+2009-01-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* visRecoRPC.cfg: Removed as obsolete.
+
+	* VisRPCRecHitTwig.cc: Display RZ view correctly. 
+
+2008-08-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisRPCRecHitTwig.cc: Change draw style and material.
+
+2008-06-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisRPCContent.cc: Remove obsolete VisMuonRPCDetTwig and
+	VisRPCDetTwig. 
+	* VisMuonRPCDetTwig.h, VisMuonRPCDetTwig.cc, VisRPCDetTwig.h,
+	VisRPCDetTwig.cc: Remove as obsolete. It has been replaced by
+	VisEventSetup.
+
+2007-12-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonRPCDetTwig.cc: Fix a bug in logic to draw wheels
+	correctly.
+
+2007-11-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonRPCDetTwig.h, VisMuonRPCDetTwig.cc: Fix a bug in logic to
+	display requested layers correctly.
+	* VisRPCContent.cc: Add the tree.
+
+	*  VisMuonRPCDetTwig.cc: Added missing header.
+
+2007-11-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisRPCContent.cc: Remove the tree it looks like it does not pick
+	up the details.
+
+2007-10-31  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonRPCDetTwig.cc, VisRPCDetTwig.cc, VisRPCDigiTwig.cc: Use
+	base class update. Let the framework handle the exceptions.
+	* VisRPCContent.cc: Disable invisible twigs.
+
+20007-08-14 Chang Liu <Chang.Liu@cern.ch>
+	* VisRPCRecHitTwig.cc: add RZ RPhi view 
+
+2007-08-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Add new deleloper.
+
+2007-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Vis*Content.cc: Introduce separate tree browser.
+	
+2007-04-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Adapted to the changes in the Iguana subsystem directory structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* VisRPCContent.cc, VisRPCDigiTwig.cc, VisRPCRecHitTwig.cc: Adapt
+	to migration of IGUANA to CMSSW.
+	
+2007-03-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonRPCDetTwig.h, VisRPCDetTwig.h, VisRPCRecHitTwig.cc:
+	Headers has been moved. 
+
+2006-11-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisRPCDigiTwig.h, VisRPCDigiTwig.cc, VisRPCRecHitTwig.h,
+	VisRPCRecHitTwig.cc: VisEventSelector takes now a process name.
+
+2006-07-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added Alessandro and Raffaello.
+	
+2006-06-21  Nicola AMAPANE  <nicola.amapane@cern.ch>
+
+	* VisRPCContent.cc: fix name of proxy and twigs
+	* test/visRecoRPC.cfg: new cfg
+
+2006-06-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added Nicola as administrator. 
+
+2006-05-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisRPCDetTwig.h, VisRPCDetTwig.cc, VisRPCDigiTwig.h,
+	VisRPCDigiTwig.cc, VisRPCContent.h, VisRPCContent.cc, xtypeinfo.h,
+	plugin.cc: Migrated here from VisReco/VisRPC and updated for new 
+	location.
+
+2006-04-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisRPCDigiTwig.cc: Clean up commented out code.
+
+2006-04-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* New package to provide a plugin for RPC
+	visualisation. 
+
+	* BuildFile: Add all the external libraries here.
+	* VisRPCDetTwig.h, VisRPCDetTwig.cc: RPC detector twig with
+	representations in 3D, RZ, and RPhi. Lego representation
+	placeholder.
+	* VisRPCDigiTwig.h, VisRPCDigiTwig.cc: RPC digi visualization.
+	* VisRPCContent.h, VisRPCContent.cc: Document proxy for the RPC
+	related visualization of the RPC event and detector.
+	* xtypeinfo.h, plugin.cc: Declare and define the above types for
+	the plugin.

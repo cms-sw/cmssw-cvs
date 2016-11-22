@@ -1,0 +1,38 @@
+#Inventor V2.1 ascii
+
+
+Separator {
+
+  MatrixTransform {
+    matrix 0.001 -3.6738193e-19 -1.8369096e-19 0
+      -1.8369096e-19 0.001 -1.8369096e-19 0
+      -3.6738193e-19 -3.6738193e-19 0.001 0
+      0 0 0 1
+
+  }
+  DrawStyle {
+    style LINES
+
+  }
+  Material {
+    ambientColor 0 0 0
+    diffuseColor 0 0 0
+    specularColor 0.63921571 0.66666669 0.68627453
+    emissiveColor 0.63921571 0.66666669 0.68627453
+    shininess 0.121
+    transparency 0
+
+  }
+  IgSoRotSolid {
+    fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+    phiStart 0.26179931
+    phiDelta 6.2831855
+    polygon [ 8300 -6610,
+        8300 6610,
+        3800 6610,
+        3800 -6610 ]
+    divisions 12
+    smooth FALSE
+
+  }
+}

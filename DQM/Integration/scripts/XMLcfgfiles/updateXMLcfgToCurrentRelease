@@ -1,0 +1,87 @@
+#!/usr/bin/env python
+"""Syntax: updateCMLcfgToCurrentRelease [-h] -r relNumber xmlcfgfile newfilename
+	-h              This text
+	-r relNumber    tell the script 
+	xmlcfgfile:     File to update
+	newfilename:    Name of the file where the changes are going to be saved
+	
+Description: This script will read xmlcfgfile and update it according to the 
+	environment variables set through cmsenv or its equivalent. The output file 
+	is written in the current directory; the original file remains unmodified.
+	
+Note: Before you run the script make sure xdaq environment settings have been 
+	properly set up and that cmsenv or its equivalent has been run from the 
+	desired release .
+	
+"""
+import sys, os.path
+import getopt as gop
+
+def detectCMSSWVersion(fileName):
+	version=""
+	fp=open(fileName)
+	line=fp.readline()
+	while line:
+		if "CMSSW_VERSION=" in line:
+			version=line[line.find("CMSSW_VERSION="):line.find(" ",line.find("CMSSW_VERSION="))]
+			break 
+		line=fp.readline()
+	fp.close()
+	version=version.split("=")[1]
+	return version
+################################################################################
+def updateFile(fileName,newFileName):
+	import EnviromentSettings as es
+	oldVersion=detectCMSSWVersion(fileName)
+	oldVersionNumber=oldVersion.split("_",1)[1]
+	fp=open(fileName)
+	nfp=open(newFileName,"w")
+	line=fp.readline()
+	while line:
+		if "environmentString=" in line:
+			envStart=line.find("environmentString=")
+			newline=line[0:envStart]
+			quote=line[envStart+18:envStart+19]
+			newline+="environmentString=\""+es.environmentString
+			newline+=line[line.find(quote,envStart+20):]
+		elif "<Configuration" in line:
+			envStart=line.find("path=")
+			newline=line[0:envStart]
+			quote=line[envStart+5:envStart+6]
+			newline+="path=\""+line[envStart+6:line.rfind("/",envStart+6,line.find(quote,envStart+6))+1]+newFileName.rstrip(".xml")
+			newline+=line[line.find(quote,envStart+6):]
+		elif oldVersionNumber in line:
+			newline=line.replace(oldVersionNumber,es.CMSSW_Release_Number)
+		else:
+			newline=line
+		nfp.write(newline)
+		line=fp.readline()
+		
+
+################################################################################
+if __name__ == "__main__":             
+	try:
+		(args,filename)=gop.getopt(sys.argv[1:],"h")
+	except getopt.GetoptError:
+		sys.stderr.write(  "Sintax Error unrecognised option\n" )
+		sys.stderr.write( __doc__ )
+		sys.exit(2)
+	for item in args:
+		if item[0]=="-h":
+			sys.stdout.write( __doc__ )
+			sys.exit()
+	if len(filename)==0:
+		sys.stderr.write(  "\nERROR: xdaq XML config file name not present, please specify\n\n" )
+		sys.stdout.write(__doc__)
+	elif len(filename) > 2:
+		sys.stderr.write(  "\nERROR: Too many file names or other arguments, please specify only 2\n\n" )
+		sys.stdout.write(__doc__)
+		sys.exit(2)
+	elif not os.path.exists(filename[0]):
+		sys.stderr.write(  "\nERROR: xdaq XML config file does not exist please verify\n\n" )
+		sys.stdout.write(__doc__)
+		sys.exit(2)
+	try: 
+		updateFile(filename[0],filename[1])
+	except IndexError:
+		print "Please specify the new file name"

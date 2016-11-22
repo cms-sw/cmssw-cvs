@@ -1,0 +1,82 @@
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisCMSMagFieldContent.cc: Removed unneeded lock.
+	* VisCMSMagFieldTwig.cc: Rename the twig to distinguish between
+	sim and reco field.
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisCMSMagFieldContent.h, VisCMSMagFieldContent.cc: Remove unused
+	multi-threaded base class. Replaced by a simpler one.
+
+2008-04-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Nicola added as an administrator.
+
+2007-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Vis*Content.cc: Introduce separate tree browser.
+	
+2007-04-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Adapted to the changes in the Iguana subsystem directory structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* VisCMSMagFieldContent.cc: Adapt to migration of IGUANA to CMSSW.
+
+2007-03-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCMSMagField.cc: Headers has been moved.
+
+2006-11-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCMSMagFieldContent.cc: Use sigc binding to the sigc
+	signals. Do it only if event processor service is present.
+	
+2006-03-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCMSMagFieldContent.cc: Use iguana lock, check existence of the
+	status bar.
+
+2006-01-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCMSMagField.cc: Try to get the ideal magnetic field record.
+
+2005-12-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCMSMagField.h: Do not use the concrete engine.
+	* BuildFile: Update needed list of packages.
+	
+2005-11-30  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* src/VisCMSMagField.cc: Converted meters into centimeter as
+	the magnetic field treat the point units as centimeters.
+	* src/VisCMSMagFieldTwig.cc: Fixed the dimentions of the
+	world bounding box (i.e. its not 18 merters instead of 1.8 meters).
+
+2005-11-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCMSMagField.h, VisCMSMagField.cc, VisCMSMagFieldTwig.cc: Check
+	the validity of the magnetic field. Use smaller bounding box.
+
+2005-11-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCMSMagField.h, VisCMSMagField.cc, VisCMSMagFieldTwig.h,
+	VisCMSMagFieldTwig.cc, VisCMSMagFieldContent.cc: Get magnetic
+	field from the event setup. Use boost signals to update it on the
+	first event.
+
+2005-10-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisCMSMagField.h, VisCMSMagField.cc,
+	VisCMSMagFieldContent.h, VisCMSMagFieldContent.cc,
+	VisCMSMagFieldTwig.h, VisCMSMagFieldTwig.cc, xtypeinfo.h,
+	plugin.cc: New files migrated from IGUANACMS.
+
+	* New package to provide a plugin for magnetic field
+	visualisation. 

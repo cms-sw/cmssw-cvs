@@ -1,0 +1,5 @@
+module lumiblockFilter = LumiblockFilter{
+    untracked int32 startblock=0 # lumi block must be > this value
+    untracked int32 endblock=0  # lumi block must be < (*not* <= ) this value
+    untracked bool debug=true
+}

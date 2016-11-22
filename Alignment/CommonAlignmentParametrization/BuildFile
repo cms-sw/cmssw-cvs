@@ -1,0 +1,10 @@
+<use name=Alignment/CommonAlignment>
+<use name=DataFormats/CLHEP>
+<use name=FWCore/MessageLogger>
+<use name=FWCore/Utilities>
+<use name=TrackingTools/TrajectoryState>
+<export>
+  <use name=Alignment/CommonAlignment>
+  <use name=DataFormats/CLHEP>
+  <lib name=AlignmentCommonAlignmentParametrization>
+</export>

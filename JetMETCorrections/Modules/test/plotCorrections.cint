@@ -1,0 +1,110 @@
+// Code for making Jet Correction and Response Plots from root file 
+// which is the output of PlotJetCorrections.cc and plotCorrections.cfg
+//
+// Usage: 
+// root.exe
+// .x plotCorrections.cint("MCJetCorrectorMcone5.root");
+// .q
+// root.exe
+// .x plotCorrections.cint("MCJetCorrectorMcone7.root");
+// .q
+// root.exe
+// .x plotCorrections.cint("MCJetCorrectorIcone5.root");
+// .q
+void plotCorrections(char* fileName)
+{
+  gROOT->SetStyle("Plain");
+  gStyle->SetOptStat(0);
+  TFile* file = new TFile(fileName);
+  char* title;
+  char* gifFile;
+  char* epsFile;
+  if( fileName=="MCJetCorrectorMcone5.root" ){
+    title="Jet Correction vs. E_{T}, Midpoint Cone R=0.5 (CMSSW_1_2_0)";
+    gifFile="correctionMcone5.gif";
+    epsFile="correctionMcone5.eps";
+  }
+  if( fileName=="MCJetCorrectorMcone7.root" ){
+    title="Jet Correction vs. E_{T}, Midpoint Cone R=0.7 (CMSSW_1_2_0)";
+    gifFile="correctionMcone7.gif";
+    epsFile="correctionMcone7.eps";
+  }
+  if( fileName=="MCJetCorrectorIcone5.root" ){
+    title="Jet Correction vs. E_{T}, Iterative Cone R=0.5 (CMSSW_1_2_0)";
+    gifFile="correctionIcone5.gif";
+    epsFile="correctionIcone5.eps";
+  }
+  TCanvas *c = new TCanvas("myc1","Display of Jet Correction");
+  myc1->SetLogx(1);
+  gPad->SetTicks(1,1);
+  correctionBarrel->SetMinimum(1.0);
+  correctionBarrel->SetMaximum(4.0);
+  correctionBarrel->SetTitle(title);
+  correctionBarrel->SetXTitle("CaloJet E_{T} (GeV)");
+  correctionBarrel->SetTitleSize(0.045,"X");
+  correctionBarrel->SetTitleOffset(1.1,"X");
+  correctionBarrel->SetYTitle("Jet Correction (CaloJet E_{T} Multiplier)");  
+  correctionBarrel->SetTitleOffset(0.8,"Y");
+  correctionBarrel->SetTitleSize(0.05,"Y");
+  correctionBarrel->SetLineWidth(2);
+  correctionBarrel->Draw("C");
+  correctionEndcap->SetLineWidth(2);
+  correctionEndcap->SetLineStyle(2);
+  correctionEndcap->Draw("CSAME");
+  correctionForward->SetLineWidth(2);
+  correctionForward->SetLineStyle(3);
+  correctionForward->Draw("CSAME");
+  leg1 = new TLegend(0.4,0.4,0.85,0.85);
+  leg1->SetFillColor(0);
+  leg1->AddEntry(correctionBarrel,"Barrel (0<|#eta|<0.226)","l");   
+  leg1->AddEntry(correctionEndcap,"Endcap (2.295<|#eta|<2.487)","l");   
+  leg1->AddEntry(correctionForward,"Forward (4.0<|#eta|<4.4)","l"); 
+  leg1->Draw();
+  myc1->Print(gifFile);
+  myc1->Print(epsFile);
+
+
+  if( fileName=="MCJetCorrectorMcone5.root" ){
+    title="Jet Response vs. E_{T}, Midpoint Cone R=0.5 (CMSSW_1_2_0)";
+    gifFile="responseMcone5.gif";
+    epsFile="responseMcone5.eps";
+  }
+  if( fileName=="MCJetCorrectorMcone7.root" ){
+    title="Jet Response vs. E_{T}, Midpoint Cone R=0.7 (CMSSW_1_2_0)";
+    gifFile="responseMcone7.gif";
+    epsFile="responseMcone7.eps";
+  }
+  if( fileName=="MCJetCorrectorIcone5.root" ){
+    title="Jet Response vs. E_{T}, Iterative Cone R=0.5 (CMSSW_1_2_0)";
+    gifFile="responseIcone5.gif";
+    epsFile="responseIcone5.eps";
+  }
+  TCanvas *c = new TCanvas("myc2","Display of Jet Response");
+  myc2->SetLogx(1);
+  gPad->SetTicks(1,1);
+  responseBarrel->SetTitle(title);
+  responseBarrel->SetMaximum(1.0);
+  responseBarrel->SetMinimum(0.25);
+  responseBarrel->SetXTitle("CaloJet E_{T} (GeV)");
+  responseBarrel->SetTitleSize(0.045,"X");
+  responseBarrel->SetTitleOffset(1.1,"X");
+  responseBarrel->SetYTitle("Jet Response (CaloJet E_{T}/GenJet E_{T})");  
+  responseBarrel->SetTitleSize(0.05,"Y");
+  responseBarrel->SetTitleOffset(0.8,"Y");
+  responseBarrel->SetLineWidth(2);
+  responseBarrel->Draw("C");
+  responseEndcap->SetLineWidth(2);
+  responseEndcap->SetLineStyle(2);
+  responseEndcap->Draw("CSAME");
+  responseForward->SetLineWidth(2);
+  responseForward->SetLineStyle(3);
+  responseForward->Draw("CSAME");
+  leg2 = new TLegend(0.45,0.15,0.85,0.5);
+  leg2->SetFillColor(0);
+  leg2->AddEntry(responseBarrel,"Barrel (0<|#eta|<0.226)","l");   
+  leg2->AddEntry(responseEndcap,"Endcap (2.295<|#eta|<2.487)","l");   
+  leg2->AddEntry(responseForward,"Forward (4.0<|#eta|<4.4)","l"); 
+  leg2->Draw();
+  myc2->Print(gifFile);
+  myc2->Print(epsFile);
+}

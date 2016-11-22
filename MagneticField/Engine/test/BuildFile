@@ -1,0 +1,24 @@
+<use name=boost>
+<use name=clhep>
+<use name=MagneticField/Engine>
+<use name=MagneticField/Records>
+<use name=MagneticField/Layers>
+<use name=DataFormats/GeometryVector>
+
+#<library file="plotField.cc" name=plotField>
+# <flags EDM_PLUGIN=1>
+# <use name=root>
+#</library>
+
+<library file="testMagneticField.cc" name=testMagneticField>
+ <flags EDM_PLUGIN=1>
+ <use name=MagneticField/VolumeBasedEngine>
+</library>
+ 
+<library file="queryField.cc" name=queryField>
+ <flags EDM_PLUGIN=1>
+</library>
+
+#<library file="profileField.cc" name=profileField>
+# <flags EDM_PLUGIN=1>
+#</library>

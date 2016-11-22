@@ -1,0 +1,10 @@
+<use name=AnalysisDataFormats/TopObjects>
+<use name=TopQuarkAnalysis/TopTools>
+<use name=FWCore/Framework>
+
+<export>
+  <use name=AnalysisDataFormats/TopObjects>
+  <use name=TopQuarkAnalysis/TopTools>
+  <use name=FWCore/Framework>
+  <lib name=TopQuarkAnalysisTopJetCombination>
+</export>
