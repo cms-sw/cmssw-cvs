@@ -1,0 +1,11 @@
+<use name=VisGeant4/VisG4Core>
+<use name=Iguana/Controls>
+<use name=Iguana/GLModels>
+<use name=Iguana/GLBrowsers>
+<use name=Iguana/Studio>
+<use name=geant4>
+<use name=qt>
+
+<export>
+  <lib name=VisGeant4VisG4Volumes>
+</export>

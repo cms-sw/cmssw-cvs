@@ -1,0 +1,11 @@
+ # Cluster Filter
+    module TECClusterFilter = TECClusterFilter
+    {
+      string  ClusterProducer = "siStripClusters325"
+      # thresholds
+      int32 ChargeThresholdTEC = 20
+      # with clusters over above respective threshold
+      int32 MinNrOfTECClusters = 1
+      # detector modules to be excluded
+      vuint32 ModulesToBeExcluded = {}
+    }

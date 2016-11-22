@@ -1,0 +1,10 @@
+<use name=sockets>
+<flags CPPFLAGS="-D_FILE_OFFSET_BITS=64">
+<export>
+  <use name=sockets>
+  <use name=zlib>
+  <use name=bz2lib>
+  <use name=pcre>
+  <use name=uuid>
+  <lib name=classlib>
+</export>

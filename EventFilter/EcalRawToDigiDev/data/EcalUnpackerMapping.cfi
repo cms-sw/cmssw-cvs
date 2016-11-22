@@ -1,0 +1,5 @@
+  # ----- For the EE Mapping :
+  include "Geometry/EcalMapping/data/EcalMapping.cfi"
+
+  include "Geometry/EcalMapping/data/EcalMappingRecord.cfi"
+

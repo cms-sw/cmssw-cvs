@@ -1,0 +1,15 @@
+source = Herwig6Source 
+{ 
+    
+    untracked int32 herwigVerbosity       = 0
+    untracked bool herwigHepMCVerbosity   = false	
+    untracked int32 maxEventsToPrint      = 0
+    untracked bool useJimmy               = true
+    untracked bool doMPInteraction        = true
+    untracked bool printCards             = false
+    untracked string lhapdfSetPath        = "/afs/cern.ch/sw/lcg/external/MCGenerators/lhapdf/5.2.3/share/PDFsets"
+
+    # include parameter card
+    include "GeneratorInterface/Herwig6Interface/test/HerwigHZZ4mu.cfi"
+    
+}	

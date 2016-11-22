@@ -1,0 +1,10 @@
+
+<bin file=TestMapVector.cpp name=test_MapVector>
+</bin>
+
+<bin file=TestMapVector2.cpp name=test_MapVector2>
+</bin>
+
+<bin file=test_precomputed_value_sort.cpp name=test_precomputed_value_sort>
+<use name=DataFormats/GeometryVector>
+</bin>

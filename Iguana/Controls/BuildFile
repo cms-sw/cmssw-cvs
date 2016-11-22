@@ -1,0 +1,7 @@
+<Use name=Qt>
+<Use name=SoQt>
+
+<Export>
+  <Use name=SoQt>
+  <Lib name=IguanaControls>
+</Export>

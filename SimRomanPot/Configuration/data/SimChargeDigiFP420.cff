@@ -1,0 +1,14 @@
+#
+#Set pixel digitization default in CMSSW_2_1_X
+#
+#
+# (do not forget to include any mixing like:
+### include "SimGeneral/MixingModule/data/mixNoPU.cfi"
+#
+# Pixel's digitization
+#
+include "SimRomanPot/SimFP420/data/FP420Digi.cfi"
+#
+#
+#
+

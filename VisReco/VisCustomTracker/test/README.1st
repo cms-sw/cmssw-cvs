@@ -1,0 +1,15 @@
+*  trackerIguana_cfg.py - generic iguana configuration file that can be used to
+      display tracker data (for example in simulated events)
+      wget http://www.ba.infn.it/%7ezito/cms/TTbar_219.root
+      iguana  trackerIguana_cfg.py 
+*  trackerIguanaraw.py - configuration file to display global runs data:displays only               tracker data 
+      to be used with RAW data on castor
+      iguana trackerIguanaraw.py    
+*  iguanaraw.py - configuration file to display global runs data
+      to be used with RAW data on castor
+      iguana iguanaraw.py    
+*  trackerFrograw.py - configuration file to display global runs data with Frog
+      creates a .vis file that can be seen with frog visualizer
+      to be used with RAW data on castor
+      should be run in Visualization/Frog/python/
+      cmsRun trackerFrograw.py    

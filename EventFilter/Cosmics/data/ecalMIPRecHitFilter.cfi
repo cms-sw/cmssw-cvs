@@ -1,0 +1,14 @@
+	module  ecalMIPRecHitFilter  = EcalMIPRecHitFilter
+{
+    InputTag EcalRecHitCollection = ecalRecHit:EcalRecHitsEB
+    
+    #These are now in ADC counts
+	untracked double AmpMinSeed   = 4.99
+    untracked double AmpMin2      = 4.99
+    untracked double SingleAmpMin = 14.99
+	
+    untracked int32 side = 3
+    # no longer needed (list of hashed indices)
+    untracked vint32 maskedChannels      = { }
+
+}

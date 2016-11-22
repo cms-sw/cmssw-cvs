@@ -1,0 +1,13 @@
+<Use name=Iguana/Framework>
+<Use name=Iguana/Models>
+<Flags CPPDEFINES="HAVE_UNISTD_H">
+<Use name=Qt>
+
+ <makefile> 	 
+   CPPFLAGS += -DIGUANA_VERSION='"$(SCRAM_PROJECTVERSION)"' -DQT3_SUPPORT	 
+ </makefile>
+
+<Export>
+  <Flags CPPDEFINES="HAVE_UNISTD_H">
+  <Lib name=IguanaStudio>
+</Export>

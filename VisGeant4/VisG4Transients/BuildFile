@@ -1,0 +1,9 @@
+<use name=Iguana/Models>
+<use name=Iguana/GLBrowsers>
+<use name=Iguana/GLModels>
+<use name=geant4core>
+
+<export>
+  <lib name=VisGeant4VisG4Transients>
+</export>
+

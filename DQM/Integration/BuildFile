@@ -1,0 +1,12 @@
+<use name=CoralBase>
+<use name=DataFormats/Provenance>
+<use name=FWCore/Catalog>
+<use name=FWCore/Framework>
+<use name=FWCore/ParameterSet>
+<use name=FWCore/ServiceRegistry>
+<use name=RelationalAccess>
+<use name=rootrflx>
+<export>
+  <use name=FWCore/ServiceRegistry>
+   <lib name=DQMIntegration>
+</export>

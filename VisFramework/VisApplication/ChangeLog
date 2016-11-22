@@ -1,0 +1,152 @@
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisApplicationMain.cc: Remove separate event browser.
+
+2009-08-25  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisApplicationMain.cc: Remove unneeded header.
+
+2009-08-24  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisApplicationMain.cc: Go back to QMdiArea.
+
+2009-08-19  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* iglet.cc: Remove IViewAppMain.
+	* IViewAppMain.h, IViewAppMain.cc: Removed.
+
+2009-07-17  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisApplicationMain.cc, IViewAppMain.cc: Return for QWorkspace
+	for the online release.
+
+2009-06-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisApplicationMain.cc, IViewAppMain.cc: Cleanup.
+
+2009-06-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisApplicationMain.cc, IViewAppMain.cc: Update acoording to
+	changes in IgPage.
+
+2009-06-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisApplicationMain.cc: Make sure the tree is visible.
+	* IViewAppMain.cc: Adjust to changes in IgPage.
+
+2008-12-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* IViewAppMain.cc: Remove iv detector.
+
+2008-11-27  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* IViewAppMain.h, IViewAppMain.cc: New session type for Iguana
+	view.
+	* iglet.cc: Add the new session.
+	
+2008-09-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisApplicationMain.cc: Added configuration for a full screen or 
+	a maximized mode.
+
+2008-08-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisApplicationMain.cc: Do not load simulation by default. It
+	causes crash.
+
+2008-06-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* data/iguana-application.cff: Iguana default configuration.
+	* data/iguana-application.py: Migration to Python.
+
+	* VisApplicationMain.cc: Remove an obsolete iglet.
+
+2008-05-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisApplicationMain.cc: Add a name for a default document.
+
+2008-05-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisApplicationMain.cc: Remove default Annotations branch.
+
+2008-03-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisApplicationMain.cc: Allow merging the browsers.
+
+2007-11-02  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisApplicationMain.cc: Rename the Provenance to Event
+	Collections toolbox which it is. Remove one Twig browser. Remove
+	separation on selection.
+
+2007-07-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisApplicationMain.cc: Rename the Provenance toolbox to Event
+	Data Collections toolbox which it is.
+
+2007-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisApplicationMain.cc: Introduce IgQToolBoxSite to separate
+	provenance twigs from the rest.
+
+2007-04-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisApplicationMain.cc, VisApplicationMain.h,
+	iglet.cc: Migrate to the new Iguana directory structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* VisApplicationMain.cc: Adapt to migration of IGUANA to CMSSW.
+
+2006-06-23  Stefano Argiro <stefano.argiro@cern.ch>
+
+	* BuildFile
+	added <use name=FWCore/Utilites> to handle exceptions
+	
+2006-06-20  Nicola AMAPANE  <nicola.amapane@cern.ch>
+
+	* data/iguana-dt.cfi, data/iguana-csc.cfi, data/iguana-rpc.cfi,
+	data/iguana-muon.cfi: new cfis for muon visualization
+
+2006-06-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* data/iguana.cfi: A sample of a configuration file.
+	* VisApplicationMain.h: Moved to src - private include.
+	* BuildFile: Do not export anything. Add Ig3DSystem for the shape
+	manager.
+	* VisApplicationSetup.h, VisApplicationSetup.cc: Remove - do all
+	initialization in one step in VisApplicationMain.
+	* plugin.cc: Remove the above.
+	* VisApplicationMain.cc: Load all data proxies if nothing is
+	defined in the configuration file.
+	
+	* data/iguana-hcal.cfi: Set HCAL event display configuration here which
+	replaces VisCosmicsApp, VisCosmicsSetup, and VisCosmicsBase.
+	
+2006-06-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Add Nicola to the developers list.
+
+2006-06-12  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* interface/*, src/*, BuildFile: First implementation of generic
+	visualisation application. Currently one can add something like
+	service = VisConfigurationService {
+	  untracked vstring Views = {'RPhi Window','RZ Window'}
+	  untracked vstring Services = {'Services/Framework/GUI/', 'Services/Framework/Config Rc' }
+	  untracked bool TextBrowser = 1
+	  untracked bool TwigBrowser = 1
+	  untracked vstring  ContentProxies = {'Cosmics/Core', 'Cosmics/Geometry', 'Cosmics/Tracks',
+	                                       'Cosmics/MagField', 'Cosmics/RecHits', 'Cosmics/Digis',
+					       'Reco/Hcal','Reco/Calorimetry' }
+	}
+	in his/her .cfg file to configure it for a sepecific application. Default values
+	of the above fields are
+	Views = {'3D Window" }
+	Services = {'Services/Framework/GUI/'}
+	TextBrowser = 1
+	TwigBrowser = 1
+	ContentProxies = {}

@@ -1,0 +1,12 @@
+<use name=DataFormats/BeamSpot>
+<use name=DataFormats/GeometrySurface>
+<use name=DataFormats/GeometryVector>
+<use name=DataFormats/VertexReco>
+<export>
+  <use name=DataFormats/BeamSpot>
+  <use name=DataFormats/GeometrySurface>
+  <use name=DataFormats/GeometryVector>
+  <use name=DataFormats/VertexReco>
+  <lib name=RecoVertexVertexPrimitives>
+</export>
+

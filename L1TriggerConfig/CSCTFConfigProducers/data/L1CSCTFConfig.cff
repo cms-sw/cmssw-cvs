@@ -1,0 +1,5 @@
+include "L1TriggerConfig/CSCTFConfigProducers/data/CSCTFConfigProducer.cfi"
+include "L1TriggerConfig/CSCTFConfigProducers/data/L1MuCSCPtLutRcdSrc.cfi"
+include "L1TriggerConfig/CSCTFConfigProducers/data/L1MuCSCTFAlignmentRcdSrc.cfi"
+include "L1TriggerConfig/CSCTFConfigProducers/data/L1MuCSCTFConfigurationRcdSrc.cfi"
+

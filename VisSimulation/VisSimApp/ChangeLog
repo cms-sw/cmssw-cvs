@@ -1,0 +1,44 @@
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2008-02-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisSimMain.cc: Modified to use configuration file settings.
+
+2007-04-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisSimMain.h, VisSimMain.cc, iglet.cc: Modified
+	according to the new Iguana subsystem directory structure. 
+	
+2007-03-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* plugin.cc: Removed.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+
+2006-04-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisSimMain.cc: Load Event core content document proxy.
+
+2006-03-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisSimMain.cc: Load Event content document proxy.
+
+2006-01-30  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* .admin/developers: Added Shahzad Muzaffar as administrator.
+	* .admin/developers: Removed the empty line.
+	
+2006-01-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisSimMain.cc: Load CMS magnetic field from Reco.
+
+2005-12-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisSimMain.h, VisSimMain.cc: New files - simulation
+	application session.

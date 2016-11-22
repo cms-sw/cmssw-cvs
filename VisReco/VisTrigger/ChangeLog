@@ -1,0 +1,137 @@
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary dependencies.
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisL1GlobalTriggerReadoutRecordTwig.cc,
+	VisL1MuDTChambPhContainerTwig.cc,
+	VisL1MuDTChambThContainerTwig.cc, VisL1MuDTTrackContainerTwig.cc,
+	VisTriggerContent.cc, VisTriggerResultsTwig.cc: Removed
+	unneeded lock.
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisTriggerContent.h, VisTriggerContent.cc: Remove unused
+	multi-threaded base class. Replaced by a simpler one. 
+
+2009-08-25  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisL1MuDTTrackContainerTwig.cc,
+	VisL1MuDTChambThContainerTwig.cc,
+	VisL1MuDTChambPhContainerTwig.cc: Clean up compilation warnings. 
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2009-01-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisL1GlobalTriggerReadoutRecordTwig.h,
+	VisL1GlobalTriggerReadoutRecordTwig.cc: Display more info in all windows.
+
+2008-11-21  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisLTCDigiTwig.h, VisLTCDigiTwig.cc: Removed as obsolete.
+	* xtypeinfo.h, xtypeinfo.cc, VisTriggerContent.cc: Modified
+	accordingly. 
+	* VisL1GlobalTriggerReadoutRecordTwig.cc: Add display of triggered
+	bits from L1 menu. 
+
+2008-11-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisL1GlobalTriggerReadoutRecordTwig.h,
+	VisL1GlobalTriggerReadoutRecordTwig.cc: New class to show L1
+	trigger record.
+	* xtypeinfo.h, xtypeinfo.cc: Declare and define the new type.
+	* VisTriggerContent.cc: Added to the data proxy.
+
+2008-03-03  Jim Brooke <Jim.Brooke@cern.ch>
+
+	*VisL1MuDTTrackContainerTwig.h, VisL1MuDTTrackContainerTwig.cc: 
+	Adapt to change of DTTF track DataFormat class name.
+
+2008-03-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added a new developer.
+
+2007-10-31  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisL1MuDTChambPhContainerTwig.cc,
+	VisL1MuDTChambThContainerTwig.cc, VisL1MuDTTrackContainerTwig.cc,
+	VisLTCDigiTwig.cc, VisTriggerResultsTwig.cc: Use base class
+	update. Let the framework handle the exceptions. 
+
+2007-08-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+	
+	* VisL1MuDTTrackContainerTwig.h, VisL1MuDTTrackContainerTwig.cc: New
+	classes to dispaly DTTF tracks.
+	* xtypeinfo.h, xtypeinfo.cc, VisTriggerContent.cc: Add the above
+	classes.
+
+2007-07-02  Ianna Osborne  <Ianna.Osborne@cern.ch>
+	
+	* VisL1MuDTChambPhContainerTwig.h,
+	VisL1MuDTChambThContainerTwig.h, VisTriggerResultsTwig.h,
+	VisL1MuDTChambPhContainerTwig.cc,
+	VisL1MuDTChambThContainerTwig.cc, VisTriggerResultsTwig.cc: New
+	classes to display DTTF and Trigger results. 
+	* VisTriggerContent.cc, xtypeinfo.h, plugin.cc: Modified
+	accordingly.
+
+2007-04-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Vis*Content.cc: Introduce separate tree browser.
+	
+2007-04-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Adapted to the changes in the Iguana subsystem directory structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* VisTriggerContent.cc: Adapt to migration of IGUANA to CMSSW.
+
+2007-01-31  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisLTCDigiTwig.cc: Remove obsolete IgSoText2 class. Use the
+	standard SoText2 instead.
+
+2006-11-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisLTCDigiTwig.h, VisLTCDigiTwig.cc: VisEventSelector takes now
+	a process name. Correct a bug in the name of HCAL RCT trigger.
+
+2006-10-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisLTCDigiTwig.h, VisLTCDigiTwig.cc: Add the trigger information
+	to the status bar.
+
+2006-10-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisLTCDigiTwig.h, VisLTCDigiTwig.cc: Correct an event delay for
+	the trigger mask. Add trigger text in the 3D window.
+
+2006-10-16  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisLTCDigiTwig.cc: Print UPS time for the event.
+
+2006-10-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisLTCDigiTwig.cc: Add help on trigger mask and convert GPS time
+	to human readable format.
+
+2006-09-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisLTCDigiTwig.cc: Include the std header.
+
+2006-08-24  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* New package to provide a plugin for a trigger visualization.
+
+	* BuildFile, VisLTCDigiTwig.h, VisTriggerContent.h, xtypeinfo.h,
+	VisLTCDigiTwig.cc, VisTriggerContent.cc, plugin.cc: New files to
+	display trigger information.

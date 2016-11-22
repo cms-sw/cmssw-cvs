@@ -1,0 +1,8 @@
+<use name=root> 
+<use name=Validation/RecoJets>
+
+<bin file="CalibClosureTest.cc"> </bin>
+# <bin file="Inspect_calib.cc"> </bin>
+# <bin file="InspectSum_calib.cc"> </bin>
+# <bin file="InspectRatio_calib.cc"> </bin>
+# <bin file="InspectFit_calib.cc"> </bin>

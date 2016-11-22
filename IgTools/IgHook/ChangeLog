@@ -1,0 +1,269 @@
+2009-11-24  Giulio Eulisse <giulio.eulisse@cern.ch>
+
+	* IgHookTrace.cc: safer assumption for the VSYSCALL_PAGE.
+	  This in particular fixes the regression that I spotted
+	  in the recent changes for RHEL5. Notice that this
+	  assumption is not valid anymore if the program is
+	  being profiled under an hypervisor as mentioned here:
+
+	  http://lkml.indiana.edu/hypermail/linux/kernel/0605.2/0016.html
+
+2009-11-13  Giulio Eulisse <giulio.eulisse@cern.ch>
+
+	* IgHookTrace.cc, test/catchtest.cpp: silence a warning
+	  due to what will be conditional behavior in some
+	  future standard of C++, therefore currently a gcc
+	  extension.
+
+2009-10-22  Giulio Eulisse <giulio.eulisse@cern.ch>
+
+	* IgHook.cc: put an ifdef around a variable that is used
+	  only in 64bit builds to avoid unused variable warning when 
+	  building 32bit version.
+
+2009-10-15  Peter Elmer <Peter.Elmer@cern.ch>
+        * BuildFile: Update arch from slc5_amd64_gcc432 to slc5_amd64_gcc434 
+          for conditional dependency on libunwind.
+ 
+2009-10-12  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHookTrace.cc (stacktrace): Protect against suspicious frame
+	addresses in signal IA32 signal frames; RHEL5 hit udivdi3 with
+	%ebp = 0xffffffff, probably another case of falling over frame
+	pointer-less functions interrupted by signal.
+
+2009-09-26  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHook.cc (parse): Reorder instruction decoding by opcode.
+
+2009-07-09  Lassi A. Tuura  <lat@iki.fi>
+
+	* BuildFile: Add yet another x86-64 architecture for libunwind.
+
+2009-07-03  Lassi A. Tuura  <lat@iki.fi>
+
+	* BuildFile: Disable debug options.
+
+2009-06-17  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHookTrace.cc (stacktrace): Add very rudimentary protection
+	against IA32 stacks where EBP is used for purposes other than the
+	frame pointer (-fomit-frame-pointer).  When such a function calls
+	other functions, the saved EBP value does not point to the
+	caller's frame but something else.  Break out the loop if the
+	displacement is more than 256kB.  Should use more sophisticated
+	methods such as unwind info to locate the canonical frame address.
+
+2009-06-15  Lassi A. Tuura  <lat@iki.fi>
+
+	* BuildFile: List more architectures using libunwind.
+
+	* IgHook.cc (parse): Recognise more x86-64 prologue code.
+	(redirect): Fix C++ syntax by moving variables out of a switch.
+
+2009-05-19  Lassi A. Tuura  <lat@iki.fi>
+
+	* BuildFile, IgHook.h, IgHook.cc, IgHookTrace.cc: Support x86-64.
+
+2007-11-21  Peter Elmer <Peter.Elmer@cern.ch>
+
+        * Updates to build with CMSSW (following the old patch for this, but
+          updating "Ig_Tools" to "IgTools")
+        * Add .admin/developers files
+
+2007-11-14  Peter Elmer <Peter.Elmer@cern.ch>
+
+        * Modify includes and BuildFiles to refer to "IgTools" rather 
+          than "Ig_Tools"
+
+2007-11-13  Peter Elmer <Peter.Elmer@cern.ch>
+
+        * Migrate Ig_Tools/{IgHook,IgTrace,IgProf} into the CMSSW CVS 
+          repository from the IGNOMINY repo, changing the subsystem name
+          to "IgTools" to conform to the CMSSW conventions. The initial
+          import is tagged "pe20071114-CMSSW-import" and the revision
+          history prior to that should be maintained.
+
+2007-06-01  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHookTrace.cc (stacktrace): Complete, tested support for signal
+	stack frames involving Linux kernel vsyscall page.
+
+2007-05-31  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHookTrace.cc (stacktrace): Add experimental support for
+	walking through signal stack frames involving Linux vsyscall page.
+
+2007-03-27  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHookTrace.cc (symbol): Never generate a dynamic symbol name.
+
+2007-02-15  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHookTrace.cc (stacktrace): Recognise Linux/IA32 signal frames.
+
+2007-02-12  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHook.cc (parse): Recognise yet another prologue instruction.
+	(debug): Print current time after process id in the debug output.
+
+2007-02-10  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHook.cc (parse): Pass the name of the function as argument so
+	it can be used to generate more meaningful debugging output.  On
+	IA32 recognise when the target already has a trampoline and avoid
+	trying to re-do the job.
+
+2007-02-07  Lassi A. Tuura  <root@maccms02.cern.ch>
+
+	* IgHookTrace.cc (stacktrace): Implement hand-written tracer for
+	OS X PowerPC.  The GCC _Unwind_Backtrace() doesn't yet have the
+	approprite fallbacks to trace through signal frames.
+
+	* IgHook.cc: Fix OS X support.
+	(debug): Print process id.
+	(allocate): Use Mach's vm_allocate() instead of mmap(MAP_FIXED) on
+	OS X, the latter replaces existing mappings, the former doesn't.
+	(protect): On OS X we can't tamper with dylib code coming from the
+	system shared map, so if we fail to change the page protections to
+	writable, try making a private writable copy of the page instead.
+	On non-OS X platforms include more details in the debug message if
+	mprotect() fails.
+
+	* test/hooktest2.cpp: New test to exercise hooking into exit().
+
+	* test/tracetest.cpp, test/catchtest.cpp: Protect against null
+	library name when printing out the stack trace.
+
+2007-01-30  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHookTrace.cc (stacktrace): Implement custom stack walker for
+	IA32.  On SL4 the system backrace() function has become hideously
+	slow as it now uses libgcc_s.so _Unwind_Backtrace and spends a
+	great deal of time in processing the DWARF-2 frame information.
+	An added benefit is that the function now works on OS X for free.
+
+	* IgHookAlloc.h: Use compiler pool allocators with GCC.
+
+2007-01-23  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHook.cc (parse): Recognise more IA32 instruction sequences.
+
+2005-08-31  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHook.cc (allocate): Don't ask for specific address on Linux,
+	SL3 and upward will happily remap over existing mapping, putting
+	all our trampolines over each other.  Just ask for a new page.
+	(protect): Start relaxing "void *" == "unsigned int" size checks.
+	(parse): Understand more IA32 instruction set.
+
+2005-03-04  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHook.cc (allocate): Hack for the moment to always get the
+	memory using mmap(), only constrain the address on PowerPC, and
+	make sure we ask for PROT_EXEC when mapping the memory.  This all
+	is required to co-operate with exec-shield introduced in RHEL3.
+
+2004-07-07  Shahzad Muzaffar <Shahzad.Muzaffar@cern.ch>
+
+	* BuildFile: updated for new SCRAM V1.
+
+2004-06-21  Shahzad Muzaffar <Shahzad.Muzaffar@cern.ch>
+
+	* BuildFile: updated for new SCRAM V1.
+
+2004-06-15  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHookTrace.cc (symbol): Resolve liboffset independent of
+	whether we find the symbol or not.  Don't destroy the liboffset
+	value we found when we can't find the symbol name.
+
+	* IgHookTrace.h, IgHookTrace.cc (symbol): Determine symbol's
+	offset from library base load address as well.
+	* test/catchtest.cpp, test/tracetest.cpp: Adjust.
+
+2004-06-04  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHookTrace.cc: Use MAP_ANON if there is no MAP_ANONYMOUS.
+
+2004-05-15  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHookTrace.h, IgHookTrace.cc: Define custom allocator that
+	obtains memory directly from the system without going through
+	malloc and friends.  Add new "merge()" operation and similar
+	operations on counters.
+
+	* IgHookTrace.h, IgHookTrace.cc: Make counters large numbers.
+	Fix symbol mapping so that it preserves maximum information.
+
+	* IgHook.h, IgHook.cc: Support versioned symbols.
+	* test/catchtest.cpp, test/hooktest.cpp: Adjust.
+
+2004-05-14  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHookLiveMap.h: Use hash_map if it's available.
+
+	* IgHookAlloc.h (allocate): Allocate correct amount of memory.
+
+	* IgHookAlloc.h: Fix slight deviances from standard.
+	* IgHookLiveMap.h: Correctly prototype allocator usage.
+
+	* IgHookAlloc.h: New std allocator that doesn't lock.
+	* IgHookLiveMap.h: Use it.
+
+	* IgHookTrace.cc (stacktrace): Prefer linux backtrace() over
+	generic GCC backtrace, the latter seems unreliable -- possibly
+	libraries without complete unwind info cause problems.
+
+2004-05-13  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHookTrace.h, IgHooKTrace.cc (operator new): Allocate memory
+	in larger chunks for efficiency.
+	(symbol): Set offset only if symbol was found.
+
+	* IgHookTrace.h, IgHookTrace.cc (symbol): Expose also as static.
+
+	* test/catchtest.cpp: Use the generic stack trace and symbol dump.
+
+	* test/tracetest.cpp: Remove gratuitous semicolons.
+
+2004-05-12  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHookTrace.h, IgHookTrace.cc: Add call counting to all counters.
+
+	* tracetest.cpp: Make functions non-static so they appear in trace.
+
+	* IgHookTrace.cc: Add generic GCC 3.4+ stack trace.
+
+2004-05-11  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHook.cc: Fix bugs for OS X.
+
+2004-05-10  Lassi A. Tuura  <lat@iki.fi>
+
+	* BuildFile: Export the library.
+
+	* IgHookLiveMap.h, IgHookLiveMap.cc: New.
+
+	* IgHookTrace.h, IgHookTrace.cc (untick, sub): New counter
+	methods.
+
+	* IgHook.cc (lookup): Look first in main program, then own deps.
+	(parse): Understand absolute indirect jumps.
+	(hook): Include trampoline address in debug output.
+
+2004-05-07  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgHookTrace.h, IgHookTrace.cc: New utility for stack trace bean
+	counting exercises.
+	* test/tracetest.cpp: New demo.
+
+2004-05-06  Lassi A. Tuura  <lat@iki.fi>
+
+	* test/catchtest.cpp: Dump stack trace on linux.
+
+	* test/catchtest.cpp: New test to demonstrate trapping throws.
+
+2004-05-06  Lassi A. Tuura  <lat@iki.fi>
+
+	* New dynamic instrumentation package.

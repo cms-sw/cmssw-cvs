@@ -1,0 +1,6 @@
+<use name=rootrflx>
+<use name=clhep>
+<export>
+  <lib name=DataFormatsTrajectoryState>
+</export>
+
