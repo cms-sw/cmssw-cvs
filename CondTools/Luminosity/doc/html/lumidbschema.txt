@@ -1,0 +1,79 @@
+Glossary: FK=Foreign Key, PK=Primary Key
+          lumiversion represents each lumi (re)processing
+
+table 1:  RUNSUMMARY (insert one row per run)
+columns:  cmsrunid(uint32, PK, represent uniqueness of runnumber ),
+          runnum(uint32),
+          fillnum(uint32),
+          totalcmsls(uint32),
+          totallumils(uint32),
+          sequence(string),
+          hltconfigid(uint32),
+          startorbit(uint64),
+          endorbit(uint64)
+ 
+=======
+table 2:  LUMISUMMARY (insert one row per run+ls+lumiversion)
+columns:  cmsrunid(uint32, FK, link to table 1 if needed),
+          lumisummaryid(unint32, PK, represent the uniqueness of runnumber+ls+lumiversion),
+          runnum(uint32),
+          lumiversion(string),
+          lsnum(uint32),
+          dtnorm(float),
+          luminorm(float),
+          instlumi(float),
+          instlumierror(float),
+          instlumiquality(short),
+          liveflag(bool),          
+          lumisectionquality(short) // use max 3 bits [HLX,HF,BRAN]
+
+======
+table 3:  LUMIDETAIL (insert 3*3564 rows per run+ls+lumiversion+algorithm)
+columns:  lumisummaryid(uint32, FK, link to table 2 when needed),
+          runnum(uint32),
+          lumiversion(string),
+          lsnum(uint32), //beg,mid,end of run, lumi section taken by lumidaq
+          bxnum(uint32),
+          lumivalue(float),
+          lumierror(float),
+          lumiquality(uint16),
+          luminorm(float),
+          algoname(string), //occ1,occ2,etsum,bran
+          
+ ======
+table 4:  TRIGGERTABLE (insert n-hltpath rows per run+ls, unrelated to lumiversion)
+columns:  cmsrunid(uint32,FK, link to table 1 when needed),
+          trgpathid(uint32,PK, represent uniqueness of runnumber+ls+trgpath)
+          trgseed(string),
+          runnum(uint32),
+          cmsluminum(uint32), //lumi section id taken by cmsdaq
+          l1bitnum(uint32), //range : 0-127 algo;128-192 tech
+          l1bitname(string),
+          l1count(uint64),
+          deadtimecount(uint64),
+          l1prescale(uint32),
+          hltpathname(string),
+          hltinputcount(uint64),
+          hltacceptcount(uint64),
+          hltprescale(uint32)
+
+
+ ======calculated data in fact table (huge table)======
+table 5:  LUMIFACT (insert 1 row per combinatorial of run+lumiversion+trgpath)
+columns:  cmsrunid(uint32, FK, link to table 1),
+          trgpathid(uint32, FK, link to table 4), //null for totallumi ,not null for trglumi 
+          lumisummaryid(uint32 FK, link to table 2),
+          runnum(uint32),
+          lumiversion(string),
+          lhcdeliveredlumi( float ), 
+          totalrecordedlumi( float ), //total recordedlumi deadtimecorrected
+          trgpathrecordedlumi( float ), 
+          trgpathrecordedlumierr( float )
+
+ ======
+table 6: IDTABLE (helper table keeping track of all the ids )
+         cmsrunid
+         trgpathid
+         lumisummaryid
+
+ 

@@ -1,0 +1,17 @@
+
+taken from https://twiki.cern.ch/twiki/bin/view/CMS/DQMGuiProduction
+
+setenv LD_LIBRARY_PATH
+source rpms/cmsset_default.csh
+source rpms/slc4_ia32_gcc345/cms/dqmgui/5.1.0/etc/profile.d/env.csh
+
+visDQMControl start all from config/server-conf-ecal.py
+
+htmlview http://localhost:8030/dqm/ecal/
+
+tail -f gui/*/log
+
+visDQMControl stop all from config/server-conf-ecal.py
+
+--
+

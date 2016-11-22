@@ -1,0 +1,6 @@
+<Use name=OpenGL>
+
+<Export>
+  <Use name=OpenGL>
+  <lib name=IguanaGL2PS>
+</Export>

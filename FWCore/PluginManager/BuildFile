@@ -1,0 +1,11 @@
+<use name=boost>
+<use name=sigcpp>
+<use name=rootrflx>
+<use name=FWCore/Utilities>
+<export>
+ <use name=boost>
+ <use name=sigcpp>
+ <use name=FWCore/Utilities>
+ <lib name=FWCorePluginManager>
+</export>
+

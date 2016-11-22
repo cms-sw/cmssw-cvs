@@ -1,0 +1,65 @@
+The usage of this file is deprecated now, sice no txt files are allowed in the HLT environment.
+
+
+EcalRawToDigi.cc and EcalElectronicsMapper.cc have been modified such that
+the DCCId:FedId correspondence is:
+1) hard coded
+2) olse, if 2 ordered vectors in cfg file are give, that correspondence is used
+
+
+---- if, nonetheless, you wanted to use this file, remove all the lines up to and including this comment ----
+
+1:601
+2:602
+3:603
+4:604
+5:605
+6:606
+7:607
+8:608
+9:609
+10:610
+11:611
+12:612
+13:613
+14:614
+15:615
+16:616
+17:617
+18:618
+19:619
+20:620
+21:621
+22:622
+23:623
+24:624
+25:625
+26:626
+27:627
+28:628
+29:629
+30:630
+31:631
+32:632
+33:633
+34:634
+35:635
+36:636
+37:637
+38:638
+39:639
+40:640
+41:641
+42:642
+43:643
+44:644
+45:645
+46:646
+47:647
+48:648
+49:649
+50:650
+51:651
+52:652
+53:653
+54:654

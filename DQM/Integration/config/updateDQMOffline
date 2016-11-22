@@ -1,0 +1,37 @@
+#!/bin/zsh
+# DATASETENC=GlobalCruzet1-A__CMSSW_2_0_7-T0ReReco-v1__RECO
+# DATASET=GlobalCruzet1-A/CMSSW_2_0_7-T0ReReco-v1/RECO
+DQM_V=4.6.0
+DQM_SW=/data/sw
+DQM_BASE=/data/dqm
+DQM_DIR=${1-$(dirname $0)}
+DQM_LOCK=$DQM_DIR/update.lock
+. $DQM_SW/cmsset_default.sh
+. $DQM_SW/slc4_ia32_gcc345/cms/dqmgui/$DQM_V/etc/profile.d/env.sh
+
+if [ -e $DQM_LOCK ]; then
+ echo An update is running with pid $(cat $DQM_LOCK)
+ echo Remove the lock file $DQM_LOCK if the job crashed 
+ exit 
+else
+  echo $$ > $DQM_LOCK
+fi
+
+[ -e $DQM_DIR/dqm.db ] && mv $DQM_DIR/{dqm,new}.db
+
+for i in $DQM_DIR/upload/**/DQM_V0001*.origin; do
+  if [ $(grep md5: < $i 2>/dev/null | wc -l) = 1 ]; then
+    ls -al $i ${i:r}
+    DATAFILE=$(echo ${i:r} | perl -pe "s|^$DQM_DIR/upload/|$DQM_DIR/data/|")
+    DIR=$(dirname $DATAFILE)
+    (set -x; mkdir -p $DIR) || exit 1
+    (set -x; mv -f $i ${i:r} $DIR) || exit 1
+
+    PASS=$(echo $DATAFILE | perl -pe "s|$DQM_DIR/data/[^/]+/||; s|/.*||")
+    DATASET=$(echo $DATAFILE | perl -pe 's|.*?__|__|; s|.root$||; s|__|/|g')
+    (set -x; visDQMRegisterFile $DQM_DIR/new.db $DATASET $PASS $DATAFILE)
+  fi
+done
+
+[ -e $DQM_DIR/new.db ] && mv $DQM_DIR/{new,dqm}.db
+rm -f $DQM_LOCK

@@ -1,0 +1,463 @@
+#Inventor V2.1 ascii
+
+Separator {
+    renderCaching OFF
+                      Material {
+                        ambientColor 0 0 0
+                        diffuseColor 0.93000001 0.88999999 0.88
+                        specularColor 0.79000002 0.83999997 0.83999997
+                        emissiveColor 0 0 0
+                        shininess 1
+                        transparency 0
+
+                      }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix 0.001 -3.6738193e-19 -1.8369096e-19 0
+                          -1.8369096e-19 0.001 -1.8369096e-19 0
+                          -3.6738193e-19 -3.6738193e-19 0.001 0
+                          0 0 0 1
+
+                      }
+                      DEF +4 IgSoRotSolid {
+                        fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+                        phiStart 0
+                        phiDelta 6.2831855
+                        polygon [ 0 1902,
+                            0 0,
+                            29.799999 0,
+                            29.799999 1900,
+                            29.450001 1900,
+                            29.450001 1902 ]
+                        smooth TRUE
+
+                      }
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix -0.001 3.4307202e-35 -1.8369096e-19 0
+                          1.8369096e-19 0.001 -6.1230319e-20 0
+                          -2.4651904e-35 1.2246064e-19 -0.001 0
+                          0 0 0 1
+
+                      }
+                      USE +4
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix 0.001 -3.6738193e-19 -1.8369096e-19 0
+                          -1.8369096e-19 0.001 -1.8369096e-19 0
+                          -3.6738193e-19 -3.6738193e-19 0.001 0
+                          0 0 0 1
+
+                      }
+                      DEF +5 IgSoRotSolid {
+                        fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+                        phiStart 0
+                        phiDelta 6.2831855
+                        polygon [ 0 1940,
+                            0 1902,
+                            29.450001 1902,
+                            29.450001 1900,
+                            30.6 1900,
+                            30.6 1904,
+                            29.799999 1904,
+                            29.799999 1920,
+                            30.6 1920,
+                            30.6 1925,
+                            29.799999 1925,
+                            29.799999 1935,
+                            30.6 1935,
+                            30.6 1940 ]
+                        smooth TRUE
+
+                      }
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix -0.001 3.4307202e-35 -1.8369096e-19 0
+                          1.8369096e-19 0.001 -6.1230319e-20 0
+                          -2.4651904e-35 1.2246064e-19 -0.001 0
+                          0 0 0 1
+
+                      }
+                      USE +5
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix 0.001 -3.6738193e-19 -1.8369096e-19 0
+                          -1.8369096e-19 0.001 -1.8369096e-19 0
+                          -3.6738193e-19 -3.6738193e-19 0.001 0
+                          0 0 0 1
+
+                      }
+                      DEF +6 IgSoRotSolid {
+                        fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+                        phiStart 0
+                        phiDelta 6.2831855
+                        polygon [ 0 2722,
+                            0 1940,
+                            30.5 1940,
+                            30.5 1948,
+                            30 1948,
+                            35.880001 2343,
+                            36.5 2343,
+                            36.5 2371.2,
+                            36.099998 2371.2,
+                            41.715 2719,
+                            42 2719,
+                            42 2722 ]
+                        smooth TRUE
+
+                      }
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix -0.001 3.4307202e-35 -1.8369096e-19 0
+                          1.8369096e-19 0.001 -6.1230319e-20 0
+                          -2.4651904e-35 1.2246064e-19 -0.001 0
+                          0 0 0 1
+
+                      }
+                      USE +6
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix 0.001 -3.6738193e-19 -1.8369096e-19 0
+                          -1.8369096e-19 0.001 -1.8369096e-19 0
+                          -3.6738193e-19 -3.6738193e-19 0.001 0
+                          0 0 0 1
+
+                      }
+                      DEF +7 IgSoRotSolid {
+                        fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+                        phiStart 0
+                        phiDelta 6.2831855
+                        polygon [ 0 3120,
+                            0 2722,
+                            42 2722,
+                            42 2740.7,
+                            41.700001 2740.7,
+                            47.16 3088,
+                            47.599998 3088,
+                            47.599998 3105,
+                            65 3105,
+                            65 3120 ]
+                        smooth TRUE
+
+                      }
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix -0.001 3.4307202e-35 -1.8369096e-19 0
+                          1.8369096e-19 0.001 -6.1230319e-20 0
+                          -2.4651904e-35 1.2246064e-19 -0.001 0
+                          0 0 0 1
+
+                      }
+                      USE +7
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix 0.001 -3.6738193e-19 -1.8369096e-19 0
+                          -1.8369096e-19 0.001 -1.8369096e-19 0
+                          -3.6738193e-19 -3.6738193e-19 0.001 0
+                          0 0 0 1
+
+                      }
+                      DEF +8 IgSoRotSolid {
+                        fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+                        phiStart 0
+                        phiDelta 6.2831855
+                        polygon [ 0 3387.6001,
+                            0 3120,
+                            65 3120,
+                            65 3135,
+                            47.693001 3135,
+                            48.095001 3162,
+                            69.5 3162,
+                            69.5 3239,
+                            49.242001 3239,
+                            49.59 3262.3999,
+                            51.455002 3387.6001 ]
+                        smooth TRUE
+
+                      }
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix -0.001 3.4307202e-35 -1.8369096e-19 0
+                          1.8369096e-19 0.001 -6.1230319e-20 0
+                          -2.4651904e-35 1.2246064e-19 -0.001 0
+                          0 0 0 1
+
+                      }
+                      USE +8
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix 0.001 -3.6738193e-19 -1.8369096e-19 0
+                          -1.8369096e-19 0.001 -1.8369096e-19 0
+                          -3.6738193e-19 -3.6738193e-19 0.001 0
+                          0 0 0 1
+
+                      }
+                      DEF +9 IgSoRotSolid {
+                        fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+                        phiStart 0
+                        phiDelta 6.2831855
+                        polygon [ 0 10539,
+                            0 3387.6001,
+                            51.455002 3387.6001,
+                            51.699001 3404,
+                            69.5 3404,
+                            69.5 3481,
+                            52.846001 3481,
+                            53.004002 3491.6001,
+                            53.129002 3500,
+                            54 3500,
+                            78 5040,
+                            78.5 5040,
+                            104.5 6500,
+                            105 6500,
+                            121.5 7950,
+                            122 7950,
+                            159.5 10539 ]
+                        smooth TRUE
+
+                      }
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix -0.001 3.4307202e-35 -1.8369096e-19 0
+                          1.8369096e-19 0.001 -6.1230319e-20 0
+                          -2.4651904e-35 1.2246064e-19 -0.001 0
+                          0 0 0 1
+
+                      }
+                      USE +9
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix 0.001 -3.6738193e-19 -1.8369096e-19 0
+                          -1.8369096e-19 0.001 -1.8369096e-19 0
+                          -3.6738193e-19 -3.6738193e-19 0.001 0
+                          0 0 0 1
+
+                      }
+                      DEF +10 IgSoRotSolid {
+                        fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+                        phiStart 0
+                        phiDelta 6.2831855
+                        polygon [ 0 13109,
+                            0 10539,
+                            159.5 10539,
+                            148 10587,
+                            148 10595,
+                            146 10595,
+                            146 10605,
+                            143 10605,
+                            126 10664.1,
+                            153 10664.1,
+                            153 10715.9,
+                            112 10715.9,
+                            82.5 10826.25,
+                            102.5 13109 ]
+                        smooth TRUE
+
+                      }
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix -0.001 3.4307202e-35 -1.8369096e-19 0
+                          1.8369096e-19 0.001 -6.1230319e-20 0
+                          -2.4651904e-35 1.2246064e-19 -0.001 0
+                          0 0 0 1
+
+                      }
+                      USE +10
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix 0.001 -3.6738193e-19 -1.8369096e-19 0
+                          -1.8369096e-19 0.001 -1.8369096e-19 0
+                          -3.6738193e-19 -3.6738193e-19 0.001 0
+                          0 0 0 1
+
+                      }
+                      DEF +11 IgSoRotSolid {
+                        fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+                        phiStart 0
+                        phiDelta 6.2831855
+                        polygon [ 0 16030.5,
+                            0 13109,
+                            102.5 13109,
+                            104.5 13290,
+                            203 13335,
+                            203 13341,
+                            227 13341,
+                            227 13361,
+                            224 13361,
+                            224 13381,
+                            36.75 13381,
+                            36.75 13439,
+                            35.75 13439,
+                            28.5 13465,
+                            28.5 16030.5 ]
+                        smooth TRUE
+
+                      }
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix -0.001 3.4307202e-35 -1.8369096e-19 0
+                          1.8369096e-19 0.001 -6.1230319e-20 0
+                          -2.4651904e-35 1.2246064e-19 -0.001 0
+                          0 0 0 1
+
+                      }
+                      USE +11
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix 0.001 -3.6738193e-19 -1.8369096e-19 0
+                          -1.8369096e-19 0.001 -1.8369096e-19 0
+                          -3.6738193e-19 -3.6738193e-19 0.001 0
+                          0 0 0 1
+
+                      }
+                      DEF +12 IgSoRotSolid {
+                        fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+                        phiStart 0
+                        phiDelta 6.2831855
+                        polygon [ 0 16340,
+                            0 16030.5,
+                            29 16030.5,
+                            31.5 16040,
+                            31.5 16056,
+                            65 16056,
+                            65 16086,
+                            45 16086,
+                            45 16115.34,
+                            50 16134,
+                            75 16134,
+                            75 16264,
+                            50 16264,
+                            45 16282.66,
+                            45 16310,
+                            65 16310,
+                            65 16340 ]
+                        smooth TRUE
+
+                      }
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix -0.001 3.4307202e-35 -1.8369096e-19 0
+                          1.8369096e-19 0.001 -6.1230319e-20 0
+                          -2.4651904e-35 1.2246064e-19 -0.001 0
+                          0 0 0 1
+
+                      }
+                      USE +12
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix 0.001 -3.6738193e-19 -1.8369096e-19 0
+                          -1.8369096e-19 0.001 -1.8369096e-19 0
+                          -3.6738193e-19 -3.6738193e-19 0.001 0
+                          0 0 0 1
+
+                      }
+                      DEF +13 IgSoRotSolid {
+                        fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+                        phiStart 0
+                        phiDelta 6.2831855
+                        polygon [ 0 18562,
+                            0 16340,
+                            31.5 16340,
+                            31.5 16424,
+                            35 16424,
+                            205 17058,
+                            205 17920,
+                            92.459999 18340,
+                            88.959999 18340,
+                            29.5 18562 ]
+                        smooth TRUE
+
+                      }
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix -0.001 3.4307202e-35 -1.8369096e-19 0
+                          1.8369096e-19 0.001 -6.1230319e-20 0
+                          -2.4651904e-35 1.2246064e-19 -0.001 0
+                          0 0 0 1
+
+                      }
+                      USE +13
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix 0.001 -3.6738193e-19 -1.8369096e-19 0
+                          -1.8369096e-19 0.001 -1.8369096e-19 0
+                          -3.6738193e-19 -3.6738193e-19 0.001 0
+                          0 0 0 1
+
+                      }
+                      DEF +14 IgSoRotSolid {
+                        fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+                        phiStart 0
+                        phiDelta 6.2831855
+                        polygon [ 0 27000,
+                            0 18562,
+                            29.5 18562,
+                            29.5 18575,
+                            40 18575,
+                            40 18625,
+                            29.5 18625,
+                            29.5 18810,
+                            40 18810,
+                            40 18860,
+                            29.5 18860,
+                            29.5 18875,
+                            21.5 18905,
+                            21.5 27000 ]
+                        smooth TRUE
+
+                      }
+                    }
+                    Separator {
+
+                      MatrixTransform {
+                        matrix -0.001 3.4307202e-35 -1.8369096e-19 0
+                          1.8369096e-19 0.001 -6.1230319e-20 0
+                          -2.4651904e-35 1.2246064e-19 -0.001 0
+                          0 0 0 1
+
+                      }
+                      USE +14
+                    }
+                  }
+            

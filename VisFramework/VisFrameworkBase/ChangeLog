@@ -1,0 +1,908 @@
+2010-07-02  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisConfigEditor.cc, VisConfiguration.cc, VisEventIdTwig.cc,
+	VisEventMenu.cc, VisEventNavigationDialog.cc,
+	VisEventProcessorService.cc, VisFEDRawDataCollectionTwig.cc,
+	VisL1FilterService.cc, VisL1TriggerFilterMenu.cc,
+	VisMainProgram.cc, VisParamEditor.cc, VisProcessEventDialog.cc,
+	VisQueuedTwig.cc, xtypeinfo.cc: Remove spurious includes.
+
+2010-01-04  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile, VisFEDRawDataCollectionTwig.cc: Remove unnecessary
+	direct dependencies.
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisConfigEditor.cc, VisConfiguration.cc, VisEventIdTwig.cc,
+	VisEventMenu.cc, VisEventObserver.cc, VisExceptionService.cc,
+	VisFEDRawDataCollectionTwig.cc, VisMainProgram.cc,
+	VisQueuedTwig.cc, xtypeinfo.cc, 
+	* VisSimHitPointSize.h, VisSimHitPointSize.cc: Removed as unused.
+
+2009-09-14  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisMainProgram.cc: Make sure the main program quits.
+
+2009-09-13  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisMainProgram.h, VisMainProgram.cc: Remove unused functions.
+
+	* VisSkipEventDialog.*: Removed as unused.
+	* VisAppearanceService.h, VisAppearanceService.cc: Removed as
+	unused.
+	* VisMainProgram.cc: Modified accordingly.
+	* VisQueuedTwig.h: Remove obsolete documentation.
+
+2009-09-11  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisQueue.h, VisQueue.cc, VisQueueProcessor.h,
+	VisQueueProcessor.cc: Removed as unused.
+	* VisEventProcessorService.h, VisEventProcessorService.cc: Removed
+	unused function.
+
+2009-08-28  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisEventMenu.cc: Migrated to Qt resources for images.
+
+2009-08-27  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisEventMenu.h, VisEventMenu.cc: Added keyboard shortcuts to
+	actions. Added GoTo event action. Cleanup.
+	* VisContent.h, VisContent.cc: Removed as unused.
+	* VisCoreContent.h, VisCoreContent.cc: Modified to use a simpler
+	base class.
+	* VisMainProgram.h, VisMainProgram.cc: Removed unused
+	services. Cleanup.
+
+2009-07-30  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* xtypeinfo.h, xtypeinfo.cc, iglet.cc: Modify accordingly.
+
+	* IView*.h, IView*.cc: Removed. iView session has been migrated to
+	iSpy. 
+
+2009-07-13  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisFEDRawDataCollectionTwig.cc: Comment out access to raw data.
+
+2009-06-17  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* IViewRecoContent.cc: Remove problematic twigs.
+	* IViewTrackTwig.cc: Make it work for a new interface.
+
+2009-06-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventMenu.h, VisEventMenu.cc, IViewEventMenu.cc,
+	VisConfiguration.cc: Use Qt4 actions and menus. 
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2009-02-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* IguanaService.h, IguanaService.cc: Migrated from here to
+	VisReco/Analyzer. 
+	* VisNet.h, VisNet.cc, test/BuildFile, test/consumer.cpp,
+	test/source.cpp: Migrated from here to Iguana/Framework.
+
+2009-01-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* pset.txt: Remove as obsolete.
+
+	* IViewEventMenu.h, IViewEventMenu.cc: Add a new toolbar for event
+	navigation.
+
+2009-01-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventMenu.h, VisEventMenu.cc: Add a new toolbar for event
+	navigation. 
+
+2008-12-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* xtypeinfo.h, xtypeinfo.cc: Declare and define new types.
+	* IViewReadService.h, IViewReadService.cc: Iguana service to read
+	ig files.
+	* iglet.cc: Add Iguana view event menu and reco content.
+	* IViewTrackTwig.h, IViewTrackTwig.cc: New class to display
+	Tracks.
+	* IViewEventMenu.h, IViewEventMenu.cc: Iguana event menu to
+	navigate the ig files.
+	* IViewQueuedTwig.h, IViewQueuedTwig.cc: Base class for Iguana
+	view twigs.
+	* IViewRecoContent.h, IViewRecoContent.cc: Reco content.
+	* IViewObserver.h, IViewObserver.cc: Iguana view event observer.
+	* IViewBinning.h, IViewBinning.cc: Histogram binning.
+	* IViewCSCSegmentTwig.h, IViewCSCSegmentTwig.cc: New class to
+	display CSC segments.
+	* IViewCaloTowerTwig.h, IViewCaloTowerTwig.cc: New class to
+	display CaloTowers.
+	* IViewDTRecSegment4DTwig.h, IViewDTRecSegment4DTwig.cc: New class
+	to display DT 4D segments.
+	* IViewEventTwig.h, IViewEventTwig.cc: New class to display event info.
+	* IViewJetTwig.h, IViewJetTwig.cc: New class to display Jets.
+	* IViewMETTwig.h, IViewMETTwig.cc: New class to display MET.
+	* IViewPFClusterTwig.h, IViewPFClusterTwig.cc: New class to
+	display PFCluster.
+	* IViewPixelDigiTwig.h, IViewPixelDigiTwig.cc: New class to
+	display pixel digis.
+	* IViewSiPixelClusterTwig.h, IViewSiPixelClusterTwig.cc: New class
+	to display SiPixel cluster.
+	* IViewSiPixelRecHitTwig.h, IViewSiPixelRecHitTwig.cc: New class
+	to display SiPixel rechit.
+	* IViewSiStripClusterTwig.h, IViewSiStripClusterTwig.cc: New class
+	to display SiStrip cluster.
+	* IViewSiStripDigiTwig.h, IViewSiStripDigiTwig.cc: New class to
+	display SiStrip digi.
+	* IguanaService.h, IguanaService.cc: Updated to use data storage.
+	* VisFEDRawDataCollectionTwig.h, VisFEDRawDataCollectionTwig.cc: New class to display
+	* VisQueuedTwig.h, VisQueuedTwig.cc: Removed 2D representations.
+	* xtypeinfo.h, xtypeinfo.cc: New types defined and declared.
+	* iglet.cc: New iglet added.
+
+	* VisEventProcessorService.cc: Change FakeConditions to Frontier
+	ones. 
+
+2008-11-21  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventIdTwig.cc: Add GMT time to the event annotation.
+
+2008-11-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* IguanaService.h, IguanaService.cc: Add a common storage.
+	* VisEventIdTwig.cc: Remove commented out includes.
+
+2008-11-18  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisFEDRawDataCollectionTwig.cc: Add it to the correct place,
+	invalidate the twig structure.
+
+2008-11-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisFEDRawDataCollectionTwig.cc: Remove duplicate information.
+	* VisTwigFactroyService.cc: Remove commented out lines.
+
+	* VisNet.h, VisNet.cc: The network layer.
+	* test/BuildFile, test/consumer.cpp, test/source.cpp: Tests for
+	the network layer.
+
+	* VisEventProcessorService.cc: Make sure correct prefix is
+	appended for files in castor. Check existence of a root file.
+	* IguanaService.h, IguanaService.cc: Iguana persistency service.
+	* plugins/BuildFile, plugins/Module.cc: Make it a CMSSW plugin.
+	* VisFEDRawDataCollectionTwig.h, VisFEDRawDataCollectionTwig.cc:
+	New class to show FED raw data information.
+	* VisL1FilterService.h, VisL1FilterService.cc: New class to keep
+	track of L1 filters.
+	* VisL1TriggerFilterMenu.h, VisL1TriggerFilterMenu.cc: New class
+	to allow event navigation based on L1 filters.
+	* VisEventIdTwig.cc: Remove FED raw data information from
+	here. Now it is a separate twig.
+	* VisEventMenu.cc: Add L1 trigger filtering menu.
+
+2008-10-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventIdTwig.cc: Protect from jumping to the next event if the
+	raw data product is not there.
+
+2008-10-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCuTkAccessDbConnection.h, VisCuTkAccessDbConnection.cc: An
+	active configurable. 
+	* VisCuTkAutoIntegrate.h, VisCuTkAutoIntegrate.cc: An active
+	configurable. 
+	* VisCuTkCrossedModulesOnly.h, VisCuTkCrossedModulesOnly.cc: An
+	active configurable. 
+	* VisCuTkNevToIntegrate.h, VisCuTkNevToIntegrate.cc: An active
+	configurable. 
+	* VisCuTkPixelClusterLabel.h, VisCuTkPixelClusterLabel.cc: An
+	active configurable. 
+	* VisCuTkPixelClusterProducer.h, VisCuTkPixelClusterProducer.cc:
+	An active configurable. 
+	* VisCuTkPixelDigiLabel.h, VisCuTkPixelDigiLabel.cc: An active
+	configurable. 
+	* VisCuTkPixelDigiProducer.h, VisCuTkPixelDigiProducer.cc: An
+	active configurable. 
+	* VisCuTkPixelRechitProducer.h, VisCuTkPixelRechitProducer.cc: An
+	active configurable. 
+	* VisCuTkSignalToIntegrate.h, VisCuTkSignalToIntegrate.cc: An
+	active configurable. 
+	* VisCuTkSimhitProducer.h, VisCuTkSimhitProducer.cc: An active
+	configurable. 
+	* VisCuTkStripClusterLabel.h, VisCuTkStripClusterLabel.cc: An
+	active configurable. 
+	* VisCuTkStripClusterProducer.h, VisCuTkStripClusterProducer.cc:
+	An active configurable. 
+	* VisCuTkStripDigiLabel.h, VisCuTkStripDigiLabel.cc: An active
+	configurable. 
+	* VisCuTkStripDigiProducer.h, VisCuTkStripDigiProducer.cc: An
+	active configurable. 
+	* VisCuTkStripRechitProducer.h, VisCuTkStripRechitProducer.cc: An
+	active configurable. 
+	* VisCuTkTrackProducer.h, VisCuTkTrackProducer.cc: An active
+	configurable. 
+	* VisCuTkXSize.h, VisCuTkXSize.cc: An active configurable.
+	* VisCuTkYSize.h, VisCuTkYSize.cc: An active configurable.
+	* VisSiStripCluster2dRep.h, VisSiStripCluster2dRep.cc: An active
+	configurable. 
+	* VisTrackerTrackLineThickness.h, VisTrackerTrackLineThickness.cc:
+	An active configurable. 
+	* VisConfigurationService_cff.py:  Add default parameters for the
+	new configurable variables.
+
+2008-09-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisQueuedTwig.h, VisQueuedTwig.cc: Add a regular expression
+	match to set twigs visible.
+	* VisSiStripClusterPointSize.h, VisSiStripClusterPointSize.cc:
+	Configurable to set a cluster point size.
+	* VisSiStripClusterRep.h, VisSiStripClusterRep.cc: Configurable to
+	define a strip cluster representation.
+	* VisConfigurationService_cff.py: Add default parameters for the
+	new configurable variables.
+
+	* This time added the classes.
+	
+2008-09-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrackShowHits.h, VisTrackShowHits.cc: Configurable to enable
+	track hits drawing.
+	* VisTrackShowDets.h, VisTrackShowDets.cc: Configurable to enable
+	hit dets drawing.
+	* VisTrackShowRefPoint.h, VisTrackShowRefPoint.cc: Configurable to
+	enable track reference point drawing.
+	* VisTrajectorySeedScale.h, VisTrajectorySeedScale.cc:
+	Configurable to set a scale for trajectory seed reps.
+	* VisConfigurationService_cff.py: Added default parameters for the
+	new configurable variables.
+
+2008-09-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisConfigurationService_cff.py: Added default parameters for the
+	new configurable variables. 
+
+	* VisHcalShowHit.h, VisHcalShowHit.cc: Configurable to enable a
+	hit drawing.
+	* VisHcalShowTower.h, VisHcalShowTower.cc: Configurable to enable
+	a tower drawing.
+	* VisHcalColorCode.h, VisHcalColorCode.cc: Configurable to set a
+	color code.
+
+	* VisEventIdTwig.cc: Added luminosity block to the printout.
+	* VisEventProcessorService.h, VisEventProcessorService.cc: Fix
+	configuration exception caught by boost. Allow empty source
+	configuration to be created if there is no parameters given to
+	iguana. Allow a PoolSource configuration to be created for a root
+	file if it is given as a parameter on a command line.
+
+2008-09-21  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* python/VisConfigurationService_cff.py: Add a default value for
+	maximum radii and visibility of a DT 4D segment chamber active
+	configurable parameters.
+
+2008-09-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHcalRMax.h, VisHcalRMax.cc: An active configurable to
+	artificially limit HCAL energy depositions.
+	* VisEcalRMax.h, VisEcalRMax.cc: An active configurable to
+	artificially limit ECAL energy depositions.
+	* VisShowDT4DSegmentChamber.h, VisShowDT4DSegmentChamber.cc: An
+	active configurable to show DT chambers for DT 4D segments.
+
+2008-09-16  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* python/VisConfigurationService_cff.py (VisConfigurationService):
+	Add VisHaloTracks default value.
+
+	* BuildFile: Remove root library. Added to Iguana/Iguana.
+	* VisEventIdTwig.cc: Check raw data validity.
+
+2008-09-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Add root library to avoid a conflict between cint 
+	generated dictionaries and reflex related ones that cause a crash 
+	for TProfile2D.
+
+2008-09-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventIdTwig.cc: Add BX and Orbit. Increase font.
+
+2008-09-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTexture.h, VisTexture.cc: Used in a definition of the name of
+	a texture file.
+
+2008-09-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMainProgram.cc: Provide detailed information for a message on
+	config failure.
+
+2008-08-27  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloJetEnergyCut.h, VisCaloJetEnergyCut.cc: An active
+	configurable to display only the jets above the cut.
+
+2008-09-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* python/VisConfigurationService_cff.py: Update to set the default
+	values for new parameters.
+	* VisHiddenLineView.h, VisHiddenLineView.cc: Show everything with
+	hidden lines removed.
+	* VisAppMode.h, VisAppMode.cc: Control an application window mode.
+
+2008-08-28 George Alverson <George.Alverson@cern.ch>
+
+	* VisMainProgram.cc: Correct warning message for bad configuration file
+
+2008-08-22  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisBinningStrategy.h, VisBinningStrategy.cc: New configurable to
+	decide how to bin the histograms.
+	* VisConfigEditor.h, VisConfigEditor.cc: Update tool tips.
+	* VisConfiguration.h, VisConfiguration.cc: Add an option to save
+	the configuration.
+	* VisEventMenu.cc: Remove warning about status - we do not check
+	it anyway. Add message to the status bar when waiting for an
+	event. 
+	* VisEventProcessorService.cc: Update to produce a python
+	configuration if root file is passed as a parameter.
+
+2008-08-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventProcessorService.cc: Add checks on whether or not the
+	end job needs to be called.
+	* VisEventIdTwig.cc: Move the label.
+
+2008-08-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisActiveConfigurable.h: Set the configurable value from an
+	external configuration. 
+
+2008-08-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventIdTwig.cc: Change th font from default to Arial. Make it
+	bigger.
+	* VisConfigEditor.cc: Lock before dumping configuration.
+	* VisConfiguration.h, VisConfiguration.cc: Use Qt lock rather then
+	the one from Utilities. Add more debugging output. Assert a
+	configurable - it must always be there.
+	* python/VisConfigurationService_cff.py: Migration to python
+	configuration.
+	* VisActiveConfigurable.h: Let the base class do the cleaning. Add
+	more logging info on debug.
+	* VisConfigurable.cc: Assert configuration - it must always be
+	there.
+
+2008-06-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventProcessorService.h, VisEventProcessorService.cc: Add a
+	cms Exception handling. Update default configuration file for root
+	file processing. Add python configuration file reading.
+	* VisMainProgram.h, VisMainProgram.cc, VisQueuedTwig.h: Add a cms
+	Exception handling.
+
+2008-06-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisSelectedTrackNumber.h, VisSelectedTrackNumber.cc: New active
+	configurable parameter to select a single track.
+
+2008-06-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisPropagatorStep.cc: Make a default step smaller. 
+
+2008-06-18  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisPropagatorOut.h, VisPropagatorOut.cc: New active configurable
+	to set for how long to extended the propagation from the outer
+	state.
+	* VisPropagatorIn.h, VisPropagatorIn.cc: New active configurable
+	to set for how long to extended the propagation from the inner
+	state.
+	* VisPropagatorStep.h, VisPropagatorStep.cc: New active
+	configurable to set a step of propagation.
+
+2008-06-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisPhiDelta.h, VisPhiDelta.cc: New active configurable to set a
+	delta slice for an RZ view.
+	* VisPhiStart.h, VisPhiStart.cc: New active configurable to set a
+	starting point for an RZ view.
+	* VisShowHitDets.h, VisShowHitDets.cc: New active configurable to
+	enable display of hit detectors.
+	* VisTwigFactroyService.cc: Simplify the twigs name.
+	* VisEventIdTwig.cc: Add reps in RZ, RPhi, and Lego views.
+
+2008-05-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventMenu.h, VisEventMenu.cc: Add an automated screen shot
+	printing.
+	* VisPrintTimer.h, VisPrintTimer.cc: New active configurable to
+	set a time delay between the automated snapshot prints.
+
+2008-05-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisAutoPrint.h, VisAutoPrint.cc: New active configurable to
+	enable auto-printing.
+
+2008-05-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisAnnotateGeometry.h, VisAnnotateGeometry.cc: New active
+	configurable allowing to switch on/off annotations.
+	* VisVolatileGeometry.h, VisVolatileGeometry.cc: New active
+	configurable allowing/disabling modification of geometry reps on
+	each event.
+	* VisConfigEditor.cc: Check presence of the configuration.
+	* VisParamEditor.cc: Do not update configuration if it's already
+	been updated.
+	
+2008-05-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* xtypeinfo.h, xtypeinfo.cc: Declare and define the new class.
+	* VisEventIdTwig.cc: Adjust the position of the label.
+
+2008-05-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventIdTwig.h, VisEventIdTwig.cc: Annotation for event ID.
+
+	* VisMuonAnnotation.h, VisMuonAnnotation.cc: Active configurable
+	to control muon annotations.
+	* VisMuonT0.cc: Set a default value to zero.
+
+2008-05-15  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisParamEditor.cc: Allow acepting a modified value on return and
+	ok.
+	* VisEventMenu.cc: Zap Qt emit.
+	* VisConfiguration.cc: Check if the configuration is empty.
+	* VisEventSelector.h: Update to the changes in the base class.
+
+2008-05-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisAnimate.h, VisAnimate.cc: Allow animation.
+	* VisBField.h, VisBField.cc: Set B field.
+	* VisCounterFrequency.h, VisCounterFrequency.cc: Set counter frequency.
+	* VisCounterMax.h, VisCounterMax.cc: Set max value for counter.
+	* VisCounterMin.h, VisCounterMin.cc: Set min value for counter.
+	* VisMuonDt.h, VisMuonDt.cc: Set Ideal track dt.
+	* VisMuonT0.h, VisMuonT0.cc: Set Ideal track t0.
+	* VisRMax.h, VisRMax.cc: Set Ideal track rmax.
+	* VisZMax.h, VisZMax.cc: Set Ideal track zmax.
+	* VisParamEditor.cc: Allow acepting a modified value on return and ok.
+
+2008-04-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalEnergyCut.h, VisEcalEnergyCut.cc: Energy cut on ECAL
+	rechits.
+	* VisHcalEnergyCut.h, VisHcalEnergyCut.cc: Energy cut on HCAL
+	rechits.
+	* VisEventMenu.cc: Remove cout.
+	* VisEventProcessorService.cc: Uncomment job report.
+	
+2008-03-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventProcessorService.h, VisEventProcessorService.cc: Merge
+	the branch of 1_6_X to HEAD.
+
+2008-02-18 George Alverson <George.Alverson@cern.ch>
+
+	* VisQueuedTwig.h, VisQueuedTwig.cc, xtypeinfo.cc: Add code to accomodate the
+	IgSpare Window/Browser/Model/Rep (based on IgRPhiXXX)
+
+2008-02-18  Ianna.Osborne@cern.ch  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added a developer.
+
+2007-12-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventProcessorService.cc: Do not start CMSSW job here - it is
+	too early for the Geant4 geometry twig.
+
+2007-12-12  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* BuildFile: Added explicit qt dependency in order to let new scram run
+	MOC properly.
+
+2007-11-27  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisSimHitPointSize.h, VisSimHitPointSize.cc: Active configurable to
+	define point size for sim hits.
+
+2007-11-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventProcessorService.h, VisEventProcessorService.cc,
+	VisMainProgram.h, VisMainProgram.cc, VisEventMenu.cc,
+	VisExceptionService.cc: Add a message handling on the status bar.
+
+	* VisSimHitConnect.h, VisSimHitConnect.cc: Active configurable to
+	set line connections for the sim hits belonging to the same
+	track.
+
+2007-11-16  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisAutoStart.h, VisAutoStart.cc: An active configurable
+	parameter to set an automatic event fetching from the start up.
+	* VisEventTimer.h, VisEventTimer.cc: An active configurable
+	parameter to set a timer delay for an automatic event fetching.
+	* VisExceptionMessage.h, VisExceptionMessage.cc: An active
+	configurable parameter to enable a GUI pop ups for the exception
+	handling service.
+	* VisEventMenu.h, VisEventMenu.cc: Use VisAutoStart and
+	VisEventTimer.
+	* VisExceptionService.h, VisExceptionService.cc: Use
+	VisExceptionMessage.
+
+2007-11-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisPtCut.h, VisPtCut.cc: An active configurable parameter to set
+	a cut on Pt.
+	* VisSimTrackAnnotation.h, VisSimTrackAnnotation.cc: An active
+	configurable parameter to enable annotations of the sim tracks.
+	* VisSimTrackTime.h, VisSimTrackTime.cc: An active configurable
+	parameter to set time for a sim track shape.
+	
+2007-11-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisActiveConfigurable.h: Use a different member function to
+	retrieve a parameter from a parameter set - the one which does not
+	throw and takes a default value. Cures a seg fault.
+
+2007-11-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisExceptionService.h, VisExceptionService.cc: New class to
+	handle exceprions.
+	* VisEventProcessorService.h, VisEventProcessorService.cc: Do not
+	report to the JobReport.
+	* VisMainProgram.cc: Use exception service.
+	* VisQueuedTwig.cc: Add log messages.
+	
+2007-10-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisConfiguration.h, VisConfiguration.cc: Event display configuration. 
+	It keeps track of VisConfigurables.
+	* VisConfigurable.h, VisConfigurable.cc: Base class for a configurable
+	parameter.
+	* VisActiveConfigurable.h: Base class for a configurable parameter with 
+	notification.
+	* VisCaloAnnotation.h, VisCaloAnnotation.cc: A configurable parameter to 
+	define whether or not to display an annotation. 
+	* VisCaloEnergyScale.h, VisCaloEnergyScale.cc: A configurable parameter 
+	to define a scale of the Calo objects.
+	* VisEnergyCut.h, VisEnergyCut.cc: A configurable parameter to define a 
+	cut on the displayed objects energy.
+	* VisLegoScale.h, VisLegoScale.cc: A configurable parameter to define a 
+	LEGO scale.
+	* VisConfigEditor.h, VisConfigEditor.cc: A GUI for interactive access and 
+	modification of the configurable parameters. 
+	* VisParamEditor.h, VisParamEditor.cc: A sub-GUI of the configuration 
+	editor to edit selected configurable parameter.
+
+	* VisActiveConfigurable.h: Add a default value set from a
+	configuration file.
+	* VisCaloEnergyScale.h, VisEnergyCut.h, VisLegoScale.h,
+	VisCaloEnergyScale.cc, VisEnergyCut.cc, VisLegoScale.cc: Switch
+	from float to double - the configuration file parser does not have
+	a specification for float.
+	* VisParamEditor.cc, VisQueuedTwig.cc: Update help message and
+	disable creation of a new configurable from a GUI.
+	* VisQueuedTwig.h, VisQueuedTwig.cc: Add exception handling here.
+
+2007-10-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventMenu.cc: Do not check the status of a run () and use
+	rewind () of the EventProcessor directly.
+
+2007-08-15  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Added dependency on Studio.
+
+2007-08-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventMenu.h, VisEventMenu.cc: Add more detailed exception
+	handling messaging.
+
+	* VisActiveConfigurable.h: Removed as obsolete.
+
+2007-07-27  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventMenu.h, VisEventMenu.cc, VisEventProcessorService.h,
+	VisEventProcessorService.cc, VisMainProgram.cc: Option -p or
+	--parameter-set is not necessary is a cfg file is given on the
+	command line. Set some shapes visible for a startup. Add more info
+	for an exception handling.
+
+	* VisEventProcessorService.cc: Fix the default configuration file
+	to avoid an exception about maximum number of events.
+
+2007-06-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventMenu.cc: Put some safety in place when EventProcessor is
+	destroyed.
+
+2007-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventProcessorService.cc: maxEvents parameter changed.
+
+2007-04-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new Iguana directory structure.
+	* VisAppearanceService.h, VisContent.h, VisEventMenu.h,
+	VisEventProcessorService.h, VisMainProgram.h, VisQueue.h,
+	VisQueueProcessor.h, VisQueuedTwig.h, VisTwigFactroyService.h,
+	xtypeinfo.h, VisAppearanceService.cc, VisEventMenu.cc,
+	VisEventObserver.cc, VisEventProcessorService.cc,
+	VisMainProgram.cc, VisQueuedTwig.cc, iglet.cc, xtypeinfo.cc:
+	Migrate to the new Iguana directory structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* VisActiveConfigurable.h, VisContent.h,
+	VisEventProcessorService.h, VisMainProgram.h, VisQueue.h, debug.h,
+	VisContent.cc, VisCoreContent.cc, VisEventMenu.cc,
+	VisEventObserver.cc, VisEventProcessorService.cc,
+	VisMainProgram.cc, VisQueue.cc, VisQueueProcessor.cc: Adapt to
+	migration of IGUANA to CMSSW.
+
+2007-03-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventMenu.cc, VisEventProcessorService.cc: Headers has been
+	moved.
+
+2007-02-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMainProgram.h, VisMainProgram.cc: Add main window to center
+	the dialogs.
+	* VisEventProcessorService.cc: Add enabled twigs for a default
+	configuration.
+
+2007-02-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventProcessorService.cc: Do not load all the dictionaries by
+	default.
+
+2007-02-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventMenu.h, VisEventMenu.cc: Add more flexible event
+	navigation: rewind collection, skip certain number of events
+	forward and backward, go to an event number.
+	* VisEventProcessorService.cc: Load a default configuration file
+	if the parameter is missing from the command line or the file is 
+	not found.
+	* VisEventNavigationDialog.h, VisEventNavigationDialog.cc, 
+	VisEventNavigationDialog.ui: A dialog for event navigation.
+	* VisProcessEventDialog.h, VisProcessEventDialog.cc, 
+	VisProcessEventDialog.ui: A dialog for selecting a specific event.
+	* VisSkipEventDialog.h, VisSkipEventDialog.ui VisSkipEventDialog.cc:
+	A dialog for skipping events. 
+
+2006-11-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventProcessorService.cc: Add default services at
+	EventProcessor instantiation.
+
+2006-11-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventMenu.h, VisEventMenu.cc: Add a menu item and an action
+	for a previous event processing. Add a menu item and an action for
+	a re-initialization of the EventProcessor - the parameter set file
+	is loaded by choosing one from a file dialog. Start the job only
+	if the event processor present - do nothing in the other case.
+	* VisEventObserver.h, VisEventObserver.cc: Make connection to the
+	postProcessEventSignal only if the event processor as already been
+	constructed - delay the action otherwise. Reconnect when the event
+	processor has been reinitialize.
+	* VisEventProcessorService.h, VisEventProcessorService.cc: Collect
+	all related to event processor and framework stuff here: message
+	logger, job report, etc. Allow re-initialization of the event
+	processor. Configure it either from an option from the command
+	line or a string. If nothing is given, construct a simple
+	parameter file with an empty source. Add a configuration failure
+	callback.
+	* VisEventSelector.h:
+	* VisMainProgram.h, VisMainProgram.cc: Add a configuration failure
+	callback. Remove message service presence - it has been moved to
+	the event processor service. Move handling the command line
+	options from here to the event processor service. Remove unused
+	thread. Delete event processor service before exiting from the
+	application.
+	* VisTwigFactroyService.cc: 
+	* VisContent.cc: Initialize actions in the event thread.
+	* BuildFile: Remove dependency on Threads.
+
+2006-10-31  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSelector.h: Add a process name to the selector.
+	* VisTwigFactroyService.h, VisTwigFactroyService.cc: Dynamic twigs
+	will have a process name to identify their collection.
+
+2006-10-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisQueuedTwig.cc, BuildFile: Add VisConfigurationService to
+	enable certain twigs from the start.
+
+2006-08-23  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* src/VisContent.cc: Added missing iostream header.
+
+2006-07-07  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* BuildFile: Used sigcpp instead of boost.
+	* interface/VisEventObserver.h: Moved to sigc::signals/connections
+	instead of boost::signals/connections.
+
+2006-06-28  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* src/VisEventMenu.cc, src/VisMainProgram.cc: Moved to use new interface
+	of IgEnvsElement i.e. use of getenv instead of get method.
+
+2006-05-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventMenu.cc: Add a key stroke for an auto event fetching.
+
+2006-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisAppearanceService.h, VisAppearanceService.cc: Define an
+	appearance service: currently sets only an automatic startup.
+	* VisEventMenu.cc: Use an environment variable to set an interval
+	between automatic fetching of the events.
+	* VisMainProgram.cc: Instantiate VisAppearanceService and set its
+	configuration from an environment variable.
+
+2006-04-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventMenu.cc: Add separate initialization of the job.
+
+2006-04-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventTwig.h, VisEventTwig.cc, VisEventTwigOps.h,
+	VisEventTwigOps.cc, VisEventContent.h, VisEventContent.cc: Moved
+	to a separate plugin.
+	* xtypeinfo.h, plugin.cc: Modify accordingly.
+
+2006-03-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMainProgram.cc: Do nothing in the thread.
+
+	* VisMainProgram.h, VisMainProgram.cc: Move initialization of the
+	message logger presence out of the running thread.
+	* VisTwigFactroyService.cc: Add double quotes at the end of names.
+
+2006-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMainProgram.h, VisMainProgram.cc: Keep the thread for
+	MessageLogger running till visualization is done.
+
+2006-03-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventObserver.h, VisEventObserver.cc: Make it a base class
+	for all twigs which should observe the end of an event and handle
+	connections of the end of event signal here.
+	* VisEventSelector.h: Selector for event collections based on
+	friendly name, module label, and an instance name.
+	* VisTwigFactroyService.h, VisTwigFactroyService.cc: A factory to
+	create the twigs on the fly: registers twigs by their friendly
+	name. 
+	* VisQueuedTwig.h, VisQueuedTwig.cc: Make it a
+	VisEventObserver. Move the multimethods out to plugin.cc.
+	* plugin.cc: See above.
+
+	* VisEventSelector.h: Adapt to changes in the framework Selector.
+	* VisEventMenu.cc: Enable initialization of the event processor
+	for tests.
+	* VisMainProgram.cc: Spawn a thread for message logger.
+
+2006-03-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventTwigOps.h: Change the id of the menu to avoid an overlap.
+
+2006-03-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventTwig.cc: Remove cout. Invalidate the parent of the twig to
+	show children.
+	
+	* VisEventTwig.cc: Add a parent twig to avoid full tree invalidation.
+	Remove cascade on each evevnt.
+
+2006-03-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisQueuedTwig.cc: IgSurfaceOperation class moved to the file
+	with the same name.
+	* VisPackageInitializer.h, VisPackageInitializer.cc: Removed as
+	obsolete.
+	* VisMainProgram.h, VisMainProgram.cc: Cleanup.
+	* VisEventContent.h, VisEventContent.cc: Event content data
+	proxy.
+	* VisEventTwigOps.h, VisEventTwigOps.cc: Options for the
+	VisEventTwig.
+	* VisQueuedTwig.cc: Use iguana lock.
+	* VisEventTwig.h, VisEventTwig.cc: Event content twig.
+	* plugin.cc: Update for the above changes.
+
+2006-01-30  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* .admin/developers: Added Shahzad Muzaffar as administrator.
+	* .admin/developers: Removed the empty line.
+	
+2006-01-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMainProgram.cc: Clean up the run and logging.
+	
+2006-01-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisActiveConfigurable.h: New class migrated from IGUANACMS to 
+	provide change-on-the fly parameters. 
+
+2005-12-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMainProgram.cc, VisMainProgram.h, VisEventProcessorService.h,
+	VisEventProcessorService.cc: Use seal::Error to catch all kinds of
+	exceptions from the framework and the other modules which use
+	broader definition of an exception.
+
+2005-12-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventProcessorService.cc: Catch seal::Error rather then 
+	seal::Exception.
+	
+2005-12-07  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* VisEventProcessor.cc, VisEventProcessor.h, VisMainProgram.cc:
+	VisEventProcessor::initEventProcessor () now takes a string
+	containing the parameter set as input. VisMainProgram is now
+	responsible for reading the parameter set and passing it to
+	VisEventProcessor::initEventProcessor ().
+
+2005-10-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMainProgram.h, VisMainProgram.cc, VisEventProcessorService.h,
+	VisEventProcessorService.cc: Move away from using Qt message
+	boxes. Use SEAL callbacks instead.
+
+2005-10-24  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventTwig.h, VisEventTwig.cc: New class to provide event 
+	information.
+	* xtypeinfo.h, plugin.cc: Re-introduce the above class.
+
+2005-10-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventProcessorService.cc: Use IgQtLock.
+	* VisEventMenu.h, VisEventMenu.cc: Enable auto event
+	fetching. Clean up commented out code.
+	
+2005-09-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventProcessorService.h, VisEventProcessorService.cc: New
+	service to keep an edm:EventProcessor in an IgState. One per
+	state.
+	* BuildFile: Dependencies clean up.
+	* VisEventTwig.h, VisHFDigiTwig.h, VisEventTwig.cc,
+	VisHFDigiTwig.cc: Moved out of this package - do not belong here.
+	* xtypeinfo.h, plugin.cc: Reflect the above change.
+	* VisQueuedTwig.h, VisQueuedTwig.cc: Add the RZ representation.
+	* VisEventMenu.h, VisEventMenu.cc: Use the 
+	VisEventProcessorService. Remove reference to the obsolete
+	classes.
+	* VisMainProgram.cc: Load the VisEventProcessorService here.
+
+2005-09-15  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* VisHFDigiTwig.cc: Move the shape out of the loop.
+
+2005-08-03  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisContent.h, VisCoreContent.h, VisEventMenu.h,
+	VisEventTwig.h, VisHFDigiTwig.h, VisMainProgram.h,
+	VisPackageInitializer.h, VisQueue.h, VisQueueProcessor.h,
+	VisQueuedTwig.h, debug.h, xtypeinfo.h, VisContent.cc,
+	VisCoreContent.cc, VisEventMenu.cc, VisEventTwig.cc,
+	VisHFDigiTwig.cc, VisMainProgram.cc, VisPackageInitializer.cc,
+	VisQueue.cc, VisQueueProcessor.cc, VisQueuedTwig.cc, plugin.cc,
+	test/pset.txt: New files migrated from IGUANACMS.
+
+	* New shared Framework-based visualisation core.

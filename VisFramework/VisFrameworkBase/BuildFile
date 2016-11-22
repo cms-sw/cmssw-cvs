@@ -1,0 +1,22 @@
+<use name=Iguana/GLModels>
+<use name=Iguana/Models>
+<use name=Iguana/Studio>
+<use name=FWCore/Framework>
+<use name=FWCore/MessageLogger>
+<use name=FWCore/PluginManager>
+<use name=FWCore/ServiceRegistry>
+<use name=FWCore/ParameterSet>
+<use name=FWCore/PythonParameterSet>
+<use name=FWCore/Utilities>
+<use name=VisFramework/VisConfigService>
+<use name=DataFormats/FEDRawData>
+<use name=rootrflx>
+<use name=DataFormats/Common>
+<use name=boost>
+<use name=boost_program_options>
+<use name=sigcpp>
+<use name=qt>
+
+<export>
+  <lib name=VisFrameworkVisFrameworkBase>
+</export>

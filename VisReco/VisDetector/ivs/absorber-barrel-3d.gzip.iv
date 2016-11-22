@@ -1,0 +1,5024 @@
+#Inventor V2.1 ascii
+
+
+DEF MBAT Switch {
+  whichChild -3
+
+  DrawStyle {
+    style FILLED
+
+  }
+  Material {
+    ambientColor 0.93905598 0.00302124 0.027419999
+    diffuseColor 0.704292 0.0022659299 0.020564999
+    specularColor 0.49999201 0.49999201 0.49999201
+    emissiveColor 0 0 0
+    shininess 0.1
+    transparency 0
+
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        3.9449999 0.345763 1.0508992e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 1986.526
+      length 200
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        3.2435901 2.27194 1.3508706e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 1986.526
+      length 200
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        1.6730601 3.58935 1.2888761e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 1986.526
+      length 200
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        -0.345763 3.9449999 8.8152969e-16 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 1986.526
+      length 200
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -2.27194 3.2435901 2.3797774e-16 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 1986.526
+      length 200
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -3.58935 1.6730601 -4.6934016e-16 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 1986.526
+      length 200
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -3.9449999 -0.34576401 -1.0508994e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 1986.526
+      length 200
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -3.2435901 -2.27194 -1.3508706e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 1986.526
+      length 200
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -1.6730601 -3.58935 -1.2888761e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 1986.526
+      length 200
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        0.34576401 -3.9449999 -8.8152948e-16 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 1986.526
+      length 200
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        2.27194 -3.2435901 -2.3797774e-16 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 1986.526
+      length 200
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        3.58935 -1.6730601 4.6934016e-16 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 1986.526
+      length 200
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        4.7575002 0 1.1652129e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        4.12012 2.3787501 1.5917115e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        2.3787501 4.12012 1.5917115e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.1652129e-15 4.7575002 1.1652129e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -2.3787501 4.12012 4.2649856e-16 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -4.12012 2.3787501 -4.2649856e-16 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -4.7575002 0 -1.1652129e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -4.12012 -2.3787501 -1.5917115e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -2.3787501 -4.12012 -1.5917115e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.1652129e-15 -4.7575002 -1.1652129e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        2.3787501 -4.12012 -4.2649856e-16 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        4.12012 -2.3787501 4.2649856e-16 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        5.6599998 0 1.3862544e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        4.9017 2.8299999 1.8936578e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        2.8299999 4.9017 1.8936578e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.3862544e-15 5.6599998 1.3862544e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -2.8299999 4.9017 5.0740339e-16 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -4.9017 2.8299999 -5.0740339e-16 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -5.6599998 0 -1.3862544e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -4.9017 -2.8299999 -1.8936578e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -2.8299999 -4.9017 -1.8936578e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.3862544e-15 -5.6599998 -1.3862544e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        2.8299999 -4.9017 -5.0740339e-16 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        4.9017 -2.8299999 5.0740339e-16 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        6.6849999 0 1.6372987e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        5.7893801 3.3425 2.2365916e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        3.3425 5.7893801 2.2365916e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.6372987e-15 6.6849999 1.6372987e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -3.3425 5.7893801 5.9929296e-16 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -5.7893801 3.3425 -5.9929296e-16 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -6.6849999 0 -1.6372987e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -5.7893801 -3.3425 -2.2365916e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -3.3425 -5.7893801 -2.2365916e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.6372987e-15 -6.6849999 -1.6372987e-15 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        3.3425 -5.7893801 -5.9929296e-16 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        5.7893801 -3.3425 5.9929296e-16 1
+
+    }
+    IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -1.55764 -5.0243101 -1.6120596e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        -1.1632 5.1300001 9.7155367e-16 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -3.57236 3.86111 7.0721017e-17 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -5.0243101 1.55764 -8.4906122e-16 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -5.1300001 -1.1632 -1.5413385e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -3.86111 -3.57236 -1.8206149e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        1.1632 -5.1300001 -9.7155367e-16 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        3.57236 -3.86111 -7.0721017e-17 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        5.0243101 -1.55764 8.4906122e-16 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        5.1300001 1.1632 1.5413385e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        3.86111 3.57236 1.8206149e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        1.55764 5.0243101 1.6120596e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.4432 6.1725001 1.865247e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -1.8364 6.0671401 1.0361982e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -4.62394 4.3361001 -7.0498135e-17 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -6.1725001 1.4432 -1.1583061e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -6.0671401 -1.8364 -1.9357451e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -4.3361001 -4.62394 -2.1945044e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.4432 -6.1725001 -1.865247e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        1.8364 -6.0671401 -1.0361982e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        4.62394 -4.3361001 7.0498135e-17 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        6.1725001 -1.4432 1.1583061e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        6.0671401 1.8364 1.9357451e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        4.3361001 4.62394 2.1945044e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00098447257 -0.00017553839 2.5935553e-19 0
+        0.00017553856 0.00098447257 3.4534173e-19 0
+        0 0 0.001 0
+        0.743348 4.16892 1.2031189e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 869.33801
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00094034756 0.00034021545 3.7486745e-19 0
+        -0.00034021545 0.00094034756 2.0821544e-19 0
+        0 0 0.001 0
+        -1.4407001 3.98206 6.2243311e-16 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 869.33801
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00064425718 0.00076480897 4.0634059e-19 0
+        -0.00076480897 0.00064425718 3.1704608e-20 0
+        0 0 0.001 0
+        -3.2387099 2.72822 -1.2502986e-16 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 869.33801
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00017553856 0.00098447257 3.4534173e-19 0
+        -0.00098447257 0.00017553856 -1.3689484e-19 0
+        0 0 0.001 0
+        -4.16892 0.74334699 -8.3899572e-16 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 869.33801
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00034021545 0.00094034756 2.0821544e-19 0
+        -0.00094034756 -0.00034021545 -2.524068e-19 0
+        0 0 0.001 0
+        -3.98206 -1.4407001 -1.3281492e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 869.33801
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00076480897 0.00064425718 3.1704608e-20 0
+        -0.00064425718 -0.00076480897 -2.8387996e-19 0
+        0 0 0.001 0
+        -2.72822 -3.2387099 -1.4614281e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 869.33801
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00098447257 0.00017553856 -1.3689484e-19 0
+        -0.00017553839 -0.00098447257 -2.2288105e-19 0
+        0 0 0.001 0
+        -0.743348 -4.16892 -1.2031189e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 869.33801
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00094034756 -0.00034021545 -2.524068e-19 0
+        0.0003402156 -0.0009403475 -8.5754745e-20 0
+        0 0 0.001 0
+        1.4407001 -3.98206 -6.2243311e-16 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 869.33801
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00064425718 -0.00076480897 -2.8387996e-19 0
+        0.00076480908 -0.00064425706 9.0756092e-20 0
+        0 0 0.001 0
+        3.2387099 -2.72821 1.2503231e-16 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 869.33801
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00017553839 -0.00098447257 -2.2288105e-19 0
+        0.00098447257 -0.00017553839 2.5935553e-19 0
+        0 0 0.001 0
+        4.16892 -0.74334699 8.3899572e-16 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 869.33801
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.0003402156 -0.0009403475 -8.5754745e-20 0
+        0.00094034756 0.00034021545 3.7486745e-19 0
+        0 0 0.001 0
+        3.98206 1.4407001 1.3281492e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 869.33801
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00076480908 -0.00064425706 9.0756092e-20 0
+        0.00064425718 0.00076480897 4.0634059e-19 0
+        0 0 0.001 0
+        2.72822 3.2387099 1.4614281e-15 1
+
+    }
+    IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 869.33801
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        4.7575002 0 5.342 1
+
+    }
+    DEF +0 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        4.12012 2.3787501 5.342 1
+
+    }
+    DEF +1 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        2.3787501 4.12012 5.342 1
+
+    }
+    DEF +2 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.1652129e-15 4.7575002 5.342 1
+
+    }
+    DEF +3 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -2.3787501 4.12012 5.342 1
+
+    }
+    DEF +4 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -4.12012 2.3787501 5.342 1
+
+    }
+    DEF +5 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -4.7575002 0 5.342 1
+
+    }
+    DEF +6 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -4.12012 -2.3787501 5.342 1
+
+    }
+    DEF +7 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -2.3787501 -4.12012 5.342 1
+
+    }
+    DEF +8 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.1652129e-15 -4.7575002 5.342 1
+
+    }
+    DEF +9 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        2.3787501 -4.12012 5.342 1
+
+    }
+    DEF +10 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        4.12012 -2.3787501 5.342 1
+
+    }
+    DEF +11 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 147.5
+      dx1 1235.25
+      dx2 1314.29
+      dy2 147.5
+      dx3 1235.25
+      dx4 1314.29
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        4.7575002 0 2.6860001 1
+
+    }
+    USE +0
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        4.12012 2.3787501 2.6860001 1
+
+    }
+    USE +1
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        2.3787501 4.12012 2.6860001 1
+
+    }
+    USE +2
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.1652129e-15 4.7575002 2.6860001 1
+
+    }
+    USE +3
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -2.3787501 4.12012 2.6860001 1
+
+    }
+    USE +4
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -4.12012 2.3787501 2.6860001 1
+
+    }
+    USE +5
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -4.7575002 0 2.6860001 1
+
+    }
+    USE +6
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -4.12012 -2.3787501 2.6860001 1
+
+    }
+    USE +7
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -2.3787501 -4.12012 2.6860001 1
+
+    }
+    USE +8
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.1652129e-15 -4.7575002 2.6860001 1
+
+    }
+    USE +9
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        2.3787501 -4.12012 2.6860001 1
+
+    }
+    USE +10
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        4.12012 -2.3787501 2.6860001 1
+
+    }
+    USE +11
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        4.7575002 0 -2.6860001 1
+
+    }
+    USE +0
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        4.12012 2.3787501 -2.6860001 1
+
+    }
+    USE +1
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        2.3787501 4.12012 -2.6860001 1
+
+    }
+    USE +2
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.1652129e-15 4.7575002 -2.6860001 1
+
+    }
+    USE +3
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -2.3787501 4.12012 -2.6860001 1
+
+    }
+    USE +4
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -4.12012 2.3787501 -2.6860001 1
+
+    }
+    USE +5
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -4.7575002 0 -2.6860001 1
+
+    }
+    USE +6
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -4.12012 -2.3787501 -2.6860001 1
+
+    }
+    USE +7
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -2.3787501 -4.12012 -2.6860001 1
+
+    }
+    USE +8
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.1652129e-15 -4.7575002 -2.6860001 1
+
+    }
+    USE +9
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        2.3787501 -4.12012 -2.6860001 1
+
+    }
+    USE +10
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        4.12012 -2.3787501 -2.6860001 1
+
+    }
+    USE +11
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        4.7575002 0 -5.342 1
+
+    }
+    USE +0
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        4.12012 2.3787501 -5.342 1
+
+    }
+    USE +1
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        2.3787501 4.12012 -5.342 1
+
+    }
+    USE +2
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.1652129e-15 4.7575002 -5.342 1
+
+    }
+    USE +3
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -2.3787501 4.12012 -5.342 1
+
+    }
+    USE +4
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -4.12012 2.3787501 -5.342 1
+
+    }
+    USE +5
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -4.7575002 0 -5.342 1
+
+    }
+    USE +6
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -4.12012 -2.3787501 -5.342 1
+
+    }
+    USE +7
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -2.3787501 -4.12012 -5.342 1
+
+    }
+    USE +8
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.1652129e-15 -4.7575002 -5.342 1
+
+    }
+    USE +9
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        2.3787501 -4.12012 -5.342 1
+
+    }
+    USE +10
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        4.12012 -2.3787501 -5.342 1
+
+    }
+    USE +11
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        5.6599998 0 5.342 1
+
+    }
+    DEF +12 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        4.9017 2.8299999 5.342 1
+
+    }
+    DEF +13 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        2.8299999 4.9017 5.342 1
+
+    }
+    DEF +14 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.3862544e-15 5.6599998 5.342 1
+
+    }
+    DEF +15 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -2.8299999 4.9017 5.342 1
+
+    }
+    DEF +16 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -4.9017 2.8299999 5.342 1
+
+    }
+    DEF +17 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -5.6599998 0 5.342 1
+
+    }
+    DEF +18 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -4.9017 -2.8299999 5.342 1
+
+    }
+    DEF +19 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -2.8299999 -4.9017 5.342 1
+
+    }
+    DEF +20 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.3862544e-15 -5.6599998 5.342 1
+
+    }
+    DEF +21 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        2.8299999 -4.9017 5.342 1
+
+    }
+    DEF +22 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        4.9017 -2.8299999 5.342 1
+
+    }
+    DEF +23 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1432.1899
+      dx2 1601
+      dy2 315
+      dx3 1432.1899
+      dx4 1601
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        5.6599998 0 2.6860001 1
+
+    }
+    USE +12
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        4.9017 2.8299999 2.6860001 1
+
+    }
+    USE +13
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        2.8299999 4.9017 2.6860001 1
+
+    }
+    USE +14
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.3862544e-15 5.6599998 2.6860001 1
+
+    }
+    USE +15
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -2.8299999 4.9017 2.6860001 1
+
+    }
+    USE +16
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -4.9017 2.8299999 2.6860001 1
+
+    }
+    USE +17
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -5.6599998 0 2.6860001 1
+
+    }
+    USE +18
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -4.9017 -2.8299999 2.6860001 1
+
+    }
+    USE +19
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -2.8299999 -4.9017 2.6860001 1
+
+    }
+    USE +20
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.3862544e-15 -5.6599998 2.6860001 1
+
+    }
+    USE +21
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        2.8299999 -4.9017 2.6860001 1
+
+    }
+    USE +22
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        4.9017 -2.8299999 2.6860001 1
+
+    }
+    USE +23
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        5.6599998 0 -2.6860001 1
+
+    }
+    USE +12
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        4.9017 2.8299999 -2.6860001 1
+
+    }
+    USE +13
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        2.8299999 4.9017 -2.6860001 1
+
+    }
+    USE +14
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.3862544e-15 5.6599998 -2.6860001 1
+
+    }
+    USE +15
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -2.8299999 4.9017 -2.6860001 1
+
+    }
+    USE +16
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -4.9017 2.8299999 -2.6860001 1
+
+    }
+    USE +17
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -5.6599998 0 -2.6860001 1
+
+    }
+    USE +18
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -4.9017 -2.8299999 -2.6860001 1
+
+    }
+    USE +19
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -2.8299999 -4.9017 -2.6860001 1
+
+    }
+    USE +20
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.3862544e-15 -5.6599998 -2.6860001 1
+
+    }
+    USE +21
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        2.8299999 -4.9017 -2.6860001 1
+
+    }
+    USE +22
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        4.9017 -2.8299999 -2.6860001 1
+
+    }
+    USE +23
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        5.6599998 0 -5.342 1
+
+    }
+    USE +12
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        4.9017 2.8299999 -5.342 1
+
+    }
+    USE +13
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        2.8299999 4.9017 -5.342 1
+
+    }
+    USE +14
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.3862544e-15 5.6599998 -5.342 1
+
+    }
+    USE +15
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -2.8299999 4.9017 -5.342 1
+
+    }
+    USE +16
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -4.9017 2.8299999 -5.342 1
+
+    }
+    USE +17
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -5.6599998 0 -5.342 1
+
+    }
+    USE +18
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -4.9017 -2.8299999 -5.342 1
+
+    }
+    USE +19
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -2.8299999 -4.9017 -5.342 1
+
+    }
+    USE +20
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.3862544e-15 -5.6599998 -5.342 1
+
+    }
+    USE +21
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        2.8299999 -4.9017 -5.342 1
+
+    }
+    USE +22
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        4.9017 -2.8299999 -5.342 1
+
+    }
+    USE +23
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        6.6849999 0 5.342 1
+
+    }
+    DEF +24 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        5.7893801 3.3425 5.342 1
+
+    }
+    DEF +25 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        3.3425 5.7893801 5.342 1
+
+    }
+    DEF +26 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.6372987e-15 6.6849999 5.342 1
+
+    }
+    DEF +27 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -3.3425 5.7893801 5.342 1
+
+    }
+    DEF +28 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -5.7893801 3.3425 5.342 1
+
+    }
+    DEF +29 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -6.6849999 0 5.342 1
+
+    }
+    DEF +30 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -5.7893801 -3.3425 5.342 1
+
+    }
+    DEF +31 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -3.3425 -5.7893801 5.342 1
+
+    }
+    DEF +32 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.6372987e-15 -6.6849999 5.342 1
+
+    }
+    DEF +33 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        3.3425 -5.7893801 5.342 1
+
+    }
+    DEF +34 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        5.7893801 -3.3425 5.342 1
+
+    }
+    DEF +35 IgSoG4Trap {
+      fields [ SFFloat dz, SFFloat theta, SFFloat phi, SFFloat dy1, SFFloat dx1, SFFloat dx2, SFFloat dy2, SFFloat dx3, SFFloat dx4, SFFloat alp1, SFFloat alp2, SFNode callbackList, SFNode faces, SFNode separator ]
+      dz 1268
+      theta 0
+      phi 0
+      dy1 315
+      dx1 1706.84
+      dx2 1875.64
+      dy2 315
+      dx3 1706.84
+      dx4 1875.64
+      alp1 0
+      alp2 0
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        6.6849999 0 2.6860001 1
+
+    }
+    USE +24
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        5.7893801 3.3425 2.6860001 1
+
+    }
+    USE +25
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        3.3425 5.7893801 2.6860001 1
+
+    }
+    USE +26
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.6372987e-15 6.6849999 2.6860001 1
+
+    }
+    USE +27
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -3.3425 5.7893801 2.6860001 1
+
+    }
+    USE +28
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -5.7893801 3.3425 2.6860001 1
+
+    }
+    USE +29
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -6.6849999 0 2.6860001 1
+
+    }
+    USE +30
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -5.7893801 -3.3425 2.6860001 1
+
+    }
+    USE +31
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -3.3425 -5.7893801 2.6860001 1
+
+    }
+    USE +32
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.6372987e-15 -6.6849999 2.6860001 1
+
+    }
+    USE +33
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        3.3425 -5.7893801 2.6860001 1
+
+    }
+    USE +34
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        5.7893801 -3.3425 2.6860001 1
+
+    }
+    USE +35
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        6.6849999 0 -2.6860001 1
+
+    }
+    USE +24
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        5.7893801 3.3425 -2.6860001 1
+
+    }
+    USE +25
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        3.3425 5.7893801 -2.6860001 1
+
+    }
+    USE +26
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.6372987e-15 6.6849999 -2.6860001 1
+
+    }
+    USE +27
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -3.3425 5.7893801 -2.6860001 1
+
+    }
+    USE +28
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -5.7893801 3.3425 -2.6860001 1
+
+    }
+    USE +29
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -6.6849999 0 -2.6860001 1
+
+    }
+    USE +30
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -5.7893801 -3.3425 -2.6860001 1
+
+    }
+    USE +31
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -3.3425 -5.7893801 -2.6860001 1
+
+    }
+    USE +32
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.6372987e-15 -6.6849999 -2.6860001 1
+
+    }
+    USE +33
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        3.3425 -5.7893801 -2.6860001 1
+
+    }
+    USE +34
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        5.7893801 -3.3425 -2.6860001 1
+
+    }
+    USE +35
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        6.6849999 0 -5.342 1
+
+    }
+    USE +24
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        5.7893801 3.3425 -5.342 1
+
+    }
+    USE +25
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        3.3425 5.7893801 -5.342 1
+
+    }
+    USE +26
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.6372987e-15 6.6849999 -5.342 1
+
+    }
+    USE +27
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -3.3425 5.7893801 -5.342 1
+
+    }
+    USE +28
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -5.7893801 3.3425 -5.342 1
+
+    }
+    USE +29
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -6.6849999 0 -5.342 1
+
+    }
+    USE +30
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -5.7893801 -3.3425 -5.342 1
+
+    }
+    USE +31
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -3.3425 -5.7893801 -5.342 1
+
+    }
+    USE +32
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.6372987e-15 -6.6849999 -5.342 1
+
+    }
+    USE +33
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        3.3425 -5.7893801 -5.342 1
+
+    }
+    USE +34
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        5.7893801 -3.3425 -5.342 1
+
+    }
+    USE +35
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -1.55764 -5.0243101 5.342 1
+
+    }
+    DEF +36 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -1.55764 -5.0243101 2.6860001 1
+
+    }
+    USE +36
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -1.55764 -5.0243101 -2.6860001 1
+
+    }
+    USE +36
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -1.55764 -5.0243101 -5.342 1
+
+    }
+    USE +36
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        -1.1632 5.1300001 5.342 1
+
+    }
+    DEF +37 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        -1.1632 5.1300001 2.6860001 1
+
+    }
+    USE +37
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        -1.1632 5.1300001 -2.6860001 1
+
+    }
+    USE +37
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        -1.1632 5.1300001 -5.342 1
+
+    }
+    USE +37
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -3.57236 3.86111 5.342 1
+
+    }
+    DEF +38 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -3.57236 3.86111 2.6860001 1
+
+    }
+    USE +38
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -3.57236 3.86111 -2.6860001 1
+
+    }
+    USE +38
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -3.57236 3.86111 -5.342 1
+
+    }
+    USE +38
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -5.0243101 1.55764 5.342 1
+
+    }
+    DEF +39 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -5.0243101 1.55764 2.6860001 1
+
+    }
+    USE +39
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -5.0243101 1.55764 -2.6860001 1
+
+    }
+    USE +39
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -5.0243101 1.55764 -5.342 1
+
+    }
+    USE +39
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -5.1300001 -1.1632 5.342 1
+
+    }
+    DEF +40 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -5.1300001 -1.1632 2.6860001 1
+
+    }
+    USE +40
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -5.1300001 -1.1632 -2.6860001 1
+
+    }
+    USE +40
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -5.1300001 -1.1632 -5.342 1
+
+    }
+    USE +40
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -3.86111 -3.57236 5.342 1
+
+    }
+    DEF +41 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -3.86111 -3.57236 2.6860001 1
+
+    }
+    USE +41
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -3.86111 -3.57236 -2.6860001 1
+
+    }
+    USE +41
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -3.86111 -3.57236 -5.342 1
+
+    }
+    USE +41
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        1.1632 -5.1300001 5.342 1
+
+    }
+    DEF +42 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        1.1632 -5.1300001 2.6860001 1
+
+    }
+    USE +42
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        1.1632 -5.1300001 -2.6860001 1
+
+    }
+    USE +42
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        1.1632 -5.1300001 -5.342 1
+
+    }
+    USE +42
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        3.57236 -3.86111 5.342 1
+
+    }
+    DEF +43 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        3.57236 -3.86111 2.6860001 1
+
+    }
+    USE +43
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        3.57236 -3.86111 -2.6860001 1
+
+    }
+    USE +43
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        3.57236 -3.86111 -5.342 1
+
+    }
+    USE +43
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        5.0243101 -1.55764 5.342 1
+
+    }
+    DEF +44 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        5.0243101 -1.55764 2.6860001 1
+
+    }
+    USE +44
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        5.0243101 -1.55764 -2.6860001 1
+
+    }
+    USE +44
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        5.0243101 -1.55764 -5.342 1
+
+    }
+    USE +44
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        5.1300001 1.1632 5.342 1
+
+    }
+    DEF +45 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        5.1300001 1.1632 2.6860001 1
+
+    }
+    USE +45
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        5.1300001 1.1632 -2.6860001 1
+
+    }
+    USE +45
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        5.1300001 1.1632 -5.342 1
+
+    }
+    USE +45
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        3.86111 3.57236 5.342 1
+
+    }
+    DEF +46 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        3.86111 3.57236 2.6860001 1
+
+    }
+    USE +46
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        3.86111 3.57236 -2.6860001 1
+
+    }
+    USE +46
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        3.86111 3.57236 -5.342 1
+
+    }
+    USE +46
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        1.55764 5.0243101 5.342 1
+
+    }
+    DEF +47 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 75
+      length 430
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        1.55764 5.0243101 2.6860001 1
+
+    }
+    USE +47
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        1.55764 5.0243101 -2.6860001 1
+
+    }
+    USE +47
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        1.55764 5.0243101 -5.342 1
+
+    }
+    USE +47
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.4432 6.1725001 5.342 1
+
+    }
+    DEF +48 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.4432 6.1725001 2.6860001 1
+
+    }
+    USE +48
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.4432 6.1725001 -2.6860001 1
+
+    }
+    USE +48
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.001 0 3.0615159e-19 0
+        3.0615159e-19 0.001 3.0615159e-19 0
+        0 0 0.001 0
+        1.4432 6.1725001 -5.342 1
+
+    }
+    USE +48
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -1.8364 6.0671401 5.342 1
+
+    }
+    DEF +49 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -1.8364 6.0671401 2.6860001 1
+
+    }
+    USE +49
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -1.8364 6.0671401 -2.6860001 1
+
+    }
+    USE +49
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 0.00050000002 3.95799e-19 0
+        -0.00050000002 0.00086602545 1.5087774e-19 0
+        0 0 0.001 0
+        -1.8364 6.0671401 -5.342 1
+
+    }
+    USE +49
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -4.62394 4.3361001 5.342 1
+
+    }
+    DEF +50 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -4.62394 4.3361001 2.6860001 1
+
+    }
+    USE +50
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -4.62394 4.3361001 -2.6860001 1
+
+    }
+    USE +50
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 0.00086602545 3.95799e-19 0
+        -0.00086602545 0.00050000002 -2.8417089e-20 0
+        0 0 0.001 0
+        -4.62394 4.3361001 -5.342 1
+
+    }
+    USE +50
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -6.1725001 1.4432 5.342 1
+
+    }
+    DEF +51 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -6.1725001 1.4432 2.6860001 1
+
+    }
+    USE +51
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -6.1725001 1.4432 -2.6860001 1
+
+    }
+    USE +51
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 3.0615159e-19 0.001 3.0615159e-19 0
+        -0.001 1.2246064e-19 -1.8369096e-19 0
+        0 0 0.001 0
+        -6.1725001 1.4432 -5.342 1
+
+    }
+    USE +51
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -6.0671401 -1.8364 5.342 1
+
+    }
+    DEF +52 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -6.0671401 -1.8364 2.6860001 1
+
+    }
+    USE +52
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -6.0671401 -1.8364 -2.6860001 1
+
+    }
+    USE +52
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 0.00086602545 1.5087774e-19 0
+        -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0 0 0.001 0
+        -6.0671401 -1.8364 -5.342 1
+
+    }
+    USE +52
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -4.3361001 -4.62394 5.342 1
+
+    }
+    DEF +53 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -4.3361001 -4.62394 2.6860001 1
+
+    }
+    USE +53
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -4.3361001 -4.62394 -2.6860001 1
+
+    }
+    USE +53
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 0.00050000002 -2.8417089e-20 0
+        -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0 0 0.001 0
+        -4.3361001 -4.62394 -5.342 1
+
+    }
+    USE +53
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.4432 -6.1725001 5.342 1
+
+    }
+    DEF +54 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.4432 -6.1725001 2.6860001 1
+
+    }
+    USE +54
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.4432 -6.1725001 -2.6860001 1
+
+    }
+    USE +54
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.001 1.2246064e-19 -1.8369096e-19 0
+        -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0 0 0.001 0
+        -1.4432 -6.1725001 -5.342 1
+
+    }
+    USE +54
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        1.8364 -6.0671401 5.342 1
+
+    }
+    DEF +55 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        1.8364 -6.0671401 2.6860001 1
+
+    }
+    USE +55
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        1.8364 -6.0671401 -2.6860001 1
+
+    }
+    USE +55
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00086602545 -0.00050000002 -2.7333837e-19 0
+        0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0 0 0.001 0
+        1.8364 -6.0671401 -5.342 1
+
+    }
+    USE +55
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        4.62394 -4.3361001 5.342 1
+
+    }
+    DEF +56 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        4.62394 -4.3361001 2.6860001 1
+
+    }
+    USE +56
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        4.62394 -4.3361001 -2.6860001 1
+
+    }
+    USE +56
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -0.00050000002 -0.00086602545 -2.7333837e-19 0
+        0.00086602545 -0.00050000002 1.5087774e-19 0
+        0 0 0.001 0
+        4.62394 -4.3361001 -5.342 1
+
+    }
+    USE +56
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        6.1725001 -1.4432 5.342 1
+
+    }
+    DEF +57 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        6.1725001 -1.4432 2.6860001 1
+
+    }
+    USE +57
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        6.1725001 -1.4432 -2.6860001 1
+
+    }
+    USE +57
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix -1.8369096e-19 -0.001 -1.8369096e-19 0
+        0.001 0 3.0615159e-19 0
+        0 0 0.001 0
+        6.1725001 -1.4432 -5.342 1
+
+    }
+    USE +57
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        6.0671401 1.8364 5.342 1
+
+    }
+    DEF +58 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        6.0671401 1.8364 2.6860001 1
+
+    }
+    USE +58
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        6.0671401 1.8364 -2.6860001 1
+
+    }
+    USE +58
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00050000002 -0.00086602545 -2.8417089e-20 0
+        0.00086602545 0.00050000002 3.95799e-19 0
+        0 0 0.001 0
+        6.0671401 1.8364 -5.342 1
+
+    }
+    USE +58
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        4.3361001 4.62394 5.342 1
+
+    }
+    DEF +59 IgSoCube {
+      fields [ SFFloat width, SFFloat length, SFFloat thickness, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      width 100
+      length 395
+      thickness 2536
+
+    }
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        4.3361001 4.62394 2.6860001 1
+
+    }
+    USE +59
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        4.3361001 4.62394 -2.6860001 1
+
+    }
+    USE +59
+  }
+  Separator {
+
+    MatrixTransform {
+      matrix 0.00086602545 -0.00050000002 1.5087774e-19 0
+        0.00050000002 0.00086602545 3.95799e-19 0
+        0 0 0.001 0
+        4.3361001 4.62394 -5.342 1
+
+    }
+    USE +59
+  }
+}
