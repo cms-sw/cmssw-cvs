@@ -1,0 +1,110 @@
+2010-07-02  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Ig2DModel.cc, Ig3DBaseRep.cc, IgOIVBrowser.cc, xtypeinfo.cc:
+	Remove spurious includes.
+	* BuildFile: Correct dependency.
+
+2010-01-13  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* IgOIVBrowser.h: Remove unnecessary include. Port Qt3Support
+	classes to Qt4.
+
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2009-03-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.h, *.cc: Port to Qt4.
+
+2009-02-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Ig2DModel.cc: Fixes for gcc 4.3.2 
+
+2008-06-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Ig3DBaseModel.cc: Cleaner logic for encoding the first non base
+	name start character.
+
+2008-06-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Ig3DBaseModel.cc: Allow the first character in the Twig name to
+	be encoded with a legal underscore.
+
+2008-04-25 Serkan Bozyigit <Serkan.Bozyigit@cern.ch>
+
+	* IgOIVBrowser.cc: added IgSoRectColHist.
+
+2008-02-18 George Alverson <George.Alverson@cern.ch>
+
+	* IgSpareModel.h, IgSpareRep.h, IgSpareModel.cc, IgSpareRep.cc: Add new
+	classes for specialized use. Copied from IgRPhi equivalents.
+
+	* IgCommon3DReps.h, xtypeinfo.h, xtypeinfo.cc, iglet.cc: Add code to accomodate
+	IgSpareModel, etc. IgOIVBrowser.cc deliberately not modified.
+ 
+2008-02-18  Ianna.Osborne@cern.ch  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added a developer.
+
+2007-11-12  Serkan Bozyigit <Serkan.Bozyigit@cern.ch>
+
+	* IgOIVBrowser.cc: Initialize new classes IgSoGridPlane
+	and IgSoGridPlaneMap.
+
+2007-11-12  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Add a new developer.
+
+2007-09-20  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* IgSoTwig.h, IgSoTwig.cc: New class to handle the iv files.
+	* xtypeinfo.h, xtypeinfo.cc: Declare and define the new IgSoTwig
+	type.
+	* iglet.cc: Add a new IgBrowser capability.
+	
+2007-09-17  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* IgOIVBrowser.cc: Initialize new class IgSoRectHist.
+	
+2007-04-12  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* IgOIVBrowser.h, IgOIVBrowser.cc: Migrated here from
+	IGUANA/Ig_Modules/IgOIVBrowser.
+	* xtypeinfo.h, xtypeinfo.cc, iglet.cc: Modified accordingly.
+
+2007-04-11  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* Ig3DModel.cc: Added missing file.
+
+2007-04-03  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* IgCommon3DReps.h, iglet.cc: Migrate here from
+	Ig_Modules/IgCommon3DReps.
+	* Ig3DRep.cc: Added missing file.
+	* xtypeinfo.cc, BuildFile: Modified accordingly.
+
+2007-04-02  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* New package for migrating Ig_Modules/Ig3DModel,
+	Ig_Modules/Ig3DBaseModel, Ig_Modules/Ig2DModel,
+	Ig_Modules/IgRPhiModel, Ig_Modules/IgRZModel,
+	Ig_Modules/IgLegoModel packages from IGUANA.
+
+	* BuildFile: Migrated from IGUANA. Adapted to the new repository
+	structure.
+	* config.h, Ig2DRep.h, Ig3DBaseModel.h, Ig3DModel.h,
+	IgLegoModel.h, IgRPhiModel.h, IgRZModel.h, xtypeinfo.h,
+	Ig2DModel.h, Ig3DBaseModelEvent.h, Ig3DBaseRep.h, Ig3DRep.h,
+	IgLegoRep.h, IgRPhiRep.h, IgRZRep.h, Ig2DModel.cc, Ig2DRep.cc,
+	Ig3DBaseModel.cc, Ig3DBaseRep.cc, IgLegoModel.cc, IgLegoRep.cc,
+	IgRPhiModel.cc, IgRPhiRep.cc, IgRZModel.cc, IgRZRep.cc,
+	xtypeinfo.cc: Migrated from IGUANA, merged from
+	Ig_Modules/Ig3DModel, Ig_Modules/Ig3DBaseModel,
+	Ig_Modules/Ig2DModel, Ig_Modules/IgRPhiModel,
+	Ig_Modules/IgRZModel, Ig_Modules/IgLegoModel packages and adapted
+	to the new repository structure.

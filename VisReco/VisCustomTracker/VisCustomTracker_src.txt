@@ -1,0 +1,229 @@
+Log for qt3to4 on Mon Apr 6 13:58:53 2009. Number of log entries: 220
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/iglet.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuCmsTracker.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkBuilder.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkGeometryTwig.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkLayer.cc
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkLayerSelection.cc at line 70 column 17: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkLayerSelection.cc at line 70 column 33: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkLayerSelection.cc at line 84 column 18: black -> Qt::black
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkLayerSelection.cc at line 86 column 23: yellow -> Qt::yellow
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkLayerSelection.cc at line 87 column 47: blue -> Qt::blue
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkLayerSelection.cc at line 90 column 17: red -> Qt::red
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkLayerSelection.cc at line 96 column 79: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkLayerSelection.cc: Added the following include directives:
+	#include <Q3PointArray> 	#include <QCloseEvent> 	#include <QPaintEvent> 	#include <QMouseEvent> 
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkLayerSlWindow.cc at line 18 column 20: qwhatsthis.h -> q3whatsthis.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkLayerSlWindow.cc at line 27 column 85: WFlags -> Qt::WFlags
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkLayerSlWindow.cc at line 51 column 29: QGridLayout -> Q3GridLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkLayerSlWindow.cc: Added the following include directives:
+	#include <Q3GridLayout> 	#include <QLabel> 
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 49 column 21: qfiledialog.h -> q3filedialog.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 51 column 21: qpointarray.h -> q3pointarray.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 115 column 30: QFileDialog -> Q3FileDialog
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 129 column 19: black -> Qt::black
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 182 column 17: black -> Qt::black
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 358 column 27: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 358 column 43: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 467 column 13: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 467 column 30: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 562 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 562 column 43: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 562 column 53: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 562 column 66: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 562 column 78: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 563 column 34: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 564 column 40: white -> Qt::white
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 567 column 24: yellow -> Qt::yellow
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 568 column 43: blue -> Qt::blue
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 573 column 73: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 678 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 679 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 679 column 25: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 679 column 38: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 679 column 50: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 680 column 32: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 684 column 16: black -> Qt::black
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc at line 689 column 19: black -> Qt::black
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMap2D.cc: Added the following include directives:
+	#include <QPixmap> 	#include <QPaintEvent> 
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMapWindow.cc at line 24 column 16: qframe.h -> q3frame.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMapWindow.cc at line 25 column 22: qtextbrowser.h -> q3textbrowser.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMapWindow.cc at line 31 column 20: qwhatsthis.h -> q3whatsthis.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMapWindow.cc at line 32 column 15: qgrid.h -> q3grid.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMapWindow.cc at line 35 column 18: qtoolbar.h -> q3toolbar.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMapWindow.cc at line 41 column 78: WFlags -> Qt::WFlags
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMapWindow.cc at line 50 column 15: QGridLayout -> Q3GridLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMapWindow.cc at line 50 column 43: QGridLayout -> Q3GridLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMapWindow.cc at line 83 column 19: QGrid -> Q3Grid
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMapWindow.cc at line 116 column 24: QToolBar -> Q3ToolBar
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkMapWindow.cc: Added the following include directives:
+	#include <QPixmap> 	#include <Q3GridLayout> 
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkModule.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkModuleMap.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkPartDetector.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkRecoContent.cc
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkScrollView.cc at line 10 column 80: WFlags -> Qt::WFlags
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkScrollView.cc at line 11 column 17: QScrollView -> Q3ScrollView
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkScrollView.cc: Added the following include directives:
+	#include <QMouseEvent> 
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSelectionBar.cc at line 177 column 16: black -> Qt::black
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSelectionBar.cc at line 181 column 23: yellow -> Qt::yellow
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSelectionBar.cc at line 182 column 46: red -> Qt::red
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSelectionBar.cc at line 186 column 45: red -> Qt::red
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSelectionBar.cc at line 186 column 68: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSelectionBar.cc at line 191 column 20: black -> Qt::black
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSelectionBar.cc at line 194 column 19: blue -> Qt::blue
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSelectionBar.cc at line 195 column 21: blue -> Qt::blue
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSelectionBar.cc at line 198 column 18: red -> Qt::red
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSelectionBar.cc at line 199 column 20: red -> Qt::red
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSelectionBar.cc at line 202 column 18: black -> Qt::black
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSelectionBar.cc: Added the following include directives:
+	#include <QMouseEvent> 	#include <QPaintEvent> 
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSlWindow.cc at line 27 column 20: qwhatsthis.h -> q3whatsthis.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSlWindow.cc at line 28 column 15: qgrid.h -> q3grid.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSlWindow.cc at line 31 column 21: qobjectlist.h -> qobject.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSlWindow.cc at line 34 column 76: WFlags -> Qt::WFlags
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSlWindow.cc at line 55 column 28: QGridLayout -> Q3GridLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSlWindow.cc at line 56 column 7: QGrid -> Q3Grid
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSlWindow.cc at line 56 column 26: QGrid -> Q3Grid
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSlWindow.cc at line 103 column 50: AlignCenter -> Qt::AlignCenter
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSlWindow.cc: Added the following include directives:
+	#include <Q3GridLayout> 
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSubDetector.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTkSubLayer.cc
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTracker.cc
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 45 column 21: qpointarray.h -> q3pointarray.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 283 column 15: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 283 column 32: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 337 column 16: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 338 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 338 column 26: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 338 column 34: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 339 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 339 column 26: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 340 column 59: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 340 column 110: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 386 column 11: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 387 column 10: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 387 column 21: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 387 column 29: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 388 column 10: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 388 column 21: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 389 column 54: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 389 column 104: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 460 column 16: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 461 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 461 column 26: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 461 column 34: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 462 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 462 column 26: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 463 column 59: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 463 column 109: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 508 column 13: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 509 column 12: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 509 column 23: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 509 column 31: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 510 column 12: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 510 column 23: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 511 column 56: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 511 column 106: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 547 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 547 column 43: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 547 column 53: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 547 column 66: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 547 column 78: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerCluster.cc at line 548 column 34: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 41 column 21: qpointarray.h -> q3pointarray.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 258 column 15: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 258 column 32: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 313 column 16: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 314 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 314 column 26: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 314 column 34: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 315 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 315 column 26: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 316 column 59: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 316 column 110: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 347 column 11: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 348 column 10: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 348 column 21: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 348 column 29: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 349 column 10: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 349 column 21: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 350 column 54: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 350 column 104: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 422 column 16: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 423 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 423 column 26: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 423 column 34: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 424 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 424 column 26: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 425 column 59: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 425 column 109: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 456 column 11: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 457 column 10: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 457 column 21: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 457 column 29: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 458 column 10: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 458 column 21: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 459 column 54: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 459 column 104: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 494 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 494 column 43: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 494 column 53: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 494 column 66: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 494 column 78: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerDigi.cc at line 495 column 34: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 45 column 21: qpointarray.h -> q3pointarray.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 346 column 15: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 346 column 32: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 397 column 16: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 398 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 398 column 26: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 398 column 34: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 399 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 399 column 26: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 400 column 59: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 400 column 109: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 467 column 16: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 468 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 468 column 26: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 468 column 34: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 469 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 469 column 26: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 470 column 59: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 470 column 109: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 504 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 504 column 43: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 504 column 53: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 504 column 66: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 504 column 78: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerRecHit.cc at line 505 column 34: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 40 column 21: qpointarray.h -> q3pointarray.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 224 column 15: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 224 column 32: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 275 column 16: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 276 column 22: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 276 column 33: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 276 column 41: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 277 column 22: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 277 column 33: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 278 column 66: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 278 column 116: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 344 column 16: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 345 column 22: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 345 column 33: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 345 column 41: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 346 column 22: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 346 column 33: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 347 column 66: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 347 column 116: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 381 column 15: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 381 column 43: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 381 column 53: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 381 column 66: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 381 column 78: green -> Qt::green
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/VisCuTrackerSimHit.cc at line 382 column 34: green -> Qt::green
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/src/xtypeinfo.cc
+

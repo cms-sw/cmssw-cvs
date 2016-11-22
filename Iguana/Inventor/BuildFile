@@ -1,0 +1,9 @@
+<Use name=OpenInventor>
+<Use name=Iguana/GL2PS>
+
+<export>
+ <Use name=OpenInventor>
+ <Use name=Iguana/GL2PS>
+ <lib name=IguanaInventor>
+</export>
+

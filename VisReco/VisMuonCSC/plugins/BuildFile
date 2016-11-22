@@ -1,0 +1,7 @@
+<use name=FWCore/PluginManager>
+<use name=FWCore/ServiceRegistry>
+<use name=VisReco/VisMuonCSC>
+
+<library file=plugin.cc name=VisRecoVisMuonCSCPlugins>
+<flags EDM_PLUGIN=1>
+</library>

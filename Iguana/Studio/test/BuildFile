@@ -1,0 +1,6 @@
+<Use name=Iguana/Framework>
+<Bin file=test_IgStudio.cpp>
+<use name=Iguana/Studio>
+<use name=Iguana/Utilities>
+<use name=soqt>
+</bin>

@@ -1,0 +1,312 @@
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Cleanup.
+
+2009-09-11  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisG4EventContent.cc: Removed unused service.
+	* VisSimProcessor.h, VisSimProcessor.cc: Removed as unused.
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisSimContent.h, VisSimContent.cc, VisG4EventContent.h,
+	VisG4EventContent.cc, VisG4GeomContent.h, VisG4GeomContent.cc,
+	VisG4MagFieldContent.h, VisG4MagFieldContent.cc,
+	VisG4TracksContent.h, VisG4TracksContent.cc: Removed unused base
+	class.
+	
+2009-08-25  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisG4TrackPtTwig.cc: Remove compilation warning.
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2007-08-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisG4TrackPtTwig.h, VisG4TrackPtTwig.cc: Remove VisActiveConfigurables.
+	* VisG4TrackEtaCut.h, VisG4TrackPtCut.h, VisG4TrackStepping.h,
+	VisG4TrackEtaCut.cc, VisG4TrackPtCut.cc, VisG4TrackStepping.cc:
+	Removed. 
+
+2007-08-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Remove obsolete dependency on VisUtilities.
+	
+2007-04-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Vis*Content.cc: Introduce separate tree browser.
+	
+2007-04-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisG4EventStatus.h, VisSimQtActions.h, xtypeinfo.h,
+	VisG4EventContent.cc, VisG4EventStatus.cc, VisG4EventTwig.cc,
+	VisG4GeomContent.cc, VisG4MagFieldContent.cc, VisG4TrackPtTwig.cc,
+	VisG4TracksContent.cc, VisG4TracksTwig.cc, VisSimContent.cc,
+	VisSimQtActions.cc, iglet.cc, xtypeinfo.cc: Modified according to
+	the new Iguana subsystem directory structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* VisG4TrackEtaCut.h, VisG4TrackPtCut.h, VisG4TrackStepping.h,
+	VisG4EventContent.cc, VisG4GeomContent.cc,
+	VisG4MagFieldContent.cc, VisG4TrackEtaCut.cc, VisG4TrackPtCut.cc,
+	VisG4TrackPtTwig.cc, VisG4TrackStepping.cc, VisG4TracksContent.cc,
+	VisSimContent.cc, VisSimQtActions.cc: Adapt to migration of IGUANA
+	to CMSSW.
+
+2007-02-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisG4TracksTwig.h, VisG4TracksTwig.cc: Observe G4Step.
+	* VisG4TracksContent.cc: Use IgQtLock. Search for a sim event
+	document and if it does not exist, create it.
+
+2006-07-06  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* BuildFile: Fixed the lib name in export section.
+
+2006-03-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisSimQtActions.cc, VisSimContent.cc, VisG4TracksContent.cc,
+	VisG4MagFieldContent.cc, VisG4GeomContent.cc,
+	VisG4EventContent.cc: Remove obsolete VisPackageInitializer.
+	
+2006-01-30  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* .admin/developers: Added Shahzad Muzaffar as administrator.
+	* .admin/developers: Removed the empty line.
+	
+2006-01-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisSimProcessor.h, VisSimProcessor.cc: Make it a state element.
+	* VisSimContent.cc: Register Object menu actions and move it to 
+	the main thread.
+	* VisG4TracksContent.cc, VisG4MagFieldContent.cc, VisG4GeomContent.cc,
+	VisG4EventContent.cc: Move it to the main thread.
+
+2005-12-21  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisG4EventStatus.h, VisG4EventTwig.h,
+	VisG4TracksTwig.h, VisSimProcessor.h, VisG4EventStatus.cc,
+	VisG4EventTwig.cc, VisG4TracksTwig.cc, VisSimProcessor.cc: Adapt
+	to compile.
+
+2005-12-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisG4EventContent.h, VisG4EventStatus.h,
+	VisG4EventTwig.h, VisG4GeomContent.h, VisG4GeomTwig.h,
+	VisG4MagFieldContent.h, VisG4TrackEtaCut.h, VisG4TrackPtCut.h,
+	VisG4TrackPtTwig.h, VisG4TrackStepping.h, VisG4TracksContent.h,
+	VisG4TracksTwig.h, VisSimContent.h, VisSimProcessor.h,
+	VisSimQtActions.h, xtypeinfo.h, VisG4EventContent.cc,
+	VisG4EventStatus.cc, VisG4EventTwig.cc, VisG4GeomContent.cc,
+	VisG4GeomTwig.cc, VisG4MagFieldContent.cc, VisG4TrackEtaCut.cc,
+	VisG4TrackPtCut.cc, VisG4TrackPtTwig.cc, VisG4TrackStepping.cc,
+	VisG4TracksContent.cc, VisG4TracksTwig.cc, VisSimContent.cc,
+	VisSimProcessor.cc, VisSimQtActions.cc, plugin.cc: Files migrated
+	from IGUANACMS. Updated for the new repository structure.
+
+2005-08-23  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* VisMantisQtMenuActions.h, VisMantisContent.cc,
+	VisMantisQtMenuActions.cc, plugin.cc: VisMantisContent now does
+	not depend on Qt: menu actions initialization moved to
+	VisMantisQtMenuActions.
+
+2005-06-17  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* VisMantisContent.cc: listen/unlisten renamed to add/remove in
+	IgDispatcher.
+
+2005-03-31  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* VisG4MagFieldContent.cc: Passed the IgState to the
+	VisG4MagFieldTwig constructor to properly add the field
+	categroy into the control centre.
+
+2005-03-24  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Leave only needed at compile and run-time
+	dependencies.
+
+2005-03-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Add MantisDefaultExceptionHandler and
+	MantisNtplReader here, no need for ExtraPackages in configuration
+	file.
+
+2005-03-18  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Update and clean up dependencies.
+
+2005-03-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* src/BuildFile: Removed as not needed for SCRAM V1.0.1.
+	* BuildFile: Define it to be plugin here.
+
+2005-03-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, src/BuildFile: Port to new SCRAMV1.
+
+2005-02-04  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Clean up dependencies on OSCAR.
+
+2004-03-10  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* VisG4TracksTwig.h, VisG4TracksTwig.cc, VisG4EventTwig.h,
+	VisG4EventTwig.cc, VisG4EventStatus.h, VisG4EventStatus.cc:
+	Observe BeginOfEvent, BeginOfTrack, BeginOfStep, EndOfEvent.
+	
+2004-01-12  Lassi A. Tuura  <lat@iki.fi>
+
+	* BuildFile, VisG4TrackPtTwig.cc, VisG4TracksTwig.cc: Use
+	IgOpenInventor's IgSbColorMap to darken track colour by pT
+	scale.
+
+2004-01-10  Lassi A. Tuura  <lat@iki.fi>
+
+	* VisG4TrackEtaCut.h, VisG4TrackEtaCut.cc, VisG4TrackPtCut.h,
+	VisG4TrackPtCut.cc, VisG4TrackStepping.h, VisG4TrackStepping.cc:
+	New utility classes for notifiable configurable values.
+
+	* VisG4TrackPtTwig.h, VisG4TrackPtTwig.cc: New twig for showing
+	trajectories classified by pT and particle id.  Move most of track
+	content here from VisG4TracksTwig.
+
+	* VisG4TracksTwig.h, VisG4TracksTwig.cc: Use VisG4TrackPtTwig to
+	show all the contents.  Use new invalidation-based rendering.
+
+	* plugin.cc, xtypeinfo.h: Advertise the new twigs.
+
+	* VisG4EventTwig.h: Make base class "update" visible.
+
+	* VisG4EventContent.cc, VisG4GeomContent.cc, VisG4MagFieldContent.cc:
+	Move to the new invalidation-based rendering.
+
+2004-01-08  Lassi A. Tuura  <lat@iki.fi>
+
+	* BuildFile: Export correct library name.
+
+	* VisG4HitsContent.h, VisG4HitsContent.cc, VisG4CaloHitsTwig.h,
+	VisG4CaloHitsTwig.cc: Removed, now in VisOscar/VisOscarHits.
+
+	* VisG4HitsTwig.h, VisG4HitsTwig.cc: Removed as unnecessary.
+
+	* xtypeinfo.h, plugin.cc: Adjust to class moves.
+
+2004-01-07  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* VisG4TracksTwig.cc: Define a step in .cobrarc for visualisation
+	of trajectories.
+
+2004-01-06  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* VisG4CaloHitsTwig.cc: Add a 3D representation of hits.
+	* VisG4TracksTwig.cc: Show gammas with yellow colour.
+
+2003-12-18  Lassi A. Tuura  <lat@iki.fi>
+
+	* VisG4CaloHitsTwig.h, VisG4CaloHitsTwig.cc: New twig, show
+	calorimeter (HCAL, ECAL) hits.  Currently just text output.
+	* xtypeinfo.h, plugin.cc: Describe the new twig type.
+	* VisG4HitsContent.cc: Create instances of the above.
+
+2003-12-17  Lassi A. Tuura  <lat@iki.fi>
+
+	* VisG4EventTwig.cc (update (IgTextRep)): Mirror ORCA output.
+
+	* VisG4EventTwig.h, VisG4EventTwig.cc: Also observe steps so we
+	get all the points for the trajectory, not just the initial one.
+
+	* BuildFile: Add all libraries from G4SimApplication, otherwise
+	Mantis doesn't work right.  Note that this creates an implicit
+	dependency on OSCAR, even though the package doesn't otherwise
+	need OSCAR at all.  It's just that apparently we cannot load the
+	libraries dynamically, e.g. with "ExtraPackages" directive in
+	.orcarc.
+
+2003-12-17  Lassi A. Tuura  <lat@iki.fi>
+
+	* BuildFile: Update from OSCAR G4SimApplication.
+
+	* VisMantisProcessor.h, VisMantisProcessor.cc: Observe only the
+	DDD world and the end of the event.
+
+	* VisG4EventTwig.cc (udpate (IgTextRep)): Check there is an event.
+
+	* VisG4TracksTwig.h, VisG4TracksTwig.cc: Actually grab and make reps
+	for all trajectories from G4Tracks.
+
+2003-12-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Remove MantisG4PhysicsLists. It is obsolete.
+
+2003-09-26  Lassi A. Tuura  <lat@iki.fi>
+
+	* BuildFile, VisG4GeomTwig.h, VisG4GeomTwig.cc,
+	VisG4MagFieldContent.cc, VisMantisContent.cc, plugin.cc: Move to
+	using Geant4 visualisation from VisGeant4 instead of IGUANA.
+
+2003-09-25  Lassi A. Tuura  <lat@iki.fi>
+
+	* plugin.cc: Fix typo in plug-in registration.
+	* BuildFile: Fix package locations.
+
+2003-09-17  Lassi A. Tuura  <lat@iki.fi>
+
+	* VisG4EventContent.cc, VisG4GeomContent.cc, VisG4HitsContent.cc,
+	VisG4MagFieldContent.cc, VisG4TracksContent.cc,
+	VisMantisContent.cc, plugin.cc, src/BuildFile:
+	Move to SEAL Foundation classes and plug-in manager.
+
+2003-08-29  Lassi A. Tuura  <lat@iki.fi>
+
+	* Adjust for new directory layout.
+
+	* Moved from COBRA/Visualisation/VisMantisBase.
+
+2003-08-27  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* VisG4GeomTwig.h, VisG4GeomTwig.cc: Move back to new G4 visualisation.
+
+2003-08-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisG4GeomTwig.h, VisG4GeomTwig.cc: Back to the old IgGeant4 headers to
+	release with IGUANA_4_2_6 .
+	 
+2003-08-15  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* BuildFile, VisG4MagFieldContent.cc, VisMantisContent.cc,
+	plugin.cc: Adjust for IgGeant4 split.
+
+	* VisG4GeomTwig.h, VisG4GeomTwig.cc: Observing DDDWorld is
+	unnecessary, render core will automatically notice changing
+	geometry.  Adjust for IgGeant4 split.
+
+2003-08-15  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisG4GeomTwig.h, VisG4GeomTwig.cc: Observe DDDWorld. 
+
+2003-06-18  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMantisProcessor.cc: DDDWorld moved to 
+	Mantis/MantisGeometry/interface/DDDWorld.h 
+	MantisSetupBuilder is now obsolete.
+
+	* VisG4EventTwig.cc: Obsolete strstream replaced 
+	by sstream.
+	
+2003-06-16  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Package for basic Mantis visualisation objects. 
+	Moved from OSCAR.

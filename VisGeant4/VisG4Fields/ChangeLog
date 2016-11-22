@@ -1,0 +1,83 @@
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisG4MagFieldTwig.cc: Rename the twig to distinguish between
+	reco and sim filed. 
+
+2007-04-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisG4AnnotationsTwig.h, VisG4MagField.h,
+	VisG4MagFieldTwig.h, VisG4MagFieldTwig.cc, plugin.cc: Migrate to
+	the new Iguana subsystem directory structure.
+
+2007-03-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* xtypeinfo.h, plugin.cc: Migrate to the new config.
+
+2006-11-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisG4AnnotationsTwig.h, VisG4MagField.h,
+	VisG4MagFieldTwig.h, config.h, xtypeinfo.h, VisG4AnnotationsTwig.cc,
+	VisG4MagField.cc, VisG4MagFieldTwig.cc, plugin.cc: Move the code from
+	IGUANACMS. 
+	
+2005-03-3  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* BuildFile: Added dependency on Ig_Modules/Ig3DCategories.
+	* VisG4MagFieldTwig.h, VisG4MagFieldTwig.cc:
+	Ig3DFieldPlanesCategory added to control the magnetic field.
+
+2005-03-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Port to new SCRAMV1.
+
+	* BuildFile: Add dependency on Geant4.
+
+2004-01-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* plugin.cc: Remove includes for VisSoG4FieldPlane and
+	VisSoFieldPlaneMap since they have already been moved to
+	IgOpenInventor.
+
+2004-01-10  Lassi A. Tuura  <lat@iki.fi>
+
+	* VisG4MagFieldTwig.cc: Move to new invalidation-based rendering.
+	"doRepresent" is now unnecessary, just use "doUpdate".
+
+2004-01-08  Lassi A. Tuura  <lat@iki.fi>
+
+	* BuildFile, VisG4MagFieldTwig.h, VisG4MagFieldTwig.cc, plugin.cc:
+	Move to using field map visualisation in IgOpenInventor.
+
+	* VisG4MagField.h, VisG4MagField.cc: New, adapts G4 field to
+	IgSbField for field map visualisation moved to IgOpenInventor.
+
+	* VisSoFieldPlaneMap.h, VisSoFieldPlaneMap.cc,
+	VisSoG4FieldPlane.h, VisSoG4FieldPlane.cc: Removed, now in
+	IgOpenInventor.
+
+2003-09-26  Lassi A. Tuura  <lat@iki.fi>
+
+	* Imported from IGUANA; all classees renamed but not yet tested.
+
+2003-09-24  Lassi A. Tuura  <lat@pb-d-128-141-36-93.cern.ch>
+
+	* IgSoFieldPlaneMap.cc, IgSoG4FieldPlane.cc: Fix OS X GL headers
+	include for OS X.
+
+2003-09-13  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgSoG4FieldPlane.cc, xtypeinfo.h, plugin.cc: Move to SEAL
+	Foundation classes and plug-in manager.
+
+2003-08-14  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* src/plugin.cc: splitted up from old IgGeant4/src/plugin.cc
+
+2003-08-13  Lassi A. Tuura  <lat@iki.fi>
+
+	* New package splitting off G4 fields from IgGeant4.
+

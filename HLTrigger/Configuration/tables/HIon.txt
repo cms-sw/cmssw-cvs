@@ -1,0 +1,12 @@
+HLTriggerFirstPath
+HLT_L1Tech_BSC_minBias
+HLT_L1Tech_HCAL_HF
+HLT_L1DoubleMuOpen
+HLT_ZeroBiasPixel_SingleTrack
+HLT_HIMinBiasCalo
+HLT_HIJet35U
+HLT_HIPhoton15
+HLTriggerFinalPath
+HLTAnalyzerEndpath
+HLTOutput
+AlCaOutput
