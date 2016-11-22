@@ -1,0 +1,112 @@
+#Inventor V2.1 ascii
+
+
+Separator {
+
+  DEF Yellow Material {
+    ambientColor 1 1 0
+    diffuseColor 1 1 0
+    specularColor 1 1 0
+    emissiveColor 1 1 0
+    shininess 0
+    transparency 0
+
+  }
+  DEF HEModule Switch {
+    whichChild -3
+
+    Separator {
+
+      MatrixTransform {
+        matrix 0.00017364819 0.00098480773 2.7402819e-19 0
+          -0.00098480773 0.00017364819 -8.7772361e-20 0
+          0 0 0.001 0
+          0 0 -0.025916679 1
+
+      }
+      DEF +0 DrawStyle {
+        style FILLED
+
+      }
+      DEF +1 IgSoRotSolid {
+        fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+        phiStart 6.1086526
+        phiDelta 0.34906584
+        polygon [ 561.59723 5541,
+            526.32642 5193,
+            454.85675 4487.8447,
+            406.07098 4006.5,
+            1777.1038 4006.5,
+            1738.5144 3919.5,
+            1913.8567 3919.5,
+            2031.0907 4006.5,
+            2679.7109 4487.8447,
+            2679.7109 5193,
+            2496.9341 5193,
+            2496.9341 5541 ]
+        divisions 1
+        smooth FALSE
+
+      }
+    }
+    Separator {
+
+      MatrixTransform {
+        matrix -0.00017364819 0.00098480773 1.5870498e-19 0
+          0.00098480773 0.00017364819 1.019e-19 0
+          1.2246064e-19 0 -0.001 0
+          -3.1737729e-18 0 0.025916679 1
+
+      }
+      USE +0
+      USE +1
+    }
+  }
+  DEF HEModule Switch {
+    whichChild -3
+
+    Separator {
+
+      MatrixTransform {
+        matrix -0.00017364819 -0.00098480773 -1.5156756e-19 0
+          0.00098480773 -0.00017364819 2.1023301e-19 0
+          0 0 0.001 0
+          0 0 -0.025916679 1
+
+      }
+      USE +0
+      DEF +2 IgSoRotSolid {
+        fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+        phiStart 6.1086526
+        phiDelta 0.34906584
+        polygon [ 561.59723 5541,
+            526.32642 5193,
+            454.85675 4487.8447,
+            406.07098 4006.5,
+            1777.1038 4006.5,
+            1738.5144 3919.5,
+            1913.8567 3919.5,
+            2031.0907 4006.5,
+            2679.7109 4487.8447,
+            2679.7109 5193,
+            2496.9341 5193,
+            2496.9341 5541 ]
+        divisions 1
+        smooth FALSE
+
+      }
+    }
+    Separator {
+
+      MatrixTransform {
+        matrix 0.00017364819 -0.00098480773 -2.8116564e-19 0
+          -0.00098480773 -0.00017364819 -2.2436064e-19 0
+          1.2246064e-19 0 -0.001 0
+          -3.1737729e-18 0 0.025916679 1
+
+      }
+      USE +0
+      USE +2
+    }
+  }
+}

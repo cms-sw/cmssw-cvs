@@ -1,0 +1,134 @@
+2010-01-27  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisG4VisSceneHandler.h: Add a missing include.
+
+	* VisG4VisSceneHandler.h, VisG4VisSceneHandler.cc: Add a new
+	function. 
+
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisG4VisSceneHandler.cc: Remove non existent header.
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2009-01-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisG4VisSceneHandler.h, VisG4VisSceneHandler.cc: Add new member
+	functions to comply with new API in G4.9.2.
+	* VisG4VisManager.h, VisG4VisManager.cc: Add new member functions
+	to comply with new API in G4.9.2.
+
+2007-04-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisG4UIManager.h, VisG4VisManager.h,
+	VisG4UIManager.cc, VisG4VisSceneHandler.cc: Migrated to the new
+	Iguana subsystem directory structure.
+
+2007-03-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* VisG4Path.h, VisG4VisManager.h, config.h, VisG4Path.cc,
+	VisG4UIManager.cc, VisG4UIShell.cc, VisG4VisManager.cc,
+	VisG4VisSceneHandler.cc, plugin.cc: Adapt to migration of IGUANA
+	to CMSSW. 
+
+2007-02-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisG4VisManager.h, VisG4VisManager.cc: Port to Geant4 8.2: added
+	a dummy implementation for new pure virtual member function
+	FilterHit. Cleanup warnings.
+
+2006-11-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisG4VisSceneHandler.h, VisG4VisSceneHandler.cc
+	* BuildFile, VisG4Path.h, VisG4UIManager.h, VisG4UIShell.h, 
+	VisG4VisManager.h, VisG4VisSceneHandler.h, VisG4VisTransform3D.h, 
+	config.h, VisG4Path.cc, VisG4UIManager.cc, VisG4UIShell.cc, 
+	VisG4VisManager.cc, VisG4VisSceneHandler.cc, plugin.cc, test.mac: 
+	Move the code from IGUANACMS.
+	
+2006-08-17  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* interface/VisG4VisSceneHandler.h, interface/VisG4VisManager.h:
+	Port to Geant4 8.1: Added dummy implementation for new pure
+	virtual member functions.
+
+2005-08-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisG4VisSceneHandler.h, VisG4VisSceneHandler.cc: Port to Geant4
+	v7: API of G4VGraphicsScene changed. Added virtual destructor.
+	* VisG4VisManager.h, VisG4VisManager.cc: Port to Geant4 v7: API of
+	G4VVisManager changed.
+
+2005-03-18  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Export all what the package uses.
+
+2005-03-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Export Geant4.
+
+2005-03-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Port to new SCRAMV1.
+
+2005-01-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisG4VisTransform3D: Rename variables according to changes in
+	CLHEP.
+
+2004-02-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisG4UIShell.cc: Remove obsolete G4std namespace for definition
+	of the standard std. 
+
+2004-02-02  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* VisG4VisSceneHandler.cc (AddThis): passing arguments in the
+	correct order.
+
+2003-12-04  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* VisG4VisSceneHandler.cc: G4Polyhedra and G4Policone now use
+	IgSoRotSolid.
+
+2003-11-28  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* src/VisG4VisSceneHandler.cc (VisG4VisSceneHandler): removed
+	SoResetTransform which was causing 2D view not to work properly.
+
+2003-10-23  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* VisG4VisSceneHandler.cc (AddThis): G4Tubs and G4Cons changed to
+	use the new IgSoRotShape. G4Trd and G4Trap changed to use new
+	field names.
+
+2003-09-26  Lassi A. Tuura  <lat@lxcms73.cern.ch>
+
+	* Fix over-zealous class renames.
+
+2003-09-26  Lassi A. Tuura  <lat@iki.fi>
+
+	* Imported from IGUANA; all classees renamed but not yet tested.
+
+2003-09-18  Lassi A. Tuura  <lat@iki.fi>
+
+	* BuildFile: IgG4XDummies is no longer needed.  However we
+	do need IgQtBrowser.
+
+2003-09-13  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgG4Path.h, IgG4VisManager.h, IgG4Path.cc, IgG4UIManager.cc,
+	IgG4UIShell.cc, IgG4VisManager.cc, IgG4VisSceneHandler.cc,
+	plugin.cc, config.h: Move to SEAL Foundation classes.
+
+2003-08-13  Lassi A. Tuura  <lat@iki.fi>
+
+	* New package splitting off core parts of IgGeant4.
+

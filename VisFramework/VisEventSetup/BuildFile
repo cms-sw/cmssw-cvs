@@ -1,0 +1,26 @@
+<use name=VisFramework/VisFrameworkBase>
+<use name=DataFormats/DetId>
+<use name=Geometry/DTGeometry>
+<use name=Geometry/CSCGeometry>
+<use name=Geometry/RPCGeometry>
+<use name=Geometry/CaloGeometry>
+<use name=Geometry/TrackerGeometryBuilder>
+<use name=TrackingTools/TransientTrack>
+<use name=TrackPropagation/SteppingHelixPropagator>
+<use name=MagneticField/Engine>
+<use name=MagneticField/Records>
+<use name=DataFormats/SiStripCluster>
+
+<export>
+  <use name=VisFramework/VisFrameworkBase>
+  <use name=DataFormats/DetId>
+  <use name=Geometry/DTGeometry>
+  <use name=Geometry/CSCGeometry>
+  <use name=Geometry/RPCGeometry>
+  <use name=Geometry/TrackerGeometryBuilder>
+  <use name=TrackingTools/TransientTrack>
+  <use name=TrackPropagation/SteppingHelixPropagator>
+  <use name=MagneticField/Engine>
+  <use name=MagneticField/Records>
+  <lib name=VisFrameworkVisEventSetup>
+</export>

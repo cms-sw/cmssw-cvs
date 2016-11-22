@@ -1,0 +1,60 @@
+Log for qt3to4 on Mon Apr 6 13:58:29 2009. Number of log entries: 51
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuCmsTracker.h
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkBuilder.h
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkCompositeDetector.h
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkGeometryTwig.h
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkLayer.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkLayerSelection.h at line 14 column 21: qpointarray.h -> q3pointarray.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkLayerSelection.h at line 38 column 15: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkLayerSelection.h at line 51 column 61: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkLayerSelection.h: Added the following include directives:
+	#include <QPaintEvent> 	#include <QMouseEvent> 	#include <QCloseEvent> 
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkLayerSlWindow.h at line 16 column 17: QGridLayout -> Q3GridLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkLayerSlWindow.h at line 27 column 75: WFlags -> Qt::WFlags
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkLayerSlWindow.h at line 30 column 15: QGridLayout -> Q3GridLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkLayerSlWindow.h: Added the following include directives:
+	#include <Q3GridLayout> 
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkMap2D.h at line 110 column 63: QPointArray -> Q3PointArray
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkMap2D.h: Added the following include directives:
+	#include <Q3PointArray> 	#include <QPaintEvent> 	#include <QPixmap> 
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkMapWindow.h at line 24 column 17: QVBoxLayout -> Q3VBoxLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkMapWindow.h at line 25 column 17: QHBoxLayout -> Q3HBoxLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkMapWindow.h at line 26 column 17: QGridLayout -> Q3GridLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkMapWindow.h at line 28 column 12: QFrame -> Q3Frame
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkMapWindow.h at line 29 column 18: QTextBrowser -> Q3TextBrowser
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkMapWindow.h at line 32 column 11: QGrid -> Q3Grid
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkMapWindow.h at line 34 column 14: QToolBar -> Q3ToolBar
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkMapWindow.h at line 46 column 71: WFlags -> Qt::WFlags
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkMapWindow.h at line 73 column 12: QToolBar -> Q3ToolBar
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkMapWindow.h at line 74 column 15: QGridLayout -> Q3GridLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkMapWindow.h at line 76 column 9: QGrid -> Q3Grid
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkMapWindow.h: Added the following include directives:
+	#include <Q3GridLayout> 	#include <Q3HBoxLayout> 	#include <Q3VBoxLayout> 	#include <QLabel> 	#include <Q3Frame> 
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkModule.h
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkModuleMap.h
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkPartDetector.h
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkRecoContent.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkScrollView.h at line 10 column 21: qscrollview.h -> q3scrollview.h
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkScrollView.h at line 12 column 44: QScrollView -> Q3ScrollView
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkScrollView.h at line 17 column 72: WFlags -> Qt::WFlags
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkScrollView.h: Added the following include directives:
+	#include <QMouseEvent> 
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkSelectionBar.h: Added the following include directives:
+	#include <QPaintEvent> 	#include <QMouseEvent> 
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkSlWindow.h at line 17 column 17: QVBoxLayout -> Q3VBoxLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkSlWindow.h at line 18 column 17: QHBoxLayout -> Q3HBoxLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkSlWindow.h at line 19 column 17: QGridLayout -> Q3GridLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkSlWindow.h at line 33 column 70: WFlags -> Qt::WFlags
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkSlWindow.h at line 35 column 15: QGridLayout -> Q3GridLayout
+In file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkSlWindow.h: Added the following include directives:
+	#include <Q3VBoxLayout> 	#include <Q3GridLayout> 	#include <Q3HBoxLayout> 
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkState.h
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkSubDetector.h
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTkSubLayer.h
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTrackerCluster.h
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTrackerDigi.h
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTracker.h
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTrackerRecHit.h
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/VisCuTrackerSimHit.h
+No changes made to file /tmp/yana/CMSSW_IGUANA_INTEGRATION/src/VisReco/VisCustomTracker/interface/xtypeinfo.h
+

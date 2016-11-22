@@ -1,0 +1,4 @@
+<use name=Iguana/Inventor>
+<use name=DataFormats/JetReco>
+<use name=VisFramework/VisFrameworkBase>
+<use name=VisFramework/VisEventSetup>

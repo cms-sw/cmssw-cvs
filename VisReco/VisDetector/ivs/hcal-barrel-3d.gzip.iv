@@ -1,0 +1,1239 @@
+#Inventor V2.1 ascii
+
+
+Separator {
+
+  Material {
+    ambientColor 0.226 0.13699999 0.056000002
+    diffuseColor 0.90399998 0.54900002 0.22400001
+    specularColor 0.094999999 0.094999999 0.094999999
+    emissiveColor 0.40000001 0.40000001 0.2
+    shininess 0.078000002
+    transparency 0
+
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation 0 0 1  0
+      scaleFactor 0.99999994 1 1
+      scaleOrientation 4.9580635e-08 -0.70710683 0.70710677  0.95531648
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -7.2902743e-08 5.1047056e-08 1  0.34906611
+      scaleFactor 1 1 0.99999994
+      scaleOrientation -0.70710689 0.70710665 1.5614656e-08  0.78539801
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -4.0951861e-08 1.9096166e-08 1  0.69813174
+      scaleFactor 1 1 0.99999994
+      scaleOrientation -0.70710683 0.70710683 2.799712e-09  0.93565118
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -2.9855432e-08 7.9997395e-09 1  1.0471976
+      scaleFactor 1.0000001 1 1
+      scaleOrientation -1.0887395e-07 0.46540016 0.88510042  0.42510805
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -2.395115e-08 2.095456e-09 1  1.3962634
+      scaleFactor 1 0.99999994 1
+      scaleOrientation -2.5984722e-08 2.0183402e-08 1  0.7853983
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -2.0097401e-08 -1.7582963e-09 1  1.7453294
+      scaleFactor 1 1 0.99999994
+      scaleOrientation -0.70710677 0.70710677 -2.5317258e-08  0.90193558
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -1.7237042e-08 -4.618653e-09 1  2.0943952
+      scaleFactor 1 1.0000001 1
+      scaleOrientation -0.53979927 2.2012973e-08 -0.84179378  0.37387726
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -1.4905259e-08 -6.9504362e-09 1  2.4434609
+      scaleFactor 1.0000001 0.99999988 1
+      scaleOrientation 0.35636038 -0.14760928 -0.92261523  0.84397078
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -1.2854723e-08 -9.0009733e-09 1  2.7925267
+      scaleFactor 1.0000001 0.99999994 1
+      scaleOrientation 0.85243732 -0.034040492 -0.52172017  0.72326529
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -1.0927847e-08 -1.0927847e-08 1  3.1415927
+      scaleFactor 1 0.99999994 1
+      scaleOrientation 1.9284798e-08 8.4864283e-08 1  0.7853983
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -9.0009733e-09 -1.2854723e-08 1  3.4906585
+      scaleFactor 1 1 1
+      scaleOrientation 0 0 1  0
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -6.9504358e-09 -1.4905257e-08 1  3.8397243
+      scaleFactor 1 1 1
+      scaleOrientation 0 0 1  0
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -4.6186517e-09 -1.7237042e-08 1  4.1887903
+      scaleFactor 1.0000001 0.99999988 1
+      scaleOrientation -0.097203679 0.23467042 0.96720278  0.80925614
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation 1.7582944e-09 2.0097401e-08 -1  1.7453291
+      scaleFactor 1.0000001 0.99999988 1
+      scaleOrientation 0.36555091 -0.15141615 -0.91839302  0.84740365
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -2.0954543e-09 2.395115e-08 -1  1.3962634
+      scaleFactor 1 1 0.99999994
+      scaleOrientation -0.70710677 0.70710683 4.3062272e-08  0.90193611
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -7.9997378e-09 2.9855435e-08 -1  1.0471976
+      scaleFactor 1 0.99999994 1
+      scaleOrientation 0.54229861 6.2444769e-08 -0.84018582  0.87202764
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -1.9096161e-08 4.0951861e-08 -1  0.69813174
+      scaleFactor 1.0000001 0.99999988 1
+      scaleOrientation 0.35636038 -0.14760928 -0.92261523  0.84397078
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -5.1047039e-08 7.2902736e-08 -1  0.34906611
+      scaleFactor 1.0000001 0.99999988 1
+      scaleOrientation 0.35624394 -0.14756106 -0.92266792  0.84392798
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -2.1855692e-08 1 1.843521e-15  3.1415927
+      scaleFactor 1.0000001 0.99999994 1
+      scaleOrientation -0.67859834 -0.28108466 -0.6785984  1.0960567
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation 0.17364815 0.98480773 1.014615e-15  3.1415927
+      scaleFactor 0.99999994 1 1
+      scaleOrientation 1.2776195e-07 0.99375087 0.11162092  0.49267843
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation 0.34202012 0.93969262 1.1814746e-15  3.1415927
+      scaleFactor 1 1.0000001 0.99999994
+      scaleOrientation -0.70683455 -0.27070218 0.65353292  1.0601413
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation 0.49999997 0.86602539 -5.1279004e-16  3.1415927
+      scaleFactor 1 1.0000001 0.99999994
+      scaleOrientation -0.51223099 -0.85041112 -0.12008511  0.83338952
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation 0.64278752 0.7660445 -1.0145051e-15  3.1415927
+      scaleFactor 1 1.0000001 0.99999988
+      scaleOrientation -0.77440423 -0.60185051 -0.19512597  0.9669922
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation 0.76604444 0.64278758 3.188445e-15  3.1415927
+      scaleFactor 1 1.0000001 0.99999988
+      scaleOrientation -0.9814204 -0.030112827 -0.18949217  0.7986815
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation 0.86602539 0.5 3.0767402e-15  3.1415927
+      scaleFactor 1 0.99999988 1.0000001
+      scaleOrientation 0.86593205 -0.47421017 -0.15901694  0.89002275
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation 0.93969262 0.34202012 -7.0888479e-16  3.1415927
+      scaleFactor 1 1.0000001 0.99999988
+      scaleOrientation -0.77145612 0.6310249 -0.081627905  0.94615018
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation 0.98480773 0.17364822 9.0188002e-16  3.1415925
+      scaleFactor 1.0000002 0.99999988 1.0000001
+      scaleOrientation 0.82422125 0.092997804 -0.55857921  0.85778588
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation 1 7.9466265e-09 0  3.1415925
+      scaleFactor 1.0000001 1 0.99999988
+      scaleOrientation -0.084343843 0.85013348 0.51976836  0.8975414
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation 0.98480773 -0.17364815 2.2547001e-16  3.1415925
+      scaleFactor 0.99999988 1.0000001 1
+      scaleOrientation -0.44847408 -0.88751787 -0.10574985  0.70836389
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation 0.93969268 -0.34202009 9.4517971e-16  3.1415925
+      scaleFactor 0.99999988 1.0000001 1.0000001
+      scaleOrientation -5.6549784e-08 -0.97920424 -0.20287691  0.77590799
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation 0.86602545 -0.49999994 -1.0255801e-15  3.1415925
+      scaleFactor 0.99999982 1.0000001 1
+      scaleOrientation -0.45260862 -0.29874316 -0.8401773  0.81906855
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation 0.76604444 -0.64278764 1.1594346e-15  3.1415925
+      scaleFactor 1.0000001 0.99999994 1
+      scaleOrientation -0.78533721 0.56049782 -0.26284546  0.9141227
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -0.64278764 0.76604444 0  3.1415927
+      scaleFactor 1 1 0.99999994
+      scaleOrientation 0.80104667 0.59860194 -1.0235968e-08  0.81654376
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -0.5 0.86602539 0  3.1415927
+      scaleFactor 1 0.99999988 1
+      scaleOrientation -0.73611081 -6.8393007e-08 -0.67686105  0.53813297
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -0.34202021 0.93969262 4.7258986e-16  3.1415927
+      scaleFactor 1.0000001 0.99999994 1
+      scaleOrientation -0.81797189 0.19012962 -0.54292971  0.73559093
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  Separator {
+
+    Transform {
+      translation 0 0 0
+      rotation -0.17364828 0.98480773 2.4801701e-15  3.1415927
+      scaleFactor 1.0000001 0.99999982 1
+      scaleOrientation -0.35358241 -0.071457237 -0.93267  0.70948941
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart -0.17453292
+      phiDelta 0.34906584
+      polygon [ 2.8764999 0,
+          2.8764999 3.08587,
+          2.8764999 3.34759,
+          2.8764999 3.6373,
+          2.8764999 3.8255999,
+          2.8764999 4.0170002,
+          2.7545002 4.0170002,
+          2.7545002 4.3320003,
+          2.6992099 4.3320003,
+          2.2811899 4.0170002,
+          2.2811899 4.0170002,
+          2.0272 3.8255999,
+          1.9275 3.6373,
+          1.9275 3.34759,
+          1.777 3.08587,
+          1.777 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+}

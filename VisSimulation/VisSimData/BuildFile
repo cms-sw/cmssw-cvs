@@ -1,0 +1,4 @@
+<use name=VisFramework/VisFrameworkBase>
+<use name=SimDataFormats/GeneratorProducts>
+<use name=heppdt>
+<use name=SimGeneral/HepPDTRecord>

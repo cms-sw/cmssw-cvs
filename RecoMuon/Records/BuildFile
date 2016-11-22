@@ -1,0 +1,10 @@
+<use name="FWCore/Framework">
+<use name="Geometry/Records">
+<use name="boost">
+<use name="CondFormats/DataRecord">
+<export>
+  <use name="FWCore/Framework">
+  <use name="Geometry/Records">
+  <use name="boost">
+  <lib name="RecoMuonRecords">
+</export>

@@ -1,0 +1,13 @@
+Make sure you have configuration.xml is in the current directory!!!
+
+> scramv1 p CMSSW CMSSW_0_2_0_pre5
+> cd CMSSW_0_2_0_pre5/src
+> project CMSSW
+> cvs co Geometry/CMSCommonData
+> cvs co VisExamples/VisMagFieldDemo/test/configuration.xml
+> cp VisExamples/VisMagFieldDemo/test/configuration.xml .
+> setenv Magfield_PATH /afs/cern.ch/cms/Releases/Geometry/Geometry_1_23_0/src/Data/FieldTables/
+> iguana
+
+Choose "CMSSW Demo -- Magnetic Field".
+

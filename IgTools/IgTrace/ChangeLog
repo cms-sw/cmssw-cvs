@@ -1,0 +1,78 @@
+2009-12-08  Giulio Eulisse
+
+	* IgTraceThrow.cc: silence a warning
+	  due to what will be conditional behavior in some
+	  future standard of C++, therefore currently a gcc
+	  extension.
+
+2009-09-26  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgTraceAtomic.h: Support x86-64.
+
+2008-06-06  Lassi A. Tuura  <lat@iki.fi>
+
+	* igtrace: Also check for mmap to see if anything was enabled.
+	* IgTraceAtomic.h: Don't increment variable twice on locking.
+	* IgTraceMMap.cc: Update coding convention.  Protect against
+	recursive calls via memory allocations in __cxa_demangle.  Do not
+	gobble symbol name if the demangling fails.
+
+2007-11-21  Peter Elmer <Peter.Elmer@cern.ch> 
+
+        * Updates to build with CMSSW (following the old patch for this, but
+          updating "Ig_Tools" to "IgTools")
+        * Add .admin/developers files
+
+2007-11-14  Peter Elmer <Peter.Elmer@cern.ch>
+
+        * Modify includes and BuildFiles to refer to "IgTools" rather 
+          than "Ig_Tools"
+
+2007-11-13  Peter Elmer <Peter.Elmer@cern.ch>
+
+        * Migrate Ig_Tools/{IgHook,IgTrace,IgProf} into the CMSSW CVS 
+          repository from the IGNOMINY repo, changing the subsystem name
+          to "IgTools" to conform to the CMSSW conventions. The initial
+          import is tagged "pe20071114-CMSSW-import" and the revision
+          history prior to that should be maintained.
+
+2007-10-22  Lassi A. Tuura  <lat@iki.fi>
+
+	* igtrace, IgTraceMMap.cc, IgTraceThrow.cc: Support demangling.
+
+2007-10-11  Lassi A. Tuura  <lat@iki.fi>
+
+	* igtrace-mmap-analysis: Clarify output a bit.
+	* igtrace-mmap-summary: Generate nice summary of *-analysis output.
+
+	* igtrace-mmap-analysis: Forgot to make perl -n implicit.
+
+	* igtrace-mmap-analysis: New, analyse memory mappings.
+
+	* IgTraceMMap.cc: Tweak stack trace output a bit.
+
+	* IgTraceMMap.cc: New, trace memory mappings.
+	* igtrace: Support memory mapping tracing.
+
+	* IgTraceMacros.h: Support up to 6 arguments.  Fix positioning.
+
+2007-06-19  Lassi A. Tuura  <lat@iki.fi>
+
+	Add support for tracing memory allocation calls.
+	Generalise filter support for all trace modules.
+	
+	* igtrace: Support selection of trace modules.  Filters are now
+	general so need to go to igtrace section.  Document all options.
+	
+	* IgTrace.h, IgTrace.cc, IgTraceThrow.cc: Move filter support to
+	IgTrace and make it general enough for use in filter modules.
+
+	* IgTraceMem.cc: New, trace calls to malloc().
+
+	* IgTraceThrow.h: Removed, collapsed into source file.
+
+2007-06-18  Lassi A. Tuura  <lat@iki.fi>
+
+	* Initial tool to trap and report C++ exceptions thrown by an
+	application.  Modeled roughly after IgProf.
+
