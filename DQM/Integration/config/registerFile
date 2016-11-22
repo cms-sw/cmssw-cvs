@@ -1,0 +1,42 @@
+#!/bin/zsh
+# DATASETENC=GlobalCruzet1-A__CMSSW_2_0_7-T0ReReco-v1__RECO
+# DATASET=GlobalCruzet1-A/CMSSW_2_0_7-T0ReReco-v1/RECO
+DQM_V=4.6.0
+DQM_SW=/data/sw
+DQM_BASE=/data/dqm
+DQM_DIR=${1-$(dirname $0)}
+DQM_LOCK=$DQM_DIR/update.lock
+. $DQM_SW/cmsset_default.sh
+. $DQM_SW/slc4_ia32_gcc345/cms/dqmgui/$DQM_V/etc/profile.d/env.sh
+
+if [ -e $DQM_LOCK ]; then
+ echo An update is running with pid $(cat $DQM_LOCK)
+ echo Remove the lock file $DQM_LOCK if the job crashed 
+ exit 
+else
+  echo $$ > $DQM_LOCK
+fi
+
+[ -e $DQM_DIR/dqm.db ] && mv $DQM_DIR/{dqm,new}.db
+
+find $DQM_DIR/data -name 'DQM_V0001*.root' |
+  perl -ne '
+    chomp;
+    $datafile = $_;
+    $pass = $datafile;
+    $pass =~ s|'"$DQM_DIR"'/data/[^/]+/||;
+    $pass =~ s|/.*||;
+    $dataset = $datafile;
+    $dataset =~ s|.*?__|__|;
+    $dataset =~ s|.root$||;
+    $dataset =~ s|__|/|g;
+    push(@{$files{"$dataset $pass"}}, $datafile);
+
+    END {
+      foreach (keys %files) {
+        system("set -x; visDQMRegisterFile '"$DQM_DIR"'/new.db $_ @{$files{$_}}");
+      }
+    }'
+
+[ -e $DQM_DIR/new.db ] && mv $DQM_DIR/{new,dqm}.db
+rm -f $DQM_LOCK

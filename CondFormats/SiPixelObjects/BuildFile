@@ -1,0 +1,31 @@
+<flags GENREFLEX_ARGS="--">
+<use name=DataFormats/DetId>
+<use name=DataFormats/SiPixelDetId>
+<use name=CalibFormats/SiPixelObjects>
+<use name=FWCore/Framework>
+<use name=FWCore/MessageLogger>
+<use name=FWCore/Utilities>
+<use name=FWCore/PluginManager>
+<use name=FWCore/ParameterSet>
+<use name=FWCore/ServiceRegistry>
+<use name=DataFormats/FEDRawData>
+<use name=DataFormats/SiPixelDigi>
+
+<use name=CondFormats/DataRecord>
+<use name=CondCore/DBOutputService>
+<use name=Geometry/Records>
+<use name=root>
+<use name=Geometry/CommonDetUnit>
+<use name=Geometry/TrackerGeometryBuilder>
+<use name=DQM/SiPixelCommon>
+<use name=DQMServices/Core>
+
+
+<use name=boost>
+<use name=rootrflx>
+<export>
+  <use name=CondFormats/Common>
+  <use name=boost>
+  <lib name=CondFormatsSiPixelObjects>
+</export>
+

@@ -1,0 +1,6 @@
+source = DaqSource
+{
+    string reader = "FUReader"
+    PSet pset = { untracked int32 dummy = 0 }
+}
+//untracked PSet maxEvents = { untracked int32 input = -1 }

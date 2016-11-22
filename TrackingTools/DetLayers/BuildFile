@@ -1,0 +1,15 @@
+
+<export>
+ <lib name=TrackingToolsDetLayers>
+ <use name=TrackingTools/TrajectoryParametrization>
+ <use name=boost>
+ <use name=clhep>
+</export>
+
+<use name=FWCore/Framework>
+<use name=FWCore/MessageLogger>
+<use name=DataFormats/GeometrySurface>
+<use name=TrackingTools/TrajectoryParametrization>
+<use name=boost>
+<use name=clhep>
+

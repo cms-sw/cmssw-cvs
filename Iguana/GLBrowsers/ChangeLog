@@ -1,0 +1,289 @@
+2010-01-22  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Ig3DBaseBrowser.cc: Deselection of a non-rep. A bug in selection
+	to fix.
+
+2010-01-15  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Ig3DBaseBrowser.h, Ig2DBrowser.cc, Ig2DWindow.cc,
+	Ig3DBaseBrowser.cc, IgControlBase.cc, IgLegoBrowser.cc,
+	IgRPhiBrowser.cc, IgRZBrowser.cc, IgSpareBrowser.cc: Remove qt3
+	support class includes. 
+
+2010-01-13  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Ig3DClipsCategory.cc, Ig3DFieldPlanesCategory.cc,
+	Ig3DSlicersCategory.cc, IgControlCategory.cc: Add now missing
+	includes.
+
+2010-01-11  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Ig3DNodeCategory.h, Ig3DRangeMControl.h, IgControlCentre.h,
+	IgControlItem.h, IgExaminerViewerCategory.h, IgGLRenderCategory.h,
+	IgQtAxisAlignment.h, IgQtRangeControlCommon.h,
+	IgQtRangeMControl.h, IgQtRangeMControlImp.h, IgQtRangeMValue.h,
+	IgQtRangeSetting.h, IgSceneManagerCategory.h, fileopen.png,
+	images.h, Ig2DViewPropertiesCategory.cc, Ig3DAnimsCategory.cc,
+	Ig3DAxisRotationControl.cc, Ig3DCameraRotControl.cc,
+	Ig3DClipsCategory.cc, Ig3DColorControl.cc,
+	Ig3DFieldPlanesCategory.cc, Ig3DLightsCategory.cc,
+	Ig3DMBoolControl.cc, Ig3DMColorControl.cc, Ig3DMStringControl.cc,
+	Ig3DNodeCategory.cc, Ig3DSlicersCategory.cc,
+	Ig3DVectorBaseControl.cc, Ig3DViewpointsCategory.cc,
+	IgControlCentre.cc, IgControlItem.cc, IgExaminerViewerCategory.cc,
+	IgGL2PSPrintCategory.cc, IgGLRenderCategory.cc, IgIVView.cc,
+	IgLegoViewPropertiesCategory.cc, IgQtApplicationCategory.cc,
+	IgQtAxisAlignment.cc, IgQtRangeControlCommon.cc,
+	IgQtRangeMControl.cc, IgQtRangeMControlFloat.cc,
+	IgQtRangeSetting.cc, IgRPhiViewPropertiesCategory.cc,
+	IgRZViewPropertiesCategory.cc, IgSceneManagerCategory.cc,
+	IgSpareViewPropertiesCategory.cc: Qt3Support classes replaced by
+	Qt4 native classes.
+
+2010-01-08  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Ig3DNodeCategory.h, Ig3DRangeControl.h, Ig3DRangeMControl.h,
+	IgControlCategory.h, Ig3DNodeCategory.cc, IgControlCategory.cc,
+	Ig3DNodeCategory.cc: Initial attempt at cleaning Qt3Support.
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Clean up compilation warnings.
+
+2009-09-15  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Ig3DBaseWindow.cc: Disable seek action in a pick mode.
+	* Ig3DBaseBrowser.cc: Remove Q3 porting class.
+
+2009-09-11  George Alverson <George.Alverson@cern.ch>
+	* IgTwigConfigElement.cc: remove more diagnostic printout; add more materials for CSC/R-Phi
+
+2009-09-11  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Ig3DBaseBrowser.cc: Set default transparency. Forbid popping up
+	the un-functional menu.
+	* Ig3DBaseWindow.cc: Correct a pixmap name.
+
+2009-09-02  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Ig3DBaseWindow.cc: Correct the icon name.
+
+2009-08-28  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Ig3DBaseWindow.cc: Use Qt resources to load icons.
+	* IgSpareWindow.cc: Remove unused class.
+
+2009-08-25  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Ig3DEnumControl.cc: Remove compilation warning.
+
+	* Ig3DBaseWindow.h, Ig3DBaseWindow.cc: Group actions in a
+	toolbar. Add whatsthis info.	
+	* Ig3DBaseBrowser.h, Ig3DBaseBrowser.cc: Cleanup.
+
+2009-08-21  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Ig3DBaseWindow.h, Ig3DBaseWindow.cc: Define all the toolbar
+	action here. Allow the derived types to disable some. Add missing
+	orthogonal/perspective camera switch. Add missing feedback
+	action. Add missing invert camera action.
+	* Ig2DBrowser.h, Ig2DViewPropertiesCategory.h:
+	* Ig3DZoomControl.h, Ig3DZoomControl.cc: Removed as unused.
+	* Ig2DWindow.h, Ig3DWindow.h, IgLegoWindow.h, IgRPhiWindow.h,
+	IgRZWindow.h, IgSpareWindow.h, Ig3DWindow.cc, IgLegoWindow.cc,
+	IgRPhiWindow.cc, IgRZWindow.cc, IgSpareWindow.cc: Use toolbar
+	actions from the base class.
+
+2009-07-26  George Alverson <George.Alverson@cern.ch>
+
+	* IgTwigConfigElement.cc: remove diagnostic printout; add material for CSC/R-Phi
+
+2009-06-29  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Ig3DBaseWindow.h, Ig3DBaseWindow.cc, Ig3DWindow.cc: Make sure
+	focus in and focus out are not called if application goes out of
+	focus. 
+
+2009-06-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* Ig3DBaseBrowser.h, Ig3DBaseBrowser.cc: Remove static definitions
+	for menus and menu items.
+	* Ig3DWindow.cc, IgLegoWindow.cc, IgRPhiWindow.cc, IgRZWindow.cc,
+	IgSpareWindow.cc: Comment out object menu. 
+	* Ig3DBaseWindow.h, Ig3DBaseWindow.cc: Add a signal on changing
+	focus. Migrate to QMdiArea.
+
+2009-06-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Ig3DBaseWindow.h, Ig3DBaseWindow.cc, Ig3DWindow.cc,
+	IgLegoWindow.cc, IgRPhiWindow.cc, IgRZWindow.cc, IgSpareWindow.cc:
+	Use Qt4 actions and tool bar. 
+
+2009-06-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Ig2DWindow.cc, Ig3DBaseWindow.cc, Ig3DWindow.cc,
+	IgLegoWindow.cc, IgRPhiWindow.cc, IgRZWindow.cc, IgSpareWindow.cc:
+	Use Qt4 actions and menus.
+
+2009-06-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* IgStudioCentre.cc, IgStudioCentre.h: Migrate to Qt4 actions.
+
+	* IgIVView.cc: Update according to changes in IgPage. 
+
+2009-06-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Ig3DBaseWindow.h, Ig2DWindow.cc, Ig3DBaseBrowser.cc,
+	Ig3DBaseWindow.cc, Ig3DWindow.cc, IgIVView.cc, IgLegoWindow.cc,
+	IgRPhiWindow.cc, IgRZWindow.cc, IgSpareWindow.cc: Propagate
+	changes in Studio.
+
+2009-04-15  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Ig3DMBoolControl.cc: Fix for gcc 4.3 64 bit.
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4. 
+
+2009-03-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *.h: Port to Qt4. 
+
+2008-12-12 George Alverson <George.Alverson@cern.ch>
+
+	* IgTwigConfigElement.cc: add materials/line types for VisCSC elements,
+	  add code to access default properties.
+	  
+2008-11-14 George Alverson <George.Alverson@cern.ch>
+
+        * IgTwigConfigElement.cc: Exact match returns bool rather than position.
+
+2008-11-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* IgTwigConfigElement.cc: Use exact match to find the material.
+
+2008-10-02  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* IgTwigConfigElement.h, IgTwigConfigElement.cc: Configuration of
+	materials.
+	* Ig3DNodeCategory.h, Ig3DNodeCategory.cc: Allow saving part of
+	the tree as iv.
+	* Ig3DNodeCategory.cc: Make sure the configurator is present in
+	the state.
+
+2008-05-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Ig3DBaseBrowser.h, Ig3DBaseWindow.h, Ig3DBaseBrowser.cc,
+	Ig3DBaseWindow.cc: Add automated screen shot production. 
+
+2008-04-25  Serkan Bozyigit <Serkan.Bozyigit@cern.ch>
+
+	* iglet.cc: added IgSoRectColHist.
+
+2008-02-18 George Alverson <George.Alverson@cern.ch>
+
+	* IgSpareBrowser.h, IgSpareWindow.h, IgSpareViewProperties.h, IgSpareBrowser.cc,
+	IgSpareWindow.cc, IgSpareViewProperties.cc: Add copy of RPhi Model/View/Browser for
+	specialized use.
+
+	* xtypeinfo.h, xtypeinfo.cc, iglet.cc: Add calls for SpareBrowser
+
+2008-02-18  Ianna.Osborne@cern.ch  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added a developer.
+
+2008-01-31  Serkan Bozyigit <Serkan.Bozyigit@cern.ch>
+
+	* Ig3DGridCategory.h, Ig3DGridCategory.cc: Extended in order to be able to 
+	save the configuration of the grid into xml files instead of oiv files.
+	Also fixed a bug which appeared in the case when user tried to load a file 
+	but then decided otherwise.
+
+2008-01-07  Serkan Bozyigit <Serkan.Bozyigit@cern.ch>
+
+	* Ig3DGridCategory.h, Ig3DGridCategory.cc: Added color slide bars for the 
+	grid's labels
+
+2007-12-07  Serkan Bozyigit <Serkan.Bozyigit@cern.ch>
+
+	* Ig3DAnimsCategory.h, Ig3DAnimsCategory.cc, Ig3DClipsCategory.h, 
+	Ig3DClipsCategory.cc, Ig3DGridCategory.h, Ig3DGridCategory.cc, 
+	Ig3DSlicersCategory.h, Ig3DSlicersCategory.cc: Corrected a bug which appeared
+	when all according items in the category were removed and one tried to add a
+	new item but decided finally decided otherwise.
+	* Ig3DGridCategory.h, Ig3DGridCategory.cc: added saving and loading grid
+	 planes buttons and functionality. saves are made into iv files.
+	* Ig3DBaseBrowser.cc: changed the drawgrid functionality (grid button in the 
+	tool bar). Instead of showing a static grid, pressing it now activates or 
+	deactivates all	available grid planes.
+
+2007-11-26  Serkan Bozyigit <Serkan.Bozyigit@cern.ch>
+
+	* Ig3DGridCategory.h,Ig3DGridCategory.cc: adapted for the new
+	functionality of the grid planes.
+
+2007-11-12  Serkan Bozyigit <Serkan.Bozyigit@cern.ch>
+
+	* Ig3DBaseBrowser.h: menu id for grid planes
+	* Ig3DGridCategory.h, Ig3DGridCategory.cc: newly added. New category
+	 for the grid planes.
+	* Ig3DWindow.h, Ig3DWindow.cc: extended in order to add the new category 
+	Ig3DGridCategory into the window.
+	* iglet.cc: extended by the cases for IgSoGridPlane and IgSoGridPlaneMap
+
+2007-10-23  Serkan Bozyigit <Serkan.Bozyigit@cern.ch>
+	
+	* Ig3DAxisRotationControl.h, Ig3DAxisRotationControl.cc: Added in 
+	order to make the rotation of the plane more intuitive. Uses 
+	thumbwheels instead of slidebars.
+	* Ig3DClipsCategory.h, Ig3DClipsCategory.cc, Ig3DSlicersCategory.h, 
+	Ig3DSlicersCategory.cc: Added a few lines of 'QWhatsthis' tips for 
+	axis rotation controls.
+	* Ig3DFieldPlanesCategory.h, Ig3DFieldPlanesCategory.cc: Added some
+	private members which are required for the detailed window controls 
+	and their widgets.
+	* Ig3DPlaneControl.h, Ig3DPlaneControl.cc: Added axis rotation
+	widget, removed direction widget, but it is still used by the axis
+	rotation controls. New plane direction class is also being used. 
+	Changed the maximum and minimum distance to 30, resp. -30, since the
+	detector does not go beyond these distances.
+	* IgControlCentre.cc: Changed the control center's sizes to a 
+	convenient 600 x 400.
+	* IgPlaneDirection.h, IgPlaneDirection.cc: Newly added. A wrapper
+	for 3D vectors witht the functionality of signals.
+
+	* Now finally added Ig3DAxisRotationControl.h, Ig3DAxisRotationControl.cc 
+	IgPlaneDirection.h, IgPlaneDirection.cc.
+
+2007-10-23  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added a new developer.
+
+2007-09-20  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* IgIVView.h, IgIVView.cc: New view for iv files.
+	* IgOIVExtension.h, IgOIVExtension.cc: New session type which can
+	read iv files. 
+	* iglet.cc: Define new iglets.
+	
+2007-09-18  Ianna.Osborne@cern.ch  <Ianna.Osborne@cern.ch>
+
+	* iglet.cc: Add initialization of a new IgSoRectHist class.
+
+2007-04-13  Ianna.Osborne@cern.ch  <Ianna.Osborne@cern.ch>
+
+	* iglet.cc: Add initialization of OpenInventor classes.
+
+2007-04-10  Ianna.Osborne@cern.ch  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: New file.
+	* *.h, *.cc: Final editing for migration.
+
+2007-04-03  Ianna.Osborne@cern.ch  <Ianna.Osborne@cern.ch>
+
+	* New browsers package.
+
+	* *.h, *.cc: Migrated from IGUANA.
+
+	* pixmaps/*.xpm: Migrated from IGUANA. 

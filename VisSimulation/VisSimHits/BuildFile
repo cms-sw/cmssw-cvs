@@ -1,0 +1,9 @@
+<use name=VisFramework/VisFrameworkBase>
+<use name=VisFramework/VisEventSetup>
+<use name=DataFormats/DetId>
+<use name=Geometry/DTGeometry>
+<use name=Geometry/CSCGeometry>
+<use name=Geometry/RPCGeometry>
+<use name=Geometry/TrackerGeometryBuilder>
+<use name=Geometry/CaloGeometry>
+<use name=Geometry/Records>

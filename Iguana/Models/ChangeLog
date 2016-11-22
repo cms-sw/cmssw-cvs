@@ -1,0 +1,173 @@
+2009-01-27  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Remove Qt dependency.
+	* IgAjaxTreeModel.cc, IgNTupleModel.cc, IgNTupleRep.cc,
+	IgUIDModel.cc, IgUIDRep.cc, IgXMLModel.cc, IgXMLRep.cc, iglet.cc,
+	IgAjaxTreeModel.h, IgCommonNTupleReps.h, IgCommonXMLReps.h,
+	IgNTupleModel.h, IgNTupleModelEvent.h, IgNTupleRep.h,
+	IgUIDModel.h, IgUIDRep.h, IgXMLModel.h, IgXMLRep.h: Removed as
+	obsolete. 
+
+2007-04-18  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* IgCommonNTupleReps.h, IgNTupleModel.h, IgNTupleModelEvent.h,
+	IgNTupleRep.h, IgNTupleModel.cc, IgNTupleRep.cc: Migrated from
+	IGUANA. Adapted to the new repository structure.
+	* xtypeinfo.h, iglet.cc, xtypeinfo.cc: Modified accordingly.
+
+2007-04-02  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrated from IGUANA. Adapted to the new repository
+	structure.
+	* config.h, IgCommonXMLReps.h, IgSimpleTextRep.h, IgTextModel.h,
+	IgUIDModel.h, IgXMLModel.h, xtypeinfo.h, IgAjaxTreeModel.h,
+	IgSimpleTextModel.h, IgTextModelEvent.h, IgTextRep.h, IgUIDRep.h,
+	IgXMLRep.h, IgAjaxTreeModel.cc, iglet.cc, IgSimpleTextModel.cc,
+	IgSimpleTextRep.cc, IgTextModel.cc, IgTextRep.cc, IgUIDModel.cc
+	IgUIDRep.cc, IgXMLModel.cc, IgXMLRep.cc, xtypeinfo.cc: Migrated
+	from IGUANA, merged from Ig_Modules/IgXMLModel and IgTextModel,
+	adapted to the new repository structure.
+
+2007-03-29  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Modify to use the CMSSW config.
+	* plugin.cc: Remove.
+	* xtypeinfo.cc: New xtype info definition.
+
+2007-03-07  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* config.h, xtypeinfo.h, IgTextModel.h, IgSimpleTextModel.cc,
+	IgSimpleTextRep.cc: Move to classlib. 
+	
+2005-03-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Port to SCRAMV1.
+
+2003-09-12  Lassi A. Tuura  <lat@pb-d-128-141-36-125.cern.ch>
+
+	* BuildFile: Tidy up.
+
+	* IgTextModel.h, IgSimpleTextModel.cc, IgSimpleTextRep.cc,
+	config.h, xtypeinfo.h: Move to using SEAL Foundation classes.
+
+2002-10-16  Lassi A. Tuura  <lat@iki.fi>
+
+	* config.h: Default Windows to DLL use.  Unify.
+
+2002-10-15  Lassi A. Tuura  <lat@iki.fi>
+
+	* xtypeinfo.h: Add export as per classlib changes.
+
+2002-09-19  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgSimpleTextModel.cc: Tidy up formatting.  Notify owners
+	only if the rep really changes.
+
+	* IgSimpleTextRep.cc: Tidy up formatting.
+
+2002-07-17  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgTextRep.h, IgSimpleTextRep.h, IgSimpleTextRep.cc (setText):
+	New method, allow the text to be modified.
+
+2002-03-19  Lassi A. Tuura  <lat@iki.fi>
+
+	* Complete implementation.
+
+2001-11-01  Lassi A. Tuura  <lat@iki.fi>
+
+	* Great renaming and general clean-up patch.
+
+2001-08-24  Lassi A. Tuura  <lat@iki.fi>
+
+	* IgSimpleTextRep.h, IgSimpleTextRep.cc: Add destructors to clean
+	up properly.
+
+2001-07-19  Lassi A. Tuura  <lat@iki.fi>
+
+	* BuildFile, plugin.cc: We no longer record model information, so
+	stop being a plug-in.
+
+2001-03-23  Lassi A. Tuura  <lat@iki.fi>
+
+	* BuildFile: Try to work around SCRAM linking issues.
+
+	* IgSimpleTextModel.cc, IgSimpleTextRep.cc: Define missing virtual
+	methods so that the library will load.
+
+2001-03-22  Lassi A. Tuura  <lat@iki.fi>
+
+	* BuildFile: First version to build with SCRAM.
+
+	* IgSimpleTextRep.h: Switch data member order to avoid warnings.
+
+	* IgTextModel.h: Fix callback name typo.
+
+	* xtypeinfo.h: Include info for IgSimpleTextRep.
+
+	* IgSimpleTextModel.cc: Fix typos.
+
+	* IgSimpleTextRep.cc, IgTextRep.cc: Move code to the right file.
+
+2007-03-29  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Modify to use the CMSSW config.
+	* plugin.cc: Remove.
+	* iglet.cc: New plugin definition.
+	* xtypeinfo.cc: New xtype info definition.
+	* test_IgUIDModel.cpp: Move to classlib.
+
+2007-03-08  Ianna Osborne <Ianna.Osborne@cern.ch>
+
+	* config.h, BuildFile, IgCommonXMLReps.h, xtypeinfo.h, plugin.cc:
+	Move to classlib and IgPluginManager.
+	
+2006-01-12  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* plugin.cc: creating 1 level of children if the parent does not
+	exists.
+
+	* IgCommonXMLReps.h: exposing multimethods.
+
+2005-12-14  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* IgXMLRep.cc: printout removed. 
+
+2005-12-02  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* IgAjaxTreeModel.h, IgUIDModel.h, IgUIDRep.h, IgXMLRep.h,
+	xtypeinfo.h, IgAjaxTreeModel.cc, IgUIDModel.cc, IgUIDRep.cc,
+	plugin.cc, BuildFile, test_IgAjaxTreeModel01.cpp,
+	test_IgUIDModel.cpp: first imported into repository.
+
+2005-10-21  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* IgXMLModel.cc: commenting out unused argurment.
+
+2005-08-24  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* plugin.cc: visibility is added to the xml representation.
+
+2005-07-26  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* test_IgXMLModel02.cpp: test removed. 
+
+	* test/BuildFile, test_QDomDocument.cpp: new test for using
+	QDomDocument.
+
+	* IgXMLModel.h, IgXMLRep.h, IgXMLModel.cc, IgXMLRep.cc,
+	  plugin.cc: now IgRepContextes are correctly deleted when
+	  deleting an IgXMLModel. 
+
+
+2005-07-13  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* xtypeinfo.h: forgot to rename IgAjaxModel to IgXMLModel.
+
+	* BuildFile, IgXMLModel.h, IgXMLRep.h, config.h, xtypeinfo.h ,
+	IgXMLModel.cc, IgXMLRep.cc, plugin.cc, BuildFile,
+	test_IgXMLModel01.cpp, test_IgXMLModel02.cpp: Added to
+	repository. This package allows to represent twig trees in XML.
+
+	* Package created.
+

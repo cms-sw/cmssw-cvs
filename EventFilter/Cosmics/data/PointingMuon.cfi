@@ -1,0 +1,18 @@
+
+module hltL2MuonPoiting = L2MuonPoiting {
+
+  string SALabel = "cosmicMuons"
+    string PropagatorName = "SteppingHelixPropagator"
+
+#ecal
+    double radius = 129.0 
+    double maxZ = 293.5
+
+#hcal
+#double radius = 181.1 
+#double maxZ = 390.0
+
+}
+
+
+}

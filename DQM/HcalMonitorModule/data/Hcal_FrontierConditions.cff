@@ -1,0 +1,40 @@
+//include "Configuration/StandardSequences/data/FrontierConditions_GlobalTag.cff"
+
+include "CondCore/DBCommon/data/CondDBSetup.cfi"
+
+
+# the following is needed for non PoolDBESSources (fake calibrations)
+##################################################
+//include "CalibTracker/SiStripESProducers/data/SiStripPedestalsFakeSource.cfi"
+include "CalibTracker/SiStripESProducers/data/SiStripQualityFakeESSource.cfi"
+include "Geometry/TrackerGeometryBuilder/data/trackerGeometry.cfi"
+include "Geometry/DTGeometry/data/dtGeometry.cfi"
+include "Geometry/CSCGeometry/data/cscGeometry.cfi"
+replace TrackerDigiGeometryESModule.applyAlignment = true
+replace DTGeometryESModule.applyAlignment = true
+replace CSCGeometryESModule.applyAlignment = true  
+include "CalibCalorimetry/EcalLaserCorrection/data/ecalLaserCorrectionService.cfi"
+
+es_module hcal_db_producer = HcalDbProducer {
+         untracked vstring dump = {""}
+         untracked string file = ""
+}
+es_source es_hardcode = HcalHardcodeCalibrations {untracked vstring toGet = {"GainWidths", "channelQuality", "ZSThresholds"}}
+
+include "CalibTracker/SiStripESProducers/data/SiStripGainESProducer.cfi"
+es_module sistripconn = SiStripConnectivity {}
+include "RecoLocalTracker/SiStripRecHitConverter/data/StripCPEfromTrackAngle.cfi"
+include "RecoLocalTracker/SiStripRecHitConverter/data/SiStripRecHitMatcher.cfi"
+
+################################################## end fake calibrations
+
+
+es_source GlobalTag = PoolDBESSource {
+    using CondDBSetup
+    string connect = "frontier://FrontierProd/CMS_COND_20X_GLOBALTAG"
+    untracked string globaltag = "IDEAL::All"
+    untracked string BlobStreamerName = "TBufferBlobStreamingService"
+}
+
+# For other valid global tags, see:
+# https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideFrontierConditions

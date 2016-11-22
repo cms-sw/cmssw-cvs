@@ -1,0 +1,218 @@
+	module hcalMonitor = HcalMonitorModule{
+
+		#Determines connection to back-end daemon
+		untracked bool MonitorDaemon = true
+	       	
+		# Verbosity Switch
+		untracked bool debug = false
+                
+                untracked bool showTiming = false
+
+		# Choices for prescaling your module (-1 mean no prescale)
+		# Operate every N events
+		untracked int32 diagnosticPrescaleEvt = -1
+		# Operate every N lumi sections
+		untracked int32 diagnosticPrescaleLS  = -1
+		# Operate every N minutes
+		untracked int32 diagnosticPrescaleTime = -1
+		# Operate every N updates
+		untracked int32 diagnosticPrescaleUpdate = -1
+
+
+		# Labels for input products
+                InputTag digiLabel = hcalDigis
+                InputTag hbheRecHitLabel = hbhereco
+                InputTag hfRecHitLabel = hfreco
+                InputTag hoRecHitLabel = horeco
+                InputTag zdcRecHitLabel = zdcreco
+		InputTag hcalLaserLabel = hcalLaserReco  
+  	        InputTag gtLabel = l1GtUnpack
+                InputTag caloTowerLabel = towerMaker
+    
+		#Flags for HotCellMonitor.  Thresholds are in GeV
+
+                untracked bool HotCellMonitor = true
+                untracked bool HotCell_checkThreshold = true // turn on/off check that cell > threshold
+                untracked bool HotCell_checkNADA = true // turn on/off neighbor-based hot cell finder
+                untracked bool HotCell_checkAbovePed = true // turn on/off check that digis > pedestal + Nsigma 
+                untracked vdouble thresholds={15,5,2,1.5,1}
+                untracked double HotCellDigiSigma=5 // # of sigma above threshold for a cell to be considered hot
+
+                # Make extra diagnostic plots
+                untracked bool MakeDiagnosticPlots          = true
+                untracked bool MakeDeadCellDiagnosticPlots  = false
+                untracked bool MakeHotCellDiagnosticPlots   = false
+                untracked bool MakeDigiDiagnosticPlots     = false
+
+                // NADA params updated for Jan DQM challenge using GREN data
+                untracked double NADA_Ecand_cut0 = 1.5 // orig values was 1.0
+                untracked double NADA_Ecand_cut1 = 2.5 // orig value was 2.5
+                untracked double NADA_Ecand_cut2 = 500.
+                untracked double NADA_Ecube_cut = 0.5 // orig value was 0.1
+                untracked double NADA_Ecell_cut = 0.1
+                untracked double NADA_Ecube_frac=0.30 // orig vale was 0.02
+                untracked double NADA_Ecell_frac=0.02
+                untracked int32 NADA_maxdepth=0
+                untracked int32 NADA_maxeta=1
+                untracked int32 NADA_maxphi=1
+                untracked double NADA_NegCand_cut = -1.5
+                
+   
+                #Flags for DeadCellMonitor
+                untracked bool DeadCellMonitor = true
+                untracked bool DeadCell_checkAbovePed = true // check that digis occasionally above pedestal
+                untracked double coolcellfrac = 0.5 // fraction of cell's neighbors that must be significantly hotter than the cell for the cell to be considered "cool"
+                untracked int32 checkNevents = 25 
+                untracked double ped_Nsigma = 0
+                untracked double minADCcount = 0
+                untracked double deadcellfloor = -10. // cells below this energy are automatically set as "cool"
+                untracked double deadcellmindiff = 1. // cell must be at least this much below neighbors to be considered a cool cell candidate 
+
+		#Flags for RecHitMonitor.  Threshold is in GeV
+	        untracked bool RecHitMonitor = true
+	        untracked bool RecHitsPerChannel = false
+	        untracked double RecHitOccThresh = 2.0  
+	       
+		#Flags for DigiMonitor.  Threshold is in ADC counts
+		untracked bool DigiMonitor = true
+		untracked bool DigisPerChannel = false # set DigisPerChannel off by default -- JT, 08 May 2008
+		untracked int32 DigiOccThresh = 0
+
+		#Flags for DataFormatMonitor
+		untracked bool DataFormatMonitor = true
+		untracked int32 dfPrtLvl = 0
+
+		#Flags for MTCCMonitor.  Thresholds are in fC
+		#Dump threshold in fC, ranges in iEta/iPhi.  Dumps to stdout
+		untracked bool MTCCMonitor = false
+		untracked double MTCCOccThresh = 10
+		untracked double DumpThreshold = 500
+		untracked int32 DumpEtaLow = 0
+		untracked int32 DumpEtaHigh = 10
+		untracked int32 DumpPhiLow = 10
+		untracked int32 DumpPhiHigh = 10
+	       
+		#Flags for pedestal monitor
+	        untracked bool PedestalMonitor = true
+	        untracked bool PedestalsPerChannel = true
+		untracked bool PedestalsInFC = false
+
+		#Flags for LED monitor
+	        untracked bool LEDMonitor = true
+	        untracked bool LEDPerChannel = true
+		untracked double LED_ADC_Thresh = -1000
+
+		#Flags for Laser monitor
+	        untracked bool LaserMonitor = true
+	        untracked bool LaserPerChannel = true
+		untracked double Laser_ADC_Thresh = -1000
+
+		#Flags for TPG monitor
+		untracked bool TrigPrimMonitor = true
+
+                #Flags for CaloTower Monitor
+                untracked bool CaloTowerMonitor = false
+
+		#Flags for the hcal template analysis
+		untracked bool HcalAnalysis = false
+
+		#Global HCAL DQM parameters.  
+		#Sets range of iEta/iPhi plots
+		untracked double MaxEta = 42.5	
+		untracked double MinEta = -42.5	
+		untracked double MaxPhi = 73.5	
+		untracked double MinPhi = -0.5	
+
+		#List of known hot cells to veto using DetId
+		untracked vstring HotCells = {}
+
+                untracked bool checkHB=true
+                untracked bool checkHE=true
+                untracked bool checkHO=true
+                untracked bool checkHF=true
+
+                # HotCell Tags for individual subdetectors
+                # If these aren't specified, then the global 
+                # values are used
+
+                #untracked bool HBdebug = false
+                #untracked bool HEdebug = false
+                #untracked bool HOdebug = false
+                #untracked bool HFdebug = false
+
+                # Re-tuned threshold based on CRUZET1 run 43636 
+                # First threshold is used when looking for hot cells 
+    untracked vdouble HBthresholds={3,2,1,5,10}
+    untracked vdouble HEthresholds={3,2,1,5,10}
+    untracked vdouble HOthresholds={2,3,1,5,10}
+    untracked vdouble HFthresholds={9,2,4,6,10}
+
+                #untracked double HBMaxEta = 41	
+ 		#untracked double HBMinEta = -41	
+		#untracked double HBMaxPhi = 73	
+		#untracked double HBMinPhi = 0	
+
+                #untracked double HEMaxEta = 41	
+ 		#untracked double HEMinEta = -41	
+		#untracked double HEMaxPhi = 73	
+		#untracked double HEMinPhi = 0	
+
+                #untracked double HOMaxEta = 41	
+ 		#untracked double HOMinEta = -41	
+		#untracked double HOMaxPhi = 73	
+		#untracked double HOMinPhi = 0	
+
+                #untracked double HFMaxEta = 41	
+ 		#untracked double HFMinEta = -41	
+		#untracked double HFMaxPhi = 73	
+		#untracked double HFMinPhi = 0	
+
+                # Cuts tuned on CRUZET data from run 43636
+                untracked double HB_NADA_Ecand_cut0 = 1.5
+                untracked double HB_NADA_Ecand_cut1 = 2.25
+                untracked double HB_NADA_Ecand_cut2 = 10.
+                untracked double HB_NADA_Ecube_cut = 0.1
+                untracked double HB_NADA_Ecell_cut = 0.0
+                untracked double HB_NADA_Ecube_frac=0.333
+                untracked double HB_NADA_Ecell_frac=0.00
+                #untracked int32 HB_NADA_maxdepth=0
+                #untracked int32 HB_NADA_maxeta=1
+                #untracked int32 HB_NADA_maxphi=1
+                #untracked double HB_NADA_NegCand_cut = -1.5
+                
+                untracked double HE_NADA_Ecand_cut0 = 1.5
+                untracked double HE_NADA_Ecand_cut1 = 2.5
+                untracked double HE_NADA_Ecand_cut2 = 10.
+                untracked double HE_NADA_Ecube_cut = 0.1
+                untracked double HE_NADA_Ecell_cut = 0.0
+                untracked double HE_NADA_Ecube_frac=0.222
+                untracked double HE_NADA_Ecell_frac=0.00
+                #untracked int32 HE_NADA_maxdepth=0
+                #untracked int32 HE_NADA_maxeta=1
+                #untracked int32 HE_NADA_maxphi=1
+                #untracked double HE_NADA_NegCand_cut = -1.5
+                
+                untracked double HO_NADA_Ecand_cut0 = 1.5
+                untracked double HO_NADA_Ecand_cut1 = 2.5
+                untracked double HO_NADA_Ecand_cut2 = 10.
+                untracked double HO_NADA_Ecube_cut = 0.1
+                untracked double HO_NADA_Ecell_cut = 0.0
+                untracked double HO_NADA_Ecube_frac=0.20
+                untracked double HO_NADA_Ecell_frac=0.00
+                #untracked int32 HO_NADA_maxdepth=0
+                #untracked int32 HO_NADA_maxeta=1
+                #untracked int32 HO_NADA_maxphi=1
+                #untracked double HO_NADA_NegCand_cut = -1.5
+                
+                untracked double HF_NADA_Ecand_cut0 = 1.5
+                untracked double HF_NADA_Ecand_cut1 = 1.5
+                untracked double HF_NADA_Ecand_cut2 = 20.
+                untracked double HF_NADA_Ecube_cut = 0.1
+                untracked double HF_NADA_Ecell_cut = 0.0
+                untracked double HF_NADA_Ecube_frac=0.5714
+                untracked double HF_NADA_Ecell_frac=0.00
+                #untracked int32 HF_NADA_maxdepth=0
+                #untracked int32 HF_NADA_maxeta=1
+                #untracked int32 HF_NADA_maxphi=1
+                #untracked double HF_NADA_NegCand_cut = -1.5
+        }

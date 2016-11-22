@@ -1,0 +1,396 @@
+
+// -*- C++ -*-
+//
+// Package:     Core
+// Class  :     FWEveLegoView
+//
+// Implementation:
+//     <Notes on implementation>
+//
+// Original Author:  Chris Jones
+//         Created:  Thu Feb 21 11:22:41 EST 2008
+// $Id: FWEveLegoView.cc,v 1.69 2009/12/10 13:27:02 amraktad Exp $
+//
+
+// system include files
+#include <algorithm>
+#include <boost/bind.hpp>
+#include <boost/shared_ptr.hpp>
+#include <boost/numeric/conversion/converter.hpp>
+#include <iostream>
+#include <sstream>
+#include <stdexcept>
+
+#define private public
+#include "TGLOrthoCamera.h"
+#undef private
+
+#include "TRootEmbeddedCanvas.h"
+#include "THStack.h"
+#include "TCanvas.h"
+#include "TClass.h"
+#include "TH2F.h"
+#include "TView.h"
+#include "TColor.h"
+#include "TEveScene.h"
+#include "TGLViewer.h"
+#include "TAttAxis.h"
+#include "RVersion.h"
+//EVIL, but only way I can avoid a double delete of TGLEmbeddedViewer::fFrame
+#define private public
+#include "TGLEmbeddedViewer.h"
+#undef private
+#include "TEveViewer.h"
+#include "TEveManager.h"
+#include "TEveElement.h"
+#include "TEveCalo.h"
+#include "TEveCaloData.h"
+#include "TEveElement.h"
+#include "TGLPerspectiveCamera.h"
+#include "TGLWidget.h"
+#include "TEveTrans.h"
+#include "TEveStraightLineSet.h"
+#include "TEveCaloLegoOverlay.h"
+#include "TEveWindow.h"
+
+// user include files
+#include "Fireworks/Core/interface/FWEveLegoView.h"
+#include "Fireworks/Core/interface/FWConfiguration.h"
+#include "Fireworks/Core/interface/FWColorManager.h"
+
+#include "Fireworks/Core/interface/FWGLEventHandler.h"
+#include "Fireworks/Core/interface/FWViewContextMenuHandlerGL.h"
+
+
+//
+// constants, enums and typedefs
+//
+
+//
+// static data member definitions
+//
+
+//
+// constructors and destructor
+//
+FWEveLegoView::FWEveLegoView(TEveWindowSlot* iParent, TEveElementList* list) :
+   m_lego(0),
+   m_overlay(0),
+   m_autoRebin(this,"Auto rebin on zoom",true),
+   m_pixelsPerBin(this, "Pixels per bin", 10., 1., 20.),
+   m_showScales(this,"Show scales",true),
+   m_cameraMatrix(0),
+   m_cameraMatrixBase(0),
+   m_cameraMatrixRef(0),
+   m_cameraMatrixBaseRef(0),
+   m_orthoCameraZoom(0),
+   m_orthoCameraMatrix(0),
+   m_orthoCameraZoomRef(0),
+   m_orthoCameraMatrixRef(0),
+   m_topView(false),
+   m_cameraSet(false)
+{
+   TEveViewer* nv = new TEveViewer(staticTypeName().c_str());
+#if ROOT_VERSION_CODE >= ROOT_VERSION(5,25,4)
+   m_embeddedViewer =  nv->SpawnGLEmbeddedViewer(0);
+#else
+   m_embeddedViewer =  nv->SpawnGLEmbeddedViewer();
+#endif
+
+   iParent->ReplaceWindow(nv);
+
+   TGLEmbeddedViewer* ev = m_embeddedViewer;
+   FWGLEventHandler* eh = new FWGLEventHandler((TGWindow*)ev->GetGLWidget(), (TObject*)ev);
+   ev->SetEventHandler(eh);
+   eh->openSelectedModelContextMenu_.connect(openSelectedModelContextMenu_);
+   m_viewContextMenu.reset(new FWViewContextMenuHandlerGL(nv));
+
+   m_autoRebin.changed_.connect(boost::bind(&FWEveLegoView::setAutoRebin,this));
+   m_pixelsPerBin.changed_.connect(boost::bind(&FWEveLegoView::setPixelsPerBin,this));
+   m_showScales.changed_.connect(boost::bind(&FWEveLegoView::showScales,this));
+
+   TEveScene* ns = gEve->SpawnNewScene(staticTypeName().c_str());
+   m_scene.reset(ns);
+   nv->AddScene(ns);
+   m_viewer.reset(nv);
+   gEve->AddElement(nv, gEve->GetViewers());
+
+
+   if (list->HasChildren())
+   {
+      m_lego =  dynamic_cast<TEveCaloLego*>( list->FirstChild());
+      if (m_lego) {
+         m_overlay = new TEveCaloLegoOverlay();
+         m_overlay->SetShowPlane(kFALSE);
+         m_overlay->SetShowPerspective(kFALSE);
+         m_overlay->GetAttAxis()->SetLabelSize(0.02);
+         ev->AddOverlayElement(m_overlay);
+         m_overlay->SetCaloLego(m_lego);
+         m_overlay->SetShowScales(1); //temporary
+         m_overlay->SetScalePosition(0.8, 0.6);
+         m_overlay->SetScaleColorTransparency(kWhite, 0);
+
+         ev->SetCurrentCamera(TGLViewer::kCameraOrthoXOY);
+         // ev->SetCurrentCamera(TGLViewer::kCameraPerspXOY);
+         eh->SetLego(m_lego);
+      }
+   }
+   // take care of cameras
+   //
+   if ( TGLPerspectiveCamera* camera = dynamic_cast<TGLPerspectiveCamera*>( &(ev->RefCamera(TGLViewer::kCameraPerspXOY) ))) {
+      m_cameraMatrixRef = const_cast<TGLMatrix*>(&(camera->GetCamTrans()));
+      m_cameraMatrixBaseRef = const_cast<TGLMatrix*>(&(camera->GetCamBase()));
+   }
+   if ( TGLOrthoCamera* camera = dynamic_cast<TGLOrthoCamera*>( &(ev->RefCamera(TGLViewer::kCameraOrthoXOY) ))) {
+      m_orthoCameraZoomRef = &(camera->fZoom);
+      m_orthoCameraMatrixRef = const_cast<TGLMatrix*>(&(camera->GetCamTrans()));
+   }
+
+   gEve->AddElement(list,ns);
+   gEve->AddToListTree(list, kTRUE);
+}
+
+FWEveLegoView::~FWEveLegoView()
+{
+   m_viewer->GetGLViewer()->RemoveOverlayElement(m_overlay);
+   m_scene->Destroy();
+   m_viewer->DestroyWindowAndSlot();
+
+   m_viewer.destroyElement();
+   delete m_cameraMatrix;
+   delete m_cameraMatrixBase;
+   delete m_orthoCameraMatrix;
+}
+
+void
+FWEveLegoView::finishSetup()
+{
+   if ( !m_cameraSet ) setCameras();
+}
+
+void
+FWEveLegoView::setBackgroundColor(Color_t iColor)
+{
+   TGLViewer* v =  m_viewer->GetGLViewer();
+   if ( (iColor == FWColorManager::kBlackIndex && !v->IsColorSetDark()) ||
+        (iColor == FWColorManager::kWhiteIndex && v->IsColorSetDark()) )
+   {
+      v->SwitchColorSet();
+      m_overlay->SetScaleColorTransparency(iColor==FWColorManager::kWhiteIndex ? kGray + 3 : kWhite, 0);
+      m_overlay->SetFrameAttribs(iColor==FWColorManager::kWhiteIndex ? kBlack : kWhite, 70, 90);
+      m_viewer->GetGLViewer()->RequestDraw(TGLRnrCtx::kLODHigh);
+   }
+
+}
+void
+FWEveLegoView::setCameras()
+{
+   // Few words on what is going on. First we paint the scene (not
+   // sure it's needed).  Than we redraw everything with a lego
+   // object already projected, reseting all the cameras. If
+   // parameters were set from a config file, apply them directly to
+   // the cameras. Add a small negative rotation (a kludgey
+   // solution), to cause decrease in theta angle of the view to
+   // emulate conditions similar to what happens during transition
+   // from 3D to top 2D view.
+   m_scene->Repaint();
+   m_viewer->Redraw(kTRUE);
+   if ( m_cameraMatrix && m_cameraMatrixBase && m_orthoCameraMatrix) {
+      *m_cameraMatrixRef = *m_cameraMatrix;
+      *m_cameraMatrixBaseRef = *m_cameraMatrixBase;
+      *m_orthoCameraMatrixRef = *m_orthoCameraMatrix;
+      *m_orthoCameraZoomRef = m_orthoCameraZoom;
+   }
+   if (!m_topView && m_embeddedViewer) {
+       m_embeddedViewer->SetCurrentCamera(TGLViewer::kCameraPerspXOY);
+   }
+
+   m_cameraSet = true;
+}
+
+void
+FWEveLegoView::setFrom(const FWConfiguration& iFrom)
+{
+   // take care of parameters
+   FWConfigurableParameterizable::setFrom(iFrom);
+
+   // retrieve camera parameters
+   m_cameraMatrix = new TGLMatrix();
+   m_cameraMatrixBase = new TGLMatrix();
+   m_orthoCameraMatrix = new TGLMatrix();
+
+   // transformation matrix
+   assert(m_cameraMatrix);
+   std::string matrixName("cameraMatrix");
+   for ( unsigned int i = 0; i < 16; ++i ) {
+      std::ostringstream os;
+      os << i;
+      const FWConfiguration* value = iFrom.valueForKey( matrixName + os.str() + "Lego" );
+      assert( value );
+      std::istringstream s(value->value());
+      s>>((*m_cameraMatrix)[i]);
+   }
+
+   // transformation matrix base
+   assert(m_cameraMatrixBase);
+   matrixName = "cameraMatrixBase";
+   for ( unsigned int i = 0; i < 16; ++i ) {
+      std::ostringstream os;
+      os << i;
+      const FWConfiguration* value = iFrom.valueForKey( matrixName + os.str() + "Lego" );
+      assert( value );
+      std::istringstream s(value->value());
+      s>>((*m_cameraMatrixBase)[i]);
+   }
+
+   // zoom
+   std::string zoomName("orthoCameraZoom"); zoomName += typeName();
+   assert( 0!=iFrom.valueForKey(zoomName) );
+   std::istringstream s(iFrom.valueForKey(zoomName)->value());
+   s>>(m_orthoCameraZoom);
+
+   // transformation matrix
+   assert(m_orthoCameraMatrix);
+   std::string orthoMatrixName("orthoCameraMatrix");
+   for ( unsigned int i = 0; i < 16; ++i ) {
+      std::ostringstream os;
+      os << i;
+      const FWConfiguration* value = iFrom.valueForKey( orthoMatrixName + os.str() + typeName() );
+      assert( value );
+      std::istringstream s(value->value());
+      s>>((*m_orthoCameraMatrix)[i]);
+   }
+
+   // topView
+   {
+      std::string stateName("topView"); stateName += typeName();
+      assert( 0!=iFrom.valueForKey(stateName) );
+      std::istringstream s(iFrom.valueForKey(stateName)->value());
+      s >> m_topView;
+   }
+}
+
+void
+FWEveLegoView::setAutoRebin()
+{
+   if(m_lego) {
+      m_lego->SetAutoRebin(m_autoRebin.value());
+      m_lego->ElementChanged(kTRUE,kTRUE);
+   }
+}
+
+void
+FWEveLegoView::setPixelsPerBin()
+{
+   if(m_lego) {
+      m_lego->SetPixelsPerBin((Int_t) (m_pixelsPerBin.value()));
+      m_lego->ElementChanged(kTRUE,kTRUE);
+   }
+}
+
+void
+FWEveLegoView::showScales()
+{
+   m_overlay->SetShowScales(m_showScales.value());
+   m_viewer->GetGLViewer()->RequestDraw();
+}
+
+
+//
+// const member functions
+//
+TGFrame*
+FWEveLegoView::frame() const
+{
+   return m_embeddedViewer->GetFrame();
+}
+
+const std::string&
+FWEveLegoView::typeName() const
+{
+   return staticTypeName();
+}
+
+FWViewContextMenuHandlerBase* 
+FWEveLegoView::contextMenuHandler() const {
+   return (FWViewContextMenuHandlerBase*)m_viewContextMenu.get();
+}
+
+void
+FWEveLegoView::addTo(FWConfiguration& iTo) const
+{
+   // take care of parameters
+   FWConfigurableParameterizable::addTo(iTo);
+
+   // store camera parameters
+
+   // transformation matrix
+   assert(m_cameraMatrixRef);
+   std::string matrixName("cameraMatrix");
+   for ( unsigned int i = 0; i < 16; ++i ) {
+      std::ostringstream osIndex;
+      osIndex << i;
+      std::ostringstream osValue;
+      osValue << (*m_cameraMatrixRef)[i];
+      iTo.addKeyValue(matrixName+osIndex.str()+"Lego",FWConfiguration(osValue.str()));
+   }
+
+   // transformation matrix base
+   assert(m_cameraMatrixBaseRef);
+   matrixName = "cameraMatrixBase";
+   for ( unsigned int i = 0; i < 16; ++i ) {
+      std::ostringstream osIndex;
+      osIndex << i;
+      std::ostringstream osValue;
+      osValue << (*m_cameraMatrixBaseRef)[i];
+      iTo.addKeyValue(matrixName+osIndex.str()+"Lego",FWConfiguration(osValue.str()));
+   }
+
+   // zoom
+   assert(m_orthoCameraZoomRef);
+   std::ostringstream s;
+   s<<(*m_orthoCameraZoomRef);
+   std::string name("orthoCameraZoom");
+   iTo.addKeyValue(name+typeName(),FWConfiguration(s.str()));
+
+   // zoom
+   s.str("");
+   bool topView = false;
+   if ( dynamic_cast<TGLOrthoCamera*>( &(m_embeddedViewer->CurrentCamera()) ) )
+      topView = true;
+   s << topView;
+   name = "topView";
+   iTo.addKeyValue(name+typeName(),FWConfiguration(s.str()));
+
+   // transformation matrix
+   assert(m_orthoCameraMatrixRef);
+   std::string orthoMatrixName("orthoCameraMatrix");
+   for ( unsigned int i = 0; i < 16; ++i ) {
+      std::ostringstream osIndex;
+      osIndex << i;
+      std::ostringstream osValue;
+      osValue << (*m_orthoCameraMatrixRef)[i];
+      iTo.addKeyValue(orthoMatrixName+osIndex.str()+typeName(),FWConfiguration(osValue.str()));
+   }
+}
+
+void
+FWEveLegoView::saveImageTo(const std::string& iName) const
+{
+   bool succeeded = m_viewer->GetGLViewer()->SavePicture(iName.c_str());
+   if(!succeeded) {
+      throw std::runtime_error("Unable to save picture");
+   }
+}
+
+
+//
+// static member functions
+//
+const std::string&
+FWEveLegoView::staticTypeName()
+{
+   static std::string s_name("3D Lego");
+   return s_name;
+}
+

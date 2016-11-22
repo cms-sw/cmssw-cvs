@@ -1,0 +1,7 @@
+<use name=Iguana/Inventor>
+<use name=VisFramework/VisFrameworkBase>
+<use name=VisFramework/VisEventSetup>
+<use name=Geometry/CommonDetUnit>
+<use name=Geometry/TrackerGeometryBuilder>
+<use name=DataFormats/Common>
+<use name=DataFormats/GsfTrackReco>

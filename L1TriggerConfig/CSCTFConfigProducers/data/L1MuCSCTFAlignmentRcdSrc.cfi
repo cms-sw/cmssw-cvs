@@ -1,0 +1,6 @@
+es_source L1MuCSCAlignmentRcdSrc = EmptyESSource {
+    string recordName = "L1MuCSCTFAlignmentRcd"
+    vuint32 firstValid = { 1 }
+    bool iovIsRunNotTime = true
+}
+

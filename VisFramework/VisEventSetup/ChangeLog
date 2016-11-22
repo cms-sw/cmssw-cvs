@@ -1,0 +1,213 @@
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisEventSetupService.cc: 
+
+	* VisCSCGeometryTwig.cc, VisCaloGeometryTwig.cc,
+	VisDTGeometryTwig.cc, VisEventSetupContent.cc,
+	VisRPCGeometryTwig.cc, VisTrackerGeometryTwig.cc: Remove unneeded
+	lock.
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisEventSetupContent.h, VisEventSetupContent.cc: Remove unused
+	multi-threaded base class. Replaced by a simpler one.
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2008-11-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.h, VisEventSetupService.cc: Introduce Event
+	Setup watches to detect if updates of the representations are
+	needed.
+	* VisCaloGeometryTwig.h, VisCaloGeometryTwig.cc,
+	VisCSCGeometryTwig.h, VisCSCGeometryTwig.cc, VisDTGeometryTwig.h,
+	VisDTGeometryTwig.cc, VisRPCGeometryTwig.h, VisRPCGeometryTwig.cc,
+	VisTrackerGeometryTwig.h, VisTrackerGeometryTwig.cc: Make use of the
+	event setup watches.
+
+2008-10-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCGeometryTwig.cc, VisCaloGeometryTwig.cc,
+	VisDTGeometryTwig.cc, VisRPCGeometryTwig.cc,
+	VisTrackerGeometryTwig.cc: Do not unref the nodes if it has been
+	done. 
+
+2008-09-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.h: Expose local coordinate calculation as
+	public.
+
+2008-09-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.h, VisEventSetupService.cc: Add member
+	functions to compute global position of a rechit, return
+	geometrical detector based on det id. Add Orbit, bx and LS to the
+	event printout.
+	* VisEventSetupContent.cc: Set Lego twig always visible.
+
+2008-08-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.h, VisEventSetupService.cc: Update helper
+	member functions.
+	* VisEventSetupContent.cc: Close the twigs.
+
+2008-08-22  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.h, VisEventSetupService.cc: Add
+	getCellPosition member function.
+
+	* VisEventSetupService.h, VisEventSetupService.cc: Provide member
+	functions to access CaloGeometry.
+
+2008-07-31  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.cc: Use wire frame for drawing hit detector
+	units. Use different colors for 3d and other views. 
+
+2008-07-22  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.cc: Use reference to the detid vectors.
+
+2008-06-24  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.cc: Put the definition of the variables in
+	a scope. 
+
+2008-06-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.h, VisEventSetupService.cc: Migrate
+	VisCaloLego code here.
+
+2008-06-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.cc: Improved refit.
+
+2008-06-18  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.h, VisEventSetupService.cc: Add
+	MagneticField. Add a Track refit member function.
+	* BuildFile: Add dependencies needed for refit.
+
+2008-06-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.h, VisEventSetupService.cc: Add a member
+	function to display selected detectors based on their ids. Comment
+	out draw style and material which should come from a material
+	service. Add a configurable slice for RZ view.
+	* VisEventSetupContent.cc: Remove hiding of the twigs.
+	* VisTrackerGeometryTwig.cc, VisRPCGeometryTwig.cc,
+	VisCaloGeometryTwig.cc, VisCSCGeometryTwig.cc,
+	VisDTGeometryTwig.cc: Check the null-ness of the reps.
+
+2008-06-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloGeometryTwig.h, VisCaloGeometryTwig.cc: New class to
+	represent Calo geometries.
+	* xtypeinfo.h, xtypeinfo.cc: Declare and define the new type.
+	* VisEventSetupService.h, VisEventSetupService.cc: Add new member
+	functions to build representations for the Calo
+	geometries. Comment out the material and style definitions from
+	here.
+	* VisEventSetupContent.h, VisEventSetupContent.cc: Add the Calo
+	geometries to the iglet.
+
+2008-06-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.h, VisEventSetupService.cc: Add material.
+
+	* VisEventSetupService.h, VisEventSetupService.cc: Add detailed
+	annotations for the tracker dets.
+
+2008-05-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.cc: Back-port from 2_1_X. 
+
+2008-05-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.cc: Improve RZ view.
+
+	* VisEventSetupService.h, VisEventSetupService.cc: Add annotations
+	of the geometries. Allow configuration from a file - what will be
+	loaded. 
+	* VisEventSetupContent.cc: Allow configuration from a file - what
+	will be loaded.
+	* VisCSCGeometryTwig.h, VisCSCGeometryTwig.cc,
+	VisDTGeometryTwig.h, VisDTGeometryTwig.cc, VisRPCGeometryTwig.h,
+	VisRPCGeometryTwig.cc, VisTrackerGeometryTwig.h,
+	VisTrackerGeometryTwig.cc: Use active configurable parameters to
+	decide whether to cache the geometry reps or update them on each
+	event. Allow annotations.	
+
+2008-05-27  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrackerGeometryTwig.h, VisTrackerGeometryTwig.cc: New class
+	to display tracker geometry.
+	* xtypeinfo.h, xtypeinfo.cc: Declare and define new class.
+	* VisEventSetupService.h, VisEventSetupService.cc: Build tracker
+	geometries.
+	* VisEventSetupContent.h, VisEventSetupContent.cc: Add tracker
+	twigs to the detector tree.
+
+2008-05-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupContent.h,  VisEventSetupContent.cc: Correct logic
+	in drawing RPCs. Add RPC endcaps with detailed structure. Separate
+	initialization for different sub-detectors.
+	* VisRPCGeometryTwig.h, VisRPCGeometryTwig.cc,
+	VisEventSetupService.cc: Correct logic in drawing RPCs. Add
+	reagions to draw also endcaps.
+
+2008-05-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.h, VisEventSetupService.cc: Build muon
+	geometries.
+	* VisCSCGeometryTwig.h, VisCSCGeometryTwig.cc: CSC geometry.  
+	* VisDTGeometryTwig.h, VisDTGeometryTwig.cc: DT geometry.
+	* VisRPCGeometryTwig.h, VisRPCGeometryTwig.cc: RPC geometry.
+	* xtypeinfo.h, xtypeinfo.cc: Declare and define new classes.
+	* VisEventSetupContent.h, VisEventSetupContent.cc: Build the reco
+	geometry tree.
+	* iglet.cc: Make it an iglet.
+
+2008-05-15  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.h, VisEventSetupService.cc: Migrate to the
+	new Calo geometry. 
+
+2007-04-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.h: Migrate to the new Iguana directory
+	structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+
+2007-03-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.h: Headers has been moved.
+
+2007-03-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.h, VisEventSetupService.cc: Use
+	GlobalTrackingGeometry.
+	* VisSubdetector.h, VisSubdetector.cc: A helper class to decode
+	detector IDs.
+
+2006-06-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.cc: Change according to
+	HcalSubdetector changes which includes the removal of
+	HcalCompositeDetId.
+
+2006-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEventSetupService.h, VisEventSetupService.cc: Initial
+	implementation of the VisEventSetupService.
+	* BuildFile: Add all the geometry related packages here.
+	
+2006-04-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* New shared event setup visualisation core.

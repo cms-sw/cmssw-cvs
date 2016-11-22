@@ -1,0 +1,9 @@
+<use name=FWCore/ServiceRegistry>
+<use name=FWCore/Utilities>
+
+<export>
+  <use name=FWCore/ServiceRegistry>
+  <use name=FWCore/Utilities>
+  <lib name=IOPoolCommon>
+</export>
+

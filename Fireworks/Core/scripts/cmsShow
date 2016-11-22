@@ -1,0 +1,72 @@
+#!/usr/bin/env bash
+
+# strip of the directory name for this shell script
+export SHELLDIR=`dirname $0`
+# if no directory specified we need to use the local directory
+if [ ! -n "$SHELLDIR" ] ; then
+  export SHELLDIR=.
+fi
+# see if we are running in standalone mode
+if [ ! -n "$CMSSW_BASE" ] ; then
+  export CMSSW_BASE=$SHELLDIR
+  export CMSSW_SEARCH_PATH="."
+  export CMSSW_DATA_PATH="."
+  export ROOTSYS=$CMSSW_BASE/external/root 
+  export LD_LIBRARY_PATH=${CMSSW_BASE}:${CMSSW_BASE}/external/lib:${ROOTSYS}/lib:$LD_LIBRARY_PATH
+  export DYLD_LIBRARY_PATH=${CMSSW_BASE}:${CMSSW_BASE}/external/lib:${ROOTSYS}/lib:$DYLD_LIBRARY_PATH
+  export PATH=${ROOTSYS}/bin:$PATH
+fi
+
+# parse arguments to find ones handled by this script
+softflag=off
+debugflag=off
+rootflag=off
+# NOTE: the while loop removes entries from $@ so need to cache its value
+originalOptions=$@
+while [ $# -gt 0 ]
+do
+    case "$1" in
+      --soft)  softflag=on;;
+      -d)  debugflag=on;;
+      --debug) debugflag=on;;
+      --root-interactive) rootflag=on;;
+      -r) rootflag=on;;
+    esac
+    shift
+done
+
+if [ "$softflag" != "off" ] ; then
+  export LIBGL_DRIVERS_PATH=/tmp/
+fi
+
+if [ "$debugflag" != "off" ] ; then
+   echo "set args $originalOptions" > gdb.cmd
+   echo "run"        >> gdb.cmd
+   echo "bt"         >> gdb.cmd
+   echo "quit"       >> gdb.cmd
+   gdb -x gdb.cmd $SHELLDIR/cmsShow.exe 2>&1 | tee crash.report
+   echo "" >> crash.report
+   echo "System Info" >> crash.report
+   uname -a  >> crash.report
+   glxinfo >> crash.report
+else
+   $SHELLDIR/cmsShow.exe $originalOptions
+   if [ $? != "0" ] ; then
+      if [ "$rootflag" == "off" ] ; then
+         echo ""
+         echo "  ########################################################################"
+         echo "  #                                                                      #"
+         echo "  #                  Abnormal program termination!                       #"
+         echo "  #                                                                      #"
+         echo "  #  We regret that this happened and we would appreciate your help      #"
+         echo "  #  in debugging and reporting this problem. Please try to reproduce    #"
+         echo "  #  the problem by running the program with --debug flag to get         #"
+         echo "  #  a crash report and send its content (saved in ./crash.report file)  #" 
+         echo "  #  to fireworks-support@cern.ch with brief instructions how to         #"
+         echo "  #  reproduce the problem.                                              #"
+         echo "  #                                                                      #"
+         echo "  ########################################################################"
+         echo ""
+      fi
+   fi
+fi

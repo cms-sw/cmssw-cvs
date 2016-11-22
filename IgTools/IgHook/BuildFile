@@ -1,0 +1,15 @@
+<use name=sockets>
+<architecture name="slc4_amd64_gcc345">
+ <use name=libunwind>
+</architecture>
+<architecture name="slc4_amd64_gcc432">
+ <use name=libunwind>
+</architecture>
+<architecture name="slc5_amd64_gcc434">
+ <use name=libunwind>
+</architecture>
+# flags CXXFLAGS="-g -O0"
+
+<export>
+ <lib name=1>
+</export>

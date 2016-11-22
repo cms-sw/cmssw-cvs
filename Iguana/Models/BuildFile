@@ -1,0 +1,6 @@
+<Use name=Iguana/Framework>
+
+<Export>
+  <Use name=Iguana/Framework>
+  <Lib name=IguanaModels>
+</Export>
