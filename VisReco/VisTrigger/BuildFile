@@ -1,0 +1,10 @@
+<use name=Iguana/Inventor>
+<use name=VisFramework/VisFrameworkBase>
+<use name=DataFormats/Common>
+<use name=DataFormats/L1DTTrackFinder>
+<use name=DataFormats/MuonDetId>
+<use name=Geometry/DTGeometry>
+<use name=Geometry/Records>
+<use name=DataFormats/L1GlobalTrigger>
+<use name=CondFormats/DataRecord>
+<use name=CondFormats/L1TObjects>

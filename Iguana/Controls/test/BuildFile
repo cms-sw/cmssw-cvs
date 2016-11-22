@@ -1,0 +1,4 @@
+<use name=Qt>
+<use name=Iguana/Controls>
+
+<bin file=test_IgMatEdMainWidget.cpp></bin>

@@ -1,0 +1,7 @@
+<Use name=Iguana/Studio>
+<Use name=Iguana/GLModels>
+<Use name=soqt>
+
+<Export>
+  <Lib name=IguanaGLBrowsers>
+</Export>

@@ -1,0 +1,65 @@
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2007-04-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisG4TrajectoriesTwig.h, VisG4TransientsTwig.h,
+	VisG4TrajectoriesTwig.cc, plugin.cc: Migrated to the new Iguana
+	subsystem structure.
+
+2007-03-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* xtypeinfo.h, plugin.cc: Migrate to the new config.
+
+2006-11-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisG4TrajectoriesTwig.h, VisG4TransientsTwig.h, 
+	VisSoG4Trajectories.h, config.h, xtypeinfo.h, VisG4TrajectoriesTwig.cc, 
+	VisG4TransientsTwig.cc, VisSoG4Trajectories.cc, plugin.cc: Move 
+	the code from IGUANACMS.
+
+2006-06-07  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* VisSoG4Trajectories.cc: Extra ; removed for ANSI C++ compliancy.
+
+2005-03-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Port to new SCRAMV1.
+
+2004-01-10  Lassi A. Tuura  <lat@iki.fi>
+
+	* VisG4TrajectoriesTwig.cc: Move to invalidation-based rendering.
+	"doRepresent" is now unnecessary, just use "doUpdate".
+
+2003-09-26  Lassi A. Tuura  <lat@lxcms73.cern.ch>
+
+	* VisG4HitsTwig.h, VisG4HitsTwig.cc: Remove.
+	* VisG4TransientsTwig.cc, plugin.cc, xtypeinfo.h: Remove
+	references to VisG4HitsTwig.
+
+2003-09-26  Lassi A. Tuura  <lat@iki.fi>
+
+	* Imported from IGUANA; all classees renamed but not yet tested.
+
+2003-09-24  Lassi A. Tuura  <lat@pb-d-128-141-36-93.cern.ch>
+
+	* IgSoG4Trajectories.cc: Fix GL headers include for OS X.
+
+2003-09-13  Lassi A. Tuura  <lat@iki.fi>
+
+	* xtypeinfo.h, plugin.cc: Move to SEAL Foundation classes.
+
+2003-08-15  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* BuildFile: Exported library name typo fixed.
+
+2003-08-14  Giulio Eulisse  <giulio.eulisse@cern.ch>
+
+	* src/plugin.cc (initG4T): splitted up from old IgGeant4/src/plugin.cc
+
+2003-08-13  Lassi A. Tuura  <lat@iki.fi>
+
+	* New package splitting off G4 transients (event data) from
+	IgGeant4.
+

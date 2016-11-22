@@ -1,0 +1,218 @@
+#Inventor V2.1 ascii
+
+
+Separator {
+  renderCaching OFF
+
+  Group {
+
+    DrawStyle {
+      style FILLED
+
+    }
+    DEF Yellow Material {
+      ambientColor 1 1 0
+      diffuseColor 1 1 0
+      specularColor 1 1 0
+      emissiveColor 1 1 0
+      shininess 0
+      transparency 0
+
+    }
+  }
+  Translation {
+    translation 6 0 0
+
+  }
+  DEF HCAL Separator {
+
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart 1.5700001
+      phiDelta 0.1
+      polygon [ 2.740849 4.3319998,
+          2.3163812 4.0170002,
+          2.0584729 3.8256044,
+          1.9572347 3.6373041,
+          1.9572347 3.3475952,
+          1.8044131 3.0858676,
+          1.8044131 0,
+          2.9208748 0,
+          2.9208748 4.0170002,
+          2.7969928 4.0170002,
+          2.7969928 4.3319998 ]
+      divisions 1
+      smooth FALSE
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart 1.5700001
+      phiDelta 0.1
+      polygon [ 2.740849 -4.3319998,
+          2.3163812 -4.0170002,
+          2.0584729 -3.8256044,
+          1.9572347 -3.6373041,
+          1.9572347 -3.3475952,
+          1.8044131 -3.0858676,
+          1.8044131 0,
+          2.9208748 0,
+          2.9208748 -4.0170002,
+          2.7969928 -4.0170002,
+          2.7969928 -4.3319998 ]
+      divisions 1
+      smooth FALSE
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart 4.71
+      phiDelta 0.1
+      polygon [ 2.740849 4.3319998,
+          2.3163812 4.0170002,
+          2.0584729 3.8256044,
+          1.9572347 3.6373041,
+          1.9572347 3.3475952,
+          1.8044131 3.0858676,
+          1.8044131 0,
+          2.9208748 0,
+          2.9208748 4.0170002,
+          2.7969928 4.0170002,
+          2.7969928 4.3319998 ]
+      divisions 1
+      smooth FALSE
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart 4.71
+      phiDelta 0.1
+      polygon [ 2.740849 -4.3319998,
+          2.3163812 -4.0170002,
+          2.0584729 -3.8256044,
+          1.9572347 -3.6373041,
+          1.9572347 -3.3475952,
+          1.8044131 -3.0858676,
+          1.8044131 0,
+          2.9208748 0,
+          2.9208748 -4.0170002,
+          2.7969928 -4.0170002,
+          2.7969928 -4.3319998 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+  DEF HCAL_steel Separator {
+
+    Translation {
+      translation -0.5 0 0
+
+    }
+    Material {
+      ambientColor 0.42352942 0.43921569 0.45490196
+      diffuseColor 0.42352942 0.43921569 0.45490196
+      specularColor 0.42352942 0.43921569 0.45490196
+      emissiveColor 0.42352942 0.43921569 0.45490196
+      shininess 0
+      transparency 0
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart 1.5700001
+      phiDelta 0
+      polygon [ 1.9008787 3.2510779,
+          1.8044131 3.0858676,
+          1.8044131 0,
+          1.9008787 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart 1.5700001
+      phiDelta 0
+      polygon [ 1.9008787 -3.2510779,
+          1.8044131 -3.0858676,
+          1.8044131 0,
+          1.9008787 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart 1.5700001
+      phiDelta 0
+      polygon [ -1.9008787 3.2510779,
+          -1.8044131 3.0858676,
+          -1.8044131 0,
+          -1.9008787 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart 1.5700001
+      phiDelta 0
+      polygon [ -1.9008787 -3.2510779,
+          -1.8044131 -3.0858676,
+          -1.8044131 0,
+          -1.9008787 0 ]
+      divisions 1
+      smooth FALSE
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart 1.5700001
+      phiDelta 0
+      polygon [ 2.8305018 4.0170002,
+          2.8305018 0,
+          2.9208748 0,
+          2.9208748 4.0170002 ]
+      divisions 1
+      smooth FALSE
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart 1.5700001
+      phiDelta 0
+      polygon [ 2.8305018 -4.0170002,
+          2.8305018 0,
+          2.9208748 0,
+          2.9208748 -4.0170002 ]
+      divisions 1
+      smooth FALSE
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart 1.5700001
+      phiDelta 0
+      polygon [ -2.8305018 4.0170002,
+          -2.8305018 0,
+          -2.9208748 0,
+          -2.9208748 4.0170002 ]
+      divisions 1
+      smooth FALSE
+
+    }
+    IgSoRotSolid {
+      fields [ SFFloat phiStart, SFFloat phiDelta, MFVec2f polygon, SFInt32 divisions, SFBool smooth, SFBool showLines, SFNode callbackList, SFNode hints, SFNode faces, SFNode lines, SFNode separator ]
+      phiStart 1.5700001
+      phiDelta 0
+      polygon [ -2.8305018 -4.0170002,
+          -2.8305018 0,
+          -2.9208748 0,
+          -2.9208748 -4.0170002 ]
+      divisions 1
+      smooth FALSE
+
+    }
+  }
+}

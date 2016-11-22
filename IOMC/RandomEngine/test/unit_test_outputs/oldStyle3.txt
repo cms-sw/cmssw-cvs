@@ -1,0 +1,57 @@
+*** TestRandomNumberServiceAnalyzer constructor
+81
+0.422889
+0.0392907
+0.291227
+0.851084
+0.0841909
+*** TestRandomNumberServiceAnalyzer constructor
+83
+0.640315
+0.910505
+0.671651
+0.107166
+0.816264
+*** TestRandomNumberServiceAnalyzer constructor
+84
+0.133504
+0.85941
+0.256103
+0.309674
+0.0839297
+*** TestRandomNumberServiceAnalyzer analyze() ***
+81
+0.331591
+0.0619389
+0.558426
+0.902128
+0.644125
+0.259708
+2.80491
+7.01635
+26.1541
+19.8754
+*** TestRandomNumberServiceAnalyzer analyze() ***
+83
+0.610132
+0.0731165
+0.238371
+0.928497
+0.179604
+41.038
+18.5006
+5.91441
+1.92333
+25.4515
+*** TestRandomNumberServiceAnalyzer analyze() ***
+84
+0.0731547
+0.118849
+0.395574
+0.0734522
+0.0989001
+6.96263
+3.40349
+6.68246
+23.8362
+0.698525

@@ -1,0 +1,10 @@
+<use name=FWCore/ParameterSet>
+<use name=DataFormats/GeometryCommonDetAlgo>
+<use name=DataFormats/GeometryVector>
+<use name=RecoVertex/VertexPrimitives>
+<export>
+  <use name=DataFormats/GeometryVector>
+  <use name=RecoVertex/VertexPrimitives>
+  <lib name=RecoVertexAdaptiveVertexFit>
+</export>
+
