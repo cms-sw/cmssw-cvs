@@ -1,0 +1,322 @@
+2010-07-12  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisHcalRecoContent.cc, VisHFRecHitTwig.cc,
+	VisHFDataFrameTwig.cc: Remove spurious includes.
+
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-10-23  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisHORecHitTwig.cc: Remove compilation warnings.
+
+2009-09-22  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisDrawTowerHelper.h, VisDrawTowerHelper.cc: Draw towers.
+	* VisH*RecHitTwig.cc: Use the helper to draw towers.
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisHBHERecHitTwig.cc, VisHFDataFrameTwig.cc, VisHFRecHitTwig.cc,
+	VisHORecHitTwig.cc, VisHcalRecoContent.cc: Removed unneeded lock.
+	* VisHcalDetTwig.h, VisHcalDetTwig.cc: Removed as unused.
+	* xtypeinfo.cc: Updated accordingly.
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisHcalRecoContent.h, VisHcalRecoContent.cc: Remove unused
+	multi-threaded base class. Replaced by a simpler one. 
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2008-12-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.cc: Invalidate the twig structure. 
+
+2008-09-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.h, VisHBHERecHitTwig.cc: Add a destructor to
+	cleanup the materials. 
+
+2008-09-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.h, VisHBHERecHitTwig.cc: Add color coding for
+	3D hits. Allow to show a tower and a hit separately. 
+
+2008-09-21  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.h, VisHBHERecHitTwig.cc: Add a maximum radius
+	to limit histograms. 
+
+2008-08-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHORecHitTwig.cc: Correct inner radius and layers.
+
+2008-08-22  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Remove unneeded dependencies.
+
+	* VisHBHERecHitTwig.h, VisHBHERecHitTwig.cc, VisHFRecHitTwig.h,
+	VisHFRecHitTwig.cc, VisHORecHitTwig.h, VisHORecHitTwig.cc: Get
+	event setup from the service that provides it. Allow different
+	strategies for binning.
+	
+2008-08-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.cc, VisHFRecHitTwig.cc, VisHORecHitTwig.cc:
+	Add material.
+
+2008-05-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.cc, VisHFDataFrameTwig.cc, VisHFRecHitTwig.cc,
+	VisHORecHitTwig.cc: Migrate to CaloGeometry.
+
+2008-04-30  Serkan Bozyigit  <Serkan.Bozyigit@cern.ch>
+
+	* VisHBHERecHitTwig.cc, VisHBHERecHitTwig.h, VisHFRecHitTwig.cc, 
+	VisHFRecHitTwig.h, VisHORecHitTwig.cc, VisHORecHitTwig.h: 
+	Exchanged IgSoRZHist and IgSoRectHist histograms by 
+	IgSoRectColHist histograms.
+
+2008-04-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added a new developer.
+
+2007-12-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.cc, VisHFRecHitTwig.cc, VisHORecHitTwig.cc:
+	Add messages to the tool bar on what is going on.
+	* VisHORecHitTwig.cc: Correct HO radius, change color to a deeper
+	blue to distinguish between HB and HO hits.
+	* VisHcalRecoContent.cc: Change color of HO hits to a deeper blue.
+	
+2007-11-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.cc: Bug fix for RZ view - geometry changed -
+	cannot rely on iEta any more.
+
+2007-11-02  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.cc, VisHFRecHitTwig.cc, VisHORecHitTwig.cc:
+	Reserve buffers. 
+	* VisHcalRecoContent.cc: Add exception handling.
+
+2007-10-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.h, VisHBHERecHitTwig.cc, VisHFRecHitTwig.h,
+	VisHFRecHitTwig.cc, VisHORecHitTwig.h, VisHORecHitTwig.cc: Use
+	active configurable parameters for energy cut, scale, lego scale,
+	annotation. Use the base class callbacks (if defined) to handle
+	exceptions.  
+	* VisHcalDetTwig.h, VisHcalDetTwig.cc: Use an active configurable
+	for the measuring stick.
+	* VisHcalRecoContent.cc: Test the above class.
+
+	* VisHBHERecHitTwig.h, VisHFRecHitTwig.h, VisHORecHitTwig.h:
+	Remove unnecessary headers.
+
+2007-07-31  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHcalSubdetector.cc: HcalZDC removed.
+
+2007-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Vis*Content.cc: Introduce separate tree browser.
+	
+2007-04-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Adapted to the changes in the Iguana subsystem directory structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* VisHBHERecHitTwig.cc, VisHFRecHitTwig.cc, VisHORecHitTwig.cc,
+	VisHcalRecoContent.cc: Adapt to migration of IGUANA to CMSSW.
+
+2007-03-02  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHFDataFrameTwig.h, VisHFDataFrameTwig.cc: New class to
+	display HF digis.
+	* plugin.cc, xtypeinfo.h: Add the new twig type.
+	* VisHcalRecoContent.cc: Add the HF data frame twig.
+	* .admin/developers: Add Arno.
+
+2007-02-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.cc: Adjust colors for the RPhi and RZ views
+	which do not have lights. Exclude HE rec hits from RPhi view.
+
+2007-02-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.cc, VisHFRecHitTwig.cc, VisHORecHitTwig.cc:
+	More efficient iteration over the collections.
+	* VisHBHEDigiTwig.h, VisHBHEDigiTwig.cc: Remove as obsolete.
+	* xtypeinfo.h, plugin.cc: Remove obsolete class.
+	
+2006-11-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.h, VisHBHERecHitTwig.cc, VisHFRecHitTwig.h,
+	VisHFRecHitTwig.cc, VisHORecHitTwig.h, VisHORecHitTwig.cc: 
+	VisEventSelector takes now a process name.
+
+2006-09-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHcalTriggerPrimitiveRecHitTwig.h,
+	VisHcalTriggerPrimitiveRecHitTwig.cc: Obsolete class, remove.
+	* xtypeinfo.h, plugin.cc, VisHcalRecoContent.cc: Remove obsolete
+	VisHcalTriggerPrimitiveRecHitTwig class.
+
+	* VisCaloRecHitTwig.h, VisCaloRecHitTwig.cc: Remove as obsolete.
+	* xtypeinfo.h, plugin.cc: Remove obsolete VisCaloRecHitTwig
+	class.
+
+	* VisHcalRecoContent.cc: Cleanup.
+
+2006-06-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHcalSubdetector.h, VisHcalSubdetector.cc: Change according to
+	HcalSubdetector changes which includes the removal of
+	HcalCompositeDetId.
+
+2006-06-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.cc, VisHFRecHitTwig.cc, VisHORecHitTwig.cc,
+	VisHcalTriggerPrimitiveRecHitTwig.cc: Removed unused headers and
+	debug output. Combine checks when the rec hits should be visible.
+
+2006-06-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.cc: Provide depth information and correct sub
+	detector name.
+	* VisHcalSubdetector.h, VisHcalSubdetector.cc: Provide string
+	conversion from/to enum of an HcalSubdetector.
+
+	* VisHFRecHitTwig.h, VisHFRecHitTwig.cc, VisHORecHitTwig.h,
+	VisHORecHitTwig.cc, VisHcalTriggerPrimitiveRecHitTwig.h,
+	VisHcalTriggerPrimitiveRecHitTwig.cc: New classes to represent
+	hcal rec hits.
+	* xtypeinfo.h, plugin.cc: Declare and define the new types.
+	* VisHBHERecHitTwig.h, VisHBHERecHitTwig.cc: Rename private
+	variable - to be consistent with the rest of the rec hit classes.
+
+2006-06-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.h, VisHBHERecHitTwig.cc: Register the twig to the
+	twig factory, provide creator and use selector.
+	* VisHcalRecoContent.cc: Update for changed interface of
+	VisHBHERecHitTwig.
+
+2006-05-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHERecHitTwig.h, VisHBHERecHitTwig.cc: New class to display
+	rec hits in HE and HB.
+	* xtypeinfo.h, plugin.cc: Declare and define the above type.
+	* VisHcalRecoContent.cc: Use this twig rather then a generic one,
+	make it visible on auto start.
+
+2006-04-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloRecHitTwig.cc, VisHBHEDigiTwig.cc: Bug fix to draw
+	circular histograms only when the values are non zero.
+	
+2006-04-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHcalRecoContent.cc: Move out signal connections which are
+	done with a base class.
+	* VisHBHEDigiTwig.cc: Clean up.
+	
+2006-03-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHEDigiTwig.cc, VisHcalDetTwig.cc, VisHcalRecoContent.cc: Use
+	iguana lock. Check an event twig, clean up.
+	
+2006-01-30  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* .admin/developers: Added Shahzad Muzaffar as administrator.
+	* .admin/developers: Removed the empty line.
+	
+2005-12-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloRecHitTwig.cc: Try getting the data handle and check its
+	validity.
+
+2005-12-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloRecHitTwig.cc: Do not show anything with negative energy
+	in 3D view.
+
+2005-12-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloRecHitTwig.cc: Use IgQtLock instead of the qapplication 
+	one directly.
+
+2005-11-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloRecHitTwig.cc: Rescale the data.
+
+2005-11-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Add packages needed to access the HCAL geometry.
+	* VisCaloRecHitTwig.h, VisCaloRecHitTwig.cc: Pass color, the detector ID
+	and the sub-detector name in the constructor. Needed to get global
+	position of the CaloRecHit from the event setup. Add the 3D
+	representation of the HCAL barrel data.
+	* VisHcalRecoContent.cc: Pass color, the detector ID and the sub-detector
+	name in the constructor of VisCaloRecHitTwig.
+
+2005-11-02  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHcalRecoContent.cc: Comment out access to the data which is
+	not in the cosmics data file. For some reason the event setup is
+	not accessible when asked for the non existing data handle in the 
+	event.
+	* VisHcalDetTwig.cc, VisCaloRecHitTwig.cc: Reduce the default
+	stick scale size.
+	* VisHBHEDigiTwig.cc: Do not draw an empty shape.
+
+2005-10-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloRecHitTwig.h, VisCaloRecHitTwig.cc: New class to display
+	all kinds of CaloRecHits.
+	* plugin.cc, xtypeinfo.h: Declare and define the new class type.
+	* VisHcalRecoContent.cc: Add new class, add event twig here.
+	* VisHBHEDigiTwig.h, VisHBHEDigiTwig.cc: Add text information
+	about run and event number. Remove status bar update. Fix event
+	display delay.
+
+2005-10-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHcalDetTwig.h, VisHcalDetTwig.cc: Remove cms namespace for
+	HBHERecHit.
+	* VisHcalRecoContent.cc: Add checks when there is no data.
+	
+2005-10-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHcalDetTwig.h, VisHcalDetTwig.cc: New class to show the HCAL 
+	detector.
+	* BuildFile: Add dependencies on the 3D shape manager.
+	* xtypeinfo.h: Add the HCAL detector twig.
+	* VisHBHEDigiTwig.cc: Use clean reps rather then remove children.
+	* VisHcalRecoContent.cc: Use the shape manager and the HCAL detector 
+	twig.
+	* plugin.cc: Use the HCAL detector twig.
+
+2005-09-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHBHEDigiTwig.h, VisHBHEDigiTwig.cc: Moved here from the
+	VisFramework. Added RZ view representation.
+	* VisHcalRecoContent.h, VisHcalRecoContent.cc: Define the content
+	of this plugin.
+	* xtypeinfo.h: Declare the types used in this plugin.
+	* plugin.cc: Define the package to be a plugin.
+	* BuildFile: Define dependencies, but do not export anything - it
+	is no suppose to be linked against.
+
+	* New package to provide a plugin for HCAL
+	visualisation. 

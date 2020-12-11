@@ -1,0 +1,7 @@
+<use name=FWCore/PluginManager>
+<use name=FWCore/ServiceRegistry>
+<use name=VisFramework/VisConfigService>
+
+<library file=plugin.cc name=VisFrameworkVisConfigServicePlugins>
+<flags EDM_PLUGIN=1>
+</library>

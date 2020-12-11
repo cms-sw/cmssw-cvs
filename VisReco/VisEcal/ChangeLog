@@ -1,0 +1,271 @@
+2010-07-12  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisSuperClusterTwig.cc, VisSuperClusterCollectionTwig.cc,
+	VisPreshowerClusterTwig.cc, VisEcalUncalibratedRecHitTwig.cc,
+	VisBasicClusterTwig.cc, VisBasicClusterCollectionTwig.cc: Remove
+	spurious includes.
+
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-10-23  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisPreshowerClusterTwig.h, VisPreshowerClusterTwig.cc: New class
+	to display preshower clusters.
+	* xtypeinfo.h, xtypeinfo.cc: Added the above.
+	* VisBasicClusterCollectionTwig.cc, VisBasicClusterTwig.cc,
+	VisEcalRecHitTwig.cc, VisEcalUncalibratedRecHitTwig.cc,
+	VisPreshowerClusterTwig.cc, VisSuperClusterCollectionTwig.cc,
+	VisSuperClusterTwig.cc: Remove compilation warnings.
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisBasicClusterCollectionTwig.cc, VisBasicClusterTwig.cc,
+	VisEcalRecHitTwig.cc, VisEcalRecoContent.cc,
+	VisEcalUncalibratedRecHitTwig.cc,
+	VisSuperClusterCollectionTwig.cc, VisSuperClusterTwig.cc: Remove
+	unneeded lock.
+
+2009-09-03  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisEcalRecHitTwig.cc: Check that the max element in the vector
+	of energies higher then the energy cut.
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisEcalRecoContent.h, VisEcalRecoContent.cc: Remove unused
+	multi-threaded base class. Replaced by a simpler one.
+
+2009-08-25  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisEcalRecoContent.cc: Remove compilation errors.
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2008-12-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalRecHitTwig.cc: Invalidate the twig structure.
+
+2008-09-21  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalRecHitTwig.h, VisEcalRecHitTwig.cc: Add a maximum radius
+	to limit histograms. 
+
+2008-08-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisBasicClusterCollectionTwig.cc,
+	VisSuperClusterCollectionTwig.cc: Destroy only transient twigs. 
+
+2008-08-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary dependencies. 
+	* VisBasicClusterCollectionTwig.h, VisBasicClusterTwig.h,
+	VisEcalRecHitTwig.h, VisEcalUncalibratedRecHitTwig.h,
+	VisSuperClusterCollectionTwig.h, VisSuperClusterTwig.h,
+	VisBasicClusterCollectionTwig.cc, VisBasicClusterTwig.cc,
+	VisEcalRecHitTwig.cc, VisEcalRecoContent.cc,
+	VisEcalUncalibratedRecHitTwig.cc,
+	VisSuperClusterCollectionTwig.cc, VisSuperClusterTwig.cc: Use
+	event setup service. 
+
+2008-08-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalRecHitTwig.cc, VisEcalUncalibratedRecHitTwig.cc: Add
+	material. 
+
+2008-05-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisBasicClusterCollectionTwig.cc, VisBasicClusterTwig.cc,
+	VisEcalRecHitTwig.cc, VisEcalUncalibratedRecHitTwig.cc,
+	VisSuperClusterCollectionTwig.cc, VisSuperClusterTwig.cc: Migrate
+	to CaloGeometry.
+
+2008-04-30  Serkan Bozyigit  <Serkan.Bozyigit@cern.ch>
+
+	* VisBasicClusterCollectionTwig.cc, VisBasicClusterCollectionTwig.h,
+	VisBasicClusterTwig.cc, VisBasicClusterTwig.h, 
+	VisEcalRecHitTwig.cc, VisEcalRecHitTwig.h, 
+	VisEcalUncalibratedRecHitTwig.cc, VisEcalUncalibratedRecHitTwig.h, 
+	VisSuperClusterCollectionTwig.cc, VisSuperClusterCollectionTwig.h,
+	VisSuperClusterTwig.cc,	VisSuperClusterTwig.h:
+	Exchanged IgSoRZHist and IgSoRectHist histograms by IgSoRectColHist
+	histograms.
+
+2008-04-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added a new developer.
+
+2008-04-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalRecHitTwig.h, VisEcalRecHitTwig.cc,
+	VisEcalUncalibratedRecHitTwig.h, VisEcalUncalibratedRecHitTwig.cc:
+	Add a separate energy cut.
+
+2007-12-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisSuperClusterCollectionTwig.h,
+	VisSuperClusterCollectionTwig.cc: New class to display
+	SuperCluster collections.	
+	* VisSuperClusterTwig.h, VisSuperClusterTwig.cc: New class to
+	display SuperCluster.
+	* xtypeinfo.h, xtypeinfo.cc: Declare and define new types.
+	* VisEcalRecoContent.cc: Add the new twig.
+
+2007-11-16  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisBasicClusterCollectionTwig.h,
+	VisBasicClusterCollectionTwig.cc: New class to display
+	BasicCluster collections.	
+	* VisBasicClusterTwig.h, VisBasicClusterTwig.cc: New class to
+	display BasicCluster.
+	* xtypeinfo.h, xtypeinfo.cc: Declare and define new types.
+	* VisEcalRecHitTwig.cc: Allocate vector.
+	* VisEcalRecoContent.cc: Make it configurable.
+
+2007-10-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalSubdetector.h, VisEcalSubdetector.cc: New class to
+	convert a string to a EcalSubdetector key and vise versa.
+	* VisEcalRecHitTwig.h, VisEcalRecHitTwig.cc,
+	VisEcalUncalibratedRecHitTwig.h, VisEcalUncalibratedRecHitTwig.cc:
+	Use active configurable for the energy cuts, scales and
+	annotations. Handle exceptions with callbacks if such have been
+	registered.
+
+2007-09-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalUncalibratedRecHitTwig.cc, VisEcalRecHitTwig.cc: Correct
+	colors for RPhi and RZ.
+
+2007-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Vis*Content.cc: Introduce separate tree browser.
+
+2007-04-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Adapted to the changes in the Iguana subsystem directory structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* VisEcalRecHitTwig.cc, VisEcalRecoContent.cc,
+	VisEcalUncalibratedRecHitTwig.cc: Adapt to migration of IGUANA to
+	CMSSW.
+
+2007-03-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added Matteo Sani as a developer.
+
+2007-02-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalRecHitTwig.cc, VisEcalUncalibratedRecHitTwig.cc: More
+	efficient iteration over the collections.
+
+2006-11-21  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalRecHitTwig.cc, VisEcalUncalibratedRecHitTwig.cc: Check
+	binning and plot only if the energy is higher then the cut.
+
+2006-11-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalRecHitTwig.h: Remove unused header.
+	* VisEcalUncalibratedRecHitTwig.h,
+	VisEcalUncalibratedRecHitTwig.cc: Get cell geometry directly,
+	without asking for a sub detector. Check if the RZ histograms have
+	any values before plotting them.
+
+2006-11-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalRecHitTwig.h, VisEcalRecHitTwig.cc,
+	VisEcalUncalibratedRecHitTwig.h, VisEcalUncalibratedRecHitTwig.cc:
+	VisEventSelector takes now a process name.
+
+2006-10-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalRecHitTwig.cc: Check energy, do not display rec hits with
+	zero energy.
+
+2006-08-21  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalUncalibratedRecHitTwig.h,
+	VisEcalUncalibratedRecHitTwig.cc: Register the twig to the twig factory.
+	* VisEcalRecHitTwig.cc: Check geometry.
+	* VisEcalRecoContent.cc: Adapt to changed API of VisEcalUncalibratedRecHitTwig.
+
+2006-06-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalRecHitTwig.h, VisEcalRecHitTwig.cc: Register the twig to
+	the twig factory, provide a creator.
+	* VisEcalRecoContent.cc: Adapt to changed API of VisEcalRecHitTwig
+	class.
+
+2006-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalRecHitTwig.cc, VisEcalUncalibratedRecHitTwig.cc: Bug fix
+	to draw circular histograms only when the values are non zero.
+	
+2006-04-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalUncalibratedRecHitTwig.h,
+	VisEcalUncalibratedRecHitTwig.cc: Cleanup.
+	* VisEcalRecoContent.cc: Connection of signals is done by the base
+	class. 
+	
+2006-03-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalRecHitTwig.cc, VisEcalUncalibratedRecHitTwig.cc: Use 
+	iguana lock.
+	* VisEcalRecoContent.cc: Look up for an event twig and a status 
+	bar.
+
+2006-02-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalRecHitTwig.h, VisEcalRecHitTwig.cc: New class to
+	represent EcalRecHit.
+	* VisEcalRecoContent.cc, xtypeinfo.h, plugin.cc: Add the new
+	class.
+	* VisEcalUncalibratedRecHitTwig.h,
+	VisEcalUncalibratedRecHitTwig.cc: Tiding up the code.
+	
+2006-01-30  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* .admin/developers: Added Shahzad Muzaffar as administrator.
+	* .admin/developers: Removed the empty line.
+	
+2006-01-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalUncalibratedRecHitTwig.cc: Include
+	EcalRecHitCollections.h which now defines
+	EcalUncalibratedRecHitCollection collection.
+
+2005-12-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalUncalibratedRecHitTwig.cc: Try to get the collection
+	first to avoid skipping the event if such collection is not
+	present.
+
+2005-12-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalUncalibratedRecHitTwig.cc: Check the validity of the
+	collection.
+
+2005-12-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalUncalibratedRecHitTwig.cc: Cut the noise and put the
+	scale with amplitude converted to energy.
+	
+2005-11-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisEcalRecoContent.h, VisEcalUncalibratedRecHitTwig.h, 
+	xtypeinfo.h, plugin.cc, VisEcalRecoContent.cc,
+	VisEcalUncalibratedRecHitTwig.cc, BuildFile: New files to visualize
+	uncalibrated rec hits for ECAL.
+
+	* New package to provide a plugin for HCAL
+	visualisation. 

@@ -1,0 +1,249 @@
+2010-07-12  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* xtypeinfo.cc, VisDetTextureTwig.cc: Remove spurious includes.
+
+	* VisDetTextureTwig.cc, xtypeinfo.cc: Remove spurious includes.
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisDetContent.cc, VisDetIvTwig.cc, VisDetTextureTwig.cc,
+	xtypeinfo.cc: Remove unneeded lock.
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisDetContent.h, VisDetContent.cc: Remove unused multi-threaded
+	base class. Replaced by a simpler one.
+
+2009-01-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* absorber-barrel-rphi.gzip.iv, absorber-barrel-rz.gzip.iv,
+	absorber-endcap-rz.gzip.iv, driftTubes-rphi.gzip.iv,
+	driftTubes-rz.gzip.iv, ecal-rz.gzip.iv,
+	hcal-barrel-layers-rz.gzip.iv, hcal-endcap-rz.gzip.iv,
+	hcal-forward-rz.gzip.iv, magnet-rz.gzip.iv: Update to transparent
+	shapes. 
+	* VisDetContent.cc: Simplify the tree structure.
+
+2008-11-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* driftTubes-3d.gzip.iv, driftTubes-rphi.gzip.iv,
+	ecal-barrel-3d.gzip.iv, ecal-barrel-rphi.gzip.iv,
+	ecal-forward-3d.gzip.iv, ecal-preshower-3d.gzip.iv,
+	hcal-barrel-3d.gzip.iv, hcal-barrel-rphi.gzip.iv,
+	hcal-barrel-rz.gzip.iv, hcal-barrel-towers-rphi.gzip.iv,
+	hcal-endcap-3d.gzip.iv, hcal-forward-3d.gzip.iv,
+	hcal-outer-3d.gzip.iv, magnet-3d.gzip.iv, rpc-barrel-3d.gzip.iv,
+	rpc-endcap-3d.gzip.iv, tracker-barrel-rphi.gzip.iv,
+	tracker-rz.gzip.iv: Updated to a more efficient and cleaner
+	representation. 
+
+2008-10-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* ivs/absorber-barrel-3d.gzip.iv,
+	ivs/absorber-barrel-rphi.gzip.iv, ivs/absorber-barrel-rz.gzip.iv,
+	ivs/absorber-endcap-3d.gzip.iv, ivs/absorber-endcap-rz.gzip.iv,
+	ivs/beampipe-rz.gzip.iv, ivs/beampipe.gzip.iv: Updated to a more
+	efficient and cleaner representation and to use only one material
+	node.
+
+2008-09-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDetTextureTwig.cc: Fix compiling errors. 
+
+	* VisDetTextureTwig.h, VisDetTextureTwig.cc: Display texture.
+	* xtypeinfo.h, xtypeinfo.cc: Declare and define the new twig.
+	* VisDetContent.cc: Add it to the iglet content.
+
+2008-08-15  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDetIvTwig.cc: Remove deleted header.
+
+2008-06-27  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDetTwig.h, VisDetTwig.cc: Remove.
+	* xtypeinfo.h, xtypeinfo.cc: Remove the above class.
+
+2008-08-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* csc-3d.gzip.iv: Make it a bit darker.
+
+	* VisDetContent.cc: Use different RZ rep for a beam-pipe.
+	* beampipe.gzip.iv: Updated to include full length.
+	* beampipe-rz.gzip.iv: New file for RZ view.
+	* csc-3d.gzip.iv, csc-rz.gzip.iv, driftTubes-3d.gzip.iv,
+	ecal-barrel-3d.gzip.iv, ecal-barrel-rphi.gzip.iv, ecal-rz.gzip.iv,
+	magnet-3d.gzip.iv, magnet-rphi.gzip.iv: Update color and draw
+	style. 
+
+2008-05-16  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* csc-3d.gzip.iv: Updated reference geometry.
+
+2007-11-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* absorber-endcap-3d.gzip.iv, absorber-endcap-rz.gzip.iv,
+	rpc-barrel-3d.gzip.iv, rpc-endcap-3d.gzip.iv,
+	rpc-endcap-rz.gzip.iv: Correct geometry.
+
+2007-10-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDetContent.cc: Remove invalidation of the tree.
+
+2007-09-24  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* absorber-barrel-3d.gzip.iv, absorber-barrel-rz.gzip.iv, 
+	absorber-endcap-3d.gzip.iv, absorber-endcap-rz.gzip.iv, 
+	beampipe.gzip.iv, csc-3d.gzip.iv, csc-rz.gzip.iv, 
+	driftTubes-3d.gzip.iv, driftTubes-rz.gzip.iv, 
+	driftTubes-superlayers-rz.gzip.iv, ecal-barrel-3d.gzip.iv, 
+	ecal-forward-3d.gzip.iv, ecal-preshower-3d.gzip.iv, ecal-rz.gzip.iv, 
+	hcal-barrel-3d.gzip.iv, hcal-barrel-layers-rz.gzip.iv, 
+	hcal-barrel-rz.gzip.iv, hcal-endcap-3d.gzip.iv, 
+	hcal-endcap-rz.gzip.iv, hcal-forward-3d.gzip.iv, 
+	hcal-forward-rz.gzip.iv, hcal-outer-3d.gzip.iv, magnet-3d.gzip.iv,
+	magnet-rz.gzip.iv, rpc-barrel-3d.gzip.iv, rpc-barrel-rz.gzip.iv, 
+	rpc-endcap-rz.gzip.iv, tracker-rz.gzip.iv: Updated format 
+	to avoid crash on selection.
+
+2007-09-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* absorber-barrel-rphi.gzip.iv, driftTubes-rphi.gzip.iv, 
+	driftTubes-superlayer-details-rphi.gzip.iv, 
+	driftTubes-superlayers-rphi.gzip.iv, ecal-barrel-rphi.gzip.iv,
+	hcal-barrel-layers-rphi.gzip.iv, hcal-barrel-rphi.gzip.iv, 
+	hcal-barrel-towers-rphi.gzip.iv, magnet-rphi.gzip.iv, 
+	rpc-barrel-rphi.gzip.iv, tracker-barrel-rphi.gzip.iv: Updated 
+	format to avoid crash on selection.
+
+2007-07-27  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* rpc-barrel-rphi.gzip.iv: Replaces the file with a misspelled file name.
+	* rpc-barre-rphi.gzip.iv: Removed.
+
+2007-06-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* debug.h, VisDetTwig.cc, iglet.cc, xtypeinfo.cc: Headers
+	cleanup.
+
+2007-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Vis*Content.cc: Introduce separate tree browser.
+	
+2007-04-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Adapted to the changes in the Iguana subsystem directory structure.
+
+2007-04-02  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* absorber-barrel-3d.gzip.iv, csc-rz.gzip.iv,
+	ecal-barrel-3d.gzip.iv, hcal-barrel-layers-rz.gzip.iv,
+	hcal-forward-rz.gzip.iv, rpc-barrel-rz.gzip.iv,
+	absorber-barrel-rphi.gzip.iv, driftTubes-3d.gzip.iv,
+	ecal-barrel-rphi.gzip.iv, hcal-barrel-rphi.gzip.iv,
+	hcal-outer-3d.gzip.iv, rpc-barre-rphi.gzip.iv,
+	absorber-barrel-rz.gzip.iv, driftTubes-rphi.gzip.iv,
+	ecal-forward-3d.gzip.iv, hcal-barrel-rz.gzip.iv,
+	magnet-3d.gzip.iv, rpc-endcap-3d.gzip.iv,
+	absorber-endcap-3d.gzip.iv, driftTubes-rz.gzip.iv,
+	ecal-preshower-3d.gzip.iv, hcal-barrel-towers-rphi.gzip.iv,
+	magnet-rphi.gzip.iv, rpc-endcap-rz.gzip.iv,
+	absorber-endcap-rz.gzip.iv,
+	driftTubes-superlayer-details-rphi.gzip.iv, ecal-rz.gzip.iv,
+	hcal-endcap-3d.gzip.iv, magnet-rz.gzip.iv,
+	tracker-barrel-rphi.gzip.iv, beampipe.gzip.iv,
+	driftTubes-superlayers-rphi.gzip.iv, hcal-barrel-3d.gzip.iv,
+	hcal-endcap-rz.gzip.iv, none.iv, tracker-rz.gzip.iv,
+	csc-3d.gzip.iv, driftTubes-superlayers-rz.gzip.iv,
+	hcal-barrel-layers-rphi.gzip.iv, hcal-forward-3d.gzip.iv,
+	rpc-barrel-3d.gzip.iv: Migrated from IGUANA. Used by this
+	package. 
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* debug.h, VisDetContent.cc, VisDetIvTwig.cc: Adapt to migration
+	of IGUANA to CMSSW.
+
+2007-03-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDetContent.cc: Make sure that the shape manager is present in
+	the state.
+
+2007-02-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDetContent.cc: Use some new shapes.
+
+	* VisDetContent.cc: Update the file names.
+	* VisDetTwig.cc: Do not build RPhi and RZ representations.
+
+2007-02-22  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisNoneIv.h: An empty node to use if the regular files are not found.
+	* VisDetIvTwig.h, VisDetIvTwig.cc: Use the empty node.
+	* VisDetContent.cc: Use compressed files.
+	* plugin.cc: Update the representations when they are visible
+	without checking the masks set.
+
+2007-02-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDetIvTwig.h, VisDetIvTwig.cc: Check the existence of the
+	nodes and update them only once.
+	* VisDetContent.cc: Remove unused code.
+
+2007-02-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDetContent.cc: Use updated iv files and also with unified names.
+
+2007-02-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDetIvTwig.h, VisDetIvTwig.cc: Allow to use different iv files for
+	different views.
+	* VisDetContent.cc: Use different iv files for different views.
+	* VisDetTwig.cc: Replace obsolete IgSoText2 with SoText2.
+	
+2006-07-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDetTwig.h, VisDetTwig.cc: New lego plot, use iv files for other
+	views.
+	* VisDetContent.cc: Pass the state to the VisDetTwig.
+
+2006-04-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDetContent.cc: Remove invalidation of the twig reps.
+
+2006-03-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDetIvTwig.h, VisDetIvTwig.cc: Make it a simple twig - it does
+	not change from event to event.
+	* plugin.cc: Add multimethods here to display it.
+	* debug.h: Define a logstream flag for this package.
+
+2005-03-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDetIvTwig.cc: Use another absobrer iv file.
+	
+2005-03-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDetIvTwig.h, VisDetIvTwig.cc: Use iguana lock.
+	
+2006-01-30  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* .admin/developers: Added Shahzad Muzaffar as administrator.
+	* .admin/developers: Removed the empty line.
+	
+2005-12-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisDetIvTwig.h, VisDetIvTwig.cc: Add RPhi and RZ representations
+	of the detector.
+	
+2005-10-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisDetContent.h, VisDetIvTwig.h, VisDetTwig.h,
+	xtypeinfo.h, plugin.cc, VisDetContent.cc, VisDetIvTwig.cc,
+	VisDetTwig.cc: New files to display the detector.
+
+	* New package to provide a plugin for detector
+	visualisation. 

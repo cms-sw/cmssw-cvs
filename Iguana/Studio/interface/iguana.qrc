@@ -1,0 +1,31 @@
+<RCC>
+  <qresource prefix="icons" >
+    <file>fileopen.xpm</file>
+    <file>seek.xpm</file>
+    <file>IGUANA_SPLASH.xpm</file>
+    <file>autoprint.xpm</file>
+    <file>control_centre.xpm</file>
+    <file>fileprint.xpm</file>
+    <file>filesave.xpm</file>
+    <file>home.xpm</file>
+    <file>iguana-mini.xpm</file>
+    <file>inverse.xpm</file>
+    <file>next.xpm</file>
+    <file>ortho.xpm</file>
+    <file>perspective.xpm</file>
+    <file>pick.xpm</file>
+    <file>pause.xpm</file>
+    <file>play.xpm</file>
+    <file>previous.xpm</file>
+    <file>print_views.xpm</file>
+    <file>set_home.xpm</file>
+    <file>view_all.xpm</file>
+    <file>view.xpm</file>
+    <file>xz_small.xpm</file>
+    <file>yx_small_col.xpm</file>
+    <file>yx_small.xpm</file>
+    <file>yz_small.xpm</file>
+    <file>zoom_minus.xpm</file>
+    <file>zoom_plus.xpm</file>
+  </qresource>
+</RCC>

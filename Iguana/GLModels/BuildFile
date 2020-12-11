@@ -1,0 +1,8 @@
+<Use name=Iguana/Framework>
+<Use name=Iguana/Models>
+<Use name=Iguana/Inventor>
+<Use name=qt>
+
+<Export>
+  <Lib name=IguanaGLModels>
+</Export>

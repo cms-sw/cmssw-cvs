@@ -1,0 +1,9 @@
+<use   name="Iguana/Framework"/>
+<use   name="Iguana/Inventor"/>
+<use   name="Iguana/Studio"/>
+<use   name="geant4core"/>
+<use   name="clhep"/>
+<use   name="qt"/>
+<export>
+  <lib   name="1"/>
+</export>

@@ -1,0 +1,648 @@
+2010-01-06  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Unnecessary direct dependencies cleanup.
+
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisGsfTrackTwig.cc, VisTkIdealHelixTracksTwig.cc,
+	VisTkRecTrackDetsTwig.cc, VisTkRecTracksTwig.cc,
+	VisTkRecoContent.cc, VisTrackerClusterTwig.cc,
+	VisTrackerDigiTwig.cc, VisTrackerPiClusterTwig.cc,
+	VisTrackerPiDigiTwig.cc, VisTrackerPiRechitTwig.cc,
+	VisTrackerRechit2DMatchedTwig.cc, VisTrackerRechit2DTwig.cc,
+	VisTrackingRecHitTwig.cc, VisTrajectorySeedTwig.cc: Removed
+	unneeded lock. 
+
+2009-09-09  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisPixelDigiTwig.h, VisPixelDigiTwig.cc: Removed as unused.
+	* xtypeinfo.h, xtypeinfo.cc: Adapt to the above changes.
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisTkRecoContent.h, VisTkRecoContent.cc: Remove unused
+	multi-threaded base class. Replaced by a simpler one.
+
+2009-08-25  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisTrajectorySeedTwig.cc: Clean up of compilation warnings.
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2008-12-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecTracksTwig.h, VisTkRecTracksTwig.cc: Do not refit the
+	Track. Use innermost and outermost states.
+
+2008-11-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrackerPiRechitTwig.cc, VisTrackerRechit2DMatchedTwig.cc,
+	VisTrackerRechit2DTwig.cc: Update to the new collection of global
+	tracker rechits.
+
+2008-10-21  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecTracksTwig.cc: Change back to the normal iteration - the
+	problem is in reconstruction.
+
+2008-10-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecTracksTwig.cc: Iterate in reverse order over refitted
+	rechits.
+	* VisTrackerClusterTwig.cc, VisTrackerDigiTwig.cc,
+	VisTrackerRechit2DMatchedTwig.cc, VisTrackerRechit2DTwig.cc:
+	Invalidate the structure of the twig.
+
+2008-09-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrackerRechit2DMatchedTwig.h,
+	VisTrackerRechit2DMatchedTwig.cc: Correct Lego representation
+	based on lego scale. Do not request event setup - use the
+	service.
+	* VisTrackerClusterTwig.h, VisTrackerClusterTwig.cc: Move yellow
+	dots closer to the blue ones. Use lego scale for lego
+	representation.
+	* VisTrackerDigiTwig.h, VisTrackerDigiTwig.cc,
+	VisTrackerRechit2DTwig.h, VisTrackerRechit2DTwig.cc: Use lego
+	scale for lego representation.
+
+2008-09-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrackerRechit2DMatchedTwig.cc: Expand the twig by
+	collections. Set the number of objects in the collection in the
+	name of the twig.
+	* VisTrackerClusterTwig.h, VisTrackerClusterTwig.cc: Use active
+	configurable variables to set draw style an strip representation.
+	* VisTkRecoContent.cc: Clean up the twig names.
+	* VisTrackerDigiTwig.cc, VisTrackerRechit2DTwig.cc,
+	VisTrackingRecHitTwig.cc:  Expand the twig by collections. Set the
+	number of objects in the collection in the name of the
+	twig. Improve RPhi and RZ reps.  
+
+2008-09-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrackingRecHitTwig.cc: Add RPhi and RZ views. 
+
+2008-09-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisGsfTrackTwig.cc: Protect from exception and subsequent skip
+	event while accessing non saved extras. 
+	* VisTrajectorySeedTwigh, VisTrajectorySeedTwig.cc: Add an event
+	setup to calculate the global positions. Split by collections. Add
+	a number of objects in the collection.
+	* VisTkRecTracksTwig.cc: Add bx, ls and orbit. Add more info in
+	text window.
+	* VisTrackingRecHitTwig.cc: Separate collections. Use event setup
+	service to determine global position.
+
+2008-09-18  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecTracksTwig.cc: Remove compiler error.
+
+2008-09-16  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecTracksTwig.cc: George's hook fix.
+
+2008-09-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* A fix from Jean-Roch.
+
+2008-08-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrackerRechit2DTwig.cc, VisTrackerRechit2DMatchedTwig.cc:
+	Obtain local position from tracking geometry.
+	* VisGsfTrackTwig.cc, VisPixelDigiTwig.cc,
+	VisTkRecTrackDetsTwig.cc, VisTrackerClusterTwig.cc,
+	VisTrackerDigiTwig.cc, VisTrackerPiClusterTwig.cc,
+	VisTrackerPiDigiTwig.cc, VisTrackerPiRechitTwig.cc,
+	VisTrajectorySeedTwig.cc, VisTrackingRecHitTwig.cc: Add a detailed
+	message from exceptions.
+	* VisTkIdealHelixTracksTwig.cc: Check the charge of the tracks.
+
+2008-07-22  Giuseppe Zito  <Giuseppe.Zito@cern.ch>
+
+	* VisTrackerPiRechitTwig.cc:protect from missing information 
+	in transient rechits 
+
+2008-07-22  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrackerPiRechitTwig.cc: Catch exceptions.
+
+2008-07-02 Giuseppe Zito  <Giuseppe.Zito@cern.ch> 
+
+	* VisTrackerClusterTwig.h, VisTrackerClusterTwig.cc: 
+	strip representation of clusters added
+
+2008-06-24 Giuseppe Zito  <Giuseppe.Zito@cern.ch> 
+
+	* VisTkRecTracksTwig.h, VisTkRecTracksTwig.cc:mods for 
+	single track selection by active configurable
+
+2008-06-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecTracksTwig.h, VisTkRecTracksTwig.cc: Added changes from
+	Chang to RZ track view. Add a callback to update the twig when
+	config changes.
+
+2008-06-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecTrackDetsTwig.cc: Protect from a NULL separator.
+
+	* VisGsfTrackTwig.cc: Add a number of GsfTracks in the twig name.
+	* VisTkRecTrackDetsTwig.cc: Check the validity of the collection.
+	* VisTkRecTracksTwig.cc: Add a number of Tracks in the name.
+	* VisTrajectorySeedTwig.cc: Add a number of Seeds in the name.
+
+2008-06-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecoContent.cc, xtypeinfo.h, xtypeinfo.cc: Updated to
+	remove the geometry twigs.
+	* VisTkGeometryTwig.h, VisTkGeometryTwig.cc: Removed. replaced by
+	VisEventSetupService.
+	* VisPixelDigiTwig.h, VisTrackerClusterTwig.h,
+	VisTrackerDigiTwig.h, VisTrackerPiClusterTwig.h,
+	VisTrackerPiDigiTwig.h, VisTrackerPiRechitTwig.h,
+	VisTrackerRechit2DMatchedTwig.h, VisTrackerRechit2DTwig.h: Remove
+	now unnecessary inheritance.
+	* VisTkRecTrackDetsTwig.cc: Use VisEventSetupService to build the
+	hit dets.
+	* VisTrackerClusterTwig.cc, VisTrackerDigiTwig.cc,
+	VisTrackerPiClusterTwig.cc, VisTrackerPiDigiTwig.cc,
+	VisTrackerPiRechitTwig.cc, VisTrackerRechit2DMatchedTwig.cc,
+	VisTrackerRechit2DTwig.cc, VisTrackingRecHitTwig.cc,
+	VisTrajectorySeedTwig.cc: Remove unnecessary now dependency on
+	VisRecoGeometry package.
+	* BuildFile:  Remove unnecessary now dependency on VisRecoGeometry
+	package. Add dependency on VisEventSetup.
+
+2008-06-02 Giuseppe Zito  <Giuseppe.Zito@cern.ch> 
+
+	* VisTrackerClusterTwig.cc, VisTrackerPiClusterTwig.cc:mods for 
+	new cluster collections.
+
+2008-04-24  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrackingRecHitTwig.h, VisTrackingRecHitTwig.cc: New class to
+	display TrackingRecHits.
+	* xtypeinfo.h, xtypeinfo.cc: Declare and define new class.
+	* VisTkRecoContent.cc: Add VisTrackingRecHitTwig to the iglet
+	content.
+
+2008-01-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisGsfTrackDirection.h, VisGsfTrackDirection.cc: An active
+	configurable to switch on/off the directions of the gsfTrack
+	innermost and outermost states.
+	* VisGsfTrackShape.h, VisGsfTrackShape.cc: Define which shape to
+	use in drawing the gsfTracks: spline, line or both.
+	* VisGsfTrackTwig.cc: Add the above features.
+	* VisTkRecTracksTwig.cc: Do not update on each creation - it's
+	done once after exploring the event content.
+	* VisTkRecoContent.cc: Typo fixed.
+
+2008-01-18  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisGsfTrackTwig.cc, VisTkRecTracksTwig.cc: Put collections into
+	the main twig browser.
+
+2008-01-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisGsfTrackTwig.cc: Add display of the directions in the
+	innermost and outermost positions.
+	* VisTkRecTracksTwig.cc: Deal only with separate collections. Do
+	not attempt to display all tracks.
+	* VisTkRecoContent.cc: Add precise description to the twig names.
+	* VisTrackerClusterTwig.cc: Use exception handling from the
+	framework. Update color. Correct RPhi and RZ views.
+	* VisTrackerDigiTwig.cc: Use exception handling from the
+	framework. Update color. Correct RPhi and RZ views.
+	* VisTrackerRechit2DTwig.cc: Use exception handling from the
+	framework. Update color. Correct RPhi and RZ views.
+
+2008-01-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisGsfTrackTwig.h, VisGsfTrackTwig.cc: New class to display
+	GsfTracks.
+	* xtypeinfo.h, xtypeinfo.cc: Declare and define the new type of
+	Twig. 
+	* VisTkRecoContent.cc: Add the GsfTracks Twig to the content.
+	* BuildFile: Add dependency on GsfTracks.
+
+	* VisGsfTrackTwig.cc: Add a layer in RZ.
+	* VisTrackerRechit2DTwig.cc: Added exception handling. Changed the
+	size of the point - made it bigger and added a layer in RZ.
+
+2007-12-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecTrackDetsTwig.cc: Replace SoAnnotation by SoSeparator.
+	* VisTkIdealHelixTracksTwig.h, VisTkIdealHelixTracksTwig.cc:
+	Cleanup and moving to exception handling by a framework.
+
+2007-12-04  Chang Liu  <Chang.Liu@cern.ch>
+
+	* VisTkRecTrackDetsTwig.cc: Fix invalid DetId exception.
+
+2007-11-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecTrackDetsTwig.cc: Add exception handling by the framework.
+	* VisTkRecTracksTwig.cc: Do not refit a Trajectory - there is a
+	problem with accessing it - crashes the application. Add exception
+	handling by the framework.
+	* VisTkRecoContent.cc: Make it configurable and also subscribe the
+	twigs to the exception service.
+	* VisTrackerPiClusterTwig.cc: Correct the name in the text browser.
+
+2007-09-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecTrackDetsTwig.h, VisTkRecTracksTwig.h, 
+	VisTkIdealHelixTracksTwig.cc, VisTkRecTrackDetsTwig.cc, 
+	VisTkRecTracksTwig.cc: Better exception handling.
+
+2007-08-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTrajectorySeedTwig.h, VisTrajectorySeedTwig.cc: Separate 
+	messaging after the checks to allow better debugging.
+
+2007-07-20  Giuseppe Zito  <Giuseppe.Zito@cern.ch>
+	*  rz refinement 
+
+2007-06-26  Chang Liu  <Chang.Liu@cern.ch>
+
+	* VisTkIdealHelixTracksTwig.h, VisTkIdealHelixTracksTwig.cc: Initial commit.
+	visualize inner and outer states of Tracks by ideal helix
+	* VisTkRecoContent.cc, xtypeinfo.h, xtypeinfo.cc: Modify accordingly.
+	* VisTkRecTracksTwig.cc, VisTrajectorySeedTwig.cc: Modifications to implement rz view.
+
+2007-06-25  Giuseppe Zito  <Giuseppe.Zito@cern.ch>
+
+	* Modifications to implement rz view
+
+2007-06-16  Chang Liu  <Chang.Liu@cern.ch>
+
+	* VisTkRecTracksTwig.cc: connect inner & outer States instead of hits.
+
+2007-05-29  Chang Liu  <Chang.Liu@cern.ch>
+
+	* VisTkRecTrackDetsTwig.h, VisTkRecTrackDetsTwig.cc: Initial commit.
+	trying to visualize DetUnits used by Tracks.
+	* VisTkRecoContent.cc, xtypeinfo.h, xtypeinfo.cc: Modify accordingly.
+
+2007-05-22  Chang Liu  <Chang.Liu@cern.ch>
+
+	* VisTrajectorySeedTwig.h, VisTrajectorySeedTwig.cc: Initial commit.
+	trying to visualize TrajectorySeed
+	* VisTkRecoContent.cc, xtypeinfo.h, xtypeinfo.cc: Modify accordingly.
+
+2007-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Vis*Content.cc: Introduce separate tree browser.
+	
+2007-04-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Adapted to the changes in the Iguana subsystem directory structure.
+
+	* VisTkRecTracksTwig.cc, xtypeinfo.cc: Remove simulated data.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkSimTracksTwig.h, VisTkSimTracksTwig.cc,
+	VisTrackerSimhitTwig.cc, VisTrackerSimhitTwig.h: Move to a
+	separate package to split the dependencies on simulation.
+	* VisTkRecoContent.cc, plugin.cc, xtypeinfo.h: Modify
+	accordingly. 
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* VisTkRecoContent.cc: Adapt to migration of IGUANA to CMSSW.
+
+2007-03-21  Chang Liu  <Chang.Liu@cern.ch>
+
+	* VisTkRecTracksTwig: track collection names configurable.
+
+2007-03-21  Chang Liu  <Chang.Liu@cern.ch>
+
+	* VisTkRecTracksTwig: Use TrackTransformer instead of
+	MuonTrackConverter to refit tracks.
+
+	* BuildFile: Add TrackingTools/TrackRefitter,
+	remove RecoMuon/TrackingTools.
+
+2007-03-21  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Change Chang's name.
+
+2007-03-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkGeometryTwig.cc, VisTkRecTracksTwig.cc: Headers has been
+	moved.
+
+2007-03-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added Matteo Sani as a developer.
+
+2007-02-23  Giuseppe Zito  <Giuseppe.Zito@cern.ch>
+
+	* VisTkRecTracksTwig, VisTrackerClusterTwig : added two new parameters to 
+	customize drawing
+
+2007-02-05  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecTracksTwig.cc: Fix the compiler errors on the SLC4.
+
+	* VisTrackerRechit2DTwig.cc: Correct label for global position and
+	add units.
+
+2007-01-30  Giuseppe Zito  <Giuseppe.Zito@cern.ch>
+
+	* VisTkRecTracksTwig.h, VisTkRecTracksTwig.cc : Detailed track printout 	now triggered by parameter
+
+2006-11-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecTracksTwig.h, VisTkRecTracksTwig.cc,
+	VisTkSimTracksTwig.h, VisTkSimTracksTwig.cc, 
+	VisTrackerClusterTwig.h, VisTrackerClusterTwig.cc,
+	VisTrackerDigiTwig.h, VisTrackerDigiTwig.cc,
+	VisTrackerPiClusterTwig.h, VisTrackerPiClusterTwig.cc,
+	VisTrackerPiDigiTwig.h, VisTrackerPiDigiTwig.cc,
+	VisTrackerPiRechitTwig.h, VisTrackerPiRechitTwig.cc,
+	VisTrackerRechit2DMatchedTwig.h, VisTrackerRechit2DMatchedTwig.cc, 
+	VisTrackerRechit2DTwig.h, VisTrackerRechit2DTwig.cc,
+	VisTrackerSimhitTwig.h, VisTrackerSimhitTwig.cc: VisEventSelector
+	takes now a process name.
+
+2006-10-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecTracksTwig.h, VisTkRecTracksTwig.cc: Try to work around
+	the DetId = 0 exception. It happens when the pixel tracks try to
+	be converted with MuonTrackConverter. Checking the RecHits for the
+	tracks shows that all of them are valid and DetId is not null.
+
+2006-10-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecTracksTwig.h, VisTkRecTracksTwig.cc: Clean up obsolete
+	code.
+	* BuildFile: Add RecoMuon/TrackingTools.
+
+2006-10-04  Chang Liu <chang.liu@cern.ch>
+
+	* VisTkRecTracksTwig.h, VisTkRecTracksTwig.cc: Add MuonTrackConverter
+	to reconstruct trajectories from tracks to get TrajectoryMeasurements
+
+2006-09-07  Giuseppe Zito  <gzito@cern.ch>
+
+	* VisTkRecoContent : hide twigs not working with new data 
+
+2006-09-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecTracksTwig.h, VisTkRecTracksTwig.cc: An attempt to add
+	transient reconstruction of the tracks by refitting it and getting
+	the measurements.
+
+	* .admin/developers: Add Norbert and Chang Liu as developers.
+
+2006-07-26  Dirk Heydhausen  <heydhaus@cern.ch>
+
+	* VisTkSimTracksTwig.cc is modified to dynamic
+
+2006-07-25  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* Modified according the new collections names
+
+2006-07-24  Dirk Heydhausen  <dirk.heydhausen@cern.ch>
+
+	* VisTkSimTracksTwig.cc is added: pixel and strip simtrack visualization
+
+2006-07-21  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	*  new Twig VisTrackerPiRecHitTwig: pixel rechit visualization
+
+	* VisTrackerRecHitTwig removed because replaced by new rechit twigs
+
+	* new Twigs: VisTrackerRecHit2DTwig, VisRecHit2DMatchedTwig
+
+2006-07-19  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* new Twig VisTrackerPiClusterTwig : pixel cluster visualization
+
+2006-07-18  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* dynamic twig for VisTrackerClusterTwig: only sistrip cluster visualization
+
+	* update VisTkRecoContent to dynamic twig
+
+	* dynamic twig for VisTrackerSimhitTwig
+
+	* new Twig VisTrackerPiDigiTwig : pixel digis visualization
+	* VisTrackerDigiTwig changed : only sistrip digis visualization
+
+2006-07-13  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	*  dimension and colour of rechit, cluster,digi changed
+
+2006-07-12  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	* VisTrackerDigiTwig: pixel digi display added and other mods 
+
+2006-07-12  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* VisTkRecTracksTwig: correction and added GeomDetIdprintout
+
+2006-07-11  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	* VisTrackerSimHitTwig.cc:added GeomDetId printout 
+
+2006-07-11  Dirk Heydhausen  <dirk.heydhausen@cern.ch>
+	* VisTrackerRecTwig.cc, VisTrackerRechitTwig.h: correction of LegoPlot visualization.
+	* VisTrackerhitTwig.cc: correction of position of visualized points
+
+2006-07-07  Gordon Kaussen  <gordon.kaussen@cern.ch>
+	* VisTrackerClusterTwig.cc: correction of 3D visualization
+	* VisTrackerRechitTwig.cc, VisTrackerRechitTwig.h: added missing functions
+
+2006-07-07  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	*  correction in VisTkRecTracksTwig 
+
+2006-07-04  Gordon Kaussen  <gordon.kaussen@cern.ch>
+	* plugin.cc, xtypeinfo.h: added removed lines
+
+2006-07-04  Gordon Kaussen  <gordon.kaussen@cern.ch>
+	* VisTrackerClusterTwig.cc, VisTrackerClusterTwig.h: New class for cluster display
+	* VisTrackerRechitTwig.cc, VisTrackerRechitTwig.h: New class for rechit display
+	* VisTkRecoContent.cc, plugin.cc, xtypeinfo.h: cluster twig and rechit twig added
+
+2006-07-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added Gordon to the list of developers.
+	
+2006-07-03  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* Use update(Ig3DRep *rep) to draw tracks
+
+2006-06-26  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	*  VisTkRecTracksTwig: print correction 
+
+2006-06-21  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	*  VisTkRecTracksTwig: correction for track disply
+
+2006-06-16  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* VisTkRecTracksTwig:  print is now correct
+
+2006-06-15  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* VisTkRecTracksTwig: works also with simulated tracks
+
+2006-06-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added Dirk to the list of developers.
+
+2006-06-09  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* VisTkRecoContent.cc, plugin.cc, xtypeinfo.h, VisTkRecTracksTwig.h, VisTkRecTrackerTwig.cc: rec tracks twig added
+
+2006-06-08  Giuseppe Zito  <Giuseppe.Zito@cern.ch>
+	* VisTrackerDigiTwig.cc: works again with simulated data 
+
+2006-05-24  Giuseppe Zito  <Giuseppe.Zito@cern.ch>
+	* VisTrackerDigiTwig.cc: now stripdigis drawn correctly in space 
+
+2006-05-19  Giuseppe Zito  <Giuseppe.Zito@cern.ch>
+	* VisTrackerDigiTwig.cc: change to new stripdigi container 
+
+2006-04-28  Giuseppe Zito  <Giuseppe.Zito@cern.ch>
+
+	* VisTrackerDigiTwig.cc: New class for  digi display 
+	* VisTrackerSimhitTwig.cc: New class for  simhit display 
+
+2006-04-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisPixelDigiTwig.cc: Removed unused header.
+	* VisTkRecoContent.cc: Use special setup for auto start.
+
+2006-04-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisPixelDigiTwig.h, VisPixelDigiTwig.cc, VisTkGeometryTwig.h,
+	VisTkGeometryTwig.cc: TrackingGeometry became TrackerGeometry.
+	* VisTkRecoContent.cc: Connection of signals is done by the base
+	class.
+
+2006-03-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkGeometryTwig.cc: TrackingGeometry became TrackerGeometry.
+
+2006-03-24  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisPixelDigiTwig.h, VisPixelDigiTwig.cc, VisTkGeometryTwig.cc:
+	Adapt to the changes in TrackingGeometry.
+
+2006-03-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecoContent.cc: Look up a CMS Event twig.
+	* VisPixelDigiTwig.cc: Move the VisTrackingGeometry  header below
+	since the class header should always come first.		
+	* VisPixelDigiTwig.cc: Add constness to remove a warning.
+	* VisPixelDigiTwig.h: Format includes.
+
+2006-03-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkGeometryTwig.h, VisTkGeometryTwig.cc: Use VisTrackingGeometry as
+	a utility calss, not a base class.
+	* VisTkRecoContent.cc: Look up a status bar.
+	
+2006-02-24  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* pixel digi display
+
+2005-02-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Add Maria and Giuseppe as developers.
+	*  VisPixelDigiTwig.cc: Correct RPhi representation from a 
+	circular histogram to dots.
+
+2005-02-21  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisPixelDigiTwig.h, VisPixelDigiTwig.cc: New class to show pixel 
+	digis.
+	* xtypeinfo.h, plugin.cc: Define and declare the new type of the 
+	above class.
+	* VisTkRecoContent.cc: Add lookup of an event twig and attach the 
+	tracker event to it.
+	
+2006-01-30  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* .admin/developers: Added Shahzad Muzaffar as administrator.
+	* .admin/developers: Removed the empty line.
+	
+2005-12-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkGeometryTwig.h, VisTkGeometryTwig.cc: Now is a subclass of
+	VisTrackingGeometry.
+	* VisTracker.h, VisTracker.cc: Removed as obsolete -
+	VisTrackingGeometry replaces this functionality.
+
+2005-11-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkGeometryTwig.h, VisTkGeometryTwig.cc: Move to the
+	TrackingGeometry rather then TrackerGeom which is obsolete.
+
+2005-11-08  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkGeometryTwig.cc: Add invalidation of the reps on new
+	event.
+	
+2005-11-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Remove TrackerSimData. It does not export anything
+	now.
+
+2005-11-02  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Add OpenInventor.
+	* VisTkGeometryTwig.h, VisTkGeometryTwig.cc: Add RZ and RPhi
+	representations of the detector.
+	* VisTracker.h, VisTracker.cc: Add a function to convert a string
+	to the detector type enum.
+	* VisTkRecoContent.cc: Add logging.
+
+2005-10-24  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Add TrackerSimData back.
+
+2005-10-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecoContent.cc: Use IgQtLock, check validity of the event
+	processor, do not connect to it if it's not valid.
+	* VisTkGeometryTwig.h, VisTkGeometryTwig.cc: Update namespace name
+	and check that a handle to TrackerGeom is valid.
+	* BuildFile: Remove TrackerSimData which is not in pre3.
+
+2005-09-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkRecoContent.h, VisTkRecoContent.cc: New files to define the
+	content of the plugin.
+	* BuildFile: Set the flag to build a plugin out of the package.
+	* plugin.cc: Define the package to be a plugin.
+
+2005-09-15  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTkGeometryTwig.h, VisTkGeometryTwig.cc: CmsDigiTracker.h 
+	was renamed to TrackerGeom.h, so was the class.
+
+2005-09-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisTracker.h, VisTracker.cc: Common code to handle adding a
+	detector unit to the scene graph - moved from IGUANACMS.
+	* BuildFile, VisTkGeometryTwig.h, VisTkGeometryTwig.cc,
+	xtypeinfo.h, plugin.cc: New files.
+
+	* New package to provide a plugin for tracker
+	visualisation. 

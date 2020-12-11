@@ -1,0 +1,11 @@
+<use name=Iguana/Models>
+<use name=Iguana/GLBrowsers>
+<use name=Iguana/GLModels>
+<use name=Iguana/Inventor>
+<use name=geant4core>
+<use name=clhep>
+
+<export>
+  <lib name=VisGeant4VisG4Fields>
+</export>
+

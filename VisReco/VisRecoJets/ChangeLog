@@ -1,0 +1,258 @@
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisCaloTowerTwig.cc, VisCandidateTwig.cc,
+	VisGenJetCollectionTwig.cc, VisGenJetTwig.cc, VisJetTagTwig.cc,
+	VisRecoCandidateContent.cc, VisRecoJetContent.cc: Removed unneeded
+	lock. 
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisRecoJetContent.h, VisRecoJetContent.cc: Remove unused
+	multi-threaded base class. Replaced by a simpler one. 
+
+2009-08-25  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisCandidateTwig.cc: Remove compilation warnings.
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2008-10-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloJetTwig.h, VisCaloJetTwig.cc: Add an RPhi
+	representation. 
+	* VisCaloTowerTwig.cc: Format.
+
+2008-09-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCandidateTwig.h, VisCandidateTwig.cc: Merged from 1_6_x
+	branch.
+	* VisRecoCandidateContent.h, VisRecoCandidateContent.cc: New iglet
+	to display Candidates.
+	* xtypeinfo.h, xtypeinfo.cc: Modified to add the new classes.
+	* iglet.cc: Added a new iglet.
+
+2008-08-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloTowerTwig.h, VisCaloTowerTwig.cc: Add 3d, RZ, and RPhi
+	representations. 
+
+2008-06-24  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisGenJetCollectionTwig.cc: Remove unnecessary include.
+	* VisGenJetTwig.cc: Remove unnecessary include. Add printout of em
+	energy.
+
+2008-06-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloTowerTwig.h, VisCaloTowerTwig.cc: Add selection of a
+	tower. Use VisEventSetupService. Use active configurable to control
+	towers scale.
+	* VisCaloJetTwig.cc: Remove lego selection.
+	* VisGenJetCollectionTwig.cc: Remove lego selection.
+	* VisGenJetTwig.cc: Remove lego selection.
+
+2008-06-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloTowerTwig.cc: Add a number of towers in the twig name.
+	* VisRecoJetContent.cc: Comment out JetTag.
+	* VisCaloJetTwig.cc: Add a number of calo jets in a collection to
+	the twig name.
+	* VisGenJetCollectionTwig.cc: Add a number of gen jets in a
+	collection to a twig name.
+
+2008-05-16  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloTowerTwig.cc, VisCaloJetTwig.cc: Undefine Qt emit - it
+	conflicts with MessageLogger emit.
+
+2008-04-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added a new developer.
+
+2007-10-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloJetTwig.h, VisCaloJetTwig.cc: Use active configurable
+	parameters.
+	* VisGenJetCollectionTwig.h, VisGenJetCollectionTwig.cc: Use
+	active configurable parameters.
+	* VisGenJetTwig.h, VisGenJetTwig.cc: Use active configurable
+	parameters.
+
+2007-10-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisJetTagTwig.h, VisJetTagTwig.cc: The JetTag DF is changed for
+	17X. Adapt to the changes.
+
+2007-08-15  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloJetTwig.cc: Delete an obsolete header.
+	* BuildFile: Delete an obsolete dependency. 
+
+2007-05-15  Shahzad Muzaffar <Shahzad.Muzaffar@cern.ch>
+
+	* src/VisJetTagTwig.cc: Compilation error fix by replaceing
+	dynamic_cast<const reco::CaloJet*>(&(j->jet ())) with
+	*(j->jet().castTo<reco::CaloJetRef>()). Changes done by
+	Ianna on 25/04/2007 are not yet tagged for CMSSW_1_5_0_pre3.
+	
+2007-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Vis*Content.cc: Introduce separate tree browser.
+	
+2007-04-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Adapted to the changes in the Iguana subsystem directory structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* VisCaloJetTwig.cc, VisRecoJetContent.cc: Adapt to migration of
+	IGUANA to CMSSW.
+
+2007-03-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloJetTwig.cc, VisCaloTowerTwig.cc,
+	VisGenJetCollectionTwig.cc, VisJetTagTwig.cc: Headers has been
+	moved.
+
+2007-03-01  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added Matteo Sani as a developer.
+
+2007-02-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloJetTwig.cc: Adapt to the change in CaloJet API.
+
+2007-01-31  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisJetTagTwig.h, VisJetTagTwig.cc: New call to visualize the
+	BTau jet tags.
+	* xtypeinfo.h, plugin.cc: Declare and register the new type.
+	* BuildFile: Add dependency on DataFormats/BTauReco.
+	* VisGenJetCollectionTwig.cc: Add the new Jet tag twig.
+
+	* VisCaloJetTwig.cc: Remove obsolete IgSoText2 class. Use the
+	standard SoText2 instead.
+
+2006-12-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisGenJetTwig.cc, VisGenJetCollectionTwig.cc: Adapt to the GenJet 
+	API changes.
+
+2006-11-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloJetTwig.h, VisCaloJetTwig.cc, VisCaloTowerTwig.h,
+	VisCaloTowerTwig.cc, VisGenJetCollectionTwig.h,
+	VisGenJetCollectionTwig.cc, VisGenJetTwig.h, VisGenJetTwig.cc:
+	VisEventSelector takes now a process name.
+
+2006-07-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloJetTwig.cc, VisCaloTowerTwig.cc, VisGenJetCollectionTwig.cc:
+	Add more information about objects.
+
+2006-07-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisGenJetTwig.h, VisGenJetTwig.cc: A dynamic twig to represent a
+	single GenJet jet.
+	* VisGenJetCollectionTwig.h, VisGenJetCollectionTwig.cc: A GenJet
+	collection.
+	* xtypeinfo.h, plugin.cc: Declare and define GenJet and
+	GenGetCollection twigs.
+
+	* VisCaloTowerTwig.cc: Add em energy fraction to the towers.
+
+2006-07-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloJetTwig.cc: Use reco namespace for CaloJet and its
+	collection.
+	
+2006-05-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloJetTwig.cc: Move the jets to 0 to 2PI range.
+	
+	* VisCaloTowerTwig.cc: Move the towers to 0 to 2PI range.
+
+2006-04-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloJetTwig.cc: Adapt to changes in CaloJet interface.
+
+2006-04-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloTowerTwig.h, VisCaloTowerTwig.cc: Replaces VisRecoJetTwig.
+	* VisRecoJetTwig.h, VisRecoJetTwig.cc: See above.
+	* xtypeinfo.h, plugin.cc: Adapt to the above changes.
+	* VisRecoJetContent.cc: Replace VisRecoJetTwig with
+	VisCaloJetTwig.
+	* BuildFile: Cleanup.
+
+2006-04-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloJetTwig.cc, VisCaloTowerTwig.cc, VisRecoJetTwig.cc: Adapt
+	to changes in CaloTower class.
+	* VisRecoJetContent.cc: Remove invalidation of the twigs.
+
+2006-03-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloJetTwig.h, VisCaloJetTwig.cc: Register the twig with twig
+	factory by its collection friendly name.
+	* VisRecoJetTwig.h, VisRecoJetContent.cc: Register the twig with
+	twig factory by its collection friendly name.
+	* VisRecoJetContent.cc: Remove signal connection from here - which
+	is done now by inheriting from a VisEventObserver.
+
+2006-03-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloJetTwig.cc: The headers were moved from FWCore/EDProduct to
+	DataFormats/Common.
+
+2006-03-21  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisRecoJetContent.cc, xtypeinfo.h, plugin.cc: Define and declare
+	a new type (see below) and add it to the content proxy.
+	* BuildFile: Add dependency on VisCaloLego package - configurable
+	parameters come from there.
+	* VisCaloJetTwig.h, VisCaloJetTwig.cc: New class to represent
+	CaloJet objects.
+
+2006-03-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloTowerTwig.cc, VisRecoJetTwig.cc, VisRecoJetContent.cc:
+	Use iguana lock and look up a status bar.
+	
+2006-01-30  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* .admin/developers: Added Shahzad Muzaffar as administrator.
+	* .admin/developers: Removed the empty line.
+	
+2005-11-02  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloTowerTwig.h, VisRecoJetTwig.h, VisCaloTowerTwig.cc,
+	VisRecoJetTwig.cc: Use realistic CaloTowers. No jets yet.
+
+2005-10-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloTowerTwig.h, VisCaloTowerTwig.cc: New class to show
+	CaloTowers.
+	* VisRecoJetTwig.h, VisRecoJetTwig.cc: Move to Lego
+	representation. Add selection and correct width of CaloTowers in
+	phi. 
+	* VisRecoJetContent.cc: Add event twig here.
+
+2005-10-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisRecoJetContent.h, VisRecoJetTwig.h, 
+	xtypeinfo.h, VisRecoJetContent.cc, VisRecoJetTwig.cc,
+	plugin.cc: New files to represent RecoJets.
+
+	* New package to provide a plugin for RecoJets
+	visualisation. 

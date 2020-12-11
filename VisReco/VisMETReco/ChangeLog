@@ -1,0 +1,59 @@
+2010-07-12  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisMETTwig.cc, VisGenMETTwig.cc, VisCaloMETTwig.cc: Remove
+	spurious includes.
+
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-12-22  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisMETTwig.h, VisMETTwig.cc: Migrated to a new MET format. 
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisCaloMETTwig.cc, VisGenMETTwig.cc, VisMETRecoContent.cc,
+	VisMETTwig.cc: Removed unneeded lock.
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisMETRecoContent.h, VisMETRecoContent.cc: Remove unused
+	multi-threaded base class. Replaced by a simpler one. 
+
+2007-11-02  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloMETTwig.cc, VisGenMETTwig.cc, VisMETTwig.cc: Let the
+	framework handle the exceptions.
+	
+2007-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Vis*Content.cc: Introduce separate tree browser.
+	
+2007-04-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Adapted to the changes in the Iguana subsystem directory structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* VisCaloMETTwig.cc, VisGenMETTwig.cc, VisMETRecoContent.cc,
+	VisMETTwig.cc: Adapt to migration of IGUANA to CMSSW.
+
+2007-03-15  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCaloMETTwig.h, VisGenMETTwig.h, VisMETTwig.h: Move the Handle
+	to the new location.
+
+2007-03-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* New package to provide a plugin for MET
+	visualisation.
+
+	* BuildFile, VisCaloMETTwig.h, VisGenMETTwig.h,
+	VisMETRecoContent.h, VisMETTwig.h, xtypeinfo.h, plugin.cc,
+	VisCaloMETTwig.cc, VisGenMETTwig.cc, VisMETRecoContent.cc,
+	VisMETTwig.cc: New classes to visualize MET, GenMET and CaloMET.

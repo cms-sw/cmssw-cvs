@@ -1,0 +1,70 @@
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisSimDataContent.h, VisSimDataContent.cc: Removed unused base
+	class.
+
+2008-06-23  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added a new developer.
+
+	* VisHepMCProductTwig.cc: Added names to the particles.
+	* BuildFile: Added dependencies on HepPDTRecord.
+
+2007-04-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Vis*Content.cc: Introduce separate tree browser.
+	
+2007-04-11  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisGenParticleTwig.h, xtypeinfo.h, VisGenParticleTwig.cc,
+	VisHepMCProductTwig.cc, VisSimDataContent.cc, iglet.cc: Migrate to
+	the new Iguana subsystem directory structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* VisSimDataContent.cc: Adapt to migration of IGUANA to CMSSW.
+
+2007-03-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHepMCParticleTree.cc, VisGenParticleTwig.cc: Migrated to HepMC.
+
+2007-03-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHepMCProductTwig.cc: Migrated to HepMC.
+
+2006-11-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHepMCProductTwig.h, VisHepMCProductTwig.cc: VisEventSelector
+	takes now a process name.
+	
+2006-07-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisGenParticleTwig.h, VisGenParticleTwig.cc: New class to represent a 
+	GenParticle twig.
+	* xtypeinfo.h, plugin.cc: Declare and define the above class.
+	* VisHepMCProductTwig.h, VisHepMCProductTwig.cc: Use the new class to
+	build the particle tree.
+
+2006-07-27  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisHepMCParticleTree.h, VisHepMCParticleTree.cc: Initial version of
+	the particle tree from Alice.
+	* BuildFile: Add HepMCCandidate package.
+
+2006-07-20  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisHepMCProductTwig.h, VisHepMCProductTwig.cc,
+	VisSimDataContent.h, VisSimDataContent.cc, xtypeinfo.h, plugin.cc: New
+	files to visualize HepMC.
+	
+	* New package to provide a plugin for the visualization of the
+	MC information.
+

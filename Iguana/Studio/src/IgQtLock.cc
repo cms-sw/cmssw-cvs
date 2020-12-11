@@ -1,0 +1,25 @@
+//<<<<<< INCLUDES                                                       >>>>>>
+
+#include "Iguana/Studio/interface/IgQtLock.h"
+#include <QApplication>
+
+//<<<<<< PRIVATE DEFINES                                                >>>>>>
+//<<<<<< PRIVATE CONSTANTS                                              >>>>>>
+//<<<<<< PRIVATE TYPES                                                  >>>>>>
+//<<<<<< PRIVATE VARIABLE DEFINITIONS                                   >>>>>>
+//<<<<<< PUBLIC VARIABLE DEFINITIONS                                    >>>>>>
+//<<<<<< CLASS STRUCTURE INITIALIZATION                                 >>>>>>
+//<<<<<< PRIVATE FUNCTION DEFINITIONS                                   >>>>>>
+//<<<<<< PUBLIC FUNCTION DEFINITIONS                                    >>>>>>
+//<<<<<< MEMBER FUNCTION DEFINITIONS                                    >>>>>>
+
+IgQtLock::IgQtLock (void)
+{
+    qApp->lock ();
+}
+
+
+IgQtLock::~IgQtLock (void)
+{
+    qApp->unlock ();    
+}

@@ -1,0 +1,62 @@
+######################################################################
+/tracking/storeTrajectory 1
+/tracking/verbose 1
+/run/verbose 1
+/event/verbose 1
+
+/gun/particle mu-
+/gun/energy 10 GeV
+/gun/direction 1. 0.1 0.
+/gun/position 0. 0. 0.
+
+/run/breakAtEndOfEvent
+/run/beamOn 1
+cont
+
+
+######################################################################
+/tracking/storeTrajectory 1
+/tracking/verbose 1
+/run/verbose 1
+/event/verbose 1
+
+/OSCAR/generator/fileNtp /afs/cern.ch/cms/geant4rep/genntpl/hzz4m.ntpl
+
+/run/breakAtEndOfEvent
+/run/beamOn 1
+cont
+
+
+######################################################################
+## verbose options
+/tracking/verbose 0
+/event/verbose 0
+/run/verbose 2
+
+## optimise the geometry for faster tracking (default)
+/run/optimizeGeometry true
+
+## Set the cuts per material as in CMSIM
+/run/particle/setStoredInAscii 0
+/run/particle/retrievePhysicsTable /afs/cern.ch/cms/geant4rep/physicsTables/OSCAR_1_3_2-CMSIMcuts
+
+## CMKIN generator ntuple: H-> tau tau -> mu + X
+/OSCAR/generator/fileNtp /afs/cern.ch/cms/geant4rep/genntpl/mu_gg_bbh200_2tau_mux.ntpl
+
+## Generator cuts
+/OSCAR/generator/minPtCut 1. GeV
+/OSCAR/generator/maxPtCut 9999. GeV
+/OSCAR/generator/minPhiCut 0. deg
+/OSCAR/generator/maxPhiCut 360. deg
+/OSCAR/generator/minEtaCut -2.5
+/OSCAR/generator/maxEtaCut 2.5
+
+## Initialize the detector and the physics
+/run/initialize
+/run/particle/dumpCutValues
+
+## Set the minimum kinetic energy cuts equivalent to CMSIM tracking cuts
+/OSCAR/cuts/minEKineCuts /afs/cern.ch/cms/Releases/OSCAR/OSCAR_1_3_2/src/Parameters/GlobalData/minEkineCutsCMSIM.lis 
+
+## Simulate events
+/run/beamOn 10

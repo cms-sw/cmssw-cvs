@@ -1,0 +1,48 @@
+template<class T>
+VisCuTkCompositeDetector<T>::VisCuTkCompositeDetector() : theSize(0) {}
+
+template<class T>
+VisCuTkCompositeDetector<T>::~VisCuTkCompositeDetector(){
+  for ( typename std::vector<T*>::iterator it = theComponents.begin();
+           it!=theComponents.end(); it++)
+   {
+     delete *it;
+   }
+}
+
+template<class T>
+unsigned int 
+VisCuTkCompositeDetector<T>::components() const { return theSize; }
+
+template<class T>
+void 
+VisCuTkCompositeDetector<T>::append(T* det)
+{
+  theComponents.push_back(det);
+  ++theSize;
+}
+template<class T>
+T * 
+VisCuTkCompositeDetector<T>::getComponent(unsigned int n) const {
+  if ( n <= theSize ) {
+    return theComponents[n-1];
+  }
+  else {
+    return 0;
+  }
+}
+
+template<class T>
+void 
+VisCuTkCompositeDetector<T>::addComponent(unsigned int n, T * det) {
+  if( n > theSize ) {
+    theComponents.resize(n);
+    theSize = n; 
+  }
+  theComponents[n-1] = det;
+}
+
+template<class T>
+std::vector<T*> VisCuTkCompositeDetector<T>::allComponents() const {
+  return theComponents;
+}

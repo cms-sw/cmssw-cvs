@@ -1,0 +1,503 @@
+2010-07-12  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisCuTkBuilder.cc, VisCuTkGeometryTwig.cc,
+	VisCuTkLayerSelection.cc, VisCuTkLayerSlWindow.cc,
+	VisCuTkMap2D.cc, VisCuTkMapWindow.cc, VisCuTkPartDetector.cc,
+	VisCuTkRecoContent.cc, VisCuTkSelectionBar.cc, VisCuTkSlWindow.cc,
+	VisCuTracker.cc, VisCuTrackerCluster.cc, VisCuTrackerDigi.cc,
+	VisCuTrackerRecHit.cc, VisCuTrackerSimHit.cc, iglet.cc: Remove
+	spurious includes.
+
+2010-01-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisCuTkLayerSelection.h, VisCuTkLayerSlWindow.h, VisCuTkMap2D.h,
+	VisCuTkMapWindow.h, VisCuTkScrollView.h, VisCuTkSlWindow.h,
+	VisCuTkLayerSelection.cc, VisCuTkLayerSlWindow.cc,
+	VisCuTkMap2D.cc, VisCuTkMapWindow.cc, VisCuTkScrollView.cc,
+	VisCuTkSlWindow.cc, VisCuTrackerCluster.cc, VisCuTrackerDigi.cc,
+	VisCuTrackerRecHit.cc, VisCuTrackerSimHit.cc: Qt3 support classes
+	replaced by Qt4 native ones.
+
+2010-01-06  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile, *.h, *.cc: Cleanup.
+	* VisCuDetectorRep.h, VisCuDetectorRep.cc: Brake up dependencies
+	on a separate VisRecoGeometry package. 
+
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-10-23  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisCuTrackerRecHit.cc: Remove compilation warning.
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisCuTrackerCluster.cc, VisCuTrackerDigi.cc,
+	VisCuTrackerRecHit.cc, VisCuTrackerSimHit.cc: Remove unneeded
+	lock. 
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisCuTkRecoContent.h, VisCuTkRecoContent.cc: Remove unused
+	multi-threaded base class. Replaced by a simpler one.
+
+2009-04-06  Giuseppe Zito  <giuseppe.zito@cern.ch> 
+
+	* VisCuTkBuilder.cc : remove compilation warning 
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2009-01-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* test/*.cfg: Removed as obsolete.
+
+2008-10-21  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	* VisCuTkGeometryTwig.cc,VisCuTkGeometryTwig.h: introduced hack for the problem of configurable  
+	parameters initialization.
+2008-10-17  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	* VisCuTkGeometryTwig.cc,VisCuTkSlWindow.cc: correction of bug in the use of configurable  
+	parameters
+2008-10-17  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	* VisCuTkGeometryTwig.h,VisCuTkMap2D.h,VisCuTkSlWindow.h,VisCuTrackerCluster.h,
+	VisCuTrackerDigi.h,VisCuTrackerRecHit.h,VisCuTrackerSimHit.h,VisCuTkGeometryTwig.cc,
+	VisCuTkMap2D.cc,VisCuTkSlWindow.cc,VisCuTrackerCluster.cc,VisCuTrackerDigi.cc,
+	VisCuTrackerRecHit.cc,VisCuTrackerSimHit.cc,trackerIguana_cfg.py,trackerIguanaraw.py
+	:configurable parameters implemented 
+
+2008-10-06  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	* trackerIguana_cfg.py,trackerIguanaraw.py: modified to use new iguana features
+
+2008-10-05  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	* trackerFrograw.py: modified
+
+2008-10-05  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	*trackerFrograw.py,iguanaraw.py : new cfg files added
+
+2008-09-30  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	*trackerckerIguana_cfg.py : new input event dataset needed
+
+2008-09-23  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	* VisCuTkMap2D.cc, VisCuTkMap2D.h, VisCuTkMapWindow.cc:added  save of trackermap
+	in png format
+
+2008-09-09  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	* trackerIguanaraw.py:added cfg file to test directory
+
+2008-09-09  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	* VisCuTkBuilder.cc,VisCuTkBuilder.h:correction needed by modified geometry in GlobalTags
+
+2008-09-03  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	* trackerckerIguana_cfg.py:correction needed by new input  events dataset 
+
+2008-09-03  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* VisCuTkBuilder.cc:correction needed by modified geometry in GlobalTags
+
+2008-09-01  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* VisCuTrackerCluster.cc, VisCuTrackerRechit.cc,VisCuTrackerDigi.cc, 
+	VisCuTrackeriSimHit.cc,VisCuTkGeometryTwig.cc, VisCuTkGeometryTwig.h,
+	VisCuTkModule.cc, VisCuTkModule.h, VisCuTkMap2D.cc, VisCuTkMap2D.h,
+	VisCuTkBuilder.cc:implemented automatic update of trackermap
+
+2008-08-13  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* trackerckerIguana_cfg.py:changed tag to access database
+
+2008-07-25  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* VisCuTrackerCluster.cc:
+	corrected bug in pixel cluster drawing 	
+
+2008-07-24  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* VisCuTrackerCluster.cc:
+	corrected bug in strip drawing in 2D window;cleaning of test directory	
+
+2008-07-23  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* trackerIguana_cfg.py:
+	cfg file with Refitter to display tracks	
+
+2008-07-02  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* VisCuTrackerCluster.cc, VisCuTrackerRechit.cc,VisCuTrackerCluster.h, VisCuTrackerRechit.h:
+	strip representation added for clusters;rechit display bug corrected	
+
+2008-07-01  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* VisCuTkGeometryTwig.cc, VisCuTkGeometryTwig.h:
+	corrected bug that makes program crash in changeConfig	
+
+2008-06-27  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* trackerIguana_cfg.py:
+	added python version of cfg file	
+
+2008-06-24  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* VisCuTkGeometryTwig.h:
+	single track selection active configurable taken fron VisFrameworkBase
+
+2008-06-12  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* VisCuTkGeometryTwig.cc, VisCuTkGeometryTwig.h, VisCuTrackerCluster.cc,
+	VisCuTkSlWindow.cc:
+	single track selection
+
+2008-06-02  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* VisCuTkMap2D.cc, VisCuTkMap2D.h, VisCuTrackerCluster.cc,
+	VisCuTkMapWindow.cc, VisCuTkMapWindow.h, VisCuTracker.h,
+	VisCuTkBuilder.cc:
+	Full implementation of module picking in trackermap;corrections for new 
+	clusters collections.
+
+2008-05-15  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* VisCuTkMap2D.cc, VisCuTkGeometryTwig.h, VisCuTrackerCluster.cc,
+	VisCuTrackerDigi.cc, VisCuTrackerRecHit.cc, VisCuTrackerSimHit.cc,
+	VisCuTkBuilder.cc:
+	Corrections to avoid warnings.
+
+2008-05-15  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCuTkMap2D.h, VisCuTkMapWindow.h, VisCuTkGeometryTwig.cc,
+	VisCuTkLayerSelection.cc, VisCuTkMap2D.cc, VisCuTkMapWindow.cc,
+	VisCuTkScrollView.cc, VisCuTkSlWindow.cc, VisCuTrackerCluster.cc,
+	VisCuTrackerDigi.cc, VisCuTrackerRecHit.cc, VisCuTrackerSimHit.cc:
+	Moved namespace use in cc files. Propagated include clean
+	up. Defined QT_NO_EMIT to avoid conflicts with changes in the
+	framework.
+
+2008-05-02  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* VisCuTrackerSimHit, VisCuTrackerCluster.cc, VisCuTrackerCluster.cc,VisCuTrackerRecHit.cc,VisCuTkGeometry.cc:getByLabel replaced by getMany to avoid CMSSW crahes due to missing data collections. 
+
+2008-02-15  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* VisCuTrackerSimHit, VisCuTrackerCluster.cc, VisCuTrackerCluster.cc,VisCuTrackerRecHit.cc:added safeguards to avoid crashes due to missing collections.Added cfg file to read tif reprocessed data. 
+
+2008-02-08  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* VisCuTkMap2D, VisCuTkMapWindow, VisCuTkScrollView.cc:Implementation of module picking in trackermap 
+
+2007-12-12  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* BuildFile: Added explicit qt dependency in order to let new scram run
+	MOC properly.
+
+2007-11-15 Giuseppe Zito  <giuseppe.zito@cern.ch> 
+
+	*   trackerIguana.cfg,README.1st : disable twig RecTracksDet giving trouble 
+	
+2007-11-14 Giuseppe Zito  <giuseppe.zito@cern.ch> 
+
+	*  VisCuTrackerSimHit.cc , trackerIguana.cfg : changed data collections names
+	
+2007-07-20 Giuseppe Zito  <giuseppe.zito@cern.ch> 
+
+	* rz window refinement 
+	
+2007-06-25 Giuseppe Zito  <giuseppe.zito@cern.ch> 
+
+	* rz window implementation 
+	
+2007-05-25 Giuseppe Zito  <giuseppe.zito@cern.ch> 
+
+	* VisCuTkGeometryTwig: Protection from invalid DetId:better way 
+	
+2007-05-11 Giuseppe Zito  <giuseppe.zito@cern.ch> 
+
+	* VisCuTkGeometryTwig: Protection from invalid DetId 
+	
+2007-05-09 Giuseppe Zito  <giuseppe.zito@cern.ch> 
+
+	* VisCuTkBuilder.cc: New tracker numbering scheme.
+	
+2007-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCuTkRecoContent.cc: Introduce separate tree browser.
+	
+2007-04-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Adapted to the changes in the Iguana subsystem directory structure.
+
+2007-03-21  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	
+	*  VisCuTkGeometry.cc : added protection to avoid sevent skipped and segfault  
+
+2007-03-21  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	
+	*  VisCuTkMap2D : deleted unused include giving trouble in compilation  
+	*  Added package documentation 
+
+2007-03-15  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	
+	*  Test cfg files modified to enable hit module selection  
+	*  VisCuTkGeometryTwig,VisCuTkSlWindow.cc : selection of hit modules 
+
+2007-03-08  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	
+	*  Test cfg files modified for 130pre5 
+	*  VisCuTrackerSimHit.cc,VisCuTkMap2D.cc : mods to speed up simhit drawing in trackermap 
+
+2007-03-02  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	
+	*  Test cfg files modified for 130pre4 
+
+2007-03-01  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	
+	*  VisCuTkMap2D.cc, trackerIguana.cfg : introduced two parameters to resize trackermap 
+
+2007-02-19  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	
+	* Bug corrections integrated signal trackermap 
+
+2007-02-16  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	
+	* Test cfg files modified for 130pre3 
+
+2007-02-12  Giuseppe Zito  <Giuseppe.Zito@cern.ch>
+
+	* VisCuTkMap2D: fix memory leak in trackermap
+
+2007-02-08  Giuseppe Zito  <Giuseppe.Zito@cern.ch>
+
+	* Corrections for tilted trackermap
+
+2007-02-06  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	
+	* Add sample configuration files in test directory 
+
+2007-02-05  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	
+	* Destroy selection windows after change of active modules configuration
+
+
+2007-01-29  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	
+	* Display of active modules only
+	 
+2007-01-11  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* Minor bugs correction
+
+2006-12-19  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* Printout of all the information in the selected modules for SimHits, RecHits, Clusters
+
+2006-12-15  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* Printout of all the information without tables
+
+	* addWafer method inherited from VisTrackingGeometry
+
+2006-12-14  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	*  Printout of all the information (module parameters + signal) only in the selected modules for PixelDigi
+
+2006-12-13  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* phival method inherited from VisCuTkMap2D
+
+	* layers windows are tilted and resized.
+
+2006-12-12  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* Printout of all the information (module parameters + signal) only in the selected modules (only for SistripDigi)
+
+2006-12-07  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* The trackermap is tilted and resized in such a way that you can see it completely in the two screens display
+
+2006-11-24  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* fix a bug in VisCuTrackerRecHit 
+
+2006-11-14  Giuseppe Zito  <gzito@lxplus072.cern.ch>
+
+	* corrections for slc4
+
+2006-11-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCuTkRecoContent.cc: Use new interface to the
+	VisEventProcessorService. Use sigc binding rather then boost. 
+
+2006-10-30  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* fix a bug on stereo module identification
+
+2006-09-14  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* VisCuTrackerDigi,Cluster,RecHit: now you can change data names with parameter set 
+
+2006-09-07  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* VisCuTrackerDigi,SimHit,Cluster,RecHit: adapted to new data names and formats 
+
+2006-07-26  Giuseppe Zito  <giuseppe.zito@cern.ch>
+
+	* VisCuTkBuilder.cc: corrected bug affecting MTCC trackermap 
+
+2006-07-26  Nicola AMAPANE  <nicola.amapane@cern.ch>
+
+	* VisCuTracker.cc: update subdetector enumerators
+
+2006-07-26  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* .admin/developers: Added Nicola Amapane as administrator.
+
+2006-07-25  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* Modified according the new  names
+
+2006-07-14  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* colour correction
+
+2006-07-13  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* dimension and colour of simhit changed
+
+	* dimension and colour of rechit, cluster , digi changed
+
+2006-07-13  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	* VisCuTrackerCluster:pixel cluster display added
+	* VisCuTrackerRecHit:pixel rechit display added
+
+2006-07-13  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	* VisCuTrackerCluster:pixel cluster display added
+	* VisCuTrackerRecHit:pixel rechit display added
+
+2006-07-12  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	* VisCuTrackerDigi:pixel digi display reimplemented
+
+2006-07-12  Giuseppe Zito  <giuseppe.zito@cern.ch>
+	* VisCuTrackerDigi:change order of digi collection search
+
+2006-07-11  Giuseppe Zito  <gzito@localhost.localdomain>
+	* More bugs correction
+
+2006-06-29  Giuseppe Zito  <gzito@localhost.localdomain>
+	* correction of some bugs 
+
+2006-06-23  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* correction of two bugs 
+
+2006-06-23  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* drawrechit method moved to VisCuTrackerRecHit
+
+2006-06-22  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* drawcluster method moved to VisCuTrackerCluster
+
+	* drawdigi method moved to VisCuTrackerDigi
+
+2006-06-21  Giuseppe Zito  <gzito@localhost.localdomain>
+	* VisCuTrackerSimHit added to draw simhits in 3D  
+
+2006-06-14  Giuseppe Zito  <gzito@localhost.localdomain>
+	* VisCuTrackerRecHit added to draw rechits in 3D  
+
+2006-06-08  Giuseppe Zito  <gzito@localhost.localdomain>
+	* Works again with simulated data  
+
+2006-06-06  Giuseppe Zito  <gzito@localhost.localdomain>
+	* Bugs corrections + some cleaning  
+
+2006-06-05  Giuseppe Zito  <gzito@localhost.localdomain>
+	* Implemented panning of 2D view  
+
+2006-05-31  Giuseppe Zito  <gzito@localhost.localdomain>
+	* corrected two bugs  
+
+2006-05-30  Giuseppe Zito  <gzito@localhost.localdomain>
+	* VisCuTrackerCluster added to draw clusters in 3D 
+
+2006-05-26  Giuseppe Zito  <gzito@localhost.localdomain>
+	* VisCutrackerDigi.h added (it was missing) 
+
+2006-05-26  Giuseppe Zito  <gzito@localhost.localdomain>
+	* mods to get immediate feedback in 3D window when digi display selected
+
+2006-05-25  Giuseppe Zito  <gzito@localhost.localdomain>
+	* VisCuTrackerDigi added to draw digi in 3D
+
+2006-05-25  Giuseppe Zito  <gzito@localhost.localdomain>
+	* VisCuTkMap2D : if MTCC layout draw all modules by default
+
+2006-05-24  Giuseppe Zito  <gzito@localhost.localdomain>
+	* VisCuTkMap2D : stripdigi now drawn correctly 
+
+2006-05-23  Giuseppe Zito  <gzito@localhost.localdomain>
+	* 2D  rechit display  now complete
+
+2006-05-22  Giuseppe Zito  <gzito@localhost.localdomain>
+	* 2D cluster and rechit(only reading) display  
+
+2006-05-19  Giuseppe Zito  <gzito@localhost.localdomain>
+	* simhits reimplemented
+
+2006-05-18  Giuseppe Zito  <gzito@localhost.localdomain>
+	* stripdigi change to detsetvector
+
+2006-05-15  Giuseppe Zito  <gzito@localhost.localdomain>
+	* stripdigi display in trackermap now with offset
+
+2006-04-26  Giuseppe Zito  <gzito@localhost.localdomain>
+	* digi display in trackermap 
+
+2006-04-24  Giuseppe Zito  <gzito@localhost.localdomain>
+	* implementation of integrated signal display in trackermap 
+
+2006-04-24  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* deleted unused buttons 
+
+2006-04-20  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* correction for zoom buttons 
+
+2006-04-19  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* implementation of zoom
+
+	* new library in Buildfile 
+
+2006-04-12  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* method deleted because available in another class
+
+	* correction in TOB barrel
+
+2006-03-21  Maria Santa Mennea  <mennea@localhost.localdomain>
+
+	* adapted to the new Tracker geometry
+
+2006-02-24  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* correction in pixel geometry (2)
+
+	* correction in pixel geometry 
+
+	* simhit display and signal integration in trackermap
+
+2006-01-31  Giuseppe Zito  <gzito@localhost.localdomain>
+
+	* correction in new geometry
+
+2006-01-30  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* .admin/developers: Added Shahzad Muzaffar as administrator.
+	* .admin/developers: Removed the empty line.
+	
+2006-01-27  Maria Santa Mennea  <mennea@lxcmsd2.cern.ch>
+
+	* new geometry

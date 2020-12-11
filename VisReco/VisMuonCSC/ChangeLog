@@ -1,0 +1,371 @@
+2010-01-05  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* BuildFile: Remove unnecessary direct dependencies.
+
+2009-09-22  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* src/VisCSCChamberDrawer.cc (getOutline): Clean up compilation
+	warning.  
+
+2009-09-18  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisCSCALCTDigiTwig.cc, VisCSCCLCTDigiTwig.cc,
+	VisCSCChamberDrawer.cc, VisCSCComparatorDigiTwig.cc,
+	VisCSCCorrelatedLCTDigiTwig.cc, VisCSCRPCDigiTwig.cc,
+	VisCSCRecHit2DTwig.cc, VisCSCSegmentTwig.cc,
+	VisCSCStripDigiTwig.cc, VisCSCWireDigiTwig.cc,
+	VisMuonCSCContent.cc: Removed unneeded lock - we run in one thread
+	any way.
+
+2009-09-11  George Alverson <George.Alverson@cern.ch>
+
+	* VisCSCWireDigiTwig.cc: fix problem displaying outlines in R-Phi view
+        * VisCSCStripDigiTwig.cc, VisCSCStripDigiTwig.h: add switch for display style of strips 
+              - VisCSCStripStyleFlag TRUE implies solid 2D shape, FALSE implies line 
+
+2009-08-26  Ianna Osborne  <ianna.osborne@cern.ch>
+
+	* VisMuonCSCContent.h, VisMuonCSCContent.cc: Remove unused
+	multi-threaded base class. Replaced by a simpler one. 
+
+2009-08-03  George Alverson <George.Alverson@cern.ch>
+
+	* src/VisCSCChamberSelector.cc: removed. Content is now in interface/ui_VisCSCChamberSelector.h
+
+2009-07-28  George Alverson <George.Alverson@cern.ch>
+
+        * VisCSCWireDigiTwig.cc, VisCSCStripDigiTwig.cc: improved geometry (thanks to Tim Cox)
+        * src/VisChamberSelector.ui, interface/ui_VisChamberSelector.h: Qt Designer file for the ChamberSelector (Qt4.5 version)
+        * *PlotWidget*.cc, .h: convert to native Qt4
+
+2009-04-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* *.cc, *h: Final migration to Qt4.
+
+2008-12-12 George Alverson <George.Alverson@cern.ch>
+	* Add a VisCSCConfigurationService: interface/VisCSC...h,
+	src/VisCSC...cc, python/VisCSCConfigurationService_cff.py,
+	plugins/plugin.cc, plugins/BuildFile.
+	* src/VisCSCChamberDrawer.cc, interface/.h: use config service. Fix 
+	bug when drawing chambers instead of layers.
+	* Use IgTwigConfigElement for drawing parameters (materials/styles):
+	VisCSCStripDigiTwig, VisCSCWireDigiTwig, VisCSCSegmentTwig
+	* VisCSCDigiTools: change default font to Helvetica
+2008-10-20 George Alverson <George.Alverson@cern.ch>
+	* VisCSCChamberDrawer.{h,cc}: new common routine to draw chamber outlines
+	* Most physics shapes: (VisCSCALCTDigiTwig.cc, VisCSCCLCTDigiTwig.cc, 
+          VisCSCComparatorDigiTwig.cc, VisCSCCorrelatedLCTDigiTwig.cc, 
+          VisCSCRPCDigiTwig.cc, VisCSCSegmentTwig.cc, VisCSCStripDigiTwig.cc, 
+          VisCSCWireDigiTwig.cc+ .h): use VisCSCChamberDrawer
+	* VisCSCSegmentTwig.cc, VisCSCRPCDigiTwig.cc: use SoCoordinate3 instead of VertexProperty:
+	should optimize better with newer hardware.
+	+ VisCSCSegmentTwig: use private variables for visual properties: to 
+	  be replaced with new SoMaterials scheme.
+2008-09-03 George Alverson <George.Alverson@cern.ch>
+	* VisCSCStripDigiTwig.cc: reset containing box indicator on update(Ig3DRep)
+        * All physics shapes (VisCSCALCTDigiTwig.cc, VisCSCCLCTDigiTwig.cc, 
+          VisCSCComparatorDigiTwig.cc, VisCSCCorrelatedLCTDigiTwig.cc, 
+          VisCSCRPCDigiTwig.cc, VisCSCSegmentTwig.cc, VisCSCStripDigiTwig.cc, 
+          VisCSCWireDigiTwig.cc) set color for chanber outline to grey35 (from white).
+          Remove any remaining center-chamber indicators.
+        * VisCSCSegmentTwig.cc: set line width to 1.
+
+2008-08-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCSegmentTwig.cc: An attempt to enhance visibility of CSC
+	segments.
+
+2008-06-24  George Alverson <George.Alverson@cern.ch>
+
+	* BuildFile: add qt
+	* Add classes/files (.cc and .h):
+	  VisCSCChamberSelector, VisCSCChamberSelectorImpl
+	  VisCSCPlotWidget, VisCSCPlotWidgetAxisX, VisCSCPlotWidgetAxisY
+	* Modified VisCSCStripDigiTwig to use the PlotWidget and the chamber selector
+	* Removed frames: VisCSCWireDigiTwig.cc, VisCSCStripDigiTwig.cc
+2008-06-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonCSCContent.cc: Remove obsolete VisMuonCSCDetTwig.
+	* VisMuonCSCDetTwig.h, VisMuonCSCDetTwig.cc: Remove as
+	obsolete. It has been replaced by VisEventSetup.
+
+2008-04-23  George Alverson <George.Alverson@cern.ch>
+
+	* VisCSCStripDigi{.h, .cc}, VisCSCWireDigi{.h, .cc},
+	VisMuonCSCDetTwig{.h, .cc}: add SpareRep to prevent interference with 
+	normal RPhi view. 
+	* VisMuonCSCStripDigi.cc: use revised threshold code from Stoyan, center point of
+	chamber commented out 
+	* Some changes in visibility code and in bookkeeping.
+
+2008-03-07  Ianna.Osborne@cern.ch  <Ianna.Osborne@cern.ch>
+
+	* VisCSCRecHit2DTwig.cc: Update for the changes in API of a
+	CSCRecHit2D.
+
+2008-02-18  Ianna.Osborne@cern.ch  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added a developer.
+
+2007-11-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCStripDigiTwig.cc, VisCSCWireDigiTwig.cc: Remove CSC
+	specific representation in RPhi window.
+
+2007-11-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	*  VisCSCCorrelatedLCTDigiTwig.cc, VisCSCRPCDigiTwig.cc,
+	VisCSCStripDigiTwig.cc, VisCSCWireDigiTwig.cc: Correct the chamber 
+	frame.
+
+2007-10-31  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	*  VisCSCCorrelatedLCTDigiTwig.cc, VisCSCRPCDigiTwig.cc,
+	VisCSCRecHit2DTwig.cc, VisCSCSegmentTwig.cc,
+	VisCSCStripDigiTwig.cc, VisCSCWireDigiTwig.cc: Use base class
+	update. Let the framework handle the exceptions.
+	* VisMuonCSCContent.cc: Disable invisible twigs.
+
+2007-10-30  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	*  VisCSCALCTDigiTwig.cc, VisCSCCLCTDigiTwig.cc,
+	VisCSCComparatorDigiTwig.cc, VisMuonCSCDetTwig.cc: Use base class
+	update. Let the framework handle the exceptions.
+
+2007-08-14  Chang Liu <Chang.Liu@cern.ch>
+
+	* VisCSCSegmentTwig.cc, VisCSCRecHit2DTwig.cc: add RZ RPhi view
+
+2007-08-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Add new deleloper.
+
+2007-04-25  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Vis*Content.cc: Introduce separate tree browser.
+	
+2007-04-12  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* Adapted to the changes in the Iguana subsystem directory structure.
+
+2007-03-29  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile: Migrate to the new config.
+	* iglet.cc: New iglet definition.
+	* plugin.cc: Removed.
+	* xtypeinfo.cc: New xtype info definition.
+	* VisCSCALCTDigiTwig.cc, VisCSCCLCTDigiTwig.cc,
+	VisCSCComparatorDigiTwig.cc, VisCSCCorrelatedLCTDigiTwig.cc,
+	VisCSCRPCDigiTwig.cc, VisCSCRecHit2DTwig.cc, VisCSCSegmentTwig.cc,
+	VisCSCStripDigiTwig.cc, VisCSCWireDigiTwig.cc,
+	VisMuonCSCContent.cc: Adapt to migration of IGUANA to CMSSW.
+
+2007-03-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCALCTDigiTwig.cc, VisCSCCLCTDigiTwig.cc,
+	VisCSCComparatorDigiTwig.cc, VisCSCCorrelatedLCTDigiTwig.cc,
+	VisCSCRPCDigiTwig.cc, VisCSCRecHit2DTwig.cc, VisCSCSegmentTwig.cc,
+	VisCSCStripDigiTwig.cc, VisCSCWireDigiTwig.cc,
+	VisMuonCSCDetTwig.h: Headers has been moved.
+
+2006-11-15  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCALCTDigiTwig.cc, VisCSCCLCTDigiTwig.cc,
+	VisCSCCorrelatedLCTDigiTwig.cc: The digis are associated with a
+	chamber now. The geometry of strips and wires is taken from a key
+	layer (3 or 4).
+
+2006-11-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCALCTDigiTwig.h, VisCSCALCTDigiTwig.cc,
+	VisCSCCLCTDigiTwig.h, VisCSCCLCTDigiTwig.cc, 
+	VisCSCComparatorDigiTwig.h, VisCSCComparatorDigiTwig.cc,
+	VisCSCCorrelatedLCTDigiTwig.h, VisCSCCorrelatedLCTDigiTwig.cc,
+	VisCSCRPCDigiTwig.h, VisCSCRPCDigiTwig.cc, VisCSCRecHit2DTwig.h,
+	VisCSCRecHit2DTwig.cc, VisCSCSegmentTwig.h, VisCSCSegmentTwig.cc, 
+	VisCSCStripDigiTwig.h, VisCSCStripDigiTwig.cc,
+	VisCSCWireDigiTwig.h, VisCSCWireDigiTwig.cc: VisEventSelector
+	takes now a process name.
+
+2006-06-02  Nicola AMAPANE  <nicola.amapane@cern.ch>
+
+	* VisCSCALCTDigiTwig.cc, VisCSCCLCTDigiTwig.cc,
+	VisCSCCorrelatedLCTDigiTwig.cc: adapt to CSCDigi interface changes.
+
+2006-05-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Move Nicola to administrators of the package.
+
+2006-05-18  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Added Tim to the developers.
+
+2006-04-27  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCRecHit2DTwig.h, VisCSCRecHit2DTwig.cc: Visualization of
+	CSC rec hits.
+	* VisCSCSegmentTwig.h, VisCSCSegmentTwig.cc: Visualization of CSC
+	segments.
+	* xtypeinfo.h, plugin.cc: Declare and define the above types.
+	* VisMuonCSCContent.cc: Add the above twigs.
+
+2006-04-26  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCALCTDigiTwig.cc, VisCSCComparatorDigiTwig.cc,
+	VisCSCCorrelatedLCTDigiTwig.cc, VisCSCStripDigiTwig.cc: Bug fix do
+	not draw circular histograms. Clean up commented out code.
+	
+2006-04-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCWireDigiTwig.cc, VisCSCALCTDigiTwig.cc,
+	VisCSCCorrelatedLCTDigiTwig.cc: API of the digis changed.
+	* VisMuonCSCDetTwig.cc: Thickness of the CSCChamber is available
+	now.
+
+	* VisCSCCLCTDigiTwig.cc: API of the digi changed.
+	
+2006-04-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonCSCDetTwig.h, VisMuonCSCDetTwig.cc: Add annotations for
+	the chambers. Visualize only requested chambers: defined by
+	endcap, station, ring and chamber numbers.
+	* VisMuonCSCContent.cc: Build a tree of endcaps,stations, rings
+	and chambers. 
+
+2006-04-04  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCALCTDigiTwig.cc, VisCSCCLCTDigiTwig.cc,
+	VisCSCComparatorDigiTwig.cc, VisCSCCorrelatedLCTDigiTwig.cc,
+	VisCSCRPCDigiTwig.cc, VisCSCStripDigiTwig.cc,
+	VisCSCWireDigiTwig.cc: Add an alias for the product created by
+	VisTwigFactory service.
+	* VisMuonCSCContent.cc: Remove unneeded includes and invalidation
+	of twig representations.
+	
+2006-03-28  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCALCTDigiTwig.h, VisCSCCLCTDigiTwig.h,
+	VisCSCComparatorDigiTwig.h, VisCSCCorrelatedLCTDigiTwig.h,
+	VisCSCRPCDigiTwig.h, VisCSCStripDigiTwig.h, VisCSCWireDigiTwig.h,
+	VisCSCALCTDigiTwig.cc, VisCSCCLCTDigiTwig.cc,
+	VisCSCComparatorDigiTwig.cc, VisCSCCorrelatedLCTDigiTwig.cc,
+	VisCSCRPCDigiTwig.cc, VisCSCStripDigiTwig.cc,
+	VisCSCWireDigiTwig.cc, VisMuonCSCContent.cc: Register twig with
+	the twig factory, use selector to fetch the event collections,
+	move out signal connections which are done with a base class.
+
+2006-03-21  Nicola Amapane  <Nicola.Amapane@cern.ch>
+	* VisMuonCSCDetTwig.cc: fix wrong include.
+
+2006-03-21  Nicola Amapane  <Nicola.Amapane@cern.ch>
+	* BuildFile, VisCSCRPCDigiTwig.h,
+	VisCSCALCTDigiTwig.cc, VisCSCCLCTDigiTwig.cc,
+	VisCSCComparatorDigiTwig.cc, VisCSCCorrelatedLCTDigiTwig.cc,
+	VisCSCRPCDigiTwig.cc, VisCSCStripDigiTwig.cc,
+	VisCSCWireDigiTwig.cc, VisMuonCSCDetTwig.cc: adapt to
+	interface changes id CSCGeometry.
+
+
+2006-03-15  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCDigiTools.h, VisCSCDigiTools.cc: Helper functions for
+	drawinf an RPhi representation (as is from Stoyan).
+	* VisCSCStripDigiTwig.cc, VisCSCWireDigiTwig.cc: RPhi
+	representations added (as is from Stoyan).
+
+2006-03-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCRPCDigiTwig.h, VisCSCRPCDigiTwig.cc: API of the CSCRPCDigi 
+	changed.
+
+2006-03-13  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCRPCDigiTwig.cc: API of the CSCRPCDigi changed.
+
+2006-03-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCCorrelatedLCTDigiTwig.cc: Correct the strip (divide by 2).
+	* VisMuonCSCDetTwig.h, VisMuonCSCDetTwig.cc: Use CSCGeometry
+	rather then TrackingGeometry..
+
+2006-03-09  Matteo Sani  <sani@lxcmse2.cern.ch>
+
+	* src/VisCSCWireDigiTwig.cc, src/VisCSCStripDigiTwig.cc, 
+	src/VisCSCComparatorDigiTwig., src/VisCSCCLCTDigiTwig.cc,
+	src/VisCSCALCTDigiTwig.cc: Removed dependency on CSCSimAlgo.
+	* BuildFile: Removed dependency on CSCSimAlgo
+
+2006-03-09  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* .admin/developers: Nicola and Matteo added as developers.
+
+2006-03-07  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCRPCDigiTwig.h, VisCSCRPCDigiTwig.cc: New class to show RPC 
+	digis.
+	* BuildFile: Add RPC geometry.
+	* VisMuonCSCDetTwig.h, VisMuonCSCDetTwig.cc: Use VisTrackingGeometry.
+	* VisMuonCSCContent.cc: Check existence of the evnt twig and check
+	the status bar presence. 
+
+2006-03-03  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCALCTDigiTwig.h, VisCSCALCTDigiTwig.cc,
+	VisCSCCLCTDigiTwig.h, VisCSCCLCTDigiTwig.cc,
+	VisCSCCorrelatedLCTDigiTwig.h, VisCSCCorrelatedLCTDigiTwig.cc:
+	New classes to represent CSC digis.
+	* VisMuonCSCContent.cc, xtypeinfo.h, plugin.cc: Modified to use 
+	the above classes.
+	* VisCSCComparatorDigiTwig.cc, VisCSCStripDigiTwig.cc,
+	VisCSCWireDigiTwig.cc: Change the module label to get the digis -
+	should be now consistent with simulation samples.
+
+2006-02-17  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCComparatorDigiTwig.h, VisCSCComparatorDigiTwig.cc: New 
+	class to represent a comparator digi.
+	* VisMuonCSCContent.cc, xtypeinfo.h, plugin.cc: Modified to use 
+	the above class.
+	* VisCSCStripDigiTwig.h, VisCSCWireDigiTwig.h, VisCSCStripDigiTwig.cc,
+	VisCSCWireDigiTwig.cc: Move to use the CSCGeometry.
+
+2006-02-10  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonCSCDetTwig.h, VisMuonCSCDetTwig.cc,
+	VisCSCStripDigiTwig.cc, VisCSCWireDigiTwig.cc,
+	VisMuonCSCContent.cc: Integrated new development from Stoyan:
+	representations of wire digis and split of the geometry tree.
+	
+2006-01-30  Shahzad Muzaffar  <Shahzad.Muzaffar@cern.ch>
+
+	* .admin/developers: Added Shahzad Muzaffar as administrator.
+	* .admin/developers: Removed the empty line.
+	
+2006-01-06  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisMuonCSCDetTwig.cc: Try to get the geometry handle and provide a
+	message for text browser if it is not valid for this event.
+
+2005-12-19  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCStripDigiTwig.cc: Try to get the data handle.
+	* VisCSCWireDigiTwig.h, VisCSCWireDigiTwig.cc: Update it similar 
+	to the strip digis.
+	
+2005-12-15  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* VisCSCStripDigiTwig.cc: Correct the representations of the
+	digis.
+
+2005-12-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* BuildFile, VisCSCStripDigiTwig.h, VisCSCStripDigiTwig.cc,
+	VisCSCWireDigiTwig.h, VisCSCWireDigiTwig.cc, VisMuonCSCContent.h,
+	VisMuonCSCContent.cc, VisMuonCSCDetTwig.h, VisMuonCSCDetTwig.cc,
+	xtypeinfo.h, plugin.cc: New files for CSC strip and wire digis and
+	geometry.
+
+2005-10-14  Ianna Osborne  <Ianna.Osborne@cern.ch>
+
+	* New package to provide a plugin for Muon CSC
+	visualisation. 
